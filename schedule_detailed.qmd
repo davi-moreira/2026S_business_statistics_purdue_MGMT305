@@ -1,0 +1,114 @@
+---
+title: "Schedule"
+author: "Davi Moreira"
+# date-modified: "last-modified"
+# date: "2025-01-13"
+# date-format: "MMM D, YYYY"
+# listing:
+#   - id: schedule
+#     contents:
+#       - topics/topic-*.qmd
+#     type: table
+#     fields: [week, title, subtitle, date]
+#     field-display-names:
+#       week: "Week"
+#       title: "Topic"
+#       description: "Dates"
+#       subtitle: "Description"
+#     date-format: "MMMM DD, YYYY to MMMM DD, YYYY"
+#     sort: [filename]
+#     sort-ui: false
+#     filter-ui: false
+ #tbl-colwidths: [5,20,50,25]
+editor: visual
+---
+
+```{=html}
+<style>
+  .overflow-table {
+    font-size: 0.85rem; /* Smaller font for compact display */
+    width: 100%; /* Ensure the table fits within page width */
+    line-height: 1.2; /* Tighter line spacing */
+  }
+  .overflow-table th, .overflow-table td {
+    padding: 0.3rem; /* Reduce padding for compact layout */
+    text-align: left; /* Left-align for readability */
+    word-wrap: break-word; /* Wrap long text within cells */
+    vertical-align: top; /* Align cell content to the top */
+  }
+  .overflow-table th:nth-child(1), .overflow-table td:nth-child(1) {
+    width: 0%; /* Increase width of the first column */
+  }
+  .below-table {
+    font-size: 0.85rem; /* Match the font size of the table */
+    line-height: 1.2; /* Match line height */
+    margin-top: 1rem; /* Add spacing above the text */
+  }
+</style>
+```
+
+::: overflow-table
+| **Week** | **Day** | **Date** | **Topic** | **Book Sections\*** | **Slides\*\*** | **Data** | **Supplementary Materials** |
+|----|----|----|----|----|----|----|----|
+| **1** | **M** | Jan 13 | Intro. & Basic Stat. & Prob. Review 01 | Syl., 1.2, 1.4, 1.5 | [slides](/lecture_slides/01_chapter_data_statistics/01_chapter_data_statistics.html){target="_blank"} | [data](/lecture_slides/01_chapter_data_statistics/data/data.zip){target="_blank"} | \- [**Video**: The NBA Data Scientist](https://www.youtube.com/watch?v=MpLHMKTolVw){target="_blank"}<br>- [**Video**: Hans Rosling's 200 Countries, 200 Years](https://www.youtube.com/watch?v=jbkSRLYSojo){target="_blank"}<br>- [IMS: Introduction to data](https://openintro-ims.netlify.app/introduction-to-data){target="_blank"} |
+| **1** | **W** | Jan 15 | Basic Stat. & Prob. Review 02 | 1.8, 3.3 (omit Chebyshev), 3.4, 3.5 | [slides](/lecture_slides/03_chapter_descriptive_statistics/03_chapter_descriptive_statistics.html){target="_blank"} | [data](/lecture_slides/03_chapter_descriptive_statistics/data/data.zip){target="_blank"} | \- [**Video**: Data Basics](https://www.youtube.com/watch?v=Mjif8PTgzUs){target="_blank"}<br>- [**Video**: Summarizing and Graphing Numerical Data](https://www.youtube.com/watch?v=Xm0PPtci3JE){target="_blank"}<br>- [**Video**: Exploring Categorical Data](https://www.youtube.com/watch?v=7NhNeADL8fA){target="_blank"}<br>- [IMS: Exploratory data analysis](https://openintro-ims.netlify.app/exploratory-data-analysis){target="_blank"} |
+| **1** | **F** | Jan 17 | Basic Stat. & Prob. Review 03 | 6.2, t Dist. Supplement | [slides](/lecture_slides/06_chapter_continuous_probability_distributions/06_chapter_continuous_probability_distributions.html){target="_blank"} | . | \- [**Video**: Normal Distribution](https://www.youtube.com/watch?v=S_p5D-YXLS4){target="_blank"} |
+| **2** | **M** | Jan 20 | MARTIN LUTHER KING JR. DAY (No class - TBD) | — | . | . | . |
+| **2** | **W** | Jan 22 | Int. Est. Review | 8.1, 8.2, 8.3, 8.4 | [slides](/lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html){target="_blank"} | . | \- [**Video**: Point Estimates](https://www.youtube.com/watch?v=oLW_uzkPZGA){target="_blank"}<br>- [**Video**: Confidence Intervals](https://www.youtube.com/watch?v=A6_W8qY8zJo){target="_blank"}<br>- [**Video**: t-distribution](https://www.youtube.com/watch?v=uVEj2uBJfq0){target="_blank"} |
+| **2** | **F** | Jan 24 | Hyp. Testing Review 01 | 9.1, 9.2, 9.4, 9.5 | [slides](/lecture_slides/09_chapter_hypothesis_tests/09_chapter_hypothesis_tests.html){target="_blank"} | . | \- [**Video**: Hypothesis Testing Fundamentals](https://www.youtube.com/watch?v=NVbPE1_Cbx8){target="_blank"} |
+| **2** | **S** | Jan 26 | **Homework 01 Due date** | **Basic Stat. & Prob. Review** | . | . | . |
+| **3** | **M** | Jan 27 | Hyp. Testing Review 02 | 11.1, 11.2 | [slides](/lecture_slides/11_chapter_inference_pop_variance/11_chapter_inference_pop_variance.html){target="_blank"} | [data](/lecture_slides/11_chapter_inference_pop_variance/data/data.zip){target="_blank"} | \- [Nature: Statisticians issue warning over misuse of P-values](https://www.nature.com/articles/nature.2016.19503){target="_blank"} |
+| **3** | **W** | Jan 29 | **Quiz 1** | **Review Material** | . | . | . |
+| **3** | **F** | Jan 31 | Analysis of Variance | 13.1, 13.2 | [slides](/lecture_slides/13_chapter_one_way_anova/13_chapter_one_way_anova.html){target="_blank"} | [data](/lecture_slides/13_chapter_one_way_anova/data/data.zip){target="_blank"} | \- [**Video**: ANOVA Introduction](https://www.youtube.com/watch?v=W36DMVJ4Ibo){target="_blank"}<br>- [**Video**: Conditions for ANOVA](https://www.youtube.com/watch?v=HGFiWMA5OC8){target="_blank"}<br>- [**Video**: Multiple comparisons](https://www.youtube.com/watch?v=THG0P3YNbdI){target="_blank"} |
+| **3** | **S** | Feb 2 | **Homework 02 Due date** | **Int. Est. & Hyp. Testing Review** | . | . | . |
+| **4** | **M** | Feb 3 | Simple Regression | 14.1 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} | [data](/lecture_slides/14_chapter_simple_regression/data/data.zip){target="_blank"} | \- [**Video**: Line Fitting & Correlation](https://www.youtube.com/watch?v=mPvtZhdPBhQ){target="_blank"} |
+| **4** | **W** | Feb 5 | Simple Regression | 14.2, 14.3 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} | . | . |
+| **4** | **F** | Feb 7 | Simple Regression | 14.4, 14.5 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} | . | . |
+| **5** | **M** | Feb 10 | Simple Regression | 14.6, 14.7 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} | . | . |
+| **5** | **W** | Feb 12 | Simple Regression | 14.8 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} | . | . |
+| **5** | **F** | Feb 14 | Simple Regression | 14.9 | [slides](/lecture_slides/14_chapter_simple_regression/14_chapter_simple_regression.html){target="_blank"} | . | . |
+| **5** | **S** | Feb 16 | **Homework 03 Due date** | **Simple Regression** | . | . | . |
+| **6** | **M** | Feb 17 | Midterm 1 Review | Analysis of Variance & Simple Regression | . | . | . |
+| **6** | **W** | Feb 19 | Midterm 1 (TBD pm–TBD pm, TBD in class?) | Analysis of Variance & Simple Regression | . | . | . |
+| **6** | **F** | Feb 21 | Multiple Regression | 15.1, 15.2 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"} | [data](/lecture_slides/15_chapter_multiple_regression/data/data.zip){target="_blank"} | \- [**Video**: Introduction to Multiple Regression](https://www.youtube.com/watch?v=sQpAuyfEYZg){target="_blank"} |
+| **7** | **M** | Feb 24 | Multiple Regression | 15.3 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"} | . | . |
+| **7** | **W** | Feb 26 | Multiple Regression | 15.4 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"} | . | . |
+| **7** | **F** | Feb 28 | Multiple Regression | 15.5 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"} | . | . |
+| **8** | **M** | Mar 2 | Multiple Regression | 15.6 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"} | . | . |
+| **8** | **W** | Mar 5 | Multiple Regression | 15.7 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"} | . | . |
+| **8** | **F** | Mar 7 | **Quiz 2** | **Multiple Regression** | . | . | . |
+| **8** | **S** | Mar 9 | **Homework 04 Due date** | **Multiple Regression, Pt. 1** | . | . | . |
+| **9** | **M** | Mar 10 | Model Building | 16.1 | [slides](/lecture_slides/16_chapter_model_building/16_chapter_model_building.html){target="_blank"} | [data](/lecture_slides/16_chapter_model_building/data/data.zip){target="_blank"} | \- [**Video**: Model Selection in Multiple Regression](https://www.youtube.com/watch?v=VB1qSwoF-l0){target="_blank"} |
+| **9** | **W** | Mar 12 | Model Building | 16.2 | [slides](/lecture_slides/16_chapter_model_building/16_chapter_model_building.html){target="_blank"} | . | . |
+| **9** | **F** | Mar 14 | Model Building | 16.3, 16.4 | [slides](/lecture_slides/16_chapter_model_building/16_chapter_model_building.html){target="_blank"} | . | . |
+| **10** | **M** | Mar 17 | Spring Break (No class) | — | . | . | . |
+| **10** | **W** | Mar 19 | Spring Break (No class) | — | . | . | . |
+| **10** | **F** | Mar 21 | Spring Break (No class) | — | . | . | . |
+| **10** | **S** | Mar 23 | **Homework 05 Due date** | **Multiple Regression, Pt. 2** | . | . | . |
+| **11** | **M** | Mar 24 | Logistic Regression | Supplement in Brightspace & Slides | [slides](/lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html){target="_blank"} | . | \- [**Video**: Basic Ideas of Logistic Regression](https://www.youtube.com/watch?v=uYC2eLVSpI8){target="_blank"} |
+| **11** | **W** | Mar 26 | Logistic Regression | Supplement in Brightspace & Slides | [slides](/lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html){target="_blank"} | . | . |
+| **11** | **F** | Mar 28 | Logistic Regression | Supplement in Brightspace & Slides | [slides](/lecture_slides/16_02_logistic_regression/16_02_logistic_regression.html){target="_blank"} | . | . |
+| **11** | **S** | Mar 30 | **Homework 06 Due date** | **Logistic Regression** | . | . | . |
+| **12** | **M** | Mar 31 | Midterm 2 Review | Mult. Regr., Model Bldg., Log. Regr. | . | . | . |
+| **12** | **W** | Apr 2 | Midterm 2 (TBD pm–TBD pm, TBD in class?) | Mult. Regr., Model Bldg., Log. Regr. | . | . | . |
+| **12** | **F** | Apr 4 | Time Series | 17.1, 17.2 | [slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"} | [data](/lecture_slides/17_chapter_time_series/data/data.zip){target="_blank"} | [**Video**: Time Series Forecast Using Forecast Sheet in Excel](https://www.youtube.com/watch?v=WU6UKKuVGY8){target="_blank"} |
+| **13** | **M** | Apr 7 | Time Series | 17.3 | [slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"} | . | . |
+| **13** | **W** | Apr 9 | Time Series | 17.4 | [slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"} | . | . |
+| **13** | **F** | Apr 11 | Time Series | 17.5, 17.6 | [slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"} | . | . |
+| **13** | **S** | Apr 13 | **Homework 07 Due date** | **Time Series** | . | . | . |
+| **14** | **M** | Apr 14 | **Quiz 3** | **Time Series** | . | . | . |
+| **14** | **W** | Apr 16 | Quality Control | 19.1 | [slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"} | . | . |
+| **14** | **F** | Apr 18 | Quality Control | 19.2, 19.3 | [slides](/lecture_slides/19_chapter_quality_control/19_chapter_quality_control.html){target="_blank"} | . | . |
+| **15** | **M** | Apr 21 | Decision Analysis | 20.1 | [slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"} | . | \- [**Video**: Bayes theorem](https://www.youtube.com/watch?v=HZGCoVF3YvM){target="_blank"} |
+| **15** | **W** | Apr 23 | Decision Analysis | 20.2 | [slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"} | . | . |
+| **15** | **F** | Apr 25 | Decision Analysis | 20.3, 20.4 | [slides](/lecture_slides/20_chapter_decision_analysis/20_chapter_decision_analysis.html){target="_blank"} | . | . |
+| **15** | **S** | Apr 27 | **Homework 08 Due date** | **Quality Control & Decision Analysis** | . | . | . |
+| **16** | **M** | Apr 28 | Final Exam Review | Cumulative | . | . | . |
+| **16** | **W** | Apr 30 | Final Exam Review | Cumulative | . | . | . |
+| **16** | **F** | May 2 | Final Exam Preparation | No class | . | . | . |
+| **17** | — | TBD | **Final Exam (TBD pm–TBD pm, TBD)** | **Cumulative** | . | . | . |
+:::
+
+\*Section Numbers refer to sections in the course textbook.
+
+\*\* Course material adapted from the textbook and previous course editions to better fit our curriculum. Thanks to Professor Jen Tang for guidance and for generously sharing the materials.
