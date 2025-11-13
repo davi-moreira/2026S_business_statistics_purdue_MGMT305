@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Professor Davi Moreira ">
+
+<title> MGMT 30500: Business Statistics  – MGMT 30500: Business Statistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-79df7ed5347781c1339259261daa236f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/mgmt_305_ai_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/davi-moreira/2025S_business_statistics_purdue_MGMT305" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../material.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Material</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#experimental-design" id="toc-experimental-design" class="nav-link" data-scroll-target="#experimental-design">Experimental Design</a>
+  <ul class="collapse">
+  <li><a href="#experimental-design-1" id="toc-experimental-design-1" class="nav-link" data-scroll-target="#experimental-design-1">Experimental Design</a></li>
+  <li><a href="#experimental-design---example-chemitech-experiment" id="toc-experimental-design---example-chemitech-experiment" class="nav-link" data-scroll-target="#experimental-design---example-chemitech-experiment">Experimental Design - Example: Chemitech Experiment</a></li>
+  <li><a href="#experimental-design---example-chemitech-experiment-1" id="toc-experimental-design---example-chemitech-experiment-1" class="nav-link" data-scroll-target="#experimental-design---example-chemitech-experiment-1">Experimental Design - Example: Chemitech Experiment</a></li>
+  <li><a href="#experimental-design---example-chemitech-experiment-2" id="toc-experimental-design---example-chemitech-experiment-2" class="nav-link" data-scroll-target="#experimental-design---example-chemitech-experiment-2">Experimental Design - Example: Chemitech Experiment</a></li>
+  <li><a href="#experimental-design---example-chemitech-experiment-3" id="toc-experimental-design---example-chemitech-experiment-3" class="nav-link" data-scroll-target="#experimental-design---example-chemitech-experiment-3">Experimental Design - Example: Chemitech Experiment</a></li>
+  <li><a href="#experimental-design---example-chemitech-experiment-4" id="toc-experimental-design---example-chemitech-experiment-4" class="nav-link" data-scroll-target="#experimental-design---example-chemitech-experiment-4">Experimental Design - Example: Chemitech Experiment</a></li>
+  <li><a href="#experimental-design---example-chemitech-experiment-5" id="toc-experimental-design---example-chemitech-experiment-5" class="nav-link" data-scroll-target="#experimental-design---example-chemitech-experiment-5">Experimental Design - Example: Chemitech Experiment</a></li>
+  </ul></li>
+  <li><a href="#one-way-anova" id="toc-one-way-anova" class="nav-link" data-scroll-target="#one-way-anova">One-way ANOVA</a>
+  <ul class="collapse">
+  <li><a href="#one-way-anova-model-assumptions" id="toc-one-way-anova-model-assumptions" class="nav-link" data-scroll-target="#one-way-anova-model-assumptions">One-way ANOVA: Model Assumptions</a></li>
+  <li><a href="#one-way-anova-analysis-method" id="toc-one-way-anova-analysis-method" class="nav-link" data-scroll-target="#one-way-anova-analysis-method">One-way ANOVA: Analysis Method</a></li>
+  <li><a href="#one-way-anova-analysis-method-1" id="toc-one-way-anova-analysis-method-1" class="nav-link" data-scroll-target="#one-way-anova-analysis-method-1">One-way ANOVA: Analysis Method</a></li>
+  <li><a href="#one-way-anova-explained-between-treatments-variation-mstr" id="toc-one-way-anova-explained-between-treatments-variation-mstr" class="nav-link" data-scroll-target="#one-way-anova-explained-between-treatments-variation-mstr">One-way ANOVA: Explained Between-Treatments Variation (MSTR)</a></li>
+  <li><a href="#one-way-anova-unexplained-within-treatments-variation-mse" id="toc-one-way-anova-unexplained-within-treatments-variation-mse" class="nav-link" data-scroll-target="#one-way-anova-unexplained-within-treatments-variation-mse">One-way ANOVA: Unexplained Within-Treatments Variation (MSE)</a></li>
+  <li><a href="#one-way-anova-test-statistic-and-decision-rule" id="toc-one-way-anova-test-statistic-and-decision-rule" class="nav-link" data-scroll-target="#one-way-anova-test-statistic-and-decision-rule">One-way ANOVA: Test Statistic and Decision Rule</a></li>
+  <li><a href="#one-way-anova-the-f-test" id="toc-one-way-anova-the-f-test" class="nav-link" data-scroll-target="#one-way-anova-the-f-test">One-way ANOVA: The F Test</a></li>
+  <li><a href="#one-way-anova-the-f-test-1" id="toc-one-way-anova-the-f-test-1" class="nav-link" data-scroll-target="#one-way-anova-the-f-test-1">One-way ANOVA: The F Test</a></li>
+  <li><a href="#one-way-anova-decision-rules" id="toc-one-way-anova-decision-rules" class="nav-link" data-scroll-target="#one-way-anova-decision-rules">One-way ANOVA: Decision Rules</a></li>
+  <li><a href="#one-way-anova-anova-table" id="toc-one-way-anova-anova-table" class="nav-link" data-scroll-target="#one-way-anova-anova-table">One-way ANOVA: ANOVA Table</a></li>
+  <li><a href="#one-way-anova-anova-table-1" id="toc-one-way-anova-anova-table-1" class="nav-link" data-scroll-target="#one-way-anova-anova-table-1">One-way ANOVA: ANOVA Table</a></li>
+  <li><a href="#one-way-anova-anova-table-2" id="toc-one-way-anova-anova-table-2" class="nav-link" data-scroll-target="#one-way-anova-anova-table-2">One-way ANOVA: ANOVA Table</a></li>
+  <li><a href="#one-way-anova-anova-table-3" id="toc-one-way-anova-anova-table-3" class="nav-link" data-scroll-target="#one-way-anova-anova-table-3">One-way ANOVA: ANOVA Table</a></li>
+  <li><a href="#one-way-anova-anova-table-4" id="toc-one-way-anova-anova-table-4" class="nav-link" data-scroll-target="#one-way-anova-anova-table-4">One-way ANOVA: ANOVA Table</a></li>
+  <li><a href="#one-way-anova-other-applications" id="toc-one-way-anova-other-applications" class="nav-link" data-scroll-target="#one-way-anova-other-applications">One-way ANOVA: Other Applications</a></li>
+  </ul></li>
+  <li><a href="#excels-anova" id="toc-excels-anova" class="nav-link" data-scroll-target="#excels-anova">Excel’s ANOVA</a>
+  <ul class="collapse">
+  <li><a href="#excels-anova-single-factor-tool" id="toc-excels-anova-single-factor-tool" class="nav-link" data-scroll-target="#excels-anova-single-factor-tool">Excel’s ANOVA: Single Factor Tool</a></li>
+  <li><a href="#excels-anova-single-factor-tool-1" id="toc-excels-anova-single-factor-tool-1" class="nav-link" data-scroll-target="#excels-anova-single-factor-tool-1">Excel’s ANOVA: Single Factor Tool</a></li>
+  <li><a href="#excels-anova-single-factor-tool-2" id="toc-excels-anova-single-factor-tool-2" class="nav-link" data-scroll-target="#excels-anova-single-factor-tool-2">Excel’s ANOVA: Single Factor Tool</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
+  </ul></li>
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="13_chapter_one_way_anova.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
+<p class="subtitle lead"><span style="font-size: 150%;"> Analysis of Variance (ANOVA)</span></p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Professor<br>Davi Moreira<br> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<div class="nonincremental">
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li>Introducion to Experimental Design</li>
+<li>Analysis of Variance (ANOVA)</li>
+</ul>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+
+</div>
+</div>
+</div>
+</section>
+<section id="experimental-design" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Experimental Design</h1>
+<section id="experimental-design-1" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-design-1">Experimental Design</h2>
+<p><br></p>
+<ul>
+<li>Statistical studies can be classified as being either experimental or observational.</li>
+<li>In an <strong>experimental study</strong>, the levels of one or more factors are controlled so that data can be obtained about how the factors influence the response variables of interest.
+<ul>
+<li><strong>Cause-and-effect relationships</strong> are easier to establish in experimental studies.</li>
+<li><strong>Analysis of variance (ANOVA)</strong> can be used to analyze the data obtained from experimental studies.</li>
+</ul></li>
+<li>In an <strong>observational study</strong>, no attempt is made to control levels of the factors.</li>
+</ul>
+</section>
+<section id="experimental-design---example-chemitech-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-design---example-chemitech-experiment">Experimental Design - Example: Chemitech Experiment</h2>
+<p><br></p>
+<p><strong>Chemitech</strong> developed a new filtration system for municipal water supplies. There are different methods that can be used to assemble the system.</p>
+<p><strong>Chemitech</strong> has narrowed down to three methods: A, B, and C and wants to determine which assembly method can produce the greatest <strong>mean</strong> number of filtration systems per week.</p>
+</section>
+<section id="experimental-design---example-chemitech-experiment-1" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-design---example-chemitech-experiment-1">Experimental Design - Example: Chemitech Experiment</h2>
+<p><br></p>
+<p><strong>Randomization and Replications</strong></p>
+<p>For the purpose, the company randomly selected 15 workers and randomly divided them into 3 groups, and then randomly assigned one of the three treatments to each group 5 of the workers.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Assembly method</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Treatments/Levels/Values</td>
+<td>A, B, and C</td>
+</tr>
+<tr class="even">
+<td>Response</td>
+<td>Number of units produced</td>
+</tr>
+<tr class="odd">
+<td>Experimental units</td>
+<td>Employees</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="experimental-design---example-chemitech-experiment-2" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-design---example-chemitech-experiment-2">Experimental Design - Example: Chemitech Experiment</h2>
+<p><br></p>
+<p><strong>Terminology</strong></p>
+<ul>
+<li>A <strong>factor</strong> is a variable that the experimenter has selected for investigation.</li>
+<li>A <strong>treatment</strong> is a level (value) of a factor.</li>
+<li><strong>Response</strong> or performance variable is a dependent/outcome variable affected by the factor.</li>
+<li><strong>Experimental units</strong> are the objects of interest in the experiment.</li>
+<li>A <strong>completely randomized design</strong> is an experimental design in which the treatments are randomly assigned to the experimental units.</li>
+</ul>
+</section>
+<section id="experimental-design---example-chemitech-experiment-3" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-design---example-chemitech-experiment-3">Experimental Design - Example: Chemitech Experiment</h2>
+<p><br></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Observation</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>58</td>
+<td>58</td>
+<td>48</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>64</td>
+<td>69</td>
+<td>57</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>55</td>
+<td>71</td>
+<td>59</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>66</td>
+<td>64</td>
+<td>47</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>67</td>
+<td>68</td>
+<td>49</td>
+</tr>
+<tr class="even">
+<td>Sample mean <span class="math inline">\(\bar{x}_j\)</span></td>
+<td>62</td>
+<td>66</td>
+<td>52</td>
+</tr>
+<tr class="odd">
+<td>Sample variance <span class="math inline">\(s_j^2\)</span></td>
+<td>27.5</td>
+<td>26.5</td>
+<td>31.0</td>
+</tr>
+<tr class="even">
+<td>Sample standard deviation <span class="math inline">\(s_j\)</span></td>
+<td>5.244</td>
+<td>5.148</td>
+<td>5.568</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<center>
+Grand sample mean <span class="math inline">\(\bar{x}\)</span> = 60
+</center>
+</section>
+<section id="experimental-design---example-chemitech-experiment-4" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-design---example-chemitech-experiment-4">Experimental Design - Example: Chemitech Experiment</h2>
+<p><br></p>
+<div class="nonincremental">
+<ul>
+<li><strong>One-way Analysis of Variance (ANOVA)</strong> can be used to test for the equality of means (mean responses) of two or more normal populations.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>The hypotheses:</p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3 = ... = \mu_k\)</span></p>
+<p><span class="math inline">\(H_a:\)</span> Not all population means are equal.</p></li>
+</ul>
+<p><br> where,</p>
+<p><span class="math inline">\((\mu_1, \mu_2, \mu_3, ..., \mu_k\)</span> are mean responses for the <span class="math inline">\(k\)</span> populations.)</p>
+<p><span class="math inline">\((k = 3\)</span> for the motivating example.)</p>
+</div>
+</section>
+<section id="experimental-design---example-chemitech-experiment-5" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-design---example-chemitech-experiment-5">Experimental Design - Example: Chemitech Experiment</h2>
+<p><br></p>
+<ul>
+<li>If <span class="math inline">\(H_0\)</span> is rejected, we cannot conclude that <strong>all</strong> population means are different.</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Rejecting <span class="math inline">\(H_0\)</span> means that at least two population means have different values, or not all means are equal.</li>
+</ul>
+</section>
+</section>
+<section id="one-way-anova" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">One-way ANOVA</h1>
+<section id="one-way-anova-model-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-model-assumptions">One-way ANOVA: Model Assumptions</h2>
+<p><br></p>
+<p>For each population:</p>
+<ul>
+<li><p>The response variable is normally distributed.</p></li>
+<li><p>The mean of <span class="math inline">\(i\)</span>-th population is <span class="math inline">\(\mu_i\)</span>.</p></li>
+<li><p>The variance of the response variable is the same for <strong>all</strong> of the populations; denoted <span class="math inline">\(\sigma^2\)</span> (unknown).</p></li>
+<li><p>The observations must be independent.</p></li>
+</ul>
+</section>
+<section id="one-way-anova-analysis-method" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-analysis-method">One-way ANOVA: Analysis Method</h2>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/analysis_method_anova.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>If the variation of the sample means is large, then not all population means are equal.</p>
+<p><br></p>
+<p><br></p>
+</section>
+<section id="one-way-anova-analysis-method-1" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-analysis-method-1">One-way ANOVA: Analysis Method</h2>
+<p><br></p>
+<p>There are two types of variation:</p>
+<ul>
+<li><p><strong>Between-treatments variation</strong> of sample means (<span class="math inline">\(\bar{x}_j\)</span>): Variation due to different treatments. (Explained variation)</p></li>
+<li><p><strong>Within-treatments variation</strong> of observations from their respective treatment means (Unexplained variation).</p></li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>The <strong>F Test</strong> for <span class="math inline">\(H_0\)</span> vs <span class="math inline">\(H_a\)</span>:</p>
+<ul>
+<li>If Between-treatments variation is significantly larger than the Within-treatment variation, reject <span class="math inline">\(H_0\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="one-way-anova-explained-between-treatments-variation-mstr" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-explained-between-treatments-variation-mstr">One-way ANOVA: Explained Between-Treatments Variation (MSTR)</h2>
+<p><br></p>
+<div class="nonincremental">
+<ul>
+<li>The variation in the sample means is measured by the mean square due to treatments and is denoted by <strong>MSTR</strong>.</li>
+</ul>
+<p><span class="math display">\[
+\text{MSTR} = \frac{\text{Sum of squares due to treatments (SSTR)}}{\text{Degrees of freedom of SSTR}} = \frac{\sum_{j=1}^k n_j(\bar{x}_j - \bar{x})^2}{k - 1}
+\]</span></p>
+<p><span class="math display">\[
+= \frac{5(62 - 60)^2 + 5(66 - 60)^2 + 5(52 - 60)^2}{3 - 1} = \frac{520}{2} = 260
+\]</span></p>
+</div>
+</section>
+<section id="one-way-anova-unexplained-within-treatments-variation-mse" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-unexplained-within-treatments-variation-mse">One-way ANOVA: Unexplained Within-Treatments Variation (MSE)</h2>
+<div class="nonincremental">
+<ul>
+<li><p>The variation of the sample observations within each sample is called the <strong>mean square error (MSE)</strong>.</p></li>
+<li><p>A measure of sampling variation.</p></li>
+</ul>
+<p><span class="math display">\[
+\text{MSE} = \frac{\text{Sum of squares due to unexplained error (SSE)}}{\text{Degrees of freedom of SSE}} = \frac{\sum_{j=1}^k (n_j - 1) s_j^2}{n_T - k}
+\]</span></p>
+<p><span class="math display">\[
+= \frac{(5-1)(27.5) + (5-1)(26.5) + (5-1)(31)}{15-3} = \frac{340}{12} = 28.33
+\]</span></p>
+<p><span class="math inline">\((n_T = 15 \text{ is the total sample size.})\)</span></p>
+</div>
+</section>
+<section id="one-way-anova-test-statistic-and-decision-rule" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-test-statistic-and-decision-rule">One-way ANOVA: Test Statistic and Decision Rule</h2>
+<p><br></p>
+<div class="nonincremental">
+<p><strong>Test statistic:</strong></p>
+<ul>
+<li>If MSTR is large, we will reject <span class="math inline">\(H_0\)</span>; but we need to take the sampling variation (MSE) into account.</li>
+<li>F statistic: <span class="math inline">\(F = \frac{MSTR}{MSE}\)</span></li>
+</ul>
+<p><strong>Decision rule:</strong></p>
+<ul>
+<li>MSE is always a good estimate of the common population variance <span class="math inline">\(\sigma^2\)</span>.</li>
+<li>If <span class="math inline">\(H_0\)</span> is false (not all means are equal), MSTR overestimates <span class="math inline">\(\sigma^2\)</span> and is expected to be much larger than MSE.</li>
+<li>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F = \frac{MSTR}{MSE}\)</span> is too large.</li>
+</ul>
+</div>
+</section>
+<section id="one-way-anova-the-f-test" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-the-f-test">One-way ANOVA: The F Test</h2>
+<div class="nonincremental">
+<ul>
+<li>The distribution of the test statistic:</li>
+</ul>
+<p><span class="math display">\[
+F = \frac{MSTR}{MSE}
+\]</span></p>
+<ul>
+<li>If the null hypothesis is true and the ANOVA assumptions are valid, the sampling distribution of the test statistic is an <strong>F distribution</strong> with <span class="math inline">\(k-1\)</span> (numerator) and <span class="math inline">\(n_T - k\)</span> (denominator) degrees of freedom.</li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>Decision Rule:</strong> Reject <span class="math inline">\(H_0\)</span> if the observed <span class="math inline">\(F &gt; F_{\alpha, k-1, n_T-k}\)</span> (right-tail),</li>
+</ul>
+<p>where <span class="math inline">\(F_{\alpha, k-1, n_T-k} = \text{F.INV}(1-\alpha, k-1, n_T-k)\)</span>.</p>
+</div>
+</section>
+<section id="one-way-anova-the-f-test-1" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-the-f-test-1">One-way ANOVA: The F Test</h2>
+<p><br></p>
+<div class="nonincremental">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/anova_mstr_mse.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Observed F-ratio = 9.18</li>
+<li><code>p-value = 1–F.DIST(9.18,2,12,TRUE)</code> <span class="math inline">\(\approx\)</span> <code>0.004</code></li>
+</ul>
+</div>
+<p><br> <br></p>
+</section>
+<section id="one-way-anova-decision-rules" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-decision-rules">One-way ANOVA: Decision Rules</h2>
+<p><br></p>
+<div class="nonincremental">
+<ul>
+<li><strong>p-value approach:</strong> Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(p\)</span>-value <span class="math inline">\(\leq \alpha\)</span></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>Critical-value approach:</strong> Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq F_{\alpha}\)</span></li>
+</ul>
+<p>where the critical value <span class="math inline">\(F_{\alpha}\)</span> is based on an <strong>F distribution</strong> with <span class="math inline">\(k-1\)</span> numerator d.f. and <span class="math inline">\(n_T - k\)</span> denominator d.f.</p>
+<ul>
+<li>In our example, <span class="math inline">\(F_{0.05,2,12} = \text{F.inv}(0.95,2,12) = 3.89\)</span>, and <span class="math inline">\(9.18 &gt; 3.89\)</span>.</li>
+</ul>
+<p><strong>Conclusion:</strong> <em>We have statistically significant evidence that at least one pair of the assembly methods produced different mean numbers of filtration systems per week. The significance level is 5%.</em></p>
+</div>
+</section>
+<section id="one-way-anova-anova-table" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-anova-table">One-way ANOVA: ANOVA Table</h2>
+<p><br></p>
+<ul>
+<li><p>ANOVA can be viewed as the process of partitioning the total sum of squares and the degrees of freedom into their corresponding sources: treatments and error.</p></li>
+<li><p>Dividing the sum of squares by the appropriate degrees of freedom provides the variance estimates, the <span class="math inline">\(F\)</span> value, and the <span class="math inline">\(p\)</span>-value used to test the hypothesis of equal population means.</p></li>
+</ul>
+</section>
+<section id="one-way-anova-anova-table-1" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-anova-table-1">One-way ANOVA: ANOVA Table</h2>
+<p><br></p>
+<div class="nonincremental">
+<ul>
+<li>Assuming <span class="math inline">\(H_0\)</span> is true, the entire data set is basically one sample from one population, the formula for computing the total sum of squares (SST) is:</li>
+</ul>
+<p><span class="math display">\[
+\text{SST} = \sum_{j=1}^k \sum_{i=1}^{n_j} (x_{ij} - \bar{x})^2 = (n_T - 1) s_x^2 = 860
+\]</span></p>
+<p><span class="math display">\[
+= \text{SSTR} + \text{SSE} = 520 + 340
+\]</span></p>
+<ul>
+<li>SST has <span class="math inline">\(n_T - 1 = 15 - 1 = 14 (= 2 + 12)\)</span> degrees of freedom.</li>
+</ul>
+</div>
+</section>
+<section id="one-way-anova-anova-table-2" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-anova-table-2">One-way ANOVA: ANOVA Table</h2>
+<p><br></p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3\)</span></p>
+<p><span class="math inline">\(H_a:\)</span> Not all the means are equal</p>
+<p><br></p>
+<div class="r-fit-text">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source of Variation</th>
+<th>Sum of Squares</th>
+<th>Degrees of Freedom</th>
+<th>Mean Square</th>
+<th><span class="math inline">\(F\)</span></th>
+<th>p-Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Treatments</td>
+<td><span class="math inline">\(SSTR\)</span></td>
+<td><span class="math inline">\(df_1\)</span></td>
+<td><span class="math inline">\(\text{MSTR}=\frac{\text{SSTR}}{df_1}\)</span></td>
+<td><span class="math inline">\(\frac{MSTR}{MSE}\)</span></td>
+<td><span class="math inline">\(1-\text{F.DIST}(F, k-1, n_T-k, \text{TRUE})\)</span></td>
+</tr>
+<tr class="even">
+<td>Error</td>
+<td><span class="math inline">\(SSE\)</span></td>
+<td><span class="math inline">\(df_2\)</span></td>
+<td><span class="math inline">\(\text{MSE}=\frac{\text{SSE}}{df_2}\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td><span class="math inline">\(SST=SSTR+SSE\)</span></td>
+<td><span class="math inline">\(df_3=df_1+df_2\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="one-way-anova-anova-table-3" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-anova-table-3">One-way ANOVA: ANOVA Table</h2>
+<p><br></p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3\)</span></p>
+<p><span class="math inline">\(H_a:\)</span> Not all the means are equal</p>
+<p><br></p>
+<div class="r-fit-text">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source of Variation</th>
+<th>Sum of Squares</th>
+<th>Degrees of Freedom</th>
+<th>Mean Square</th>
+<th><span class="math inline">\(F\)</span></th>
+<th>p-Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Treatments</td>
+<td><span class="math inline">\(\sum_{j=1}^k n_j (\bar{x}_j - \bar{x})^2\)</span></td>
+<td><span class="math inline">\(k - 1\)</span></td>
+<td><span class="math inline">\(\frac{\text{SSTR}}{k - 1}\)</span></td>
+<td><span class="math inline">\(\frac{\text{MSTR}}{\text{MSE}}\)</span></td>
+<td><span class="math inline">\(1-\text{F.DIST}(F, k-1, n_T-k, \text{TRUE})\)</span></td>
+</tr>
+<tr class="even">
+<td>Error</td>
+<td><span class="math inline">\(\sum_{j=1}^k (n_j - 1) s_j^2\)</span></td>
+<td><span class="math inline">\(n_T - k\)</span></td>
+<td><span class="math inline">\(\frac{\text{SSE}}{n_T - k}\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td><span class="math inline">\(\sum_{j=1}^k \sum_{i=1}^{n_j} (x_{ij} - \bar{x})^2\)</span></td>
+<td><span class="math inline">\(n_T - 1\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="one-way-anova-anova-table-4" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-anova-table-4">One-way ANOVA: ANOVA Table</h2>
+<p><br></p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3\)</span></p>
+<p><span class="math inline">\(H_a:\)</span> Not all the means are equal</p>
+<p><br></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source of Variation</th>
+<th>Sum of Squares</th>
+<th>Degrees of Freedom</th>
+<th>Mean Square</th>
+<th><span class="math inline">\(F\)</span></th>
+<th>p-Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Treatments</td>
+<td>520</td>
+<td>2</td>
+<td>260.00</td>
+<td>9.18</td>
+<td>.004</td>
+</tr>
+<tr class="even">
+<td>Error</td>
+<td>340</td>
+<td>12</td>
+<td>28.33</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>860</td>
+<td>14</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="one-way-anova-other-applications" class="level2">
+<h2 class="anchored" data-anchor-id="one-way-anova-other-applications">One-way ANOVA: Other Applications</h2>
+<div class="nonincremental">
+<ul>
+<li>Mean sales of companies using four (4) different advertising methods (spot TV, newspapers, flyers, magazines).</li>
+<li>Mean quality levels of products from several vendors.</li>
+<li>Yields of several processes (machines).</li>
+<li>Mean completion times of different methods.</li>
+<li>Mean waiting times of several lines in a bank.</li>
+<li>Mean selling price of houses in different school districts.</li>
+<li>Mean response time of a service request for several companies.</li>
+<li>Mean ages between floor workers, middle managers, and executives.</li>
+<li>Mean improvement or learning outcome measures between several training/teaching methods (in-person, online, hybrid, weekend program).</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="excels-anova" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Excel’s ANOVA</h1>
+<section id="excels-anova-single-factor-tool" class="level2">
+<h2 class="anchored" data-anchor-id="excels-anova-single-factor-tool">Excel’s ANOVA: Single Factor Tool</h2>
+<div class="nonincremental">
+<ul>
+<li><p><strong>Step 1:</strong> Open <code>Assembly.xlsx</code>, and, <code>on Sheet 2</code>, click the <strong>Data</strong> tab on the Ribbon</p></li>
+<li><p><strong>Step 2:</strong> In the <strong>Analysis</strong> group, click <strong>Data Analysis</strong></p></li>
+<li><p><strong>Step 3:</strong> Choose <strong>Anova: Single Factor</strong> from the list of Analysis Tools</p></li>
+<li><p><strong>Step 4:</strong> When the <strong>Anova: Single Factor</strong> dialog box appears: (see details on next slide)</p></li>
+</ul>
+</div>
+</section>
+<section id="excels-anova-single-factor-tool-1" class="level2">
+<h2 class="anchored" data-anchor-id="excels-anova-single-factor-tool-1">Excel’s ANOVA: Single Factor Tool</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/anova_excel_01.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="excels-anova-single-factor-tool-2" class="level2">
+<h2 class="anchored" data-anchor-id="excels-anova-single-factor-tool-2">Excel’s ANOVA: Single Factor Tool</h2>
+<p><strong>Summary and Output data</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/anova_excel_02.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<section id="summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
+<div class="nonincremental">
+<p>Some key takeaways from this session:</p>
+<ul>
+<li><p><strong>Experimental Design</strong>: allow for control over variables, enabling the establishment of cause-and-effect relationships.</p>
+<ul>
+<li>Observational studies do not control variables, limiting conclusions about causality.</li>
+</ul></li>
+<li><p><strong>ANOVA</strong>: Is a statistical method used to test for differences in means across multiple groups.</p>
+<ul>
+<li>It partitions the variance into components due to treatments and error, facilitating hypothesis testing.</li>
+</ul></li>
+<li><p><strong>ANOVA Assumptions and Decision Making</strong>:</p>
+<ul>
+<li>Assumptions include normal distribution, equal variances, and independence of observations.</li>
+<li>Decision rules are based on comparing the calculated F-statistic to a critical value <strong>or</strong> p-value to accept or reject the null hypothesis.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="thank-you" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Thank you!</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

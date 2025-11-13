@@ -1,0 +1,1782 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Professor Davi Moreira ">
+
+<title> MGMT 30500: Business Statistics  – MGMT 30500: Business Statistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-79df7ed5347781c1339259261daa236f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked slimcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/mgmt_305_ai_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/davi-moreira/2025S_business_statistics_purdue_MGMT305" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../material.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Material</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">Descriptive Statistics</a></li>
+  <li><a href="#measures-of-central-location-and-variability" id="toc-measures-of-central-location-and-variability" class="nav-link" data-scroll-target="#measures-of-central-location-and-variability">Measures of Central Location and Variability</a>
+  <ul class="collapse">
+  <li><a href="#central-location" id="toc-central-location" class="nav-link" data-scroll-target="#central-location">Central Location</a></li>
+  <li><a href="#variability-sampling-variation" id="toc-variability-sampling-variation" class="nav-link" data-scroll-target="#variability-sampling-variation">Variability (Sampling Variation)</a></li>
+  </ul></li>
+  <li><a href="#distribution-shape" id="toc-distribution-shape" class="nav-link" data-scroll-target="#distribution-shape">Distribution Shape</a>
+  <ul class="collapse">
+  <li><a href="#distribution-shape-skewness" id="toc-distribution-shape-skewness" class="nav-link" data-scroll-target="#distribution-shape-skewness">Distribution Shape: Skewness</a></li>
+  <li><a href="#distribution-shape-skewness-1" id="toc-distribution-shape-skewness-1" class="nav-link" data-scroll-target="#distribution-shape-skewness-1">Distribution Shape: Skewness</a></li>
+  <li><a href="#distribution-shape-skewness-2" id="toc-distribution-shape-skewness-2" class="nav-link" data-scroll-target="#distribution-shape-skewness-2">Distribution Shape: Skewness</a></li>
+  <li><a href="#distribution-shape-skewness-3" id="toc-distribution-shape-skewness-3" class="nav-link" data-scroll-target="#distribution-shape-skewness-3">Distribution Shape: Skewness</a></li>
+  <li><a href="#distribution-shape-skewness-4" id="toc-distribution-shape-skewness-4" class="nav-link" data-scroll-target="#distribution-shape-skewness-4">Distribution Shape: Skewness</a></li>
+  </ul></li>
+  <li><a href="#relative-location---z-scores" id="toc-relative-location---z-scores" class="nav-link" data-scroll-target="#relative-location---z-scores">Relative Location - z-Scores</a>
+  <ul class="collapse">
+  <li><a href="#z-scores" id="toc-z-scores" class="nav-link" data-scroll-target="#z-scores">z-Scores</a></li>
+  <li><a href="#z-scores-1" id="toc-z-scores-1" class="nav-link" data-scroll-target="#z-scores-1">z-Scores</a></li>
+  <li><a href="#z-scores-2" id="toc-z-scores-2" class="nav-link" data-scroll-target="#z-scores-2">z-Scores</a></li>
+  </ul></li>
+  <li><a href="#z-scores---example" id="toc-z-scores---example" class="nav-link" data-scroll-target="#z-scores---example">z-Scores - Example</a></li>
+  <li><a href="#empirical-rule---68-95-99.7-rule" id="toc-empirical-rule---68-95-99.7-rule" class="nav-link" data-scroll-target="#empirical-rule---68-95-99.7-rule">Empirical Rule - 68-95-99.7 Rule</a>
+  <ul class="collapse">
+  <li><a href="#empirical-rule---68-95-99.7-rule-1" id="toc-empirical-rule---68-95-99.7-rule-1" class="nav-link" data-scroll-target="#empirical-rule---68-95-99.7-rule-1">Empirical Rule - 68-95-99.7 Rule</a></li>
+  <li><a href="#empirical-rule---68-95-99.7-rule-2" id="toc-empirical-rule---68-95-99.7-rule-2" class="nav-link" data-scroll-target="#empirical-rule---68-95-99.7-rule-2">Empirical Rule - 68-95-99.7 Rule</a></li>
+  <li><a href="#empirical-rule---68-95-99.7-rule---example" id="toc-empirical-rule---68-95-99.7-rule---example" class="nav-link" data-scroll-target="#empirical-rule---68-95-99.7-rule---example">Empirical Rule - 68-95-99.7 Rule - Example</a></li>
+  </ul></li>
+  <li><a href="#detecting-outliers" id="toc-detecting-outliers" class="nav-link" data-scroll-target="#detecting-outliers">Detecting Outliers</a>
+  <ul class="collapse">
+  <li><a href="#detecting-outliers-1" id="toc-detecting-outliers-1" class="nav-link" data-scroll-target="#detecting-outliers-1">Detecting Outliers</a></li>
+  <li><a href="#detecting-outliers---example" id="toc-detecting-outliers---example" class="nav-link" data-scroll-target="#detecting-outliers---example">Detecting Outliers - Example</a></li>
+  </ul></li>
+  <li><a href="#five-number-summaries-and-boxplots" id="toc-five-number-summaries-and-boxplots" class="nav-link" data-scroll-target="#five-number-summaries-and-boxplots">Five-Number Summaries and Boxplots</a>
+  <ul class="collapse">
+  <li><a href="#five-number-summaries" id="toc-five-number-summaries" class="nav-link" data-scroll-target="#five-number-summaries">Five-Number Summaries</a></li>
+  <li><a href="#five-number-summaries---example" id="toc-five-number-summaries---example" class="nav-link" data-scroll-target="#five-number-summaries---example">Five-Number Summaries - Example</a></li>
+  <li><a href="#boxplot" id="toc-boxplot" class="nav-link" data-scroll-target="#boxplot">Boxplot</a></li>
+  <li><a href="#boxplot-1" id="toc-boxplot-1" class="nav-link" data-scroll-target="#boxplot-1">Boxplot</a></li>
+  <li><a href="#boxplot-2" id="toc-boxplot-2" class="nav-link" data-scroll-target="#boxplot-2">Boxplot</a></li>
+  <li><a href="#boxplot-3" id="toc-boxplot-3" class="nav-link" data-scroll-target="#boxplot-3">Boxplot</a></li>
+  <li><a href="#boxplot-4" id="toc-boxplot-4" class="nav-link" data-scroll-target="#boxplot-4">Boxplot</a></li>
+  </ul></li>
+  <li><a href="#measures-of-association-between-two-variables" id="toc-measures-of-association-between-two-variables" class="nav-link" data-scroll-target="#measures-of-association-between-two-variables">Measures of Association Between Two Variables</a>
+  <ul class="collapse">
+  <li><a href="#covariance" id="toc-covariance" class="nav-link" data-scroll-target="#covariance">Covariance</a></li>
+  <li><a href="#covariance-1" id="toc-covariance-1" class="nav-link" data-scroll-target="#covariance-1">Covariance</a></li>
+  <li><a href="#correlation-coefficient" id="toc-correlation-coefficient" class="nav-link" data-scroll-target="#correlation-coefficient">Correlation Coefficient</a></li>
+  <li><a href="#correlation-coefficient-1" id="toc-correlation-coefficient-1" class="nav-link" data-scroll-target="#correlation-coefficient-1">Correlation Coefficient</a></li>
+  <li><a href="#correlation-coefficient-2" id="toc-correlation-coefficient-2" class="nav-link" data-scroll-target="#correlation-coefficient-2">Correlation Coefficient</a></li>
+  <li><a href="#correlation-coefficient-3" id="toc-correlation-coefficient-3" class="nav-link" data-scroll-target="#correlation-coefficient-3">Correlation Coefficient</a></li>
+  <li><a href="#correlation-coefficient-4" id="toc-correlation-coefficient-4" class="nav-link" data-scroll-target="#correlation-coefficient-4">Correlation Coefficient</a></li>
+  <li><a href="#correlation-coefficient-5" id="toc-correlation-coefficient-5" class="nav-link" data-scroll-target="#correlation-coefficient-5">Correlation Coefficient</a></li>
+  <li><a href="#covariance-and-correlation-coefficient---example" id="toc-covariance-and-correlation-coefficient---example" class="nav-link" data-scroll-target="#covariance-and-correlation-coefficient---example">Covariance and Correlation Coefficient - Example</a></li>
+  <li><a href="#covariance-and-correlation-coefficient---example-1" id="toc-covariance-and-correlation-coefficient---example-1" class="nav-link" data-scroll-target="#covariance-and-correlation-coefficient---example-1">Covariance and Correlation Coefficient - Example</a></li>
+  <li><a href="#covariance-and-correlation-coefficient---example-2" id="toc-covariance-and-correlation-coefficient---example-2" class="nav-link" data-scroll-target="#covariance-and-correlation-coefficient---example-2">Covariance and Correlation Coefficient - Example</a></li>
+  <li><a href="#correlation-coefficient-6" id="toc-correlation-coefficient-6" class="nav-link" data-scroll-target="#correlation-coefficient-6">Correlation Coefficient</a></li>
+  </ul></li>
+  <li><a href="#using-excel-to-compute-covariance-and-correlation-coefficient" id="toc-using-excel-to-compute-covariance-and-correlation-coefficient" class="nav-link" data-scroll-target="#using-excel-to-compute-covariance-and-correlation-coefficient">Using Excel to Compute Covariance and Correlation coefficient</a>
+  <ul class="collapse">
+  <li><a href="#using-excel-to-compute-covariance-and-correlation-coefficient-1" id="toc-using-excel-to-compute-covariance-and-correlation-coefficient-1" class="nav-link" data-scroll-target="#using-excel-to-compute-covariance-and-correlation-coefficient-1">Using Excel to Compute Covariance and Correlation coefficient</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
+  </ul></li>
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="03_chapter_descriptive_statistics.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
+<p class="subtitle lead"><span style="font-size: 150%;"> Basic Stat. &amp; Prob. Rvw. 02 </span></p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Professor<br>Davi Moreira<br> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<div class="nonincremental">
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>Descriptive Statistics</p></li>
+<li><p>Measures of Central Location and Variability</p></li>
+<li><p>Distribution Shape</p>
+<ul>
+<li>Skewness</li>
+<li>Symmetry</li>
+</ul></li>
+<li><p>Relative Location and z-Scores</p>
+<ul>
+<li>Calculation and Interpretation</li>
+<li>Examples</li>
+</ul></li>
+<li><p>Empirical Rule</p>
+<ul>
+<li>68-95-99.7 Rule</li>
+<li>Detecting Outliers</li>
+</ul></li>
+</ul>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>Five-Number Summaries and Boxplots</p></li>
+<li><p>Measures of Association Between Two Variables</p>
+<ul>
+<li>Covariance</li>
+<li>Correlation</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="descriptive-statistics" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Descriptive Statistics</h1>
+</section>
+<section id="measures-of-central-location-and-variability" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Measures of Central Location and Variability</h1>
+<section id="central-location" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="central-location">Central Location</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 36%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Statistic</strong></th>
+<th><strong>Definition</strong></th>
+<th><strong>Formula</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mean</strong></td>
+<td>The average of all values of a variable</td>
+<td><span class="math inline">\(\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Mode</strong></td>
+<td>The most frequently occurring value</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>k<sup>th</sup> Percentile</strong></td>
+<td>Roughly k% of the data is at or below this value</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Quartile</strong></td>
+<td>The first, second, and third quartiles are 25<sup>th</sup>, 50<sup>th</sup>, and 75<sup>th</sup> percentiles</td>
+<td><span class="math inline">\(Q1, Q2, Q3\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Median</strong></td>
+<td>The “middle” observation when the data are listed from smallest to largest</td>
+<td><span class="math inline">\(Q2\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Maximum</strong></td>
+<td>The largest value</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Minimum</strong></td>
+<td>The smallest value</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Midrange</strong></td>
+<td>The middle of the maximum and minimum</td>
+<td><span class="math inline">\(\frac{Max + Min}{2}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Midhinge</strong></td>
+<td>The middle of the first and third quartiles</td>
+<td><span class="math inline">\(\frac{Q3 + Q1}{2}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="variability-sampling-variation" class="level2">
+<h2 class="anchored" data-anchor-id="variability-sampling-variation">Variability (Sampling Variation)</h2>
+<ul>
+<li><p><strong>Sample Variance</strong>: “Average” squared deviation of observations from the mean of all observations (<span class="math inline">\(n-1\)</span> is called the <strong>degrees of freedom, df</strong>):</p>
+<p><span class="math display">\[
+S^2 = \frac{\sum (x_i - \bar{x})^2}{n - 1}
+\]</span></p>
+<ul>
+<li>Why do we compute the sample variance using <span class="math inline">\(n-1\)</span> instead of <span class="math inline">\(n\)</span>?</li>
+<li>To not underestimate the True Population Variance <span class="math inline">\(\sigma^2\)</span></li>
+<li>What is an unbiased estimator? <a href="https://www.youtube.com/watch?v=xJlwSkyeP0k">Video</a></li>
+<li><a href="https://www.khanacademy.org/math/ap-statistics/summarizing-quantitative-data-ap/more-standard-deviation/v/review-and-intuition-why-we-divide-by-n-1-for-the-unbiased-sample-variance">Video</a> and <a href="https://www.khanacademy.org/computer-programming/unbiased-variance-visualization/1167453164">Simulation</a></li>
+</ul></li>
+<li><p><strong>Sample Standard Deviation</strong>:</p>
+<p><span class="math display">\[
+S = \sqrt{S^2}
+\]</span></p></li>
+<li><p><strong>Range</strong> = Maximum – Minimum.</p></li>
+<li><p><strong>Interquartile Range (IQR)</strong> = 3rd Quartile – 1st Quartile<br>
+(Range of the middle 50% of data.)</p></li>
+</ul>
+</section>
+</section>
+<section id="distribution-shape" class="level1">
+<h1>Distribution Shape</h1>
+<section id="distribution-shape-skewness" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-shape-skewness">Distribution Shape: Skewness</h2>
+<ul>
+<li><p>An important measure of the shape of a distribution is called <a href="https://en.wikipedia.org/wiki/Skewness"><strong>skewness</strong></a>.</p></li>
+<li><p>The formula for the skewness of sample data is:</p>
+<p><span class="math display">\[
+\text{Skewness} = \frac{n}{(n - 1)(n - 2)} \sum \left(\frac{x_i - \bar{x}}{s}\right)^3
+\]</span></p></li>
+<li><p>Skewness can be easily computed using statistical software.</p></li>
+</ul>
+</section>
+<section id="distribution-shape-skewness-1" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-shape-skewness-1">Distribution Shape: Skewness</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/01_skewness.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br> <br></p>
+<ul>
+<li><p>Symmetric (not skewed)</p>
+<ul>
+<li>Skewness is zero.</li>
+<li>Mean and median are equal.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="distribution-shape-skewness-2" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-shape-skewness-2">Distribution Shape: Skewness</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/02_skewness.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br> <br></p>
+<ul>
+<li><p>Moderately Skewed Left</p>
+<ul>
+<li>Skewness is negative.</li>
+<li>Mean will usually be less than the median.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="distribution-shape-skewness-3" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-shape-skewness-3">Distribution Shape: Skewness</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/03_skewness.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br> <br></p>
+<ul>
+<li><p>Moderately Skewed Right</p>
+<ul>
+<li>Skewness is positive.</li>
+<li>Mean will usually be more than the median.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="distribution-shape-skewness-4" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-shape-skewness-4">Distribution Shape: Skewness</h2>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/04_skewness.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br> <br></p>
+<ul>
+<li><p>Highly Skewed Right</p>
+<ul>
+<li>Skewness is positive (often above 1.0).</li>
+<li>Mean will usually be more than the median.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="relative-location---z-scores" class="level1 page-columns page-full" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Relative Location - z-Scores</h1>
+<section id="z-scores" class="level2">
+<h2 class="anchored" data-anchor-id="z-scores">z-Scores</h2>
+<ul>
+<li><p>The <a href="https://en.wikipedia.org/wiki/Standard_score"><strong>z-score</strong></a> is often called the standardized value.</p></li>
+<li><p>It describes the relative location of a data value relative to the mean.</p></li>
+<li><p>It denotes the number of standard deviations a data value <span class="math inline">\(x_i\)</span> is from the mean.</p>
+<p><span class="math display">\[
+Z_i = \frac{x_i - \bar{x}}{s}
+\]</span></p></li>
+<li><p><code>=STANDARDIZE(x, mean, standard deviation)</code></p></li>
+</ul>
+</section>
+<section id="z-scores-1" class="level2">
+<h2 class="anchored" data-anchor-id="z-scores-1">z-Scores</h2>
+<ul>
+<li>An observation’s z-score is a measure of the relative location of the observation in a data set.</li>
+<li>A data value less than the sample mean will have a z-score less than zero.</li>
+<li>A data value greater than the sample mean will have a z-score greater than zero.</li>
+<li>A data value equal to the sample mean will have a z-score of zero.</li>
+</ul>
+</section>
+<section id="z-scores-2" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="z-scores-2">z-Scores</h2>
+<p><br></p>
+<p><strong>Example:</strong> <code>class_size_data.xlsx</code></p>
+<p><span class="math display">\[
+Z_i = \frac{x_i - \bar{x}}{s}
+\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 30%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Number of students in class</th>
+<th>Deviation about the Mean</th>
+<th>Z score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>46</td>
+<td>2</td>
+<td><span class="math inline">\(\frac{2}{8} = 0.25\)</span></td>
+</tr>
+<tr class="even">
+<td>54</td>
+<td>10</td>
+<td><span class="math inline">\(\frac{10}{8} = 1.25\)</span></td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>-2</td>
+<td><span class="math inline">\(\frac{-2}{8} = -0.25\)</span></td>
+</tr>
+<tr class="even">
+<td>46</td>
+<td>2</td>
+<td><span class="math inline">\(\frac{2}{8} = 0.25\)</span></td>
+</tr>
+<tr class="odd">
+<td>32</td>
+<td>-12</td>
+<td><span class="math inline">\(\frac{-12}{8} = -1.5\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p><strong>Note:</strong> <span class="math inline">\(\bar{x} = 44\)</span> and <span class="math inline">\(s = 8\)</span> for the given data.</p>
+</div></div></section>
+</section>
+<section id="z-scores---example" class="level1">
+<h1>z-Scores - Example</h1>
+<p><br> <br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/zscore_excel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<center>
+<ul>
+<li><code>=STANDARDIZE(x, mean, standard deviation)</code></li>
+</ul>
+</center>
+</section>
+<section id="empirical-rule---68-95-99.7-rule" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Empirical Rule - 68-95-99.7 Rule</h1>
+<section id="empirical-rule---68-95-99.7-rule-1" class="level2">
+<h2 class="anchored" data-anchor-id="empirical-rule---68-95-99.7-rule-1">Empirical Rule - 68-95-99.7 Rule</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/empirical_rule.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>When the data are believed to approximate a bell-shaped (normal) distribution:</p>
+<ul>
+<li>The empirical rule can be used to determine the percentage of data values that must be within a specified number of standard deviations of the mean.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="empirical-rule---68-95-99.7-rule-2" class="level2">
+<h2 class="anchored" data-anchor-id="empirical-rule---68-95-99.7-rule-2">Empirical Rule - 68-95-99.7 Rule</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/empirical_rule.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>For nearly normally distributed data,</p>
+<ul>
+<li>about 68% falls within 1 SD of the mean,</li>
+<li>about 95% falls within 2 SD of the mean,</li>
+<li>about 99.7% falls within 3 SD of the mean.</li>
+</ul></li>
+<li><p>It is possible for observations to fall 4, 5, or more standard deviations away from the mean, but these occurrences are very rare if the data are nearly normal.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="empirical-rule---68-95-99.7-rule---example" class="level2">
+<h2 class="anchored" data-anchor-id="empirical-rule---68-95-99.7-rule---example">Empirical Rule - 68-95-99.7 Rule - Example</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/empirical_rule.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>SAT scores are distributed nearly normally with mean 1500 and standard deviation 300.</p>
+<ul>
+<li>~68% of students score between 1200 and 1800 on the SAT.</li>
+<li>~95% of students score between 900 and 2100 on the SAT.</li>
+<li>~$99.7% of students score between 600 and 2400 on the SAT.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="detecting-outliers" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Detecting Outliers</h1>
+<section id="detecting-outliers-1" class="level2">
+<h2 class="anchored" data-anchor-id="detecting-outliers-1">Detecting Outliers</h2>
+<ul>
+<li><p>An outlier is an unusually small or unusually large value in a data set.</p></li>
+<li><p>A data value with a z-score less than −3 or greater than +3 might be considered an outlier.</p></li>
+<li><p>It might be:</p>
+<ul>
+<li>an incorrectly recorded data value</li>
+<li>a data value that was incorrectly included in the data set</li>
+<li>a correctly recorded unusual data value that belongs in the data set</li>
+</ul></li>
+</ul>
+</section>
+<section id="detecting-outliers---example" class="level2">
+<h2 class="anchored" data-anchor-id="detecting-outliers---example">Detecting Outliers - Example</h2>
+<p><strong>Example:</strong> <code>class_size_data.xlsx</code></p>
+<p><span class="math display">\[
+Z_i = \frac{x_i - \bar{x}}{s}
+\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 30%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Number of students in class</th>
+<th>Deviation about the Mean</th>
+<th>Z score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>46</td>
+<td>2</td>
+<td><span class="math inline">\(\frac{2}{8} = 0.25\)</span></td>
+</tr>
+<tr class="even">
+<td>54</td>
+<td>10</td>
+<td><span class="math inline">\(\frac{10}{8} = 1.25\)</span></td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>-2</td>
+<td><span class="math inline">\(\frac{-2}{8} = -0.25\)</span></td>
+</tr>
+<tr class="even">
+<td>46</td>
+<td>2</td>
+<td><span class="math inline">\(\frac{2}{8} = 0.25\)</span></td>
+</tr>
+<tr class="odd">
+<td>32</td>
+<td>-12</td>
+<td><span class="math inline">\(\frac{-12}{8} = -1.5\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Note:</strong> <span class="math inline">\(-1.5\)</span> shows the fifth class size is farthest from the mean.</li>
+<li>No outliers are present as the z values are within the <span class="math inline">\(\pm 3\)</span> guideline.</li>
+</ul>
+</section>
+</section>
+<section id="five-number-summaries-and-boxplots" class="level1 page-columns page-full" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Five-Number Summaries and Boxplots</h1>
+<section id="five-number-summaries" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="five-number-summaries">Five-Number Summaries</h2>
+<p><br></p>
+<ul>
+<li><p>Smallest Value</p></li>
+<li><p>First Quartile (25th percentile)</p></li>
+<li><p>Median (50th percentile)</p></li>
+<li><p>Third Quartile (75th percentile)</p></li>
+<li><p>Largest Value</p></li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<div class="fragment">
+<p><strong>Note:</strong> <span class="math inline">\(k-th\)</span> percentile = <code>percentile.EXC(Data Array, k)</code>, where 0 ≤ k ≤ 1.</p>
+</div>
+</div></div></section>
+<section id="five-number-summaries---example" class="level2">
+<h2 class="anchored" data-anchor-id="five-number-summaries---example">Five-Number Summaries - Example</h2>
+<p><strong>Example:</strong> Monthly starting salary</p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Monthly Starting Salary ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5,710</td>
+</tr>
+<tr class="even">
+<td>5,755</td>
+</tr>
+<tr class="odd">
+<td>5,850</td>
+</tr>
+<tr class="even">
+<td>5,880</td>
+</tr>
+<tr class="odd">
+<td>5,890</td>
+</tr>
+<tr class="even">
+<td>5,920</td>
+</tr>
+<tr class="odd">
+<td>5,940</td>
+</tr>
+<tr class="even">
+<td>5,950</td>
+</tr>
+<tr class="odd">
+<td>6,050</td>
+</tr>
+<tr class="even">
+<td>6,130</td>
+</tr>
+<tr class="odd">
+<td>6,325</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br> <br></p>
+<ul>
+<li><strong>Lowest Value</strong> = 5,710</li>
+<li><strong>Third Quartile</strong> = 6,025</li>
+<li><strong>Median</strong> = 5,905</li>
+<li><strong>First Quartile</strong> = 5,857.5</li>
+<li><strong>Largest Value</strong> = 6,325</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="boxplot" class="level2">
+<h2 class="anchored" data-anchor-id="boxplot">Boxplot</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/boxplot_michelsonmorley.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="font-size: 70%;">
+<center>
+<p><a href="https://en.wikipedia.org/wiki/Michelson%E2%80%93Morley_experiment#Michelson_experiment_(1881)">Michelson–Morley experiment - Wiki</a></p>
+</center>
+</div>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>A <a href="https://en.wikipedia.org/wiki/Box_plot"><strong>boxplot</strong></a> is a graphical summary of data that is based on a five-number summary.</p></li>
+<li><p>A key to the development of a boxplot is the computation of the median and the quartiles, <span class="math inline">\(Q_1\)</span> and <span class="math inline">\(Q_3\)</span>.</p></li>
+<li><p>Boxplots provide another way to identify outliers.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="boxplot-1" class="level2">
+<h2 class="anchored" data-anchor-id="boxplot-1">Boxplot</h2>
+<p><strong>Example:</strong> <code>monthly_starting_salary.xlsx</code></p>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/boxplot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>A box is drawn with its ends located at the first and third quartiles.</li>
+<li>A vertical line is drawn in the box at the location of the median (second quartile).</li>
+</ul>
+<p><br></p>
+</section>
+<section id="boxplot-2" class="level2">
+<h2 class="anchored" data-anchor-id="boxplot-2">Boxplot</h2>
+<p><br></p>
+<ul>
+<li>Limits are located using the interquartile range (IQR).</li>
+<li>Data outside these limits are considered outliers.</li>
+<li>The locations of each outlier are shown with the symbol.</li>
+<li>The limits are not shown is a Boxplot.</li>
+</ul>
+</section>
+<section id="boxplot-3" class="level2">
+<h2 class="anchored" data-anchor-id="boxplot-3">Boxplot</h2>
+<div style="font-size: 80%;">
+<p><strong>Example:</strong> <code>monthly_starting_salary.xlsx</code></p>
+</div>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/boxplot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<div style="font-size: 80%;">
+<ul>
+<li><p>The lower limit is located 1.5(IQR) below <span class="math inline">\(Q_1\)</span>.</p>
+<ul>
+<li>Lower Limit: <span class="math inline">\(Q_1 - 1.5(\text{IQR}) = 5,857.5 - 1.5(167.5) = 5,606.25\)</span></li>
+</ul></li>
+<li><p>The upper limit is located 1.5(IQR) above <span class="math inline">\(Q_3\)</span>.</p>
+<ul>
+<li>Upper Limit: <span class="math inline">\(Q_3 + 1.5(\text{IQR}) = 6,025 + 1.5(167.5) = 6,276.25\)</span></li>
+</ul></li>
+<li><p>There is one outlier: 6,325.</p></li>
+</ul>
+</div>
+</section>
+<section id="boxplot-4" class="level2">
+<h2 class="anchored" data-anchor-id="boxplot-4">Boxplot</h2>
+<p><br></p>
+<center>
+<strong>Distribution and Boxplot</strong>
+</center>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/boxplot_distribution.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="measures-of-association-between-two-variables" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Measures of Association Between Two Variables</h1>
+<section id="covariance" class="level2">
+<h2 class="anchored" data-anchor-id="covariance">Covariance</h2>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/scatter_plot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>The covariance is a measure of the linear association between two variables.</li>
+<li>Positive values indicate a positive relationship.</li>
+<li>Negative values indicate a negative relationship.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+</section>
+<section id="covariance-1" class="level2">
+<h2 class="anchored" data-anchor-id="covariance-1">Covariance</h2>
+<p><br></p>
+<ul>
+<li><p>The covariance is computed as follows:</p>
+<p><strong>For population:</strong></p>
+<p><span class="math display">\[
+\sigma_{xy} = \frac{\sum (x_i - \mu_x)(y_i - \mu_y)}{N}
+\]</span></p>
+<p><strong>For samples:</strong></p>
+<p><span class="math display">\[
+s_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n - 1}
+\]</span></p></li>
+<li><p><strong>EXCEL for Sample covariance:</strong> <code>=COVARIANCE.S(array1, array2)</code></p></li>
+</ul>
+</section>
+<section id="correlation-coefficient" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-coefficient">Correlation Coefficient</h2>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/xkcd.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<ul>
+<li>Correlation is a unit-free measure of linear association and not necessarily causation.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</section>
+<section id="correlation-coefficient-1" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-coefficient-1">Correlation Coefficient</h2>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/spurious_correlations.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<center>
+<a href="https://www.tylervigen.com/spurious-correlations">Spurious Correlations!</a>
+</center>
+<p><br></p>
+<ul>
+<li>Just because two variables are highly correlated, it does not mean that one variable is the cause of the other.</li>
+</ul>
+<p><br> <br> <br></p>
+</section>
+<section id="correlation-coefficient-2" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-coefficient-2">Correlation Coefficient</h2>
+<ul>
+<li><p>The correlation coefficient is computed as follows:</p>
+<p><strong>For population:</strong></p>
+<p><span class="math display">\[
+\rho_{xy} = \frac{\sigma_{xy}}{\sigma_x \sigma_y}
+\]</span></p>
+<p><strong>For samples:</strong></p>
+<p><span class="math display">\[
+r_{xy} = \frac{s_{xy}}{s_x s_y}
+\]</span></p></li>
+<li><p><strong>EXCEL:</strong> <code>=correl(array1, array2)</code></p></li>
+</ul>
+</section>
+<section id="correlation-coefficient-3" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-coefficient-3">Correlation Coefficient</h2>
+<p><br></p>
+<ul>
+<li><p>The coefficient can take on values between −1 and +1.</p>
+<ul>
+<li>Values near −1 indicate a strong negative linear relationship.</li>
+<li>Values near +1 indicate a strong positive linear relationship.</li>
+</ul></li>
+<li><p>The closer the correlation is to zero, the weaker the relationship.</p></li>
+</ul>
+<p><br></p>
+<center>
+<div class="fragment">
+<p><a href="https://www.guessthecorrelation.com/">Guess the correlation!</a></p>
+</div>
+</center>
+</section>
+<section id="correlation-coefficient-4" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-coefficient-4">Correlation Coefficient</h2>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/correlation_estimates.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Rules of thumb:</strong></p>
+<ul>
+<li>( 0.0 &lt; |r| &lt; 0.3 ) — <em>weak correlation</em></li>
+<li>( 0.3 &lt; |r| &lt; 0.7 ) — <em>moderate correlation</em></li>
+<li>( 0.7 &lt; |r| &lt; 1.0 ) — <em>strong correlation</em></li>
+</ul>
+<p><br></p>
+</section>
+<section id="correlation-coefficient-5" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-coefficient-5">Correlation Coefficient</h2>
+<p><br></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/correlation_linear.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="nonincremental">
+<div class="fragment">
+<div style="font-size: 70%;">
+<ul>
+<li>The correlation reflects the strength and direction of a linear relationship (top row)</li>
+<li>The correlation does not reflect the slope of that relationship (middle)</li>
+<li>Nor many aspects of nonlinear relationships (bottom).</li>
+<li>N.B.: the figure in the center has a slope of 0 but in that case the correlation coefficient is undefined because the variance of Y is zero.</li>
+</ul>
+<center>
+<a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Wiki</a>
+</center>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="covariance-and-correlation-coefficient---example" class="level2">
+<h2 class="anchored" data-anchor-id="covariance-and-correlation-coefficient---example">Covariance and Correlation Coefficient - Example</h2>
+<p><br></p>
+<div style="font-size: 80%;">
+<p><strong>Example:</strong> <code>san_francisco_electronics_store.xlsx</code></p>
+</div>
+<p><br></p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Number of Commercials</th>
+<th>Sales ($100s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>5</td>
+<td>57</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>1</td>
+<td>41</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>3</td>
+<td>54</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>4</td>
+<td>54</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>1</td>
+<td>38</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>5</td>
+<td>63</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>3</td>
+<td>48</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>4</td>
+<td>59</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>2</td>
+<td>46</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<ul>
+<li>The store’s manager wants to determine the relationship between the number of weekend television commercials shown and the sales at the store during the following week.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="covariance-and-correlation-coefficient---example-1" class="level2">
+<h2 class="anchored" data-anchor-id="covariance-and-correlation-coefficient---example-1">Covariance and Correlation Coefficient - Example</h2>
+<p><br></p>
+<div style="font-size: 80%;">
+<p><strong>Example:</strong> <code>san_francisco_electronics_store.xlsx</code></p>
+</div>
+<p><br></p>
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(x_i\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(y_i\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(x_i - \bar{x}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(y_i - \bar{y}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\((x_i - \bar{x})(y_i - \bar{y})\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">57</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">41</td>
+<td style="text-align: center;">-2</td>
+<td style="text-align: center;">-10</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">54</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">-2</td>
+<td style="text-align: center;">-13</td>
+<td style="text-align: center;">26</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">63</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">24</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">48</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-3</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">59</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">-5</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Totals</strong></td>
+<td style="text-align: center;"><strong>30</strong></td>
+<td style="text-align: center;"><strong>510</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>99</strong></td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><span class="math display">\[
+s_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n - 1} = \frac{99}{10 - 1} = 11
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="covariance-and-correlation-coefficient---example-2" class="level2">
+<h2 class="anchored" data-anchor-id="covariance-and-correlation-coefficient---example-2">Covariance and Correlation Coefficient - Example</h2>
+<p><br></p>
+<div style="font-size: 80%;">
+<p><strong>Example:</strong> <code>san_francisco_electronics_store.xlsx</code></p>
+</div>
+<p><br></p>
+<p><strong>Sample Covariance</strong></p>
+<p><span class="math display">\[
+s_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n - 1} = \frac{99}{10 - 1} = 11
+\]</span></p>
+<p><strong>Sample Correlation Coefficient</strong></p>
+<p><span class="math display">\[
+r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{11}{1.49 \times 7.93} = 0.93
+\]</span></p>
+</section>
+<section id="correlation-coefficient-6" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-coefficient-6">Correlation Coefficient</h2>
+<p><br></p>
+<p><span class="math display">\[
+r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{1}{n-1} \sum \left(\frac{x_i - \bar{x}}{s_x}\right) \left(\frac{y_i - \bar{y}}{s_y}\right)
+\]</span> <br></p>
+<ul>
+<li>Correlation is a unit-free measure of linear relationship.</li>
+<li>Correlation is unchanged if one or both variables are linearly transformed.</li>
+</ul>
+</section>
+</section>
+<section id="using-excel-to-compute-covariance-and-correlation-coefficient" class="level1">
+<h1>Using Excel to Compute Covariance and Correlation coefficient</h1>
+<section id="using-excel-to-compute-covariance-and-correlation-coefficient-1" class="level2">
+<h2 class="anchored" data-anchor-id="using-excel-to-compute-covariance-and-correlation-coefficient-1">Using Excel to Compute Covariance and Correlation coefficient</h2>
+<p>Example: San Francisco Electronics Store</p>
+<p>Excel Formula and Value Worksheets</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/covariance_excel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="summary" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Summary</h1>
+<section id="summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
+<div class="nonincremental">
+<p>Some key takeaways from this session:</p>
+<ul>
+<li><p><strong>Descriptive Statistics</strong>: help us to understand the data we have.</p></li>
+<li><p><strong>Measures of Central Location and Variability</strong>: Central location and variability metrics help us to summarize the data.</p></li>
+<li><p><strong>Distribution Shape</strong>: skewness can be used to understand the shape of a distribution.</p></li>
+<li><p><strong>Relative Location and z-Scores</strong>: z-scores to determine the relative position of data points within a distribution.</p></li>
+<li><p><strong>Empirical Rule</strong>: The 68-95-99.7 Rule for understanding data distribution in relation to the mean and standard deviation. Good for symetric distrubutions!</p></li>
+<li><p><strong>Covariance and Correlation</strong>: to understand the relationship between two numerical variables.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="thank-you" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Thank you!</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

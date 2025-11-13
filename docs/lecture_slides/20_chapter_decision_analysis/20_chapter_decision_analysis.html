@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Professor Davi Moreira ">
+
+<title> MGMT 30500: Business Statistics  – MGMT 30500: Business Statistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-79df7ed5347781c1339259261daa236f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/mgmt_305_ai_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/davi-moreira/2025S_business_statistics_purdue_MGMT305" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../material.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Material</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#decision-analysis" id="toc-decision-analysis" class="nav-link" data-scroll-target="#decision-analysis">Decision Analysis</a>
+  <ul class="collapse">
+  <li><a href="#problem-formulation" id="toc-problem-formulation" class="nav-link" data-scroll-target="#problem-formulation">Problem Formulation</a></li>
+  <li><a href="#example-pittsburgh-development-corporation-pdc" id="toc-example-pittsburgh-development-corporation-pdc" class="nav-link" data-scroll-target="#example-pittsburgh-development-corporation-pdc">Example: Pittsburgh Development Corporation (PDC)</a></li>
+  <li><a href="#example-pdcs-decision-alternatives" id="toc-example-pdcs-decision-alternatives" class="nav-link" data-scroll-target="#example-pdcs-decision-alternatives">Example: PDC’s Decision Alternatives</a></li>
+  <li><a href="#chance-events-and-states-of-nature-in-decision-analysis" id="toc-chance-events-and-states-of-nature-in-decision-analysis" class="nav-link" data-scroll-target="#chance-events-and-states-of-nature-in-decision-analysis">Chance Events and States of Nature in Decision Analysis</a></li>
+  <li><a href="#example-states-of-nature-for-the-pdc-project" id="toc-example-states-of-nature-for-the-pdc-project" class="nav-link" data-scroll-target="#example-states-of-nature-for-the-pdc-project">Example: States of Nature for the PDC Project</a></li>
+  <li><a href="#example-sequence-of-decisions-and-consequences" id="toc-example-sequence-of-decisions-and-consequences" class="nav-link" data-scroll-target="#example-sequence-of-decisions-and-consequences">Example: Sequence of Decisions and Consequences</a></li>
+  </ul></li>
+  <li><a href="#payoff-tables" id="toc-payoff-tables" class="nav-link" data-scroll-target="#payoff-tables">Payoff Tables</a>
+  <ul class="collapse">
+  <li><a href="#payoff-tables-1" id="toc-payoff-tables-1" class="nav-link" data-scroll-target="#payoff-tables-1">Payoff Tables</a></li>
+  <li><a href="#example-payoff-table" id="toc-example-payoff-table" class="nav-link" data-scroll-target="#example-payoff-table">Example: Payoff Table</a></li>
+  <li><a href="#example-interpreting-payoffs" id="toc-example-interpreting-payoffs" class="nav-link" data-scroll-target="#example-interpreting-payoffs">Example: Interpreting Payoffs</a></li>
+  </ul></li>
+  <li><a href="#decision-trees" id="toc-decision-trees" class="nav-link" data-scroll-target="#decision-trees">Decision Trees</a>
+  <ul class="collapse">
+  <li><a href="#decision-trees-1" id="toc-decision-trees-1" class="nav-link" data-scroll-target="#decision-trees-1">Decision Trees</a></li>
+  <li><a href="#explanation-of-the-decision-tree" id="toc-explanation-of-the-decision-tree" class="nav-link" data-scroll-target="#explanation-of-the-decision-tree">Explanation of the Decision Tree</a></li>
+  </ul></li>
+  <li><a href="#decision-making-with-probabilities" id="toc-decision-making-with-probabilities" class="nav-link" data-scroll-target="#decision-making-with-probabilities">Decision Making with Probabilities</a>
+  <ul class="collapse">
+  <li><a href="#decision-making-with-probabilities-1" id="toc-decision-making-with-probabilities-1" class="nav-link" data-scroll-target="#decision-making-with-probabilities-1">Decision Making with Probabilities</a></li>
+  <li><a href="#expected-value-approach" id="toc-expected-value-approach" class="nav-link" data-scroll-target="#expected-value-approach">Expected Value Approach</a></li>
+  <li><a href="#expected-value-calculation" id="toc-expected-value-calculation" class="nav-link" data-scroll-target="#expected-value-calculation">Expected Value Calculation</a></li>
+  <li><a href="#example-calculation-of-expected-value" id="toc-example-calculation-of-expected-value" class="nav-link" data-scroll-target="#example-calculation-of-expected-value">Example: Calculation of Expected Value</a></li>
+  <li><a href="#applying-the-expected-value-approach-using-decision-trees" id="toc-applying-the-expected-value-approach-using-decision-trees" class="nav-link" data-scroll-target="#applying-the-expected-value-approach-using-decision-trees">Applying the Expected Value Approach Using Decision Trees</a></li>
+  <li><a href="#summary-of-expected-value-approach-using-decision-trees" id="toc-summary-of-expected-value-approach-using-decision-trees" class="nav-link" data-scroll-target="#summary-of-expected-value-approach-using-decision-trees">Summary of Expected Value Approach Using Decision Trees</a></li>
+  </ul></li>
+  <li><a href="#expected-value-of-perfect-information-evpi" id="toc-expected-value-of-perfect-information-evpi" class="nav-link" data-scroll-target="#expected-value-of-perfect-information-evpi">Expected Value of Perfect Information (EVPI)</a>
+  <ul class="collapse">
+  <li><a href="#expected-value-of-perfect-information-evpi-1" id="toc-expected-value-of-perfect-information-evpi-1" class="nav-link" data-scroll-target="#expected-value-of-perfect-information-evpi-1">Expected Value of Perfect Information (EVPI)</a></li>
+  <li><a href="#payoff-table-for-the-pdc-condominium-project-millions" id="toc-payoff-table-for-the-pdc-condominium-project-millions" class="nav-link" data-scroll-target="#payoff-table-for-the-pdc-condominium-project-millions">Payoff Table for the PDC Condominium Project ($ Millions)</a></li>
+  <li><a href="#decision-strategy-with-perfect-information" id="toc-decision-strategy-with-perfect-information" class="nav-link" data-scroll-target="#decision-strategy-with-perfect-information">Decision Strategy with Perfect Information</a></li>
+  <li><a href="#expected-value-of-this-decision-strategy" id="toc-expected-value-of-this-decision-strategy" class="nav-link" data-scroll-target="#expected-value-of-this-decision-strategy">Expected Value of this Decision Strategy</a></li>
+  <li><a href="#expected-value-of-perfect-information-evpi-2" id="toc-expected-value-of-perfect-information-evpi-2" class="nav-link" data-scroll-target="#expected-value-of-perfect-information-evpi-2">Expected Value <strong>of</strong> Perfect Information (EVPI)</a></li>
+  <li><a href="#example-expected-value-of-perfect-information-evpi" id="toc-example-expected-value-of-perfect-information-evpi" class="nav-link" data-scroll-target="#example-expected-value-of-perfect-information-evpi">Example: Expected Value of Perfect Information (EVPI)</a></li>
+  </ul></li>
+  <li><a href="#decision-analysis-with-sample-information" id="toc-decision-analysis-with-sample-information" class="nav-link" data-scroll-target="#decision-analysis-with-sample-information">Decision Analysis with Sample Information</a>
+  <ul class="collapse">
+  <li><a href="#decision-analysis-with-sample-information-1" id="toc-decision-analysis-with-sample-information-1" class="nav-link" data-scroll-target="#decision-analysis-with-sample-information-1">Decision Analysis with Sample Information</a></li>
+  <li><a href="#market-research-study-for-pdc" id="toc-market-research-study-for-pdc" class="nav-link" data-scroll-target="#market-research-study-for-pdc">Market Research Study for PDC</a></li>
+  <li><a href="#decision-tree-with-market-research-study" id="toc-decision-tree-with-market-research-study" class="nav-link" data-scroll-target="#decision-tree-with-market-research-study">Decision Tree with Market Research Study</a></li>
+  <li><a href="#analysis-of-decision-tree-structure" id="toc-analysis-of-decision-tree-structure" class="nav-link" data-scroll-target="#analysis-of-decision-tree-structure">Analysis of Decision Tree Structure</a></li>
+  <li><a href="#probabilities-for-market-research-study" id="toc-probabilities-for-market-research-study" class="nav-link" data-scroll-target="#probabilities-for-market-research-study">Probabilities for Market Research Study</a></li>
+  <li><a href="#decision-strategy" id="toc-decision-strategy" class="nav-link" data-scroll-target="#decision-strategy">Decision Strategy</a></li>
+  <li><a href="#decision-strategy-1" id="toc-decision-strategy-1" class="nav-link" data-scroll-target="#decision-strategy-1">Decision Strategy</a></li>
+  <li><a href="#selecting-best-decisions" id="toc-selecting-best-decisions" class="nav-link" data-scroll-target="#selecting-best-decisions">Selecting Best Decisions</a></li>
+  <li><a href="#selecting-best-decisions-1" id="toc-selecting-best-decisions-1" class="nav-link" data-scroll-target="#selecting-best-decisions-1">Selecting Best Decisions</a></li>
+  <li><a href="#final-decision-strategy" id="toc-final-decision-strategy" class="nav-link" data-scroll-target="#final-decision-strategy">Final Decision Strategy</a></li>
+  <li><a href="#summary-of-decision-tree-analysis" id="toc-summary-of-decision-tree-analysis" class="nav-link" data-scroll-target="#summary-of-decision-tree-analysis">Summary of Decision Tree Analysis</a></li>
+  <li><a href="#expected-value-of-sample-information-formula" id="toc-expected-value-of-sample-information-formula" class="nav-link" data-scroll-target="#expected-value-of-sample-information-formula">Expected Value of Sample Information Formula</a></li>
+  <li><a href="#example-expected-value-of-sample-information-evsi" id="toc-example-expected-value-of-sample-information-evsi" class="nav-link" data-scroll-target="#example-expected-value-of-sample-information-evsi">Example: Expected Value of Sample Information (EVSI)</a></li>
+  </ul></li>
+  <li><a href="#computing-branch-probabilities-using-bayes-theorem" id="toc-computing-branch-probabilities-using-bayes-theorem" class="nav-link" data-scroll-target="#computing-branch-probabilities-using-bayes-theorem">Computing Branch Probabilities Using Bayes’ Theorem</a>
+  <ul class="collapse">
+  <li><a href="#computing-branch-probabilities-using-bayes-theorem-1" id="toc-computing-branch-probabilities-using-bayes-theorem-1" class="nav-link" data-scroll-target="#computing-branch-probabilities-using-bayes-theorem-1">Computing Branch Probabilities Using Bayes’ Theorem</a></li>
+  <li><a href="#computing-branch-probabilities-using-bayes-theorem-2" id="toc-computing-branch-probabilities-using-bayes-theorem-2" class="nav-link" data-scroll-target="#computing-branch-probabilities-using-bayes-theorem-2">Computing Branch Probabilities Using Bayes’ Theorem</a></li>
+  <li><a href="#bayes-theorem-in-decision-trees" id="toc-bayes-theorem-in-decision-trees" class="nav-link" data-scroll-target="#bayes-theorem-in-decision-trees">Bayes’ Theorem in Decision Trees</a></li>
+  <li><a href="#conditional-probability-calculations" id="toc-conditional-probability-calculations" class="nav-link" data-scroll-target="#conditional-probability-calculations">Conditional Probability Calculations</a></li>
+  <li><a href="#market-research-probabilities-table" id="toc-market-research-probabilities-table" class="nav-link" data-scroll-target="#market-research-probabilities-table">Market Research Probabilities Table</a></li>
+  <li><a href="#tabular-computation-branch-probabilities-for-favorable-report" id="toc-tabular-computation-branch-probabilities-for-favorable-report" class="nav-link" data-scroll-target="#tabular-computation-branch-probabilities-for-favorable-report">Tabular Computation: Branch Probabilities for Favorable Report</a></li>
+  <li><a href="#tabular-computation-branch-probabilities-for-unfavorable-report" id="toc-tabular-computation-branch-probabilities-for-unfavorable-report" class="nav-link" data-scroll-target="#tabular-computation-branch-probabilities-for-unfavorable-report">Tabular Computation: Branch Probabilities for Unfavorable Report</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
+  <li><a href="#summary-2" id="toc-summary-2" class="nav-link" data-scroll-target="#summary-2">Summary</a></li>
+  </ul></li>
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="20_chapter_decision_analysis.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
+<p class="subtitle lead"><span style="font-size: 150%;"> Decision Analysis </span></p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Professor<br>Davi Moreira<br> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<div class="nonincremental">
+<div class="columns">
+<div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>Problem formulation.</p></li>
+<li><p>Chance Events and States of Nature.</p></li>
+<li><p>Payoff tables.</p></li>
+<li><p>Decision trees.</p></li>
+</ul>
+</div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
+<ul>
+<li><p>Decision Making with Probabilities.</p>
+<ul>
+<li>Expected Value Approach</li>
+<li>Expected Value of Perfect Information (EVPI)</li>
+<li>Expected Value with Sample Information (EVSI)</li>
+</ul></li>
+<li><p>Bayes’ theorem to compute branch probabilities for decision trees.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="decision-analysis" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Decision Analysis</h1>
+<!---
+## Decision Analysis Overview
+
+Decision analysis can be used to develop an optimal decision strategy when a decision maker is faced with several decision alternatives and an uncertain or risk-filled pattern of future events.
+
+Topics we will cover:
+
+- Payoff tables: to provide a structure for decision problems. 
+- Decision trees: to show the sequential nature of the problems and to identify an optimal sequence of decisions, referred to as an optimal decision strategy. 
+- Bayes’ theorem: to compute branch probabilities for decision trees.
+
+--->
+<section id="problem-formulation" class="level2">
+<h2 class="anchored" data-anchor-id="problem-formulation">Problem Formulation</h2>
+<p><br></p>
+<p>The first step in the decision analysis process is problem formulation.</p>
+<p><br></p>
+<p>It can be a verbal statement of the problem. Then, we identify the decision alternatives, the uncertain future events, referred to as <strong>chance events</strong>, and the <strong>consequences</strong> associated with each decision alternative and each chance event outcome.</p>
+</section>
+<section id="example-pittsburgh-development-corporation-pdc" class="level2">
+<h2 class="anchored" data-anchor-id="example-pittsburgh-development-corporation-pdc">Example: Pittsburgh Development Corporation (PDC)</h2>
+<div style="font-size: 80%;">
+<p>Pittsburgh Development Corporation (PDC) has purchased land to develop a luxury condominium complex with individual units priced between $300,000 and $1,400,000.</p>
+<ul>
+<li><p><strong>Decision Problem</strong>: PDC’s primary decision challenge is to determine the optimal size of the condominium project that will maximize profits, considering the uncertainty of future demand for these units.</p></li>
+<li><p><strong>Project Options</strong>: PDC has commissioned architectural plans for three potential project sizes:</p>
+<ol type="1">
+<li><strong>Small Complex</strong>: 30 condominiums</li>
+<li><strong>Medium Complex</strong>: 60 condominiums</li>
+<li><strong>Large Complex</strong>: 90 condominiums</li>
+</ol></li>
+<li><p><strong>Key Considerations</strong>: The financial viability and success of the project depend on:</p>
+<ul>
+<li>The selected project size (small, medium, or large)</li>
+<li>Future demand for the condominiums, an uncertain factor influencing profitability</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>PDC must analyze both the scale of the project and demand uncertainty to make an informed, profitable decision.</p>
+</div>
+</div>
+</section>
+<section id="example-pdcs-decision-alternatives" class="level2">
+<h2 class="anchored" data-anchor-id="example-pdcs-decision-alternatives">Example: PDC’s Decision Alternatives</h2>
+<p>It is clear that the decision is to select the best size for the condominium complex.</p>
+<p><br></p>
+<p>PDC has the following three decision alternatives:</p>
+<p><span class="math display">\[
+d_1 = \text{a small complex with 30 condominiums}
+\]</span></p>
+<p><span class="math display">\[
+d_2 = \text{a medium complex with 60 condominiums}
+\]</span></p>
+<p><span class="math display">\[
+d_3 = \text{a large complex with 90 condominiums}
+\]</span></p>
+</section>
+<section id="chance-events-and-states-of-nature-in-decision-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="chance-events-and-states-of-nature-in-decision-analysis">Chance Events and States of Nature in Decision Analysis</h2>
+<p>In decision analysis, uncertain future events like demand levels are known as <strong>chance events</strong>.</p>
+<p>The possible outcomes of these events are called <strong>states of nature</strong>, with only one state ultimately occurring.</p>
+</section>
+<section id="example-states-of-nature-for-the-pdc-project" class="level2">
+<h2 class="anchored" data-anchor-id="example-states-of-nature-for-the-pdc-project">Example: States of Nature for the PDC Project</h2>
+<p><br></p>
+<p>A key factor in PDC’s decision-making process is the uncertainty surrounding <strong>demand for the condominiums</strong>.</p>
+<p><br></p>
+<p>For PDC’s condominium project, the two relevant states of nature regarding demand are:</p>
+<p><span class="math display">\[
+s_1 = \text{Strong demand for the condominiums}
+\]</span></p>
+<p><span class="math display">\[
+s_2 = \text{Weak demand for the condominiums}
+\]</span></p>
+<p>By defining these states of nature, PDC can structure its decision-making process to account for <strong>demand uncertainty</strong> and <strong>evaluate the impact of each demand scenario</strong> on project profitability.</p>
+</section>
+<section id="example-sequence-of-decisions-and-consequences" class="level2">
+<h2 class="anchored" data-anchor-id="example-sequence-of-decisions-and-consequences">Example: Sequence of Decisions and Consequences</h2>
+<p>The decision analysis process follows a structured sequence to ensure optimal decision-making:</p>
+<ol type="1">
+<li><p><strong>Select a Decision Alternative</strong>: Management begins by choosing a project size (complex size) from the available options (small, medium, or large complex).</p></li>
+<li><p><strong>State of Nature Occurs</strong>: After the decision, an uncertain demand scenario—known as the state of nature—will materialize. In this case, it could be: <strong>Strong Demand</strong> or <strong>Weak Demand</strong>.</p></li>
+<li><p><strong>Observe the Consequence</strong>: Based on the chosen project size and the actual demand, a consequence will occur. For PDC, the consequence is represented as <strong>profit or loss</strong> from the project.</p></li>
+</ol>
+<div class="fragment">
+<p>By following this sequence, PDC can better understand potential outcomes and make informed decisions to maximize profitability.</p>
+</div>
+</section>
+</section>
+<section id="payoff-tables" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Payoff Tables</h1>
+<section id="payoff-tables-1" class="level2">
+<h2 class="anchored" data-anchor-id="payoff-tables-1">Payoff Tables</h2>
+<p>To determine the optimal complex size, PDC must evaluate the <strong>consequence</strong> of each decision alternative under different demand scenarios. For the purpose of choosing the best <strong>Payoff</strong>, we use <strong>Payoff Tables</strong>.</p>
+<ul>
+<li><p><strong>Key Concepts</strong></p></li>
+<li><p><strong>Payoff</strong>: The result (profit or loss) from a specific combination of a decision alternative (complex size) and a state of nature (demand).</p></li>
+<li><p><strong>Payoff Table</strong>: A table that organizes payoffs for all possible combinations of decision alternatives and states of nature, providing a structured view of potential outcomes.</p></li>
+</ul>
+<div class="fragment">
+<p>By analyzing the payoff table, PDC can make an informed decision that aligns with their profitability goals.</p>
+<p><br></p>
+<center>
+<strong>Given the three decision alternatives and the two states of nature, which complex size should PDC choose?</strong>
+</center>
+</div>
+</section>
+<section id="example-payoff-table" class="level2">
+<h2 class="anchored" data-anchor-id="example-payoff-table">Example: Payoff Table</h2>
+<p><br></p>
+<p>The payoff table will show projected profits (in millions of dollars) for each combination of decision alternative (complex size) and state of nature (demand).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 53%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Decision Alternative / State of Nature</strong></td>
+<td style="text-align: center;"><strong>Strong Demand</strong><br>(<span class="math inline">\(s_1\)</span>)</td>
+<td style="text-align: center;"><strong>Weak Demand</strong><br>(<span class="math inline">\(s_2\)</span>)</td>
+</tr>
+<tr class="even">
+<td><strong>Small complex</strong> (<span class="math inline">\(d_1\)</span>)</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="odd">
+<td><strong>Medium complex</strong> (<span class="math inline">\(d_2\)</span>)</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td><strong>Large complex</strong> (<span class="math inline">\(d_3\)</span>)</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">-9</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="example-interpreting-payoffs" class="level2">
+<h2 class="anchored" data-anchor-id="example-interpreting-payoffs">Example: Interpreting Payoffs</h2>
+<p>Since PDC’s goal is to maximize profit, <strong>profit</strong> is used as the payoff measure in this case.</p>
+<ul>
+<li><strong>Notation</strong>: We use <span class="math inline">\(V_{ij}\)</span> to denote the payoff for decision alternative <span class="math inline">\(i\)</span> under state of nature <span class="math inline">\(j\)</span>.</li>
+</ul>
+<div class="fragment">
+<p><strong>From the Payoff Table</strong>:</p>
+<ul>
+<li><p><span class="math inline">\(V_{31} = 20\)</span>: A payoff of $20 million occurs if PDC builds a large complex (<span class="math inline">\(d_3\)</span>) and demand is strong (<span class="math inline">\(s_1\)</span>).</p></li>
+<li><p><span class="math inline">\(V_{32} = -9\)</span>: A loss of $9 million occurs if PDC builds a large complex (<span class="math inline">\(d_3\)</span>) and demand is weak (<span class="math inline">\(s_2\)</span>).</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>These payoff values help PDC evaluate the potential financial outcomes of each decision under different demand scenarios, guiding them toward the most profitable choice.</p>
+</div>
+</section>
+</section>
+<section id="decision-trees" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Decision Trees</h1>
+<section id="decision-trees-1" class="level2">
+<h2 class="anchored" data-anchor-id="decision-trees-1">Decision Trees</h2>
+<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A <strong>decision tree</strong> graphically shows the sequential nature of the decision-making process.</p>
+<div class="fragment">
+<p>The Figure presents a decision tree for the PDC problem, demonstrating the natural or logical progression that will occur over time.</p>
+<ol type="1">
+<li><p>First, PDC must make a decision regarding the size of the condominium complex (<span class="math inline">\(d_1\)</span>, <span class="math inline">\(d_2\)</span>, or <span class="math inline">\(d_3\)</span>).</p></li>
+<li><p>Then, after the decision is implemented, either state of nature <span class="math inline">\(s_1\)</span> or <span class="math inline">\(s_2\)</span> will occur.</p></li>
+</ol>
+</div>
+<div class="fragment">
+<p>The number at each end point of the tree indicates the <strong>payoff</strong> associated with a particular sequence. For example:</p>
+<ul>
+<li><p>The topmost payoff of 8 indicates an $8 million profit if PDC constructs a small condominium complex (<span class="math inline">\(d_1\)</span>) and demand is strong (<span class="math inline">\(s_1\)</span>).</p></li>
+<li><p>The next payoff of 7 indicates an anticipated profit of $7 million if PDC constructs a small condominium complex (<span class="math inline">\(d_1\)</span>) and demand is weak (<span class="math inline">\(s_2\)</span>).</p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Thus, the decision tree shows the sequences of decision alternatives and states of nature, providing the six possible payoffs.</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="explanation-of-the-decision-tree" class="level2">
+<h2 class="anchored" data-anchor-id="explanation-of-the-decision-tree">Explanation of the Decision Tree</h2>
+<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The decision tree has four <strong>nodes</strong>, numbered 1–4, representing decisions and chance events:</p>
+<ul>
+<li><p><strong>Decision nodes</strong> (squares): Represent points where a decision must be made. Node 1 is the decision node.</p></li>
+<li><p><strong>Chance nodes</strong> (circles): Represent points where the outcome depends on chance. Nodes 2, 3, and 4 are chance nodes.</p></li>
+<li><p><strong>Branches</strong>: Branches leaving the decision node correspond to decision alternatives (small, medium, or large complex).</p></li>
+<li><p><strong>Branches</strong>: Branches leaving each chance node correspond to the states of nature (strong or weak demand).</p></li>
+<li><p><strong>Payoffs</strong>: are shown at the end of each branch.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<center>
+<strong>How can the decision maker use the information in the payoff table or the decision tree to select the best decision alternative?</strong>
+</center>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="decision-making-with-probabilities" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Decision Making with Probabilities</h1>
+<section id="decision-making-with-probabilities-1" class="level2">
+<h2 class="anchored" data-anchor-id="decision-making-with-probabilities-1">Decision Making with Probabilities</h2>
+<div style="font-size: 90%;">
+<p>With the <strong>decision alternatives</strong> and the <strong>states of nature</strong> established, our next step is to determine the <strong>probabilities</strong> for each state of nature.</p>
+<p>There are several methods to assign probabilities:</p>
+<ul>
+<li><p><strong>Classical method</strong>: Based on logical analysis, typically used when outcomes are equally likely.</p></li>
+<li><p><strong>Relative frequency method</strong>: Uses historical or empirical data to estimate probabilities.</p></li>
+<li><p><strong>Subjective method</strong>: Relies on expert judgment or intuition when data is scarce or unavailable.</p></li>
+</ul>
+<div class="fragment">
+<p>With these probabilities in hand, we apply the <strong>expected value approach</strong> to calculate the <strong>expected payoff</strong> for each decision alternative by weighting possible outcomes according to their probabilities.</p>
+</div>
+<div class="fragment">
+<p>The decision alternative with the highest expected value is then identified as the best or recommended choice for the problem.</p>
+</div>
+</div>
+</section>
+<section id="expected-value-approach" class="level2">
+<h2 class="anchored" data-anchor-id="expected-value-approach">Expected Value Approach</h2>
+<div style="font-size: 90%;">
+<p>The probabilities for the states of nature must satisfy the basic requirements for assigning probabilities.</p>
+<p>We begin by defining the expected value of a decision alternative. Let:</p>
+<ul>
+<li><p><span class="math inline">\(N\)</span> = the number of states of nature</p></li>
+<li><p><span class="math inline">\(P(s_j)\)</span> = the probability of state of nature <span class="math inline">\(s_j\)</span></p></li>
+</ul>
+<div class="fragment">
+<p>Because one and only one of the <span class="math inline">\(N\)</span> states of nature can occur, the probabilities must satisfy two conditions:</p>
+<ol type="1">
+<li><p><strong>Non-negativity</strong>: <span class="math display">\[
+P(s_j) \geq 0 \quad \text{for all states of nature}
+\]</span></p></li>
+<li><p><strong>Total probability</strong>: <span class="math display">\[
+\sum_{j=1}^{N} P(s_j) = P(s_1) + P(s_2) + \cdots + P(s_N) = 1
+\]</span></p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="expected-value-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="expected-value-calculation">Expected Value Calculation</h2>
+<p>The <strong>expected value (EV)</strong> of decision alternative <span class="math inline">\(d_i\)</span> is as follows:</p>
+<p><span class="math display">\[
+\text{EV}(d_i) = \sum_{j=1}^{N} P(s_j) V_{ij}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(V_{ij}\)</span> = the value of the payoff for decision alternative <span class="math inline">\(d_i\)</span> and state of nature <span class="math inline">\(s_j\)</span>.</li>
+</ul>
+<div class="fragment">
+<p>In words, the expected value of a decision alternative is the sum of weighted payoffs for the decision alternative. The weight for a payoff is the probability of the associated state of nature and therefore the probability that the payoff will occur.</p>
+</div>
+</section>
+<section id="example-calculation-of-expected-value" class="level2">
+<h2 class="anchored" data-anchor-id="example-calculation-of-expected-value">Example: Calculation of Expected Value</h2>
+<div style="font-size: 80%;">
+<p>PDC is optimistic about the potential demand for its luxury high-rise condominium complex. Based on this optimism, PDC assigns <strong>subjective probabilities</strong> to represent the likelihood of each demand scenario:</p>
+<ul>
+<li>Probability of <strong>strong demand</strong> (<span class="math inline">\(s_1\)</span>): <span class="math inline">\(P(s_1) = 0.8\)</span></li>
+<li>Probability of <strong>weak demand</strong> (<span class="math inline">\(s_2\)</span>): <span class="math inline">\(P(s_2) = 0.2\)</span></li>
+</ul>
+<div class="fragment">
+<p>Using these probabilities and the associated payoffs, we calculate the <strong>expected value (EV)</strong> for each decision alternative:</p>
+<ol type="1">
+<li><p><strong>Small complex (</strong><span class="math inline">\(d_1\)</span>): <span class="math display">\[
+\text{EV}(d_1) = 0.8(8) + 0.2(7) = 7.8
+\]</span></p></li>
+<li><p><strong>Medium complex (</strong><span class="math inline">\(d_2\)</span>): <span class="math display">\[
+\text{EV}(d_2) = 0.8(14) + 0.2(5) = 12.2
+\]</span></p></li>
+<li><p><strong>Large complex (</strong><span class="math inline">\(d_3\)</span>): <span class="math display">\[
+\text{EV}(d_3) = 0.8(20) + 0.2(-9) = 14.2
+\]</span></p></li>
+</ol>
+</div>
+<div class="fragment">
+<p>By comparing the expected values, we find that the <strong>large complex</strong> (<span class="math inline">\(d_3\)</span>) yields the highest expected value of <strong>$14.2 million</strong>. Therefore, according to the expected value approach, the large complex is the recommended decision.</p>
+</div>
+</div>
+</section>
+<section id="applying-the-expected-value-approach-using-decision-trees" class="level2">
+<h2 class="anchored" data-anchor-id="applying-the-expected-value-approach-using-decision-trees">Applying the Expected Value Approach Using Decision Trees</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_expected_value.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>The calculations required to identify the decision alternative with the best expected value can be conveniently carried out on a decision tree.</p></li>
+<li><p>Working backward through the decision tree, we first compute the expected value at each chance node; that is, at each chance node, we weight each possible payoff by its probability of occurrence. By doing so, we obtain the expected values for nodes 2, 3, and 4.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="summary-of-expected-value-approach-using-decision-trees" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-expected-value-approach-using-decision-trees">Summary of Expected Value Approach Using Decision Trees</h2>
+<p><br></p>
+<p>The decision maker controls the choice at each decision node aiming to maximize the expected profit. At <strong>decision node 1</strong>, the expected value approach identifies the <strong>best decision alternative</strong> as:</p>
+<ul>
+<li><strong>Decision</strong> <span class="math inline">\(d_3\)</span>: Constructing the large condominium complex, which yields an expected value of <strong>$14.2 million</strong>.</li>
+</ul>
+<div class="fragment">
+<p>This recommendation of <span class="math inline">\(d_3\)</span> is consistent with both the decision tree analysis and the expected value calculations derived from the payoff table.</p>
+<p><strong>Using the expected value approach in conjunction with the decision tree provides a clear and structured framework for selecting the optimal decision based on projected profits.</strong></p>
+</div>
+</section>
+</section>
+<section id="expected-value-of-perfect-information-evpi" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Expected Value of Perfect Information (EVPI)</h1>
+<section id="expected-value-of-perfect-information-evpi-1" class="level2">
+<h2 class="anchored" data-anchor-id="expected-value-of-perfect-information-evpi-1">Expected Value of Perfect Information (EVPI)</h2>
+<p><br></p>
+<center>
+What if PDC has the opportunity to conduct a <strong>market research study</strong> to gauge buyer interest in the condominium project?
+</center>
+<div class="fragment">
+<p>This study could provide valuable information to refine the probability assessments for the different <strong>states of nature</strong> (e.g., strong or weak demand).</p>
+</div>
+<div class="fragment">
+<p>To understand the potential value of this information, we assume the study could yield <strong>perfect information</strong> — meaning PDC would know, with certainty, which state of nature will occur before making a decision.</p>
+</div>
+<div class="fragment">
+<p>Given this perfect information, we can develop an optimal <strong>decision strategy</strong>.</p>
+</div>
+<div class="fragment">
+<p>We can quantify how much PDC should be willing to pay for this perfect information by calculating the <strong>Expected Value of Perfect Information (EVPI)</strong>.</p>
+</div>
+</section>
+<section id="payoff-table-for-the-pdc-condominium-project-millions" class="level2">
+<h2 class="anchored" data-anchor-id="payoff-table-for-the-pdc-condominium-project-millions">Payoff Table for the PDC Condominium Project ($ Millions)</h2>
+<p><br></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Decision Alternative</th>
+<th>Strong Demand <span class="math inline">\(s_1\)</span></th>
+<th>Weak Demand <span class="math inline">\(s_2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small complex, <span class="math inline">\(d_1\)</span></td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Medium complex, <span class="math inline">\(d_2\)</span></td>
+<td>14</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Large complex, <span class="math inline">\(d_3\)</span></td>
+<td>20</td>
+<td>-9</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="decision-strategy-with-perfect-information" class="level2">
+<h2 class="anchored" data-anchor-id="decision-strategy-with-perfect-information">Decision Strategy with Perfect Information</h2>
+<div style="font-size: 80%;">
+<p>With <strong>perfect information</strong> about the states of nature, PDC can tailor its decision strategy to maximize profits based on certainty about demand:</p>
+<ol type="1">
+<li>If PDC knows with certainty that <strong>strong demand</strong> (<span class="math inline">\(s_1\)</span>) will occur:</li>
+</ol>
+<ul>
+<li>The optimal decision is to select the <strong>large complex</strong> (<span class="math inline">\(d_3\)</span>), resulting in a payoff of <strong>$20 million</strong>.</li>
+</ul>
+<ol start="2" type="1">
+<li>If PDC knows with certainty that <strong>weak demand</strong> (<span class="math inline">\(s_2\)</span>) will occur:</li>
+</ol>
+<ul>
+<li>The optimal decision is to select the <strong>small complex</strong> (<span class="math inline">\(d_1\)</span>), resulting in a payoff of <strong>$7 million</strong>.</li>
+</ul>
+<div class="fragment">
+<p>This decision strategy demonstrates the value of perfect information by showing how it would enable PDC to make the most profitable choice in each scenario.</p>
+</div>
+<div class="fragment">
+<center>
+<strong>What is the expected value for this decision strategy?</strong>
+</center>
+</div>
+</div>
+</section>
+<section id="expected-value-of-this-decision-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="expected-value-of-this-decision-strategy">Expected Value of this Decision Strategy</h2>
+<center>
+What is the expected value for this decision strategy?
+</center>
+<div class="fragment">
+<p>To compute the expected value with perfect information, we return to the original probabilities for the states of nature:</p>
+<ul>
+<li><span class="math inline">\(P(s_1) = 0.8\)</span></li>
+<li><span class="math inline">\(P(s_2) = 0.2\)</span></li>
+</ul>
+</div>
+<div class="fragment">
+<p>So, the expected value of the decision strategy based on perfect information is:</p>
+<p><span class="math display">\[
+0.8(20) + 0.2(7) = 17.4
+\]</span></p>
+<p>We refer to the expected value of $17.4 million as the <strong>expected value with perfect information (EVwPI)</strong>.</p>
+</div>
+<!---
+
+## Branch Probabilities for the PDC Condominium Project Based on a Favorable Market Research Report
+
+| States of Nature $s_j$ | Prior Probabilities $P(s_j)$ | Conditional Probabilities $P(F | s_j)$ | Joint Probabilities $P(F \cap s_j)$ | Posterior Probabilities $P(s_j | F)$ |
+|----------------------------|----------------------------------|--------------------------------------------|------------------------------------------|-------------------------------------------|
+| $s_1$                  | 0.8                              | 0.90                                       | 0.72                                     | 0.94                                      |
+| $s_2$                  | 0.2                              | 0.25                                       | 0.05                                     | 0.06                                      |
+| **Total**                  | **1.0**                          |                                            | $P(F) = 0.77$                        | 1.00                                      |
+
+--->
+</section>
+<section id="expected-value-of-perfect-information-evpi-2" class="level2">
+<h2 class="anchored" data-anchor-id="expected-value-of-perfect-information-evpi-2">Expected Value <strong>of</strong> Perfect Information (EVPI)</h2>
+<p>In general, the <strong>expected value <em>of</em> perfect information (EVPI)</strong> is computed as follows:</p>
+<p><span class="math display">\[
+\text{EVPI} = | \text{EVwPI} - \text{EVwoPI} |
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><p><strong>EVPI</strong> = expected value of perfect information</p></li>
+<li><p><strong>EVwPI</strong> = expected value <em>with</em> perfect information about the states of nature</p></li>
+<li><p><strong>EVwoPI</strong> = expected value <em>without</em> perfect information about the states of nature</p></li>
+</ul>
+<div class="fragment">
+<div style="font-size: 90%;">
+<p>Note the role of the absolute value. For minimization problems, information helps reduce or lower cost; thus, the expected value with perfect information is less than or equal to the expected value without perfect information. In this case, EVPI is the magnitude of the difference between EVwPI and EVwoPI.</p>
+</div>
+</div>
+</section>
+<section id="example-expected-value-of-perfect-information-evpi" class="level2">
+<h2 class="anchored" data-anchor-id="example-expected-value-of-perfect-information-evpi">Example: Expected Value of Perfect Information (EVPI)</h2>
+<p>The expected value <strong>with</strong> perfect information is $17.4 million, and the expected value <strong>without</strong> perfect information (EVwoPI) is $14.2 million. Therefore, the expected value <strong>of</strong> perfect information (EVPI) is:</p>
+<p><span class="math display">\[
+\text{EVPI} = 17.4 - 14.2 = 3.2
+\]</span></p>
+<div class="fragment">
+<p>In other words, $3.2 million represents the additional expected value that can be obtained if perfect information were available about the states of nature.</p>
+</div>
+<div class="fragment">
+<p>Given the EVPI of $3.2 million, PDC might seriously consider a market survey as a way to obtain more information about the states of nature.</p>
+</div>
+</section>
+</section>
+<section id="decision-analysis-with-sample-information" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Decision Analysis with Sample Information</h1>
+<section id="decision-analysis-with-sample-information-1" class="level2">
+<h2 class="anchored" data-anchor-id="decision-analysis-with-sample-information-1">Decision Analysis with Sample Information</h2>
+<p>Additional information is often obtained through <strong>sample information</strong>, which provides insights into the likely states of nature. Common sources of sample information include:</p>
+<ul>
+<li><strong>Raw material sampling</strong></li>
+<li><strong>Product testing</strong></li>
+<li><strong>Market research studies</strong></li>
+</ul>
+<div class="fragment">
+<p>Using sample information, decision makers can update their <strong>prior probability</strong> estimates. These revised probabilities, adjusted based on new data, are referred to as <strong>posterior probabilities</strong>.</p>
+</div>
+</section>
+<section id="market-research-study-for-pdc" class="level2">
+<h2 class="anchored" data-anchor-id="market-research-study-for-pdc">Market Research Study for PDC</h2>
+<p>Let’s assume that PDC manager is considering a six-month market research study designed to learn more about potential market acceptance of the PDC condominium project.</p>
+<p>She anticipates that the market research study will provide one of the following two results:</p>
+<ol type="1">
+<li><p><strong>Favorable report</strong>: A significant number of the individuals contacted express interest in purchasing a PDC condominium.</p></li>
+<li><p><strong>Unfavorable report</strong>: Very few of the individuals contacted express interest in purchasing a PDC condominium.</p></li>
+</ol>
+</section>
+<section id="decision-tree-with-market-research-study" class="level2">
+<h2 class="anchored" data-anchor-id="decision-tree-with-market-research-study">Decision Tree with Market Research Study</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The decision tree for the PDC problem with sample information shows the logical sequence for the decisions and the chance events.</p>
+<ul>
+<li><p>PDC’s management must decide whether the market research should be conducted.</p></li>
+<li><p>If it is conducted, PDC’s management must be prepared to make a decision about the size of the condominium project if:</p>
+<ul>
+<li>the market research report is favorable or</li>
+<li>the market research report is unfavorable.</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_mkt_research_study.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="analysis-of-decision-tree-structure" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-of-decision-tree-structure">Analysis of Decision Tree Structure</h2>
+<div style="font-size: 60%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>In the decision tree diagram:</p>
+<ul>
+<li><p><strong>Squares represent decision nodes</strong>, where PDC actively makes a choice.</p></li>
+<li><p><strong>Circles represent chance nodes</strong>, where the outcome is determined by probability rather than a decision.</p></li>
+</ul>
+<div class="fragment">
+<p><strong>Key Nodes in the Decision Tree</strong></p>
+<ol type="1">
+<li><strong>Decision Node 1</strong>:
+<ul>
+<li>PDC must decide whether to conduct a <strong>market research study</strong>.</li>
+</ul></li>
+<li><strong>Chance Node 2</strong>:
+<ul>
+<li>If the study is conducted, the outcome—<strong>favorable</strong> or <strong>unfavorable report</strong>—is determined by chance, as PDC has no control over this result.</li>
+</ul></li>
+<li><strong>Decision Node 3</strong>:
+<ul>
+<li>If the report is favorable, PDC must choose the <strong>size of the complex</strong> (small, medium, or large) based on this information.</li>
+</ul></li>
+<li><strong>Decision Node 4</strong>:
+<ul>
+<li>If the report is unfavorable, PDC again chooses the <strong>size of the complex</strong> (small, medium, or large), this time with the knowledge of an unfavorable market assessment.</li>
+</ul></li>
+<li><strong>Chance Nodes 6 to 14</strong>:
+<ul>
+<li>These nodes represent the <strong>final demand outcomes</strong> (strong or weak) for each decision path. Here, the actual state of nature—<strong>strong demand</strong> or <strong>weak demand</strong>—is determined by chance.</li>
+</ul></li>
+</ol>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_mkt_research_study.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="probabilities-for-market-research-study" class="level2">
+<h2 class="anchored" data-anchor-id="probabilities-for-market-research-study">Probabilities for Market Research Study</h2>
+<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>PDC developed the following branch probabilities.</p>
+<ul>
+<li><p>If the market research study is undertaken,</p>
+<p><span class="math display">\[
+P(\text{Favorable report}) = P(F) = 0.77
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Unfavorable report}) = P(U) = 0.23
+\]</span></p></li>
+<li><p>If the market research report is favorable,</p>
+<p><span class="math display">\[
+P(\text{Strong demand given a favorable report}) = P(s_1 | F) = 0.94
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Weak demand given a favorable report}) = P(s_2 | F) = 0.06
+\]</span></p></li>
+<li><p>If the market research report is unfavorable,</p>
+<p><span class="math display">\[
+P(\text{Strong demand given an unfavorable report}) = P(s_1 | U) = 0.35
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Weak demand given an unfavorable report}) = P(s_2 | U) = 0.65
+\]</span></p></li>
+<li><p>If the market research report is not undertaken, the prior probabilities are applicable:</p>
+<p><span class="math display">\[
+P(\text{Strong demand}) = P(s_1) = 0.80
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Weak demand}) = P(s_2) = 0.20
+\]</span></p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_branch_probs.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="decision-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="decision-strategy">Decision Strategy</h2>
+<p><br></p>
+<p>The approach used to determine the <strong>optimal decision strategy</strong> is based on a backward pass through the decision tree using the following steps:</p>
+<ol type="1">
+<li><p><strong>At chance nodes</strong>, compute the expected value by multiplying the payoff at the end of each branch by the corresponding branch probability.</p></li>
+<li><p><strong>At decision nodes</strong>, select the decision branch that leads to the best expected value. This expected value becomes the expected value at the decision node.</p></li>
+</ol>
+</section>
+<section id="decision-strategy-1" class="level2">
+<h2 class="anchored" data-anchor-id="decision-strategy-1">Decision Strategy</h2>
+<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br></p>
+<p><br></p>
+<p>Starting the backward pass calculations by computing the <strong>expected values at chance nodes</strong> 6 to 14 provides the following results:</p>
+<p><br></p>
+<p><span class="math display">\[
+\begin{align*}
+\text{EV(Node 6)} &amp;= 0.94(8) + 0.06(7) = 7.94 \\
+\text{EV(Node 7)} &amp;= 0.94(14) + 0.06(5) = 13.46 \\
+\text{EV(Node 8)} &amp;= 0.94(20) + 0.06(-9) = 18.26 \\
+\text{EV(Node 9)} &amp;= 0.35(8) + 0.65(7) = 7.35 \\
+\text{EV(Node 10)} &amp;= 0.35(14) + 0.65(5) = 8.15 \\
+\text{EV(Node 11)} &amp;= 0.35(20) + 0.65(-9) = 1.15 \\
+\text{EV(Node 12)} &amp;= 0.80(8) + 0.20(7) = 7.80 \\
+\text{EV(Node 13)} &amp;= 0.80(14) + 0.20(5) = 12.20 \\
+\text{EV(Node 14)} &amp;= 0.80(20) + 0.20(-9) = 14.20 \\
+\end{align*}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_expected_values.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="selecting-best-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-best-decisions">Selecting Best Decisions</h2>
+<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Next, move to <strong>decision nodes</strong> 3, 4, and 5. For each of these nodes, select the decision alternative branch that leads to the best expected value.</p>
+<ul>
+<li><p>At node 3, the choices are:</p>
+<ul>
+<li>Small complex branch: EV(Node 6) = 7.94</li>
+<li>Medium complex branch: EV(Node 7) = 13.46</li>
+<li>Large complex branch: EV(Node 8) = 18.26</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>The best decision is the large complex, with EV(Node 3) = 18.26.</p>
+<ul>
+<li><p>At node 4, we select the best expected value from nodes 9, 10, and 11. The best decision is the medium complex, with EV(Node 4) = 8.15.</p></li>
+<li><p>For node 5, we select the best expected value from nodes 12, 13, and 14. The best decision is the large complex, with EV(Node 5) = 14.20.</p></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p>PDC Decision Tree After Choosing Best Decisions at Nodes 3, 4, and 5</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_best_decisions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="selecting-best-decisions-1" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-best-decisions-1">Selecting Best Decisions</h2>
+<div style="font-size: 80%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br></p>
+<p>The expected value at <strong>chance node</strong> 2 can now be computed as follows:</p>
+<p><span class="math display">\[
+\begin{align*}
+\text{EV(Node 2)} &amp;= 0.77 \times \text{EV(Node 3)} + 0.23 \times \text{EV(Node 4)} \\
+&amp;= 0.77(18.26) + 0.23(8.15) = 15.93
+\end{align*}
+\]</span></p>
+<p>This calculation reduces the decision tree to one involving only the two decision branches from node 1.</p>
+</div><div class="column" style="width:50%;">
+<p>PDC Decision Tree Reduced to Two Decision Branches</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_reduced_two_branches.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="final-decision-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="final-decision-strategy">Final Decision Strategy</h2>
+<div style="font-size: 80%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br></p>
+<p>At <strong>decision node 1</strong>, PDC can determine the optimal choice by comparing the expected values from nodes 2 and 5.</p>
+<div class="fragment">
+<p>The highest expected value is <strong>15.93</strong>, which supports the decision to conduct the <strong>market research study</strong>.</p>
+</div>
+<div class="fragment">
+<p><strong>The Optimal Decision Strategy for PDC</strong> is to conduct the market research study and then carry out the following decision strategy:</p>
+<ul>
+<li><p><strong>If the market research is favorable</strong>: Construct the <strong>large condominium complex</strong> to maximize profits (<span class="math inline">\(d_3\)</span>).</p></li>
+<li><p><strong>If the market research is unfavorable</strong>: Construct the <strong>medium condominium complex</strong> as a safer choice under lower demand expectations (<span class="math inline">\(d_2\)</span>).</p></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p>PDC Decision Tree After Choosing Best Decisions at Nodes 3, 4, and 5</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_best_decisions.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="summary-of-decision-tree-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-decision-tree-analysis">Summary of Decision Tree Analysis</h2>
+<ol type="1">
+<li><p><strong>Work backward through the tree</strong> to calculate expected values at each chance node.</p></li>
+<li><p><strong>Select the optimal decision branch</strong> at each decision node based on these expected values.</p></li>
+<li><p>The resulting sequence of optimal branches forms the <strong>final decision strategy</strong> for maximizing expected profit.</p></li>
+</ol>
+<div class="fragment">
+<p>By systematically calculating expected values and selecting the best options at each node, PDC arrives at a data-driven decision strategy that adapts based on the information received from the market research study.</p>
+</div>
+</section>
+<section id="expected-value-of-sample-information-formula" class="level2">
+<h2 class="anchored" data-anchor-id="expected-value-of-sample-information-formula">Expected Value of Sample Information Formula</h2>
+<p><span class="math display">\[
+\text{EVSI} = |\text{EVwSI} - \text{EVwoSI}|
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><strong>EVSI</strong> = expected value of sample information</li>
+<li><strong>EVwSI</strong> = expected value <em>with</em> sample information about the states of nature</li>
+<li><strong>EVwoSI</strong> = expected value <em>without</em> sample information about the states of nature</li>
+</ul>
+<div class="fragment">
+<div style="font-size: 90%;">
+<p>Note the role of the absolute value. For minimization problems, the expected value with sample information is always less than or equal to the expected value without sample information.</p>
+</div>
+</div>
+</section>
+<section id="example-expected-value-of-sample-information-evsi" class="level2">
+<h2 class="anchored" data-anchor-id="example-expected-value-of-sample-information-evsi">Example: Expected Value of Sample Information (EVSI)</h2>
+<p>The expected value associated with the market research study is $15.93.</p>
+<p>Before, we saw that the best expected value if the market research study is not undertaken is $14.20. Thus, we can conclude that the difference is:</p>
+<p><span class="math display">\[
+\text{EVSI} = 15.93 - 14.20 = 1.73
+\]</span></p>
+<p>that is the <strong>expected value of sample information (EVSI)</strong>.</p>
+<p>To conclude, conducting the market research study adds $1.73 million to the PDC expected value.</p>
+</section>
+</section>
+<section id="computing-branch-probabilities-using-bayes-theorem" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Computing Branch Probabilities Using Bayes’ Theorem</h1>
+<section id="computing-branch-probabilities-using-bayes-theorem-1" class="level2">
+<h2 class="anchored" data-anchor-id="computing-branch-probabilities-using-bayes-theorem-1">Computing Branch Probabilities Using Bayes’ Theorem</h2>
+<div style="font-size: 70%;">
+<p>The branch probabilities for the PDC decision tree chance nodes were specified in the problem description, with no computations initially required.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>PDC developed the following branch probabilities.</p>
+<ul>
+<li><p>If the market research study is undertaken,</p>
+<p><span class="math display">\[
+P(\text{Favorable report}) = P(F) = 0.77
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Unfavorable report}) = P(U) = 0.23
+\]</span></p></li>
+<li><p>If the market research report is favorable,</p>
+<p><span class="math display">\[
+P(\text{Strong demand given a favorable report}) = P(s_1 | F) = 0.94
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Weak demand given a favorable report}) = P(s_2 | F) = 0.06
+\]</span></p></li>
+<li><p>If the market research report is unfavorable,</p>
+<p><span class="math display">\[
+P(\text{Strong demand given an unfavorable report}) = P(s_1 | U) = 0.35
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Weak demand given an unfavorable report}) = P(s_2 | U) = 0.65
+\]</span></p></li>
+<li><p>If the market research report is not undertaken, the prior probabilities are applicable:</p>
+<p><span class="math display">\[
+P(\text{Strong demand}) = P(s_1) = 0.80
+\]</span></p>
+<p><span class="math display">\[
+P(\text{Weak demand}) = P(s_2) = 0.20
+\]</span></p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_branch_probs.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="computing-branch-probabilities-using-bayes-theorem-2" class="level2">
+<h2 class="anchored" data-anchor-id="computing-branch-probabilities-using-bayes-theorem-2">Computing Branch Probabilities Using Bayes’ Theorem</h2>
+<p>Now, we will see how <strong>Bayes’ theorem</strong> can be used to compute branch probabilities for decision trees.</p>
+<p>Bayes’ theorem is expressed as:</p>
+<p><span class="math display">\[
+P(s_j | F) = \frac{P(F | s_j) \cdot P(s_j)}{P(F)}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><p><span class="math inline">\(P(s_j | F)\)</span> is the posterior probability of state <span class="math inline">\(s_j\)</span> given a favorable report <span class="math inline">\(F\)</span>.</p></li>
+<li><p><span class="math inline">\(P(F | s_j)\)</span> is the conditional probability of receiving a favorable report given state <span class="math inline">\(s_j\)</span>.</p></li>
+<li><p><span class="math inline">\(P(s_j)\)</span> is the prior probability of state <span class="math inline">\(s_j\)</span>.</p></li>
+<li><p><span class="math inline">\(P(F)\)</span> is the total probability of receiving a favorable report.</p></li>
+</ul>
+</section>
+<section id="bayes-theorem-in-decision-trees" class="level2">
+<h2 class="anchored" data-anchor-id="bayes-theorem-in-decision-trees">Bayes’ Theorem in Decision Trees</h2>
+<div style="font-size: 60%;">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Definitions</strong></p>
+<p>Let:</p>
+<ul>
+<li><span class="math inline">\(F\)</span>: Favorable market research report</li>
+<li><span class="math inline">\(U\)</span>: Unfavorable market research report</li>
+<li><span class="math inline">\(s_1\)</span>: Strong demand (state of nature 1)</li>
+<li><span class="math inline">\(s_2\)</span>: Weak demand (state of nature 2)</li>
+</ul>
+<div class="fragment">
+<p><strong>Key Branch Probabilities</strong></p>
+<ul>
+<li><p><strong>At Chance Node 2</strong>: Determine probabilities of a favorable or unfavorable report: <span class="math inline">\(P(F)\)</span> and <span class="math inline">\(P(U)\)</span>.</p></li>
+<li><p><strong>At Chance Nodes 6, 7, and 8</strong>: Calculate <strong>posterior probabilities</strong> for demand given a favorable report:</p>
+<ul>
+<li><span class="math inline">\(P(s_1 | F)\)</span>: Probability of strong demand given a favorable report.</li>
+<li><span class="math inline">\(P(s_2 | F)\)</span>: Probability of weak demand given a favorable report.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+
+</div>
+<ul>
+<li><p><strong>At Chance Nodes 9, 10, and 11</strong>: Calculate <strong>posterior probabilities</strong> for demand given an unfavorable report:</p>
+<ul>
+<li><span class="math inline">\(P(s_1 | U)\)</span>: Probability of strong demand given an unfavorable report.</li>
+<li><span class="math inline">\(P(s_2 | U)\)</span>: Probability of weak demand given an unfavorable report.</li>
+</ul></li>
+<li><p><strong>At Chance Nodes 12, 13, and 14</strong>: Use prior probabilities <span class="math inline">\(P(s_1)\)</span> and <span class="math inline">\(P(s_2)\)</span> if the market research study is not conducted.</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<center>
+The PDC Decision Tree
+</center>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/decision_tree_PDC_bayes.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="conditional-probability-calculations" class="level2">
+<h2 class="anchored" data-anchor-id="conditional-probability-calculations">Conditional Probability Calculations</h2>
+<div style="font-size: 70%;">
+<p>To perform the probability computations, we need two main sets of probabilities:</p>
+<ol type="1">
+<li><p><strong>Prior Probabilities</strong>: PDC’s initial assessment of the likelihood of each state of nature:</p>
+<ul>
+<li><span class="math inline">\(P(s_1)\)</span>: Probability of strong demand.</li>
+<li><span class="math inline">\(P(s_2)\)</span>: Probability of weak demand.</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li><strong>Conditional Probabilities</strong>: Likelihood of specific market research outcomes (sample information) given each state of nature.</li>
+</ol>
+<div class="fragment">
+<ul>
+<li><p><strong>Favorable Report</strong>:</p>
+<ul>
+<li><span class="math inline">\(P(F | s_1)\)</span>: Probability of favorable report given strong demand.</li>
+<li><span class="math inline">\(P(F | s_2)\)</span>: Probability of favorable report given weak demand.</li>
+</ul></li>
+<li><p><strong>Unfavorable Report</strong>:</p>
+<ul>
+<li><span class="math inline">\(P(U | s_1)\)</span>: Probability of unfavorable report given strong demand.</li>
+<li><span class="math inline">\(P(U | s_2)\)</span>: Probability of unfavorable report given weak demand.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<p>These conditional probabilities allow us to use Bayes’ theorem to update prior probabilities based on market research outcomes, leading to more informed decision-making.</p>
+</div>
+</div>
+</section>
+<section id="market-research-probabilities-table" class="level2">
+<h2 class="anchored" data-anchor-id="market-research-probabilities-table">Market Research Probabilities Table</h2>
+<p><br></p>
+<p>We assume that the following assessments are available for these conditional probabilities. This is the key piece of information that we use to compute the branches probabilities.</p>
+<p><br></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>State of Nature / Market Research</th>
+<th>Favorable, <span class="math inline">\(F\)</span></th>
+<th>Unfavorable, <span class="math inline">\(U\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Strong demand, <span class="math inline">\(s_1\)</span></td>
+<td><span class="math inline">\(P(F|s_1) = 0.90\)</span></td>
+<td><span class="math inline">\(P(U|s_1) = 0.10\)</span></td>
+</tr>
+<tr class="even">
+<td>Weak demand, <span class="math inline">\(s_2\)</span></td>
+<td><span class="math inline">\(P(F|s_2) = 0.25\)</span></td>
+<td><span class="math inline">\(P(U|s_2) = 0.75\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Note: These probability assessments provide a reasonable degree of confidence in the market research study:</p>
+<ul>
+<li>If <span class="math inline">\(s_1\)</span> is true, <span class="math inline">\(P(F|s_1) = 0.90\)</span> and <span class="math inline">\(P(U|s_1) = 0.10\)</span>.</li>
+<li>If <span class="math inline">\(s_2\)</span> is true, <span class="math inline">\(P(F|s_2) = 0.25\)</span> and <span class="math inline">\(P(U|s_2) = 0.75\)</span>.</li>
+</ul>
+</section>
+<section id="tabular-computation-branch-probabilities-for-favorable-report" class="level2">
+<h2 class="anchored" data-anchor-id="tabular-computation-branch-probabilities-for-favorable-report">Tabular Computation: Branch Probabilities for Favorable Report</h2>
+<div style="font-size: 70%;">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Steps for Tabular Probability Computation</strong></p>
+<ul>
+<li><p><strong>Step 1</strong>: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of a favorable report <span class="math inline">\(F\)</span> given each state of nature.</p></li>
+<li><p><strong>Step 2</strong>: In column 4, compute the joint probabilities by multiplying the prior probability values in column 2 by the corresponding conditional probabilities in column 3.</p></li>
+<li><p><strong>Step 3</strong>: Sum the joint probabilities in column 4 to obtain the probability of a favorable report, <span class="math inline">\(P(F)\)</span>.</p></li>
+<li><p><strong>Step 4</strong>: Divide each joint probability in column 4 by <span class="math inline">\(P(F) = 0.77\)</span> to obtain the revised or posterior probabilities, <span class="math inline">\(P(s_1|F)\)</span> and <span class="math inline">\(P(s_2|F)\)</span>.</p></li>
+</ul>
+</div><div class="column" style="width:70%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">(1)<br>States of Nature <span class="math inline">\(s_j\)</span></th>
+<th style="text-align: center;">(2)<br>Prior Probabilities <span class="math inline">\(P(s_j)\)</span></th>
+<th style="text-align: center;">(3)<br>Conditional Probabilities <span class="math inline">\(P(F | s_j)\)</span></th>
+<th style="text-align: center;">(4)<br>Joint Probabilities <span class="math inline">\(P(F \cap s_j)\)</span></th>
+<th style="text-align: center;">(5)<br>Posterior Probabilities <span class="math inline">\(P(s_j | F)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(s_1\)</span></td>
+<td style="text-align: center;">0.8</td>
+<td style="text-align: center;">0.90</td>
+<td style="text-align: center;"><span class="math inline">\(0.80\times0.90 = 0.72\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{0.72}{0.77}=0.94\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(s_2\)</span></td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.25</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">0.06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>1.0</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P(F) = 0.77\)</span></td>
+<td style="text-align: center;">1.00</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<div class="fragment">
+<p>The Table shows that the probability of obtaining a favorable report is <span class="math inline">\(P(F) = 0.77\)</span>.</p>
+<p>In addition:</p>
+<ul>
+<li><p><span class="math inline">\(P(s_1|F) = 0.94\)</span></p></li>
+<li><p><span class="math inline">\(P(s_2|F) = 0.06\)</span></p></li>
+</ul>
+</div>
+<div class="fragment">
+<p>Note that a favorable report prompts a <strong>posterior probability</strong> of 0.94 that demand will be strong (<span class="math inline">\(s_1\)</span>).</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="tabular-computation-branch-probabilities-for-unfavorable-report" class="level2">
+<h2 class="anchored" data-anchor-id="tabular-computation-branch-probabilities-for-unfavorable-report">Tabular Computation: Branch Probabilities for Unfavorable Report</h2>
+<div style="font-size: 70%;">
+<p>The tabular probability computation procedure must be repeated for each possible sample information outcome.</p>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><strong>Steps for Tabular Probability Computation</strong></p>
+<ul>
+<li><p><strong>Step 1</strong>: In column 1, enter the states of nature. In column 2, enter the prior probabilities. In column 3, enter the conditional probabilities of an unfavorable report <span class="math inline">\(U\)</span> given each state of nature.</p></li>
+<li><p><strong>Step 2</strong>: In column 4, compute the joint probabilities by multiplying the prior probability values in column 2 by the corresponding conditional probabilities in column 3.</p></li>
+<li><p><strong>Step 3</strong>: Sum the joint probabilities in column 4 to obtain the probability of an unfavorable report, <span class="math inline">\(P(U)\)</span>.</p></li>
+<li><p><strong>Step 4</strong>: Divide each joint probability in column 4 by <span class="math inline">\(P(U) = 0.23\)</span> to obtain the revised or posterior probabilities, <span class="math inline">\(P(s_1|U)\)</span> and <span class="math inline">\(P(s_2|U)\)</span>.</p></li>
+</ul>
+</div><div class="column" style="width:70%;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">(1)<br>States of Nature <span class="math inline">\(s_j\)</span></th>
+<th style="text-align: center;">(2)<br>Prior Probabilities <span class="math inline">\(P(s_j)\)</span></th>
+<th style="text-align: center;">(3)<br>Conditional Probabilities <span class="math inline">\(P(U | s_j)\)</span></th>
+<th style="text-align: center;">(4)<br>Joint Probabilities <span class="math inline">\(P(U \cap s_j)\)</span></th>
+<th style="text-align: center;">(5)<br>Posterior Probabilities <span class="math inline">\(P(s_j | U)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(s_1\)</span></td>
+<td style="text-align: center;">0.8</td>
+<td style="text-align: center;">0.10</td>
+<td style="text-align: center;"><span class="math inline">\(0.8\times0.1=0.08\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{0.08}{0.23}=0.35\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(s_2\)</span></td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.75</td>
+<td style="text-align: center;">0.15</td>
+<td style="text-align: center;">0.65</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>1.0</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><span class="math inline">\(P(U) = 0.23\)</span></td>
+<td style="text-align: center;">1.00</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>The probability of an unfavorable report is <span class="math inline">\(P(U) = 0.23\)</span>.</p>
+<p>With an unfavorable report:</p>
+<ul>
+<li><p><span class="math inline">\(P(s_1|U) = 0.35\)</span></p></li>
+<li><p><span class="math inline">\(P(s_2|U) = 0.65\)</span></p></li>
+<li><p>Note that an unfavorable report prompts a <strong>posterior probability</strong> of 0.65 that demand will be weak <span class="math inline">\((s_2)\)</span>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<ul>
+<li><p>The resulting <strong>posterior probabilities</strong> provide a clearer understanding of potential outcomes, enabling PDC to select the optimal path based on updated insights. To recap from previous slides:</p>
+<ul>
+<li><p><strong>The Optimal Decision Strategy for PDC</strong> is to conduct the market research study and then carry out the following decision strategy, with EV = 15.93:</p>
+<ul>
+<li><p><strong>If the market research is favorable</strong>: Construct the <strong>large condominium complex</strong> to maximize profits (<span class="math inline">\(d_3\)</span>) with EV = 18.26.</p></li>
+<li><p><strong>If the market research is unfavorable</strong>: Construct the <strong>medium condominium complex</strong> as a safer choice under lower demand expectations (<span class="math inline">\(d_2\)</span>) with EV = 8.15.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="summary" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Summary</h1>
+<section id="summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
+<div style="font-size: 80%;">
+<div class="nonincremental">
+<p>Some key takeaways from this session:</p>
+<ul>
+<li><p><strong>Decision Analysis Structure</strong>: A structured approach using payoff tables and decision trees allows for organized, strategic decision-making, particularly in uncertain conditions.</p></li>
+<li><p><strong>Expected Value Approach</strong>: By calculating expected values across different states of nature, we can identify optimal decisions based on probabilistic outcomes, maximizing potential profits.</p></li>
+<li><p><strong>Value of Information</strong>:</p>
+<ul>
+<li><strong>Expected Value of Perfect Information (EVPI)</strong>: Quantifies the benefit of having certainty about future states, guiding decision-makers on how much to invest in obtaining information.</li>
+<li><strong>Expected Value of Sample Information (EVSI)</strong>: Measures the potential benefit of additional data (e.g., market research), providing insight on the value of partial or imperfect information.</li>
+</ul></li>
+<li><p><strong>Bayes’ Theorem in Decision Trees</strong>: Allows for updating probabilities based on new evidence (e.g., favorable or unfavorable reports) to make more informed, dynamic decisions.</p></li>
+<li><p><strong>Decision Trees with Probabilities</strong>: Decision trees not only display possible decisions and outcomes but, with added probabilities, allow for more precise expected value calculations.</p></li>
+<li><p><strong>Optimal Decision Strategy</strong>: Analyzing decision trees and recalculating with updated probabilities leads to a final strategy that maximizes expected outcomes based on the best available information.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="summary-2" class="level2">
+<h2 class="anchored" data-anchor-id="summary-2">Summary</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 29%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Purpose</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Payoff</strong></td>
+<td>Quantitative value of profit/loss for a decision-state combination</td>
+<td>Used to evaluate and compare decision alternatives</td>
+<td>Building a large complex yields $20 million if demand is high.</td>
+</tr>
+<tr class="even">
+<td><strong>Results</strong></td>
+<td>Actual effects observed after decision and state of nature occur</td>
+<td>Evaluate real-world effectiveness of decision</td>
+<td>Medium complex yields a realized profit of $14 million.</td>
+</tr>
+<tr class="odd">
+<td><strong>Outputs</strong></td>
+<td>Immediate, measurable consequences from the decision</td>
+<td>Provide operational metrics</td>
+<td>Number of units built, time to completion, occupancy rate.</td>
+</tr>
+<tr class="even">
+<td><strong>Outcomes</strong></td>
+<td>Broader end results, often aligned with goals/objectives</td>
+<td>Assess decision’s success in achieving goals</td>
+<td>Profit, market reputation, customer satisfaction, future demand</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="thank-you" class="level1" data-background-color="#cfb991">
+<h1 data-background-color="#cfb991">Thank you!</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
