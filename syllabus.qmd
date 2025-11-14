@@ -42,13 +42,13 @@ Our primary goal is to instill in students the quantitative and data analysis sk
 
 Because modern data analysis relies heavily on computers and software, we will emphasize practical applications using Microsoft Excel (with exposure to Minitab, R, or Python when relevant).
 
-**Course Website**: [https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305){target="_blank"}
+**Course Website**: [https://davi-moreira.github.io/2026S_business_statistics_purdue_MGMT305/](https://davi-moreira.github.io/2026S_business_statistics_purdue_MGMT305/){target="_blank"}
 
 ## Instructor
 
 ### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
 
--   Office: Young Hall 414
+-   Office: Young Hall 1019
 -   Email: [dmoreira\@purdue.edu](mailto:dmoreira@purdue.edu)
 -   Virtual Office hours: Zoom link in your Course Brightspace Page
 -   Individual Appointments: Book time with me through the link in the course syllabus on your Course Brightspace Page or by appointment.
@@ -60,8 +60,7 @@ By the end of this course, students will be able to:
 1.  Understand the basic statistical principles and their applications in the area of management and business.\
 2.  Understand fundamental issues in business and management.\
 3.  Describe and use the commonly used statistical techniques for analyzing business data.\
-4.  Understand the impacts of recent developments in big data and AI in business and management.\
-5.  Be proficient in using Excel to carry out statistical and analytics methods covered in the course.
+4.  Be proficient in using Excel to carry out statistical and analytics methods covered in the course.
 
 ## Course Materials
 
@@ -95,16 +94,21 @@ Below are the grading components and their respective weights:
 
 | **Assessment**               | **Weight** |
 |------------------------------|:----------:|
-| **Attendance/Participation** |     7%     |
+| **Attendance**               |     3%     |
+| **Participation**            |     7%     |
 | **Homework** (8 total)       |    28%     |
 | **Quizzes** (3 total)        |    15%     |
 | **Midterms** (2 total)       |    30%     |
 | **Final** (cumulative)       |    20%     |
 
-### Attendance and Participation
 
--   Attendance will be recorded randomly via participatory activities.\
--   According to Purdue regulations, students are expected to be present at every scheduled session. Missing class negatively impacts your ability to succeed.
+### Attendance 
+
+Attendance is essential for success in this course. If you do not attend class regularly, you are unlikely to succeed. According to the [University regulations](https://catalog.purdue.edu/content.php?catoid=15&navoid=18634#classes), “Scheduled courses allow students to avoid conflicts and reflect the University’s expectation that students should be present for every meeting of a class/laboratory for which they are registered.” Attendance will be recorded using iClicker, and these records will be reflected in your gradebook at the end of the semester. A minimum attendance rate of 85% is required to meet the expectations of this course.
+
+### Participation 
+
+Participate and take participatory activities. During the semester you will be required to take participatory activities. Your participation grade will be based on this record. 
 
 ### Homework
 
@@ -122,7 +126,7 @@ Below are the grading components and their respective weights:
 
 ### Midterms
 
--   **Two** midterms, each worth 15%. Neither is cumulative.\
+-   **Two** in-person midterms exams, each worth 15%. Neither is cumulative.\
 -   Exams test technical calculation skills and conceptual understanding similar to homework problems.\
 -   Calculators without internet or USB capabilities are allowed; phones/watches are not.
 

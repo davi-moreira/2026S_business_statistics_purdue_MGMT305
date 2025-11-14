@@ -25,7 +25,7 @@ Our main goal is to instill the basic quantitative and data analysis skills need
 
 Since modern data analysis is primarily performed using computers and various sophisticated software, this course will also emphasize software applications (such as Minitab, R, or Python). However, Microsoft Excel is the primary software tool demonstrated in this course.
 
-**Course Website**: [https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305/](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305/){target="_blank"}
+**Course Website**: [https://davi-moreira.github.io/2026S_business_statistics_purdue_MGMT305/](https://davi-moreira.github.io/2026S_business_statistics_purdue_MGMT305/){target="_blank"}
 
 ### Instructor: [Professor Davi Moreira](https://davi-moreira.github.io)
 
@@ -40,8 +40,7 @@ By the end of this course, students will be able to:
 1.  Understand the basic statistical principles and their applications in the area of management and business.\
 2.  Understand fundamental issues in business and management.\
 3.  Describe and use the commonly used statistical techniques for analyzing business data.\
-4.  Understand the impacts of recent developments in big data and AI in business and management.\
-5.  Be proficient in using Excel to carry out statistical and analytics methods covered in the course.
+4.  Be proficient in using Excel to carry out statistical and analytics methods covered in the course.
 
 ### Prerequisite
 
