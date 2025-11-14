@@ -1,274 +1,151 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Professor Davi Moreira ">
-
-<title> MGMT 30500: Business Statistics  – MGMT 30500: Business Statistics</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<html lang="en"><head>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-79df7ed5347781c1339259261daa236f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
-<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
+  <meta name="author" content="Professor Davi Moreira ">
+  <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
     }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../styles.css">
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
 
-<body class="nav-sidebar docked quarto-light">
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
+  <p class="subtitle"><span style="font-size: 150%;"> Logistic Regression</span></p>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/mgmt_305_ai_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-      <div class="sidebar-tools-main">
-    <a href="https://github.com/davi-moreira/2025S_business_statistics_purdue_MGMT305" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Professor<br>Davi Moreira<br> 
 </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syllabus</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../material.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Material</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a>
-  <ul class="collapse">
-  <li><a href="#motivation-1" id="toc-motivation-1" class="nav-link" data-scroll-target="#motivation-1">Motivation</a></li>
-  <li><a href="#review-of-linear-estimation" id="toc-review-of-linear-estimation" class="nav-link" data-scroll-target="#review-of-linear-estimation">Review of Linear Estimation</a></li>
-  <li><a href="#review-of-linear-estimation-1" id="toc-review-of-linear-estimation-1" class="nav-link" data-scroll-target="#review-of-linear-estimation-1">Review of Linear Estimation</a></li>
-  </ul></li>
-  <li><a href="#general-linear-model" id="toc-general-linear-model" class="nav-link" data-scroll-target="#general-linear-model">General Linear Model</a>
-  <ul class="collapse">
-  <li><a href="#general-linear-model-1" id="toc-general-linear-model-1" class="nav-link" data-scroll-target="#general-linear-model-1">General Linear Model</a></li>
-  <li><a href="#general-linear-model-2" id="toc-general-linear-model-2" class="nav-link" data-scroll-target="#general-linear-model-2">General Linear Model</a></li>
-  <li><a href="#binary-dependent-variable" id="toc-binary-dependent-variable" class="nav-link" data-scroll-target="#binary-dependent-variable">Binary Dependent Variable</a></li>
-  </ul></li>
-  <li><a href="#understanding-the-link-function" id="toc-understanding-the-link-function" class="nav-link" data-scroll-target="#understanding-the-link-function">Understanding the Link Function</a>
-  <ul class="collapse">
-  <li><a href="#understanding-the-link-function-1" id="toc-understanding-the-link-function-1" class="nav-link" data-scroll-target="#understanding-the-link-function-1">Understanding the Link Function</a></li>
-  <li><a href="#understanding-the-link-function-2" id="toc-understanding-the-link-function-2" class="nav-link" data-scroll-target="#understanding-the-link-function-2">Understanding the Link Function</a></li>
-  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution:</a></li>
-  <li><a href="#understanding-the-link-function-3" id="toc-understanding-the-link-function-3" class="nav-link" data-scroll-target="#understanding-the-link-function-3">Understanding the Link Function</a></li>
-  <li><a href="#the-role-of-the-link-function" id="toc-the-role-of-the-link-function" class="nav-link" data-scroll-target="#the-role-of-the-link-function">The Role of the Link Function</a></li>
-  <li><a href="#logit-models" id="toc-logit-models" class="nav-link" data-scroll-target="#logit-models">Logit Models</a></li>
-  <li><a href="#logistic-function-vs-normal-distribution" id="toc-logistic-function-vs-normal-distribution" class="nav-link" data-scroll-target="#logistic-function-vs-normal-distribution">Logistic Function vs Normal Distribution</a></li>
-  </ul></li>
-  <li><a href="#the-logit-link-function" id="toc-the-logit-link-function" class="nav-link" data-scroll-target="#the-logit-link-function">The Logit Link Function</a>
-  <ul class="collapse">
-  <li><a href="#the-logit-link-function-1" id="toc-the-logit-link-function-1" class="nav-link" data-scroll-target="#the-logit-link-function-1">The Logit Link Function</a></li>
-  <li><a href="#the-logit-link-function-2" id="toc-the-logit-link-function-2" class="nav-link" data-scroll-target="#the-logit-link-function-2">The Logit Link Function</a></li>
-  <li><a href="#estimating-the-event-probability" id="toc-estimating-the-event-probability" class="nav-link" data-scroll-target="#estimating-the-event-probability">Estimating the Event Probability</a></li>
-  <li><a href="#interpretation-of-beta_1-via-lnodds" id="toc-interpretation-of-beta_1-via-lnodds" class="nav-link" data-scroll-target="#interpretation-of-beta_1-via-lnodds">Interpretation of <span class="math inline">\(\beta_1\)</span> via Ln(Odds)</a></li>
-  <li><a href="#interpretation-of-ebeta_1-via-odds-ratio" id="toc-interpretation-of-ebeta_1-via-odds-ratio" class="nav-link" data-scroll-target="#interpretation-of-ebeta_1-via-odds-ratio">Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> via Odds Ratio</a></li>
-  <li><a href="#interpretation-of-ebeta_1-continuous-predictor-x" id="toc-interpretation-of-ebeta_1-continuous-predictor-x" class="nav-link" data-scroll-target="#interpretation-of-ebeta_1-continuous-predictor-x">Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> (Continuous Predictor, <span class="math inline">\(x\)</span>)</a></li>
-  </ul></li>
-  <li><a href="#motivation-binomial-logit-model" id="toc-motivation-binomial-logit-model" class="nav-link" data-scroll-target="#motivation-binomial-logit-model">Motivation: Binomial Logit Model</a>
-  <ul class="collapse">
-  <li><a href="#motivation-binomial-logit-model-1" id="toc-motivation-binomial-logit-model-1" class="nav-link" data-scroll-target="#motivation-binomial-logit-model-1">Motivation: Binomial Logit Model</a></li>
-  <li><a href="#estimating-the-model-r-output" id="toc-estimating-the-model-r-output" class="nav-link" data-scroll-target="#estimating-the-model-r-output">Estimating the Model: <code>R</code> Output</a></li>
-  <li><a href="#output-model-summary" id="toc-output-model-summary" class="nav-link" data-scroll-target="#output-model-summary">Output: Model Summary</a></li>
-  <li><a href="#output-model-fit-statistics" id="toc-output-model-fit-statistics" class="nav-link" data-scroll-target="#output-model-fit-statistics">Output: Model Fit Statistics</a></li>
-  <li><a href="#output-coefficients" id="toc-output-coefficients" class="nav-link" data-scroll-target="#output-coefficients">Output: Coefficients</a></li>
-  </ul></li>
-  <li><a href="#from-log-odds-to-odds-and-probabilities" id="toc-from-log-odds-to-odds-and-probabilities" class="nav-link" data-scroll-target="#from-log-odds-to-odds-and-probabilities">From Log-Odds to Odds and Probabilities</a>
-  <ul class="collapse">
-  <li><a href="#from-log-odds-to-odds-and-probabilities-1" id="toc-from-log-odds-to-odds-and-probabilities-1" class="nav-link" data-scroll-target="#from-log-odds-to-odds-and-probabilities-1">From Log-Odds to Odds and Probabilities</a></li>
-  <li><a href="#from-log-odds-to-odds" id="toc-from-log-odds-to-odds" class="nav-link" data-scroll-target="#from-log-odds-to-odds">From Log-Odds to Odds</a></li>
-  <li><a href="#from-log-odds-to-probabilities" id="toc-from-log-odds-to-probabilities" class="nav-link" data-scroll-target="#from-log-odds-to-probabilities">From Log-Odds to Probabilities</a></li>
-  <li><a href="#interpretation-of-results-log-odds" id="toc-interpretation-of-results-log-odds" class="nav-link" data-scroll-target="#interpretation-of-results-log-odds">Interpretation of Results: Log-Odds</a></li>
-  <li><a href="#interpretation-of-results-odds" id="toc-interpretation-of-results-odds" class="nav-link" data-scroll-target="#interpretation-of-results-odds">Interpretation of Results: Odds</a></li>
-  <li><a href="#interpretation-of-results-probability" id="toc-interpretation-of-results-probability" class="nav-link" data-scroll-target="#interpretation-of-results-probability">Interpretation of Results: Probability</a></li>
-  <li><a href="#interpretation-of-results-predicted-probability" id="toc-interpretation-of-results-predicted-probability" class="nav-link" data-scroll-target="#interpretation-of-results-predicted-probability">Interpretation of Results: Predicted Probability</a></li>
-  <li><a href="#example-output-conclusion" id="toc-example-output-conclusion" class="nav-link" data-scroll-target="#example-output-conclusion">Example Output: Conclusion</a></li>
-  <li><a href="#additional-material" id="toc-additional-material" class="nav-link" data-scroll-target="#additional-material">Additional Material</a></li>
-  </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
-  <ul class="collapse">
-  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
-  <li><a href="#summary-2" id="toc-summary-2" class="nav-link" data-scroll-target="#summary-2">Summary</a></li>
-  <li><a href="#summary-3" id="toc-summary-3" class="nav-link" data-scroll-target="#summary-3">Summary</a></li>
-  </ul></li>
-  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="16_02_logistic_regression.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
-<p class="subtitle lead"><span style="font-size: 150%;"> Logistic Regression</span></p>
+</div>
 </div>
 
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Professor<br>Davi Moreira<br> </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+</section>
+<section id="overview" class="slide level2 center">
+<h2>Overview</h2>
 <!--- Very interesting package for equations: https://datalorax.github.io/equatiomatic/ --->
-<div class="nonincremental">
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
@@ -276,21 +153,21 @@ window.Quarto = {
 </ul>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 
-</div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="motivation" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Motivation</h1>
-<section id="motivation-1" class="level2">
-<h2 class="anchored" data-anchor-id="motivation-1">Motivation</h2>
-<div class="nonincremental">
+<section>
+<section id="motivation" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Motivation</h1>
+
+</section>
+<section id="motivation-1" class="slide level2 center">
+<h2>Motivation</h2>
 <ul>
 <li>What is the probability of success of a candidate based on the data below?</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<table class="table caption-top" data-quarto-postprocess="true" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">admit</th>
@@ -346,30 +223,29 @@ window.Quarto = {
 <li><code>rank</code>: prestige of undergraduate institution</li>
 <li><code>admit</code>: admission to graduate school</li>
 </ul>
-</div>
 </section>
-<section id="review-of-linear-estimation" class="level2">
-<h2 class="anchored" data-anchor-id="review-of-linear-estimation">Review of Linear Estimation</h2>
+<section id="review-of-linear-estimation" class="slide level2 center">
+<h2>Review of Linear Estimation</h2>
 <p><br></p>
 <center>
 <p><span class="math inline">\(Y = \beta_{0} + \beta_{1}X + \beta_{2}Z + \epsilon\)</span></p>
 </center>
 <p><br></p>
 <ul>
-<li><p>We could transform or add variables to achieve model linearity:</p>
+<li class="fragment"><p>We could transform or add variables to achieve model linearity:</p>
 <ul>
-<li>Taking logarithms of Y and/or X’s;</li>
-<li>Adding quadratic terms;</li>
-<li>Adding interactions.</li>
+<li class="fragment">Taking logarithms of Y and/or X’s;</li>
+<li class="fragment">Adding quadratic terms;</li>
+<li class="fragment">Adding interactions.</li>
 </ul></li>
 </ul>
 <p><br></p>
 <ul>
-<li>Then we run our estimation, check model quality, visualize results, etc.</li>
+<li class="fragment">Then we run our estimation, check model quality, visualize results, etc.</li>
 </ul>
 </section>
-<section id="review-of-linear-estimation-1" class="level2">
-<h2 class="anchored" data-anchor-id="review-of-linear-estimation-1">Review of Linear Estimation</h2>
+<section id="review-of-linear-estimation-1" class="slide level2 center">
+<h2>Review of Linear Estimation</h2>
 <p><br></p>
 <center>
 <p><span class="math inline">\(Y = \beta_{0} + \beta_{1}X + \beta_{2}Z + \epsilon\)</span></p>
@@ -380,15 +256,17 @@ window.Quarto = {
 <center>
 <p><strong>What do we do when it is not numerical/continuous?</strong></p>
 </center>
+</section></section>
+<section>
+<section id="general-linear-model" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>General Linear Model</h1>
+
 </section>
-</section>
-<section id="general-linear-model" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">General Linear Model</h1>
-<section id="general-linear-model-1" class="level2">
-<h2 class="anchored" data-anchor-id="general-linear-model-1">General Linear Model</h2>
+<section id="general-linear-model-1" class="slide level2 center">
+<h2>General Linear Model</h2>
 <ul>
-<li><p>Models in which the parameters <span class="math inline">\((\beta_0, \beta_1, \ldots, \beta_p)\)</span> all have exponents of one are called <strong>linear models</strong>.</p></li>
-<li><p>A <strong>general linear model</strong> involving <span class="math inline">\(p\)</span> independent variables (<span class="math inline">\(z_i\)</span>’s) is:</p></li>
+<li class="fragment"><p>Models in which the parameters <span class="math inline">\((\beta_0, \beta_1, \ldots, \beta_p)\)</span> all have exponents of one are called <strong>linear models</strong>.</p></li>
+<li class="fragment"><p>A <strong>general linear model</strong> involving <span class="math inline">\(p\)</span> independent variables (<span class="math inline">\(z_i\)</span>’s) is:</p></li>
 </ul>
 <div class="fragment">
 <p><span class="math display">\[
@@ -396,14 +274,13 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 \]</span></p>
 <p>where each independent variable <span class="math inline">\(z_i\)</span> is a (linear or nonlinear) function of <span class="math inline">\(x_1, x_2, \ldots, x_k\)</span> (the variables for which data have been collected).</p>
 <ul>
-<li>Here, <span class="math inline">\(y\)</span> can be a function of the original response variable as well.</li>
+<li class="fragment">Here, <span class="math inline">\(y\)</span> can be a function of the original response variable as well.</li>
 </ul>
 </div>
 </section>
-<section id="general-linear-model-2" class="level2">
-<h2 class="anchored" data-anchor-id="general-linear-model-2">General Linear Model</h2>
+<section id="general-linear-model-2" class="slide level2 center">
+<h2>General Linear Model</h2>
 <p><br></p>
-<div class="nonincremental">
 <p>The <strong>General Linear Model</strong> can be used to relates the dependent variable <span class="math inline">\(Y\)</span> to the systematic part of the model (linear predictors) through a link function.</p>
 <ul>
 <li>From:</li>
@@ -424,10 +301,9 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 <p><br></p>
 </div>
 <p><font size="3"><strong>Source</strong>: <a href="https://en.wikipedia.org/wiki/Generalized_linear_model">Wikipedia - Generalized linear model.</a></font></p>
-</div>
 </section>
-<section id="binary-dependent-variable" class="level2">
-<h2 class="anchored" data-anchor-id="binary-dependent-variable">Binary Dependent Variable</h2>
+<section id="binary-dependent-variable" class="slide level2 center">
+<h2>Binary Dependent Variable</h2>
 <p><br></p>
 <p>Therefore, the predicted probabilities of a binary dependent variable model can be given by:</p>
 <p><br></p>
@@ -436,60 +312,38 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 </center>
 <p><br></p>
 <p>where <span class="math inline">\(\Lambda(\hat{X}_{i}B)\)</span> is the systematic (linear) component of the model.</p>
+</section></section>
+<section>
+<section id="understanding-the-link-function" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Understanding the Link Function</h1>
+
 </section>
-</section>
-<section id="understanding-the-link-function" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Understanding the Link Function</h1>
-<section id="understanding-the-link-function-1" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-link-function-1">Understanding the Link Function</h2>
+<section id="understanding-the-link-function-1" class="slide level2 center">
+<h2>Understanding the Link Function</h2>
 <p><br></p>
 <center>
 How to solve this problem?
 </center>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="16_02_logistic_regression_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="understanding-the-link-function-2" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-link-function-2">Understanding the Link Function</h2>
+
+<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="understanding-the-link-function-2" class="slide level2 center">
+<h2>Understanding the Link Function</h2>
 <p><br></p>
 <center>
 How to solve this problem?
 </center>
 <ul>
-<li><p>We need to transform <span class="math inline">\(Y\)</span> (dichotomous) into a continuous variable <span class="math inline">\(Y'\)</span> (<span class="math inline">\(-\infty\)</span>, <span class="math inline">\(\infty\)</span>);</p></li>
-<li><p>To do this, we need a link function that performs this transformation.</p></li>
+<li class="fragment"><p>We need to transform <span class="math inline">\(Y\)</span> (dichotomous) into a continuous variable <span class="math inline">\(Y'\)</span> (<span class="math inline">\(-\infty\)</span>, <span class="math inline">\(\infty\)</span>);</p></li>
+<li class="fragment"><p>To do this, we need a link function that performs this transformation.</p></li>
 </ul>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="16_02_logistic_regression_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="solution" class="level2">
-<h2 class="anchored" data-anchor-id="solution">Solution:</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="16_02_logistic_regression_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="understanding-the-link-function-3" class="level2">
-<h2 class="anchored" data-anchor-id="understanding-the-link-function-3">Understanding the Link Function</h2>
+
+<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="solution" class="slide level2 center">
+<h2>Solution:</h2>
+
+<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="understanding-the-link-function-3" class="slide level2 center">
+<h2>Understanding the Link Function</h2>
 <p><br></p>
 <p>Let’s remember the log-level model transformation:</p>
 <center>
@@ -499,20 +353,20 @@ How to solve this problem?
 </center>
 <p><br></p>
 <ul>
-<li>A variation of one unit in <span class="math inline">\(X_i\)</span> implies a <span class="math inline">\(\beta\%\)</span> variation in <span class="math inline">\(Y_i\)</span>;</li>
-<li>The link function is: <span class="math inline">\(F(Y) = \log(Y)\)</span>;</li>
+<li class="fragment">A variation of one unit in <span class="math inline">\(X_i\)</span> implies a <span class="math inline">\(\beta\%\)</span> variation in <span class="math inline">\(Y_i\)</span>;</li>
+<li class="fragment">The link function is: <span class="math inline">\(F(Y) = \log(Y)\)</span>;</li>
 </ul>
 </section>
-<section id="the-role-of-the-link-function" class="level2">
-<h2 class="anchored" data-anchor-id="the-role-of-the-link-function">The Role of the Link Function</h2>
+<section id="the-role-of-the-link-function" class="slide level2 center">
+<h2>The Role of the Link Function</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><img src="figs/image12.png" class="img-fluid" style="width:95.0%"></p>
+<p><img data-src="figs/image12.png" style="width:95.0%"></p>
 <div style="font-size: 60%;">
 <ul>
-<li>The logistic function transforms the linear prediction <span class="math inline">\(\beta_0 + \beta X\)</span> into a probability that <span class="math inline">\(Y = 1\)</span>, denoted as <span class="math inline">\(\Pr(Y = 1|X)\)</span>.</li>
-<li>This function is sigmoidal (S-shaped), which is why the probability smoothly transitions between 0 and 1.</li>
-<li>The line <span class="math inline">\(E(y^*|X)\)</span> represents the expected value of the latent variable for a given value of <span class="math inline">\(X\)</span>.</li>
+<li class="fragment">The logistic function transforms the linear prediction <span class="math inline">\(\beta_0 + \beta X\)</span> into a probability that <span class="math inline">\(Y = 1\)</span>, denoted as <span class="math inline">\(\Pr(Y = 1|X)\)</span>.</li>
+<li class="fragment">This function is sigmoidal (S-shaped), which is why the probability smoothly transitions between 0 and 1.</li>
+<li class="fragment">The line <span class="math inline">\(E(y^*|X)\)</span> represents the expected value of the latent variable for a given value of <span class="math inline">\(X\)</span>.</li>
 </ul>
 </div>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
@@ -526,22 +380,21 @@ Y =
   \end{cases}
 \]</span></p>
 <ul>
-<li><span class="math inline">\(y^{*}\)</span>: is a latent (unobserved) variable, which represents an underlying continuous measure that influences the binary outcome. It drives the observed binary outcome <span class="math inline">\(Y\)</span>.</li>
+<li class="fragment"><span class="math inline">\(y^{*}\)</span>: is a latent (unobserved) variable, which represents an underlying continuous measure that influences the binary outcome. It drives the observed binary outcome <span class="math inline">\(Y\)</span>.</li>
 </ul>
 <div class="fragment">
 <p><span class="math display">\[
 y^{*}_{i} = \beta_{0} + \beta X + \epsilon
 \]</span></p>
 <ul>
-<li><p>The binary variable <span class="math inline">\(Y\)</span> is determined by a threshold applied to the latent variable <span class="math inline">\(y^{*}\)</span>.</p></li>
-<li><p>The plot illustrates the role of the logistic function in converting the continuous latent variable into probabilities that <span class="math inline">\(Y = 1\)</span> or <span class="math inline">\(Y = 0\)</span>. As <span class="math inline">\(X\)</span> increases past a certain threshold (denoted <span class="math inline">\(\tau = 0\)</span> on the graph), the probability that <span class="math inline">\(Y = 1\)</span> rises above 0.5, indicating a higher likelihood of observing <span class="math inline">\(Y = 1\)</span>.</p></li>
-<li><p><strong>In summary</strong>: The logistic model maps a linear predictor (<span class="math inline">\(\beta_0 + \beta X\)</span>) to a binary outcome, using the latent variable <span class="math inline">\(y^*\)</span> to link the continuous world with the binary outcome via a threshold and the logistic function.</p></li>
+<li class="fragment"><p>The binary variable <span class="math inline">\(Y\)</span> is determined by a threshold applied to the latent variable <span class="math inline">\(y^{*}\)</span>.</p></li>
+<li class="fragment"><p>The plot illustrates the role of the logistic function in converting the continuous latent variable into probabilities that <span class="math inline">\(Y = 1\)</span> or <span class="math inline">\(Y = 0\)</span>. As <span class="math inline">\(X\)</span> increases past a certain threshold (denoted <span class="math inline">\(\tau = 0\)</span> on the graph), the probability that <span class="math inline">\(Y = 1\)</span> rises above 0.5, indicating a higher likelihood of observing <span class="math inline">\(Y = 1\)</span>.</p></li>
+<li class="fragment"><p><strong>In summary</strong>: The logistic model maps a linear predictor (<span class="math inline">\(\beta_0 + \beta X\)</span>) to a binary outcome, using the latent variable <span class="math inline">\(y^*\)</span> to link the continuous world with the binary outcome via a threshold and the logistic function.</p></li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 <!---
 
 ## The Role of the Link Function
@@ -610,12 +463,11 @@ The probability depends on the distribution of $\epsilon$.
 ## Logit and Probit Models
 --->
 </section>
-<section id="logit-models" class="level2">
-<h2 class="anchored" data-anchor-id="logit-models">Logit Models</h2>
+<section id="logit-models" class="slide level2 center">
+<h2>Logit Models</h2>
 <!---
 Two distributions of $\epsilon$ are considered:
 --->
-<div class="nonincremental">
 <ul>
 <li><strong>Logistic distribution</strong>: In the Logit model, <span class="math inline">\(\epsilon\)</span> has a logistic distribution, <span class="math inline">\(\mu = 0\)</span> and variance given by: <span class="math inline">\(\sigma^2(u) = \pi^2/3\)</span></li>
 </ul>
@@ -633,46 +485,31 @@ $$
 
 :::
 --->
-</div>
 </section>
-<section id="logistic-function-vs-normal-distribution" class="level2">
-<h2 class="anchored" data-anchor-id="logistic-function-vs-normal-distribution">Logistic Function vs Normal Distribution</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="16_02_logistic_regression_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="logistic-function-vs-normal-distribution" class="slide level2 center">
+<h2>Logistic Function vs Normal Distribution</h2>
+
+<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section></section>
+<section>
+<section id="the-logit-link-function" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>The Logit Link Function</h1>
+
 </section>
-</section>
-<section id="the-logit-link-function" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">The Logit Link Function</h1>
-<section id="the-logit-link-function-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-logit-link-function-1">The Logit Link Function</h2>
+<section id="the-logit-link-function-1" class="slide level2 center">
+<h2>The Logit Link Function</h2>
 <center>
-<img src="figs/Image16.png" class="img-fluid" style="width:70.0%">
+<img data-src="figs/Image16.png" style="width:70.0%">
 </center>
 </section>
-<section id="the-logit-link-function-2" class="level2">
-<h2 class="anchored" data-anchor-id="the-logit-link-function-2">The Logit Link Function</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="16_02_logistic_regression_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>The probability of the event occurring is the cumulative density function of <span class="math inline">\(\epsilon\)</span> evaluated at values determined by the independent variables</li>
+<section id="the-logit-link-function-2" class="slide level2 center">
+<h2>The Logit Link Function</h2>
+
+<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
+<li class="fragment">The probability of the event occurring is the cumulative density function of <span class="math inline">\(\epsilon\)</span> evaluated at values determined by the independent variables</li>
 </ul>
 </section>
-<section id="estimating-the-event-probability" class="level2">
-<h2 class="anchored" data-anchor-id="estimating-the-event-probability">Estimating the Event Probability</h2>
+<section id="estimating-the-event-probability" class="slide level2 center">
+<h2>Estimating the Event Probability</h2>
 <p><span class="math display">\[
 P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 \]</span></p>
@@ -683,8 +520,8 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <p><strong>Prediction equation</strong></p>
 <p>A common estimation method to obtain <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> is called the Maximum Likelihood Method. It finds the values of <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> that maximize the probability (or likelihood) of observing the data.</p>
 </section>
-<section id="interpretation-of-beta_1-via-lnodds" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-beta_1-via-lnodds">Interpretation of <span class="math inline">\(\beta_1\)</span> via Ln(Odds)</h2>
+<section id="interpretation-of-beta_1-via-lnodds" class="slide level2 center">
+<h2>Interpretation of <span class="math inline">\(\beta_1\)</span> via Ln(Odds)</h2>
 <p>Define the odds for the event:</p>
 <p><span class="math display">\[
 \text{Odds}(x) \equiv \frac{\text{Event probability}}{\text{Non-event probability}} = \frac{P(Y = 1)}{1 - P(Y = 1)} = e^{\beta_0 + \beta_1 x}
@@ -693,26 +530,23 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 \ln(\text{Odds}(x)) = \beta_0 + \beta_1 x
 \]</span></p>
 <ul>
-<li><span class="math inline">\(b_1\)</span> is the predicted change in the <span class="math inline">\(\ln(\text{Odds}(x))\)</span> per-unit increase in <span class="math inline">\(x\)</span>.</li>
-<li><span class="math inline">\(b_1\)</span> is the predicted difference: <span class="math display">\[
+<li class="fragment"><span class="math inline">\(b_1\)</span> is the predicted change in the <span class="math inline">\(\ln(\text{Odds}(x))\)</span> per-unit increase in <span class="math inline">\(x\)</span>.</li>
+<li class="fragment"><span class="math inline">\(b_1\)</span> is the predicted difference: <span class="math display">\[
 \ln(\text{Odds}(x+1)) - \ln(\text{Odds}(x)).
 \]</span></li>
-<li>This relationship is true for all <span class="math inline">\(x\)</span>.</li>
+<li class="fragment">This relationship is true for all <span class="math inline">\(x\)</span>.</li>
 </ul>
 </section>
-<section id="interpretation-of-ebeta_1-via-odds-ratio" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-ebeta_1-via-odds-ratio">Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> via Odds Ratio</h2>
-<div class="nonincremental">
+<section id="interpretation-of-ebeta_1-via-odds-ratio" class="slide level2 center">
+<h2>Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> via Odds Ratio</h2>
 <p>Define the odds ratio:</p>
 <p><span class="math display">\[
 \text{Odds Ratio}(x) \equiv \frac{\text{Odds}(x+1)}{\text{Odds}(x)} = e^{\beta_1}
 \]</span></p>
 <p>By increasing <span class="math inline">\(x\)</span> by one unit, the odds of the event change by a factor of <span class="math inline">\(e^{\beta_1}\)</span>.</p>
-</div>
 </section>
-<section id="interpretation-of-ebeta_1-continuous-predictor-x" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-ebeta_1-continuous-predictor-x">Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> (Continuous Predictor, <span class="math inline">\(x\)</span>)</h2>
-<div class="nonincremental">
+<section id="interpretation-of-ebeta_1-continuous-predictor-x" class="slide level2 center">
+<h2>Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> (Continuous Predictor, <span class="math inline">\(x\)</span>)</h2>
 <p><span class="math display">\[
 \frac{\text{Odds}(x+1)}{\text{Odds}(x)} = e^{\beta_1}
 \]</span></p>
@@ -723,17 +557,18 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <li><p>If <span class="math inline">\(\beta_1 &lt; 0\)</span> or <span class="math inline">\(e^{\beta_1} &lt; 1\)</span>, the odds decrease.</p></li>
 </ul>
 <p>If <span class="math inline">\(\beta_1\)</span> is estimated by <span class="math inline">\(b_1\)</span>, then the odds for the event are predicted to change by a factor of <span class="math inline">\(e^{b_1}\)</span> per unit increase in <span class="math inline">\(x\)</span>.</p>
-</div>
+</section></section>
+<section>
+<section id="motivation-binomial-logit-model" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Motivation: Binomial Logit Model</h1>
+
 </section>
-</section>
-<section id="motivation-binomial-logit-model" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Motivation: Binomial Logit Model</h1>
-<section id="motivation-binomial-logit-model-1" class="level2">
-<h2 class="anchored" data-anchor-id="motivation-binomial-logit-model-1">Motivation: Binomial Logit Model</h2>
+<section id="motivation-binomial-logit-model-1" class="slide level2 center">
+<h2>Motivation: Binomial Logit Model</h2>
 <p>A researcher is interested in how variables such as GRE (Graduate Record Exam scores), GPA (Grade Point Average), and the prestige of the undergraduate institution affect admission into graduate school. The response variable, admit/don’t admit, is binary. What is the probability of success of a candidate based on these data?</p>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<table class="table caption-top" data-quarto-postprocess="true" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">admit</th>
@@ -785,13 +620,13 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
 <p><br> <font size="3"><strong>Source</strong>: <a href="https://stats.oarc.ucla.edu/r/dae/logit-regression/">LOGIT REGRESSION - R DATA ANALYSIS EXAMPLES</a></font></p>
 </section>
-<section id="estimating-the-model-r-output" class="level2">
-<h2 class="anchored" data-anchor-id="estimating-the-model-r-output">Estimating the Model: <code>R</code> Output</h2>
+<section id="estimating-the-model-r-output" class="slide level2 center">
+<h2>Estimating the Model: <code>R</code> Output</h2>
 <div style="font-size: 65%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -818,7 +653,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -849,7 +684,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -918,15 +753,15 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
 </div>
 </section>
-<section id="output-model-summary" class="level2">
-<h2 class="anchored" data-anchor-id="output-model-summary">Output: Model Summary</h2>
+<section id="output-model-summary" class="slide level2 center">
+<h2>Output: Model Summary</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 65%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -953,7 +788,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -984,7 +819,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1055,40 +890,39 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 80%;">
 <ul>
-<li><p><strong>Observations</strong>: 400</p>
+<li class="fragment"><p><strong>Observations</strong>: 400</p>
 <ul>
-<li>The number of data points used in the model (400 observations).</li>
+<li class="fragment">The number of data points used in the model (400 observations).</li>
 </ul></li>
-<li><p><strong>Dependent Variable</strong>: <code>admit</code></p>
+<li class="fragment"><p><strong>Dependent Variable</strong>: <code>admit</code></p>
 <ul>
-<li>The binary outcome variable being predicted (in this case, admission to a school).</li>
+<li class="fragment">The binary outcome variable being predicted (in this case, admission to a school).</li>
 </ul></li>
-<li><p><strong>Type</strong>: Generalized linear model</p>
+<li class="fragment"><p><strong>Type</strong>: Generalized linear model</p>
 <ul>
-<li>The model used is a generalized linear model (GLM).</li>
+<li class="fragment">The model used is a generalized linear model (GLM).</li>
 </ul></li>
-<li><p><strong>Family</strong>: binomial</p>
+<li class="fragment"><p><strong>Family</strong>: binomial</p>
 <ul>
-<li>The binomial family is appropriate for binary outcomes.</li>
+<li class="fragment">The binomial family is appropriate for binary outcomes.</li>
 </ul></li>
-<li><p><strong>Link</strong>: logit</p>
+<li class="fragment"><p><strong>Link</strong>: logit</p>
 <ul>
-<li>The logit link function is used to model the log-odds of the probability of success.</li>
+<li class="fragment">The logit link function is used to model the log-odds of the probability of success.</li>
 </ul></li>
 </ul>
 </div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="output-model-fit-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="output-model-fit-statistics">Output: Model Fit Statistics</h2>
+<section id="output-model-fit-statistics" class="slide level2 center">
+<h2>Output: Model Fit Statistics</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 65%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1115,7 +949,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1146,7 +980,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1217,44 +1051,43 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 75%;">
 <ul>
-<li><p><strong>χ²(5) = 41.46</strong>:</p>
+<li class="fragment"><p><strong>χ²(5) = 41.46</strong>:</p>
 <ul>
-<li>The chi-squared test statistic for the overall model fit.</li>
+<li class="fragment">The chi-squared test statistic for the overall model fit.</li>
 </ul></li>
-<li><p><strong>p = 0.00</strong>:</p>
+<li class="fragment"><p><strong>p = 0.00</strong>:</p>
 <ul>
-<li>The p-value for the model, indicating that the model is statistically significant (p &lt; 0.05).</li>
+<li class="fragment">The p-value for the model, indicating that the model is statistically significant (p &lt; 0.05).</li>
 </ul></li>
-<li><p><strong>Pseudo-R² (Cragg-Uhler) = 0.14</strong>:</p>
+<li class="fragment"><p><strong>Pseudo-R² (Cragg-Uhler) = 0.14</strong>:</p>
 <ul>
-<li>The pseudo-R², similar to the R² in linear regression, but interpreted more loosely. Indicates that 14% of the variation in the outcome is explained by the model.</li>
+<li class="fragment">The pseudo-R², similar to the R² in linear regression, but interpreted more loosely. Indicates that 14% of the variation in the outcome is explained by the model.</li>
 </ul></li>
-<li><p><strong>Pseudo-R² (McFadden) = 0.08</strong>:</p>
+<li class="fragment"><p><strong>Pseudo-R² (McFadden) = 0.08</strong>:</p>
 <ul>
-<li>Another form of pseudo-R², typically smaller than Cragg-Uhler’s.</li>
+<li class="fragment">Another form of pseudo-R², typically smaller than Cragg-Uhler’s.</li>
 </ul></li>
-<li><p><strong>AIC = 470.52</strong>:</p>
+<li class="fragment"><p><strong>AIC = 470.52</strong>:</p>
 <ul>
-<li>The Akaike Information Criterion, a measure of model fit that penalizes for complexity. Lower values indicate a better fit.</li>
+<li class="fragment">The Akaike Information Criterion, a measure of model fit that penalizes for complexity. Lower values indicate a better fit.</li>
 </ul></li>
-<li><p><strong>BIC = 494.47</strong>:</p>
+<li class="fragment"><p><strong>BIC = 494.47</strong>:</p>
 <ul>
-<li>The Bayesian Information Criterion, similar to AIC but with a stronger penalty for complexity.</li>
+<li class="fragment">The Bayesian Information Criterion, similar to AIC but with a stronger penalty for complexity.</li>
 </ul></li>
 </ul>
 </div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="output-coefficients" class="level2">
-<h2 class="anchored" data-anchor-id="output-coefficients">Output: Coefficients</h2>
+<section id="output-coefficients" class="slide level2 center">
+<h2>Output: Coefficients</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 65%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1281,7 +1114,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1312,7 +1145,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1383,41 +1216,41 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 70%;">
 <ul>
-<li><p><strong>Intercept (Est. = -3.99, p = 0.00)</strong>:</p>
+<li class="fragment"><p><strong>Intercept (Est. = -3.99, p = 0.00)</strong>:</p>
 <ul>
-<li>The log-odds of being admitted when all predictors are zero. The negative value indicates a low baseline probability of admission.</li>
+<li class="fragment">The log-odds of being admitted when all predictors are zero. The negative value indicates a low baseline probability of admission.</li>
 </ul></li>
-<li><p><strong>GRE (Est. = 0.00, p = 0.04)</strong>:</p>
+<li class="fragment"><p><strong>GRE (Est. = 0.00, p = 0.04)</strong>:</p>
 <ul>
-<li>The coefficient for GRE is positive and statistically significant (p &lt; 0.05), but the value is very close to zero. This means GRE has a very small positive effect on the log-odds of admission.</li>
+<li class="fragment">The coefficient for GRE is positive and statistically significant (p &lt; 0.05), but the value is very close to zero. This means GRE has a very small positive effect on the log-odds of admission.</li>
 </ul></li>
-<li><p><strong>GPA (Est. = 0.80, p = 0.02)</strong>:</p>
+<li class="fragment"><p><strong>GPA (Est. = 0.80, p = 0.02)</strong>:</p>
 <ul>
-<li>A positive coefficient indicates that higher GPA increases the likelihood of admission. It is statistically significant (p &lt; 0.05).</li>
+<li class="fragment">A positive coefficient indicates that higher GPA increases the likelihood of admission. It is statistically significant (p &lt; 0.05).</li>
 </ul></li>
-<li><p><strong>Rank 2 (Est. = -0.68, p = 0.03)</strong>:</p>
+<li class="fragment"><p><strong>Rank 2 (Est. = -0.68, p = 0.03)</strong>:</p>
 <ul>
-<li>Being in rank 2 (relative to rank 1) decreases the odds of admission. This is statistically significant.</li>
+<li class="fragment">Being in rank 2 (relative to rank 1) decreases the odds of admission. This is statistically significant.</li>
 </ul></li>
-<li><p><strong>Rank 3 (Est. = -1.34, p = 0.00)</strong>:</p>
+<li class="fragment"><p><strong>Rank 3 (Est. = -1.34, p = 0.00)</strong>:</p>
 <ul>
-<li>A strong negative effect on the log-odds of admission for rank 3. It is statistically significant.</li>
+<li class="fragment">A strong negative effect on the log-odds of admission for rank 3. It is statistically significant.</li>
 </ul></li>
-<li><p><strong>Rank 4 (Est. = -1.55, p = 0.00)</strong>:</p>
+<li class="fragment"><p><strong>Rank 4 (Est. = -1.55, p = 0.00)</strong>:</p>
 <ul>
-<li>Being in rank 4 strongly reduces the chances of admission, statistically significant with a very low p-value.</li>
+<li class="fragment">Being in rank 4 strongly reduces the chances of admission, statistically significant with a very low p-value.</li>
 </ul></li>
 </ul>
 </div>
-</div>
-</div>
+</div></div>
+</section></section>
+<section>
+<section id="from-log-odds-to-odds-and-probabilities" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>From Log-Odds to Odds and Probabilities</h1>
+
 </section>
-</section>
-<section id="from-log-odds-to-odds-and-probabilities" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">From Log-Odds to Odds and Probabilities</h1>
-<section id="from-log-odds-to-odds-and-probabilities-1" class="level2">
-<h2 class="anchored" data-anchor-id="from-log-odds-to-odds-and-probabilities-1">From Log-Odds to Odds and Probabilities</h2>
-<div class="nonincremental">
+<section id="from-log-odds-to-odds-and-probabilities-1" class="slide level2 center">
+<h2>From Log-Odds to Odds and Probabilities</h2>
 <ul>
 <li><strong>Log-Odds (Linear Equation)</strong></li>
 </ul>
@@ -1430,11 +1263,9 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <li><p><span class="math inline">\(\beta_0\)</span> is the intercept,</p></li>
 <li><p><span class="math inline">\(\beta_1, \beta_2, \dots, \beta_k\)</span> are the coefficients for predictors <span class="math inline">\(X_1, X_2, \dots, X_k\)</span>.</p></li>
 </ul>
-</div>
 </section>
-<section id="from-log-odds-to-odds" class="level2">
-<h2 class="anchored" data-anchor-id="from-log-odds-to-odds">From Log-Odds to Odds</h2>
-<div class="nonincremental">
+<section id="from-log-odds-to-odds" class="slide level2 center">
+<h2>From Log-Odds to Odds</h2>
 <ul>
 <li><strong>Converting Log-Odds to Odds</strong></li>
 </ul>
@@ -1443,11 +1274,9 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 \text{Odds} = e^{\text{Log-Odds}} = e^{\beta_0 + \beta_1 X_1 + \dots + \beta_k X_k}
 \]</span></p>
 <p>The odds represent the ratio of the probability of the event happening to the probability of the event not happening.</p>
-</div>
 </section>
-<section id="from-log-odds-to-probabilities" class="level2">
-<h2 class="anchored" data-anchor-id="from-log-odds-to-probabilities">From Log-Odds to Probabilities</h2>
-<div class="nonincremental">
+<section id="from-log-odds-to-probabilities" class="slide level2 center">
+<h2>From Log-Odds to Probabilities</h2>
 <ul>
 <li><strong>Computing the Probability</strong></li>
 </ul>
@@ -1460,17 +1289,16 @@ P(Y = 1) = \frac{1}{1 + e^{-\text{Log-Odds}}}
 P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 \]</span></p>
 <p>This formula converts the log-odds into a probability value between 0 and 1.</p>
-</div>
 </section>
-<section id="interpretation-of-results-log-odds" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-results-log-odds">Interpretation of Results: Log-Odds</h2>
+<section id="interpretation-of-results-log-odds" class="slide level2 center">
+<h2>Interpretation of Results: Log-Odds</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 65%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1497,7 +1325,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1528,7 +1356,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1598,23 +1426,22 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li><p><strong>GRE</strong>: For a one-unit increase in <code>gre</code>, the log-odds of the dependent variable (<code>admit</code>) increase by 0.002;</p></li>
-<li><p><strong>GPA</strong>: For a one-unit increase in <code>gpa</code>, the log-odds of the DV increase by 0.804;</p></li>
-<li><p><strong>Rank</strong>: In the case of the variable <code>rank</code>, being a graduate of an institution with <code>rank</code><span class="math inline">\(=2\)</span> changes the log-odds by <span class="math inline">\(-0.675\)</span> compared to an institution with <code>rank</code><span class="math inline">\(=1\)</span>.</p></li>
+<li class="fragment"><p><strong>GRE</strong>: For a one-unit increase in <code>gre</code>, the log-odds of the dependent variable (<code>admit</code>) increase by 0.002;</p></li>
+<li class="fragment"><p><strong>GPA</strong>: For a one-unit increase in <code>gpa</code>, the log-odds of the DV increase by 0.804;</p></li>
+<li class="fragment"><p><strong>Rank</strong>: In the case of the variable <code>rank</code>, being a graduate of an institution with <code>rank</code><span class="math inline">\(=2\)</span> changes the log-odds by <span class="math inline">\(-0.675\)</span> compared to an institution with <code>rank</code><span class="math inline">\(=1\)</span>.</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 <p><font size="3"><strong>Source</strong>: <a href="https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/">How do I interpret Odds Ratios in Logistic Regression?</a></font></p>
 </section>
-<section id="interpretation-of-results-odds" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-results-odds">Interpretation of Results: Odds</h2>
+<section id="interpretation-of-results-odds" class="slide level2 center">
+<h2>Interpretation of Results: Odds</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 65%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1641,7 +1468,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1672,7 +1499,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1743,29 +1570,28 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 70%;">
 <ul>
-<li><p><strong>GRE</strong>: For a one-unit increase in GRE, the odds of being admitted increase by a factor of: <span class="math display">\[
+<li class="fragment"><p><strong>GRE</strong>: For a one-unit increase in GRE, the odds of being admitted increase by a factor of: <span class="math display">\[
 e^{0.002} \approx 1.002
 \]</span> This means that for every additional point in GRE, the odds of admission increase by 0.2%.</p></li>
-<li><p><strong>GPA</strong>: For a one-unit increase in GPA, the odds of being admitted increase by a factor of: <span class="math display">\[
+<li class="fragment"><p><strong>GPA</strong>: For a one-unit increase in GPA, the odds of being admitted increase by a factor of: <span class="math display">\[
 e^{0.804} \approx 2.23
 \]</span> This means that for each additional GPA point, the odds of admission more than double (2.23 times higher).</p></li>
-<li><p><strong>Rank (Rank 2)</strong>: For being in Rank 2 compared to Rank 1, the odds of admission decrease by a factor of: <span class="math display">\[
+<li class="fragment"><p><strong>Rank (Rank 2)</strong>: For being in Rank 2 compared to Rank 1, the odds of admission decrease by a factor of: <span class="math display">\[
 e^{-0.675} \approx 0.51
 \]</span> This means that students from Rank 2 institutions have approximately half the odds of being admitted compared to those from Rank 1 institutions.</p></li>
 </ul>
 </div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="interpretation-of-results-probability" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-results-probability">Interpretation of Results: Probability</h2>
+<section id="interpretation-of-results-probability" class="slide level2 center">
+<h2>Interpretation of Results: Probability</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 65%;">
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1792,7 +1618,7 @@ e^{-0.675} \approx 0.51
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1823,7 +1649,7 @@ e^{-0.675} \approx 0.51
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1898,53 +1724,45 @@ e^{-0.675} \approx 0.51
 P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}
 \]</span></p>
 <ul>
-<li><p><strong>GRE</strong>: The change in probability for a one-unit increase in GRE is minimal, given the very small log-odds coefficient (0.002). The probability increases slightly for each GRE point.</p></li>
-<li><p><strong>GPA</strong>: A one-unit increase in GPA substantially increases the probability of admission, as the log-odds increase by 0.804. This leads to a noticeable jump in the probability of being admitted.</p></li>
-<li><p><strong>Rank (Rank 2)</strong>: Being in Rank 2 compared to Rank 1 decreases the probability of admission due to the reduction in log-odds by 0.675. This results in a lower probability of being admitted for Rank 2 graduates.</p></li>
+<li class="fragment"><p><strong>GRE</strong>: The change in probability for a one-unit increase in GRE is minimal, given the very small log-odds coefficient (0.002). The probability increases slightly for each GRE point.</p></li>
+<li class="fragment"><p><strong>GPA</strong>: A one-unit increase in GPA substantially increases the probability of admission, as the log-odds increase by 0.804. This leads to a noticeable jump in the probability of being admitted.</p></li>
+<li class="fragment"><p><strong>Rank (Rank 2)</strong>: Being in Rank 2 compared to Rank 1 decreases the probability of admission due to the reduction in log-odds by 0.675. This results in a lower probability of being admitted for Rank 2 graduates.</p></li>
 </ul>
 </div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="interpretation-of-results-predicted-probability" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-results-predicted-probability">Interpretation of Results: Predicted Probability</h2>
+<section id="interpretation-of-results-predicted-probability" class="slide level2 center">
+<h2>Interpretation of Results: Predicted Probability</h2>
 <p><span class="math display">\[
 p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}
 \]</span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="16_02_logistic_regression_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="example-output-conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="example-output-conclusion">Example Output: Conclusion</h2>
+
+<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<section id="example-output-conclusion" class="slide level2 center">
+<h2>Example Output: Conclusion</h2>
 <p><br></p>
 <p>This model indicates that GPA, GRE, and rank significantly influence the likelihood of admission, with lower ranks (higher numerical values) significantly decreasing the chances of admission.</p>
 </section>
-<section id="additional-material" class="level2">
-<h2 class="anchored" data-anchor-id="additional-material">Additional Material</h2>
+<section id="additional-material" class="slide level2 center">
+<h2>Additional Material</h2>
 <ul>
-<li><a href="https://stats.oarc.ucla.edu/r/dae/logit-regression/">Binomial Logistic Regression</a>.</li>
-<li><a href="https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/">How do I interpret Odds Ratios in Logistic Regression?</a>.</li>
-<li><a href="https://stats.oarc.ucla.edu/r/dae/multinomial-logistic-regression/">Multinomial Logistic Regression</a>.</li>
-<li><a href="https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r/">Tutorial: Leveraging Labelled Data in R</a>.</li>
-<li><a href="https://stats.oarc.ucla.edu/other/dae/">UCLA: Data Analysis Examples</a>.</li>
-<li><a href="https://www.econometrics-with-r.org/">Introduction to Econometrics with R</a>.</li>
-<li><a href="https://bookdown.org/roback/bookdown-BeyondMLR/">Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R</a></li>
+<li class="fragment"><a href="https://stats.oarc.ucla.edu/r/dae/logit-regression/">Binomial Logistic Regression</a>.</li>
+<li class="fragment"><a href="https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/">How do I interpret Odds Ratios in Logistic Regression?</a>.</li>
+<li class="fragment"><a href="https://stats.oarc.ucla.edu/r/dae/multinomial-logistic-regression/">Multinomial Logistic Regression</a>.</li>
+<li class="fragment"><a href="https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r/">Tutorial: Leveraging Labelled Data in R</a>.</li>
+<li class="fragment"><a href="https://stats.oarc.ucla.edu/other/dae/">UCLA: Data Analysis Examples</a>.</li>
+<li class="fragment"><a href="https://www.econometrics-with-r.org/">Introduction to Econometrics with R</a>.</li>
+<li class="fragment"><a href="https://bookdown.org/roback/bookdown-BeyondMLR/">Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R</a></li>
 </ul>
+</section></section>
+<section>
+<section id="summary" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Summary</h1>
+
 </section>
-</section>
-<section id="summary" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Summary</h1>
-<section id="summary-1" class="level2">
-<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
+<section id="summary-1" class="slide level2 center">
+<h2>Summary</h2>
 <div style="font-size: 70%;">
-<div class="nonincremental">
 <p>Some key takeaways from this session:</p>
 <ul>
 <li><p><strong>When to Use Logistic Regression</strong>: Use logistic regression when the dependent variable is binary (e.g., success/failure).</p></li>
@@ -1966,11 +1784,9 @@ p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}
 </ul></li>
 </ul>
 </div>
-</div>
 </section>
-<section id="summary-2" class="level2">
-<h2 class="anchored" data-anchor-id="summary-2">Summary</h2>
-<div class="nonincremental">
+<section id="summary-2" class="slide level2 center">
+<h2>Summary</h2>
 <p>Some key takeaways from this session:</p>
 <ul>
 <li><p><strong>Log-Odds to Odds</strong>:</p>
@@ -1986,12 +1802,10 @@ P(Y = 1) = \frac{\text{Odds}}{1 + \text{Odds}}
 P(Y = 1) = \frac{e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}{1 + e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}
 \]</span></p></li>
 </ul>
-</div>
 </section>
-<section id="summary-3" class="level2">
-<h2 class="anchored" data-anchor-id="summary-3">Summary</h2>
+<section id="summary-3" class="slide level2 center">
+<h2>Summary</h2>
 <div style="font-size: 70%;">
-<div class="nonincremental">
 <p>Some key takeaways from this session:</p>
 <ul>
 <li><p><strong>Maximum Likelihood Estimation (MLE)</strong>: Estimates the parameters that maximize the likelihood of observing the given data.</p></li>
@@ -2002,418 +1816,396 @@ P(Y = 1) = \frac{e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}{1 + e^{\beta_
 <li><p>Understanding how to convert between log-odds, odds, and probabilities is crucial for interpretation.</p></li>
 </ul>
 </div>
+</section></section>
+<section id="thank-you" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Thank you!</h1>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>Business Statistics</p>
 </div>
-</section>
-</section>
-<section id="thank-you" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Thank you!</h1>
+</div></div>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
 
-</section>
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
-        }
-        return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
         },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
       });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
-          return note.innerHTML;
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
             }
           } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
             });
           }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
         }
-      }, function(instance) {
       });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
-  </script>
-</div> <!-- /content -->
-
-
-
+      </script>
+    
 
 </body></html>

@@ -1,315 +1,148 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Professor Davi Moreira ">
-
-<title> MGMT 30500: Business Statistics  – MGMT 30500: Business Statistics</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<html lang="en"><head>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-79df7ed5347781c1339259261daa236f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.32">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
+  <meta name="author" content="Professor Davi Moreira ">
+  <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
     }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../styles.css">
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
 </head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
 
-<body class="nav-sidebar docked quarto-light">
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
+  <p class="subtitle"><span style="font-size: 150%;"> Multiple Regression</span></p>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../images/mgmt_305_ai_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-      <div class="sidebar-tools-main">
-    <a href="https://github.com/davi-moreira/2025S_business_statistics_purdue_MGMT305" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Professor<br>Davi Moreira<br> 
 </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syllabus</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../material.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Material</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a>
-  <ul class="collapse">
-  <li><a href="#motivation-controlling-for-a-variable" id="toc-motivation-controlling-for-a-variable" class="nav-link" data-scroll-target="#motivation-controlling-for-a-variable">Motivation: Controlling for a Variable</a></li>
-  <li><a href="#motivation-controlling-for-a-variable-1" id="toc-motivation-controlling-for-a-variable-1" class="nav-link" data-scroll-target="#motivation-controlling-for-a-variable-1">Motivation: Controlling for a Variable</a></li>
-  <li><a href="#motivation-controlling-for-a-variable-2" id="toc-motivation-controlling-for-a-variable-2" class="nav-link" data-scroll-target="#motivation-controlling-for-a-variable-2">Motivation: Controlling for a Variable</a></li>
-  <li><a href="#omitted-variables-confounders" id="toc-omitted-variables-confounders" class="nav-link" data-scroll-target="#omitted-variables-confounders">Omitted Variables (Confounders)</a></li>
-  <li><a href="#how-to-address-omitted-variable-bias" id="toc-how-to-address-omitted-variable-bias" class="nav-link" data-scroll-target="#how-to-address-omitted-variable-bias">How to Address Omitted Variable Bias?</a></li>
-  </ul></li>
-  <li><a href="#multiple-regression" id="toc-multiple-regression" class="nav-link" data-scroll-target="#multiple-regression">Multiple Regression</a>
-  <ul class="collapse">
-  <li><a href="#multiple-regression-1" id="toc-multiple-regression-1" class="nav-link" data-scroll-target="#multiple-regression-1">Multiple Regression</a></li>
-  <li><a href="#multiple-regression-model" id="toc-multiple-regression-model" class="nav-link" data-scroll-target="#multiple-regression-model">Multiple Regression Model</a></li>
-  <li><a href="#multiple-regression-equation" id="toc-multiple-regression-equation" class="nav-link" data-scroll-target="#multiple-regression-equation">Multiple Regression Equation</a></li>
-  <li><a href="#estimated-multiple-regression-equation" id="toc-estimated-multiple-regression-equation" class="nav-link" data-scroll-target="#estimated-multiple-regression-equation">Estimated Multiple Regression Equation</a></li>
-  </ul></li>
-  <li><a href="#least-squares-method" id="toc-least-squares-method" class="nav-link" data-scroll-target="#least-squares-method">Least Squares Method</a>
-  <ul class="collapse">
-  <li><a href="#least-squares-method-1" id="toc-least-squares-method-1" class="nav-link" data-scroll-target="#least-squares-method-1">Least Squares Method</a></li>
-  <li><a href="#estimation-process" id="toc-estimation-process" class="nav-link" data-scroll-target="#estimation-process">Estimation Process</a></li>
-  <li><a href="#multiple-regression-model-1" id="toc-multiple-regression-model-1" class="nav-link" data-scroll-target="#multiple-regression-model-1">Multiple Regression Model</a></li>
-  <li><a href="#multiple-regression-model-2" id="toc-multiple-regression-model-2" class="nav-link" data-scroll-target="#multiple-regression-model-2">Multiple Regression Model</a></li>
-  <li><a href="#multiple-regression-model-3" id="toc-multiple-regression-model-3" class="nav-link" data-scroll-target="#multiple-regression-model-3">Multiple Regression Model</a></li>
-  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary Statistics</a></li>
-  <li><a href="#correlations" id="toc-correlations" class="nav-link" data-scroll-target="#correlations">Correlations</a></li>
-  <li><a href="#regression-output" id="toc-regression-output" class="nav-link" data-scroll-target="#regression-output">Regression Output</a></li>
-  <li><a href="#estimated-regression-equation" id="toc-estimated-regression-equation" class="nav-link" data-scroll-target="#estimated-regression-equation">Estimated Regression Equation</a></li>
-  <li><a href="#interpreting-the-regression-coefficients" id="toc-interpreting-the-regression-coefficients" class="nav-link" data-scroll-target="#interpreting-the-regression-coefficients">Interpreting the Regression Coefficients</a></li>
-  <li><a href="#interpreting-the-regression-coefficients-1" id="toc-interpreting-the-regression-coefficients-1" class="nav-link" data-scroll-target="#interpreting-the-regression-coefficients-1">Interpreting the Regression Coefficients</a></li>
-  </ul></li>
-  <li><a href="#multiple-coefficient-of-determination" id="toc-multiple-coefficient-of-determination" class="nav-link" data-scroll-target="#multiple-coefficient-of-determination">Multiple Coefficient of Determination</a>
-  <ul class="collapse">
-  <li><a href="#multiple-coefficient-of-determination-1" id="toc-multiple-coefficient-of-determination-1" class="nav-link" data-scroll-target="#multiple-coefficient-of-determination-1">Multiple Coefficient of Determination</a></li>
-  <li><a href="#partition-of-sst" id="toc-partition-of-sst" class="nav-link" data-scroll-target="#partition-of-sst">Partition of SST</a></li>
-  <li><a href="#multiple-coefficient-of-determination-2" id="toc-multiple-coefficient-of-determination-2" class="nav-link" data-scroll-target="#multiple-coefficient-of-determination-2">Multiple Coefficient of Determination</a></li>
-  <li><a href="#multiple-coefficient-of-determination-3" id="toc-multiple-coefficient-of-determination-3" class="nav-link" data-scroll-target="#multiple-coefficient-of-determination-3">Multiple Coefficient of Determination</a></li>
-  <li><a href="#remarks-on-multiple-coefficient-of-determination" id="toc-remarks-on-multiple-coefficient-of-determination" class="nav-link" data-scroll-target="#remarks-on-multiple-coefficient-of-determination">Remarks on Multiple Coefficient of Determination</a></li>
-  <li><a href="#adjusted-multiple-coefficient-of-determination" id="toc-adjusted-multiple-coefficient-of-determination" class="nav-link" data-scroll-target="#adjusted-multiple-coefficient-of-determination">Adjusted Multiple Coefficient of Determination</a></li>
-  <li><a href="#adjusted-multiple-coefficient-of-determination-1" id="toc-adjusted-multiple-coefficient-of-determination-1" class="nav-link" data-scroll-target="#adjusted-multiple-coefficient-of-determination-1">Adjusted Multiple Coefficient of Determination</a></li>
-  <li><a href="#adjusted-multiple-coefficient-of-determination-2" id="toc-adjusted-multiple-coefficient-of-determination-2" class="nav-link" data-scroll-target="#adjusted-multiple-coefficient-of-determination-2">Adjusted Multiple Coefficient of Determination</a></li>
-  </ul></li>
-  <li><a href="#testing-for-significance" id="toc-testing-for-significance" class="nav-link" data-scroll-target="#testing-for-significance">Testing for Significance</a>
-  <ul class="collapse">
-  <li><a href="#testing-for-significance-1" id="toc-testing-for-significance-1" class="nav-link" data-scroll-target="#testing-for-significance-1">Testing for Significance</a></li>
-  <li><a href="#testing-for-overall-significance-f-test" id="toc-testing-for-overall-significance-f-test" class="nav-link" data-scroll-target="#testing-for-overall-significance-f-test">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</a></li>
-  <li><a href="#testing-for-overall-significance-f-test-1" id="toc-testing-for-overall-significance-f-test-1" class="nav-link" data-scroll-target="#testing-for-overall-significance-f-test-1">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</a></li>
-  <li><a href="#testing-for-overall-significance-f-test-2" id="toc-testing-for-overall-significance-f-test-2" class="nav-link" data-scroll-target="#testing-for-overall-significance-f-test-2">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</a></li>
-  <li><a href="#testing-for-overall-significance-f-test-3" id="toc-testing-for-overall-significance-f-test-3" class="nav-link" data-scroll-target="#testing-for-overall-significance-f-test-3">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</a></li>
-  <li><a href="#testing-for-overall-significance-f-test-4" id="toc-testing-for-overall-significance-f-test-4" class="nav-link" data-scroll-target="#testing-for-overall-significance-f-test-4">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</a></li>
-  <li><a href="#testing-for-overall-significance-f-test-5" id="toc-testing-for-overall-significance-f-test-5" class="nav-link" data-scroll-target="#testing-for-overall-significance-f-test-5">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</a></li>
-  <li><a href="#testing-for-individual-significance-t-test" id="toc-testing-for-individual-significance-t-test" class="nav-link" data-scroll-target="#testing-for-individual-significance-t-test">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</a></li>
-  <li><a href="#testing-for-individual-significance-t-test-1" id="toc-testing-for-individual-significance-t-test-1" class="nav-link" data-scroll-target="#testing-for-individual-significance-t-test-1">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</a></li>
-  <li><a href="#testing-for-individual-significance-t-test-2" id="toc-testing-for-individual-significance-t-test-2" class="nav-link" data-scroll-target="#testing-for-individual-significance-t-test-2">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</a></li>
-  <li><a href="#testing-for-individual-significance-t-test-3" id="toc-testing-for-individual-significance-t-test-3" class="nav-link" data-scroll-target="#testing-for-individual-significance-t-test-3">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</a></li>
-  <li><a href="#testing-for-individual-significance-t-test-4" id="toc-testing-for-individual-significance-t-test-4" class="nav-link" data-scroll-target="#testing-for-individual-significance-t-test-4">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</a></li>
-  </ul></li>
-  <li><a href="#multicollinearity" id="toc-multicollinearity" class="nav-link" data-scroll-target="#multicollinearity">Multicollinearity</a>
-  <ul class="collapse">
-  <li><a href="#multicollinearity-1" id="toc-multicollinearity-1" class="nav-link" data-scroll-target="#multicollinearity-1">Multicollinearity</a></li>
-  <li><a href="#multicollinearity-2" id="toc-multicollinearity-2" class="nav-link" data-scroll-target="#multicollinearity-2">Multicollinearity</a></li>
-  </ul></li>
-  <li><a href="#estimation-and-prediction" id="toc-estimation-and-prediction" class="nav-link" data-scroll-target="#estimation-and-prediction">Estimation and Prediction</a>
-  <ul class="collapse">
-  <li><a href="#estimation-and-prediction-1" id="toc-estimation-and-prediction-1" class="nav-link" data-scroll-target="#estimation-and-prediction-1">Estimation and Prediction</a></li>
-  </ul></li>
-  <li><a href="#categorical-independent-variables" id="toc-categorical-independent-variables" class="nav-link" data-scroll-target="#categorical-independent-variables">Categorical Independent Variables</a>
-  <ul class="collapse">
-  <li><a href="#categorical-independent-variables-1" id="toc-categorical-independent-variables-1" class="nav-link" data-scroll-target="#categorical-independent-variables-1">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-2" id="toc-categorical-independent-variables-2" class="nav-link" data-scroll-target="#categorical-independent-variables-2">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-3" id="toc-categorical-independent-variables-3" class="nav-link" data-scroll-target="#categorical-independent-variables-3">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-4" id="toc-categorical-independent-variables-4" class="nav-link" data-scroll-target="#categorical-independent-variables-4">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-5" id="toc-categorical-independent-variables-5" class="nav-link" data-scroll-target="#categorical-independent-variables-5">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-6" id="toc-categorical-independent-variables-6" class="nav-link" data-scroll-target="#categorical-independent-variables-6">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-7" id="toc-categorical-independent-variables-7" class="nav-link" data-scroll-target="#categorical-independent-variables-7">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-8" id="toc-categorical-independent-variables-8" class="nav-link" data-scroll-target="#categorical-independent-variables-8">Categorical Independent Variables</a></li>
-  <li><a href="#categorical-independent-variables-9" id="toc-categorical-independent-variables-9" class="nav-link" data-scroll-target="#categorical-independent-variables-9">Categorical Independent Variables</a></li>
-  <li><a href="#interpretation-of-beta_2" id="toc-interpretation-of-beta_2" class="nav-link" data-scroll-target="#interpretation-of-beta_2">Interpretation of <span class="math inline">\(\beta_2\)</span></a></li>
-  <li><a href="#categorical-independent-variables-10" id="toc-categorical-independent-variables-10" class="nav-link" data-scroll-target="#categorical-independent-variables-10">Categorical Independent Variables</a></li>
-  <li><a href="#more-complex-categorical-variables" id="toc-more-complex-categorical-variables" class="nav-link" data-scroll-target="#more-complex-categorical-variables">More Complex Categorical Variables</a></li>
-  <li><a href="#example-categorical-variable-with-three-levels" id="toc-example-categorical-variable-with-three-levels" class="nav-link" data-scroll-target="#example-categorical-variable-with-three-levels">Example: Categorical Variable with Three Levels</a></li>
-  <li><a href="#example-dummy-variable-coding" id="toc-example-dummy-variable-coding" class="nav-link" data-scroll-target="#example-dummy-variable-coding">Example: Dummy Variable Coding</a></li>
-  <li><a href="#example-regression-equation-with-dummy-variables" id="toc-example-regression-equation-with-dummy-variables" class="nav-link" data-scroll-target="#example-regression-equation-with-dummy-variables">Example: Regression Equation with Dummy Variables</a></li>
-  <li><a href="#example-important-points-on-dummy-variables" id="toc-example-important-points-on-dummy-variables" class="nav-link" data-scroll-target="#example-important-points-on-dummy-variables">Example: Important Points on Dummy Variables</a></li>
-  </ul></li>
-  <li><a href="#model-assumptions" id="toc-model-assumptions" class="nav-link" data-scroll-target="#model-assumptions">Model Assumptions</a>
-  <ul class="collapse">
-  <li><a href="#precision-and-accuracy" id="toc-precision-and-accuracy" class="nav-link" data-scroll-target="#precision-and-accuracy">Precision and Accuracy</a></li>
-  <li><a href="#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model" id="toc-assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model" class="nav-link" data-scroll-target="#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model">Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</a></li>
-  <li><a href="#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1" id="toc-assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1" class="nav-link" data-scroll-target="#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1">Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</a></li>
-  <li><a href="#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2" id="toc-assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2" class="nav-link" data-scroll-target="#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2">Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</a></li>
-  </ul></li>
-  <li><a href="#residual-analysis" id="toc-residual-analysis" class="nav-link" data-scroll-target="#residual-analysis">Residual Analysis</a>
-  <ul class="collapse">
-  <li><a href="#residual-analysis-1" id="toc-residual-analysis-1" class="nav-link" data-scroll-target="#residual-analysis-1">Residual Analysis</a></li>
-  <li><a href="#standardized-residuals" id="toc-standardized-residuals" class="nav-link" data-scroll-target="#standardized-residuals">Standardized Residuals</a></li>
-  <li><a href="#standardized-residuals-1" id="toc-standardized-residuals-1" class="nav-link" data-scroll-target="#standardized-residuals-1">Standardized Residuals</a></li>
-  <li><a href="#standardized-residual-plot-against-haty" id="toc-standardized-residual-plot-against-haty" class="nav-link" data-scroll-target="#standardized-residual-plot-against-haty">Standardized Residual Plot Against <span class="math inline">\(\hat{y}\)</span></a></li>
-  </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
-  <ul class="collapse">
-  <li><a href="#summary-1" id="toc-summary-1" class="nav-link" data-scroll-target="#summary-1">Summary</a></li>
-  </ul></li>
-  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank you!</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="15_chapter_multiple_regression.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span style="font-size: 100%;"> MGMT 30500: Business Statistics </span></h1>
-<p class="subtitle lead"><span style="font-size: 150%;"> Multiple Regression</span></p>
+</div>
 </div>
 
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Professor<br>Davi Moreira<br> </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<div class="nonincremental">
+</section>
+<section id="overview" class="slide level2 center">
+<h2>Overview</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
@@ -326,30 +159,31 @@ window.Quarto = {
 <li>Prediction</li>
 <li>Categorical Independent Variables</li>
 </ul>
-</div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="motivation" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Motivation</h1>
-<section id="motivation-controlling-for-a-variable" class="level2">
-<h2 class="anchored" data-anchor-id="motivation-controlling-for-a-variable">Motivation: Controlling for a Variable</h2>
+<section>
+<section id="motivation" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Motivation</h1>
+
+</section>
+<section id="motivation-controlling-for-a-variable" class="slide level2 center">
+<h2>Motivation: Controlling for a Variable</h2>
 <ul>
-<li><strong>Puzzle</strong>: What is the effect of education on income?</li>
-<li><strong>Y</strong>: Income</li>
-<li><strong>X</strong>: Education</li>
-<li><strong>Objective</strong>: X <span class="math inline">\(\rightarrow\)</span> Y</li>
-<li><strong>Challenge</strong>: X <span class="math inline">\(\leftarrow\)</span> W <span class="math inline">\(\rightarrow\)</span> Y</li>
-<li><strong>W</strong>: IQ (Intelligence)</li>
-<li><strong>Solution</strong>: Control for W</li>
+<li class="fragment"><strong>Puzzle</strong>: What is the effect of education on income?</li>
+<li class="fragment"><strong>Y</strong>: Income</li>
+<li class="fragment"><strong>X</strong>: Education</li>
+<li class="fragment"><strong>Objective</strong>: X <span class="math inline">\(\rightarrow\)</span> Y</li>
+<li class="fragment"><strong>Challenge</strong>: X <span class="math inline">\(\leftarrow\)</span> W <span class="math inline">\(\rightarrow\)</span> Y</li>
+<li class="fragment"><strong>W</strong>: IQ (Intelligence)</li>
+<li class="fragment"><strong>Solution</strong>: Control for W</li>
 </ul>
 </section>
-<section id="motivation-controlling-for-a-variable-1" class="level2">
-<h2 class="anchored" data-anchor-id="motivation-controlling-for-a-variable-1">Motivation: Controlling for a Variable</h2>
+<section id="motivation-controlling-for-a-variable-1" class="slide level2 center">
+<h2>Motivation: Controlling for a Variable</h2>
 <center>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/dag-control.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<figure>
+<p><img data-src="figs/dag-control.png" style="width:30.0%"></p>
 <figcaption>DAG</figcaption>
 </figure>
 </div>
@@ -358,12 +192,12 @@ window.Quarto = {
 </div>
 </center>
 </section>
-<section id="motivation-controlling-for-a-variable-2" class="level2">
-<h2 class="anchored" data-anchor-id="motivation-controlling-for-a-variable-2">Motivation: Controlling for a Variable</h2>
+<section id="motivation-controlling-for-a-variable-2" class="slide level2 center">
+<h2>Motivation: Controlling for a Variable</h2>
 <center>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/animation_control.gif" class="img-fluid figure-img" style="width:40.0%"></p>
+<figure>
+<p><img data-src="figs/animation_control.gif" style="width:40.0%"></p>
 <figcaption>Relationship between Y and X controlled for W</figcaption>
 </figure>
 </div>
@@ -372,47 +206,49 @@ window.Quarto = {
 </div>
 </center>
 </section>
-<section id="omitted-variables-confounders" class="level2">
-<h2 class="anchored" data-anchor-id="omitted-variables-confounders">Omitted Variables (Confounders)</h2>
+<section id="omitted-variables-confounders" class="slide level2 center">
+<h2>Omitted Variables (Confounders)</h2>
 <ul>
-<li><p>One of the most common errors in observational studies (besides selection bias and information bias — classification or measurement error);</p></li>
-<li><p>It occurs when we suggest that the explanation for something is “confounded” with the effect of another variable;</p></li>
-<li><p>For example, “the sun rose because the rooster crowed,” and not because of Earth’s rotation.</p></li>
+<li class="fragment"><p>One of the most common errors in observational studies (besides selection bias and information bias — classification or measurement error);</p></li>
+<li class="fragment"><p>It occurs when we suggest that the explanation for something is “confounded” with the effect of another variable;</p></li>
+<li class="fragment"><p>For example, “the sun rose because the rooster crowed,” and not because of Earth’s rotation.</p></li>
 </ul>
 </section>
-<section id="how-to-address-omitted-variable-bias" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-address-omitted-variable-bias">How to Address Omitted Variable Bias?</h2>
+<section id="how-to-address-omitted-variable-bias" class="slide level2 center">
+<h2>How to Address Omitted Variable Bias?</h2>
 <ul>
-<li><p>Be well-versed in the literature;</p></li>
-<li><p>Select good control variables for your model;</p></li>
-<li><p>That is, perform a <strong>multiple regression model</strong>.</p></li>
+<li class="fragment"><p>Be well-versed in the literature;</p></li>
+<li class="fragment"><p>Select good control variables for your model;</p></li>
+<li class="fragment"><p>That is, perform a <strong>multiple regression model</strong>.</p></li>
+</ul>
+</section></section>
+<section>
+<section id="multiple-regression" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Multiple Regression</h1>
+
+</section>
+<section id="multiple-regression-1" class="slide level2 center">
+<h2>Multiple Regression</h2>
+<ul>
+<li class="fragment"><p>Regression analysis involving two or more independent variables (x’s).</p></li>
+<li class="fragment"><p>This subject area, called multiple regression analysis, enables us to consider more independent variables (factors) and thus obtain better estimates of the relationship than are possible with simple linear regression.</p></li>
 </ul>
 </section>
-</section>
-<section id="multiple-regression" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Multiple Regression</h1>
-<section id="multiple-regression-1" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-1">Multiple Regression</h2>
-<ul>
-<li><p>Regression analysis involving two or more independent variables (x’s).</p></li>
-<li><p>This subject area, called multiple regression analysis, enables us to consider more independent variables (factors) and thus obtain better estimates of the relationship than are possible with simple linear regression.</p></li>
-</ul>
-</section>
-<section id="multiple-regression-model" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-model">Multiple Regression Model</h2>
+<section id="multiple-regression-model" class="slide level2 center">
+<h2>Multiple Regression Model</h2>
 <p>The equation that describes how the dependent variable <span class="math inline">\(y\)</span> is related to the independent variables <span class="math inline">\(x_1, x_2, \ldots x_p\)</span> and an error term <span class="math inline">\(\epsilon\)</span> is:</p>
 <p><span class="math display">\[
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p + \epsilon
 \]</span></p>
 <p>Where:</p>
 <ul>
-<li><p><span class="math inline">\(\beta_0, \beta_1, \beta_2, \dots, \beta_p\)</span> are the unknown parameters.</p></li>
-<li><p><span class="math inline">\(\epsilon\)</span> is a random variable called the error term with the same assumptions as in simple regression (Normality, zero mean, constant variance, independence).</p></li>
-<li><p><span class="math inline">\(p\)</span> is the number of independent variables (dimension or complexity of the model).</p></li>
+<li class="fragment"><p><span class="math inline">\(\beta_0, \beta_1, \beta_2, \dots, \beta_p\)</span> are the unknown parameters.</p></li>
+<li class="fragment"><p><span class="math inline">\(\epsilon\)</span> is a random variable called the error term with the same assumptions as in simple regression (Normality, zero mean, constant variance, independence).</p></li>
+<li class="fragment"><p><span class="math inline">\(p\)</span> is the number of independent variables (dimension or complexity of the model).</p></li>
 </ul>
 </section>
-<section id="multiple-regression-equation" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-equation">Multiple Regression Equation</h2>
+<section id="multiple-regression-equation" class="slide level2 center">
+<h2>Multiple Regression Equation</h2>
 <p>The equation that describes how the mean value of <span class="math inline">\(y\)</span> is related to <span class="math inline">\(x_1, x_2, \ldots x_p\)</span> is:</p>
 <p><span class="math display">\[
 E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
@@ -421,8 +257,8 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <p><br></p>
 <p>For example, <span class="math inline">\(\beta_1\)</span> is the change in <span class="math inline">\(E(y)\)</span> corresponding to a 1-unit increase in <span class="math inline">\(x_1\)</span>, when all other independent variables are held constant or when we control for all other independent variables.</p>
 </section>
-<section id="estimated-multiple-regression-equation" class="level2">
-<h2 class="anchored" data-anchor-id="estimated-multiple-regression-equation">Estimated Multiple Regression Equation</h2>
+<section id="estimated-multiple-regression-equation" class="slide level2 center">
+<h2>Estimated Multiple Regression Equation</h2>
 <p><br></p>
 <p><span class="math display">\[
 \hat{y} = b_0 + b_1 x_1 + b_2 x_2 + \dots + b_p x_p
@@ -430,12 +266,14 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <p>A simple random sample is used to compute sample slopes <span class="math inline">\(b_0, b_1, b_2, \dots, b_p\)</span> that are used as the point estimators of the population slopes <span class="math inline">\(\beta_0, \beta_1, \beta_2, \dots, \beta_p\)</span>.</p>
 <p><br></p>
 <p>Hence, <span class="math inline">\(\hat{y}\)</span> estimates <span class="math inline">\(E(Y)\)</span>.</p>
+</section></section>
+<section>
+<section id="least-squares-method" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Least Squares Method</h1>
+
 </section>
-</section>
-<section id="least-squares-method" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Least Squares Method</h1>
-<section id="least-squares-method-1" class="level2">
-<h2 class="anchored" data-anchor-id="least-squares-method-1">Least Squares Method</h2>
+<section id="least-squares-method-1" class="slide level2 center">
+<h2>Least Squares Method</h2>
 <p><br></p>
 <p>Least Squares Criterion: Minimize the Sum of Squared Errors (SSE):</p>
 <p><span class="math display">\[
@@ -444,34 +282,26 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <p>Where <span class="math inline">\(y_i - \hat{y_i}\)</span> is the <span class="math inline">\(i\)</span>-th residual/error.</p>
 <p><br></p>
 <ul>
-<li><p>The formulas for the regression coefficients <span class="math inline">\(b_0, b_1, b_2, \dots, b_p\)</span> involve the use of matrix algebra. We will rely on computer software packages to perform the calculations.</p></li>
-<li><p>The emphasis will be on how to interpret the computer output rather than on how to make the multiple regression computations.</p></li>
+<li class="fragment"><p>The formulas for the regression coefficients <span class="math inline">\(b_0, b_1, b_2, \dots, b_p\)</span> involve the use of matrix algebra. We will rely on computer software packages to perform the calculations.</p></li>
+<li class="fragment"><p>The emphasis will be on how to interpret the computer output rather than on how to make the multiple regression computations.</p></li>
 </ul>
 </section>
-<section id="estimation-process" class="level2">
-<h2 class="anchored" data-anchor-id="estimation-process">Estimation Process</h2>
+<section id="estimation-process" class="slide level2 center">
+<h2>Estimation Process</h2>
 <p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/estimation_process.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+
+<img data-src="figs/estimation_process.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
-<section id="multiple-regression-model-1" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-model-1">Multiple Regression Model</h2>
+<section id="multiple-regression-model-1" class="slide level2 center">
+<h2>Multiple Regression Model</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p>Managers at Butler Trucking Company want to develop better work schedules for their drivers. They believe that the total daily travel time would be closely related to the number of miles traveled in making the daily deliveries and also to the number of deliveries.</p>
 <p>A simple random sample of 10 driving assignments was taken.</p>
 </section>
-<section id="multiple-regression-model-2" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-model-2">Multiple Regression Model</h2>
+<section id="multiple-regression-model-2" class="slide level2 center">
+<h2>Multiple Regression Model</h2>
 <p><strong>Example</strong>: Butler Trucking Company - <code>Butler.xlsx</code></p>
-<table class="caption-top table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 24%">
 <col style="width: 24%">
@@ -550,8 +380,8 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 </tbody>
 </table>
 </section>
-<section id="multiple-regression-model-3" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-regression-model-3">Multiple Regression Model</h2>
+<section id="multiple-regression-model-3" class="slide level2 center">
+<h2>Multiple Regression Model</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p>Suppose we believe that total daily travel time (<span class="math inline">\(y\)</span>) is related to the miles traveled (<span class="math inline">\(x_1\)</span>) and the number of deliveries made (<span class="math inline">\(x_2\)</span>) by the following multiple linear regression model:</p>
 <p><span class="math display">\[
@@ -559,16 +389,16 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 \]</span></p>
 <p>Where:</p>
 <ul>
-<li><p><span class="math inline">\(y\)</span> = Total travel time</p></li>
-<li><p><span class="math inline">\(x_1\)</span> = Miles traveled</p></li>
-<li><p><span class="math inline">\(x_2\)</span> = Deliveries made</p></li>
-<li><p><span class="math inline">\(n = 10, p = 2\)</span></p></li>
+<li class="fragment"><p><span class="math inline">\(y\)</span> = Total travel time</p></li>
+<li class="fragment"><p><span class="math inline">\(x_1\)</span> = Miles traveled</p></li>
+<li class="fragment"><p><span class="math inline">\(x_2\)</span> = Deliveries made</p></li>
+<li class="fragment"><p><span class="math inline">\(n = 10, p = 2\)</span></p></li>
 </ul>
 </section>
-<section id="summary-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="summary-statistics">Summary Statistics</h2>
+<section id="summary-statistics" class="slide level2 center">
+<h2>Summary Statistics</h2>
 <div style="font-size: 80%;">
-<table class="caption-top table">
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th></th>
@@ -660,9 +490,9 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 </table>
 </div>
 </section>
-<section id="correlations" class="level2">
-<h2 class="anchored" data-anchor-id="correlations">Correlations</h2>
-<table class="caption-top table">
+<section id="correlations" class="slide level2 center">
+<h2>Correlations</h2>
+<table class="caption-top">
 <colgroup>
 <col style="width: 33%">
 <col style="width: 21%">
@@ -699,23 +529,15 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 </tbody>
 </table>
 </section>
-<section id="regression-output" class="level2">
-<h2 class="anchored" data-anchor-id="regression-output">Regression Output</h2>
+<section id="regression-output" class="slide level2 center">
+<h2>Regression Output</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/butler_company_reg_output_excel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+
+<img data-src="figs/butler_company_reg_output_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
-<section id="estimated-regression-equation" class="level2">
-<h2 class="anchored" data-anchor-id="estimated-regression-equation">Estimated Regression Equation</h2>
+<section id="estimated-regression-equation" class="slide level2 center">
+<h2>Estimated Regression Equation</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p>Prediction equation:</p>
 <p><span class="math display">\[
@@ -730,23 +552,22 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <p>Unexplained residual = <span class="math inline">\(y - \hat{y} = 9.3 - 8.9385 = 0.3615\)</span></p>
 </div>
 </section>
-<section id="interpreting-the-regression-coefficients" class="level2">
-<h2 class="anchored" data-anchor-id="interpreting-the-regression-coefficients">Interpreting the Regression Coefficients</h2>
+<section id="interpreting-the-regression-coefficients" class="slide level2 center">
+<h2>Interpreting the Regression Coefficients</h2>
 <p><br></p>
 <p>Each <span class="math inline">\(b_i\)</span> (for <span class="math inline">\(x_i\)</span>) represents an estimate of the change in the expected <span class="math inline">\(y\)</span> corresponding to a 1-unit increase in <span class="math inline">\(x_i\)</span>, when all other independent variables are held constant or when we control for all other independent variables.</p>
 </section>
-<section id="interpreting-the-regression-coefficients-1" class="level2">
-<h2 class="anchored" data-anchor-id="interpreting-the-regression-coefficients-1">Interpreting the Regression Coefficients</h2>
+<section id="interpreting-the-regression-coefficients-1" class="slide level2 center">
+<h2>Interpreting the Regression Coefficients</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><br></p>
-<div class="nonincremental">
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/butler_company_reg_output_excel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figure>
+<p><img data-src="figs/butler_company_reg_output_excel.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
@@ -765,18 +586,18 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <li>+0.9234 is the estimated average change (increase) in the expected travel time corresponding to an increase of one delivery when the number of miles traveled is held constant.</li>
 </ul></li>
 </ul>
-</div>
-</div>
-</div>
+</div></div>
+</section></section>
+<section>
+<section id="multiple-coefficient-of-determination" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Multiple Coefficient of Determination</h1>
+
 </section>
-</section>
-<section id="multiple-coefficient-of-determination" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Multiple Coefficient of Determination</h1>
-<section id="multiple-coefficient-of-determination-1" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-coefficient-of-determination-1">Multiple Coefficient of Determination</h2>
+<section id="multiple-coefficient-of-determination-1" class="slide level2 center">
+<h2>Multiple Coefficient of Determination</h2>
 <div style="font-size: 80%;">
 <p>Relationship Among SST, SSR, SSE</p>
-<table class="caption-top table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 24%">
 <col style="width: 27%">
@@ -811,37 +632,29 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 \]</span></p>
 <p>Where:</p>
 <ul>
-<li><p>SST = Total sum of squares (total variation of the response)</p></li>
-<li><p>SSR = Sum of squares due to regression (explained by all predictors)</p></li>
-<li><p>SSE = Sum of squares due to error (unexplained variation of residuals)</p></li>
-<li><p><span class="math inline">\(n\)</span> = sample size.</p></li>
-<li><p><span class="math inline">\(p\)</span> = number of predictors (independent variables).</p></li>
-<li><p>The degrees of freedom for SSE reflect the number of observations left after accounting for the number of estimated parameters (<span class="math inline">\(n - (p + \text{one intercept})\)</span>.</p></li>
+<li class="fragment"><p>SST = Total sum of squares (total variation of the response)</p></li>
+<li class="fragment"><p>SSR = Sum of squares due to regression (explained by all predictors)</p></li>
+<li class="fragment"><p>SSE = Sum of squares due to error (unexplained variation of residuals)</p></li>
+<li class="fragment"><p><span class="math inline">\(n\)</span> = sample size.</p></li>
+<li class="fragment"><p><span class="math inline">\(p\)</span> = number of predictors (independent variables).</p></li>
+<li class="fragment"><p>The degrees of freedom for SSE reflect the number of observations left after accounting for the number of estimated parameters (<span class="math inline">\(n - (p + \text{one intercept})\)</span>.</p></li>
 </ul>
 </div>
 </section>
-<section id="partition-of-sst" class="level2">
-<h2 class="anchored" data-anchor-id="partition-of-sst">Partition of SST</h2>
+<section id="partition-of-sst" class="slide level2 center">
+<h2>Partition of SST</h2>
 <p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/partitiion_sst.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+
+<img data-src="figs/partitiion_sst.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 <center>
 df: SST = 9, SSE = 7, SSR = 2
 </center>
 </section>
-<section id="multiple-coefficient-of-determination-2" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-coefficient-of-determination-2">Multiple Coefficient of Determination</h2>
+<section id="multiple-coefficient-of-determination-2" class="slide level2 center">
+<h2>Multiple Coefficient of Determination</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><strong>ANOVA Table</strong></p>
-<table class="caption-top table">
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th>ANOVA</th>
@@ -880,8 +693,8 @@ df: SST = 9, SSE = 7, SSR = 2
 </tbody>
 </table>
 </section>
-<section id="multiple-coefficient-of-determination-3" class="level2">
-<h2 class="anchored" data-anchor-id="multiple-coefficient-of-determination-3">Multiple Coefficient of Determination</h2>
+<section id="multiple-coefficient-of-determination-3" class="slide level2 center">
+<h2>Multiple Coefficient of Determination</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><span class="math display">\[
 R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}
@@ -893,26 +706,26 @@ R^2 = \frac{21.6006}{23.9} = 1 - \frac{2.2994}{23.9} = 90.38\%
 R^2 = 1 - \frac{SSE / (n - 1)}{SST / (n - 1)} = 1 - \frac{\text{Residual variance}}{\text{Response variance}}
 \]</span></p>
 </section>
-<section id="remarks-on-multiple-coefficient-of-determination" class="level2">
-<h2 class="anchored" data-anchor-id="remarks-on-multiple-coefficient-of-determination">Remarks on Multiple Coefficient of Determination</h2>
+<section id="remarks-on-multiple-coefficient-of-determination" class="slide level2 center">
+<h2>Remarks on Multiple Coefficient of Determination</h2>
 <ul>
-<li><p>Adding independent variables, even ones that are not statistically significant, will reduce the prediction errors, thus the SSE will become smaller.</p></li>
-<li><p>Because SST = SSR + SSE is fixed, SSR will become larger, SSE will become smaller, and hence, <span class="math inline">\(R^2 = SSR/SST\)</span> will always increase.</p></li>
-<li><p>But, adding independent variables, the model will become more complex (a larger <span class="math inline">\(p\)</span>).</p></li>
+<li class="fragment"><p>Adding independent variables, even ones that are not statistically significant, will reduce the prediction errors, thus the SSE will become smaller.</p></li>
+<li class="fragment"><p>Because SST = SSR + SSE is fixed, SSR will become larger, SSE will become smaller, and hence, <span class="math inline">\(R^2 = SSR/SST\)</span> will always increase.</p></li>
+<li class="fragment"><p>But, adding independent variables, the model will become more complex (a larger <span class="math inline">\(p\)</span>).</p></li>
 </ul>
 </section>
-<section id="adjusted-multiple-coefficient-of-determination" class="level2">
-<h2 class="anchored" data-anchor-id="adjusted-multiple-coefficient-of-determination">Adjusted Multiple Coefficient of Determination</h2>
+<section id="adjusted-multiple-coefficient-of-determination" class="slide level2 center">
+<h2>Adjusted Multiple Coefficient of Determination</h2>
 <p><br></p>
 <p>The <strong>adjusted multiple coefficient of determination</strong> (<span class="math inline">\(R^2_a\)</span>) takes into account the following factors:</p>
 <ul>
-<li><p>The number of independent variables in the model (<span class="math inline">\(p\)</span>, dimension or complexity)</p></li>
-<li><p>The <span class="math inline">\(R^2\)</span> (Adequacy)</p></li>
-<li><p>The sample size (<span class="math inline">\(n\)</span>, available information)</p></li>
+<li class="fragment"><p>The number of independent variables in the model (<span class="math inline">\(p\)</span>, dimension or complexity)</p></li>
+<li class="fragment"><p>The <span class="math inline">\(R^2\)</span> (Adequacy)</p></li>
+<li class="fragment"><p>The sample size (<span class="math inline">\(n\)</span>, available information)</p></li>
 </ul>
 </section>
-<section id="adjusted-multiple-coefficient-of-determination-1" class="level2">
-<h2 class="anchored" data-anchor-id="adjusted-multiple-coefficient-of-determination-1">Adjusted Multiple Coefficient of Determination</h2>
+<section id="adjusted-multiple-coefficient-of-determination-1" class="slide level2 center">
+<h2>Adjusted Multiple Coefficient of Determination</h2>
 <p><strong>Example</strong>: Butler Trucking Company</p>
 <p><span class="math display">\[
 R^2 = 1 - \frac{SSE}{SST} = 90.38\%
@@ -924,8 +737,8 @@ R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - (1 - R^2) 
 R^2_a = 1 - \frac{2.2994 / (10 - 2 - 1)}{23.9 / (10 - 1)} = 1 - (1 - 0.9038) \cdot \frac{10 - 1}{10 - 2 - 1} = 87.63\%
 \]</span></p>
 </section>
-<section id="adjusted-multiple-coefficient-of-determination-2" class="level2">
-<h2 class="anchored" data-anchor-id="adjusted-multiple-coefficient-of-determination-2">Adjusted Multiple Coefficient of Determination</h2>
+<section id="adjusted-multiple-coefficient-of-determination-2" class="slide level2 center">
+<h2>Adjusted Multiple Coefficient of Determination</h2>
 <p><span class="math display">\[
 R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - \frac{MSE}{\frac{SST}{(n - 1)}} = 1 - \frac{S^2}{\frac{SST}{(n - 1)}}
 \]</span></p>
@@ -934,30 +747,32 @@ R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - \frac{MSE}
 <p>Bringing in a new independent variable will increase the <span class="math inline">\(R^2_a\)</span> when and only when it can decrease the estimated error variance (<span class="math inline">\(S^2\)</span> or MSE). Hence, <span class="math inline">\(R^2_a\)</span> is a good criterion for <strong>model building or model selection</strong>.</p>
 <p><br></p>
 <p><em>(Recall: MSE or</em> <span class="math inline">\(S^2\)</span> estimates the error variance <span class="math inline">\(\sigma^2\)</span>.)</p>
+</section></section>
+<section>
+<section id="testing-for-significance" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Testing for Significance</h1>
+
 </section>
-</section>
-<section id="testing-for-significance" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Testing for Significance</h1>
-<section id="testing-for-significance-1" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-significance-1">Testing for Significance</h2>
+<section id="testing-for-significance-1" class="slide level2 center">
+<h2>Testing for Significance</h2>
 <ul>
-<li>In simple linear regression, the F and <span class="math inline">\(t\)</span> Tests provide the same conclusion:
+<li class="fragment">In simple linear regression, the F and <span class="math inline">\(t\)</span> Tests provide the same conclusion:
 <ul>
-<li>They are equivalen<span class="math inline">\(t\)</span> Tests: Squared t-value = F-value.</li>
-<li>They have the same p-value.</li>
+<li class="fragment">They are equivalen<span class="math inline">\(t\)</span> Tests: Squared t-value = F-value.</li>
+<li class="fragment">They have the same p-value.</li>
 </ul></li>
-<li>In multiple regression, the F and <span class="math inline">\(t\)</span> Tests have different purposes and are not equivalent.</li>
+<li class="fragment">In multiple regression, the F and <span class="math inline">\(t\)</span> Tests have different purposes and are not equivalent.</li>
 </ul>
 </section>
-<section id="testing-for-overall-significance-f-test" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-overall-significance-f-test">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<section id="testing-for-overall-significance-f-test" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <ul>
-<li><p>The <span class="math inline">\(F\)</span> Test is used to determine whether a significant linear relationship exists between the dependent variable and the set of all the independent variables, by testing their population slopes (<span class="math inline">\(\beta_1, \dots, \beta_p\)</span>) together as a group.</p></li>
-<li><p>The <span class="math inline">\(F\)</span> Test is referred to as the test for overall significance.</p></li>
+<li class="fragment"><p>The <span class="math inline">\(F\)</span> Test is used to determine whether a significant linear relationship exists between the dependent variable and the set of all the independent variables, by testing their population slopes (<span class="math inline">\(\beta_1, \dots, \beta_p\)</span>) together as a group.</p></li>
+<li class="fragment"><p>The <span class="math inline">\(F\)</span> Test is referred to as the test for overall significance.</p></li>
 </ul>
 </section>
-<section id="testing-for-overall-significance-f-test-1" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-overall-significance-f-test-1">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<section id="testing-for-overall-significance-f-test-1" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <div style="font-size: 80%;">
 <p><strong>Hypotheses</strong></p>
 <p><span class="math display">\[
@@ -978,8 +793,8 @@ MSR = \frac{SSR}{p} \quad \text{and} \quad MSE = \frac{SSE}{n-p-1}
 <p>where <span class="math inline">\(F_\alpha\)</span> is based on an <span class="math inline">\(F\)</span> distribution with <span class="math inline">\(p\)</span> d.f. (numerator) and <span class="math inline">\(n - p - 1\)</span> d.f. (denominator).</p>
 </div>
 </section>
-<section id="testing-for-overall-significance-f-test-2" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-overall-significance-f-test-2">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<section id="testing-for-overall-significance-f-test-2" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><strong>Hypotheses:</strong></p>
 <p><span class="math display">\[
@@ -992,8 +807,8 @@ H_a: \text{One or both slopes are not equal to zero}
 <p>For <span class="math inline">\(\alpha = 0.01\)</span> and degrees of freedom = 2 and 7, <span class="math inline">\(F_{\alpha} = 9.55\)</span>.</p>
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq 9.55\)</span> or <span class="math inline">\(p \leq .01\)</span>.</p>
 </section>
-<section id="testing-for-overall-significance-f-test-3" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-overall-significance-f-test-3">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<section id="testing-for-overall-significance-f-test-3" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>Test Statistics</strong></p>
 <p><span class="math display">\[
 F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
@@ -1002,10 +817,10 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 <p>We reject <span class="math inline">\(H_0\)</span> because <span class="math inline">\(F = 32.8784 &gt; 9.55\)</span>.</p>
 <p>We have significant statistical evidence to conclude that at least one of the independent variables is useful in explaining the variation in the total travel time, or for predicting the total travel time. The significance level is 1%.</p>
 </section>
-<section id="testing-for-overall-significance-f-test-4" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-overall-significance-f-test-4">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<section id="testing-for-overall-significance-f-test-4" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>ANOVA Output</strong></p>
-<table class="caption-top table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 16%">
 <col style="width: 16%">
@@ -1052,10 +867,10 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 </tbody>
 </table>
 </section>
-<section id="testing-for-overall-significance-f-test-5" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-overall-significance-f-test-5">Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
+<section id="testing-for-overall-significance-f-test-5" class="slide level2 center">
+<h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>ANOVA Output</strong></p>
-<table class="caption-top table">
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th>Source</th>
@@ -1097,19 +912,19 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 p-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 \]</span></p>
 </section>
-<section id="testing-for-individual-significance-t-test" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-individual-significance-t-test">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
+<section id="testing-for-individual-significance-t-test" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <ul>
-<li><p>If the <span class="math inline">\(F\)</span> test shows an overall significance, a separate <span class="math inline">\(t\)</span> test is conducted for each of the independent variables in the model.</p></li>
-<li><p>The <span class="math inline">\(t\)</span> test is used to determine whether each of the individual independent variables is significant <strong>in the presence of all other independent variables in the model</strong>.</p>
+<li class="fragment"><p>If the <span class="math inline">\(F\)</span> test shows an overall significance, a separate <span class="math inline">\(t\)</span> test is conducted for each of the independent variables in the model.</p></li>
+<li class="fragment"><p>The <span class="math inline">\(t\)</span> test is used to determine whether each of the individual independent variables is significant <strong>in the presence of all other independent variables in the model</strong>.</p>
 <ul>
-<li>It tests the <strong>additional contribution</strong> in reducing the variation of the unexplained error (or in increasing the explained variation).</li>
+<li class="fragment">It tests the <strong>additional contribution</strong> in reducing the variation of the unexplained error (or in increasing the explained variation).</li>
 </ul></li>
-<li><p>We refer to each of these <span class="math inline">\(t\)</span> tests as a test for individual significance.</p></li>
+<li class="fragment"><p>We refer to each of these <span class="math inline">\(t\)</span> tests as a test for individual significance.</p></li>
 </ul>
 </section>
-<section id="testing-for-individual-significance-t-test-1" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-individual-significance-t-test-1">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
+<section id="testing-for-individual-significance-t-test-1" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Hypotheses</strong></p>
 <p><span class="math display">\[
 H_0: \beta_i = 0 \quad (x_i \text{ is not significant in the presence of all other } x's)
@@ -1125,12 +940,12 @@ t = \frac{b_i - 0}{s_{b_i}} \quad (s_{b_i} \text{ is the standard error of } b_i
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(t \leq -t_{\alpha / 2}\)</span> or <span class="math inline">\(t \geq t_{\alpha / 2}\)</span> or if <span class="math inline">\(p\)</span>-value <span class="math inline">\(\leq \alpha\)</span>.</p>
 <p>where <span class="math inline">\(t_{\alpha/2}\)</span> is based on a <span class="math inline">\(t\)</span>-distribution with <span class="math inline">\(n - p - 1\)</span> degrees of freedom.</p>
 </section>
-<section id="testing-for-individual-significance-t-test-2" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-individual-significance-t-test-2">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
+<section id="testing-for-individual-significance-t-test-2" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <ul>
-<li><span class="math inline">\(H_0: \beta_i = 0\)</span></li>
-<li><span class="math inline">\(H_a: \beta_i \neq 0 \quad \text{(Two-tailed)}\)</span></li>
+<li class="fragment"><span class="math inline">\(H_0: \beta_i = 0\)</span></li>
+<li class="fragment"><span class="math inline">\(H_a: \beta_i \neq 0 \quad \text{(Two-tailed)}\)</span></li>
 </ul>
 <div class="fragment">
 <p>For <span class="math inline">\(\alpha = 0.01\)</span> and <span class="math inline">\(df = 7\)</span>:</p>
@@ -1140,8 +955,8 @@ t_{0.005} = 3.499
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(p\)</span>-value <span class="math inline">\(\leq .01\)</span>, or if <span class="math inline">\(t \leq -3.499\)</span> or <span class="math inline">\(t \geq 3.499\)</span>.</p>
 </div>
 </section>
-<section id="testing-for-individual-significance-t-test-3" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-individual-significance-t-test-3">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
+<section id="testing-for-individual-significance-t-test-3" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Test Statistics</strong></p>
 <p><span class="math display">\[
 t = \frac{b_1 - 0}{s_{b_1}} = \frac{0.0611 - 0}{0.0099} = 6.1717, \quad \text{for } x_1
@@ -1152,102 +967,100 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <p><strong>Conclusion</strong></p>
 <p>Reject each of <span class="math inline">\(H_0: \beta_1 = 0\)</span> and <span class="math inline">\(H_0: \beta_2 = 0\)</span>. Each independent variable is statistically significant <strong>in the presence of the other</strong>.</p>
 </section>
-<section id="testing-for-individual-significance-t-test-4" class="level2">
-<h2 class="anchored" data-anchor-id="testing-for-individual-significance-t-test-4">Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
+<section id="testing-for-individual-significance-t-test-4" class="slide level2 center">
+<h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p>Regression Table</p>
 <p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/butler_company_reg_table_excel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+
+<img data-src="figs/butler_company_reg_table_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
+</section></section>
+<section>
+<section id="multicollinearity" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Multicollinearity</h1>
+
 </section>
-</section>
-<section id="multicollinearity" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Multicollinearity</h1>
-<section id="multicollinearity-1" class="level2">
-<h2 class="anchored" data-anchor-id="multicollinearity-1">Multicollinearity</h2>
+<section id="multicollinearity-1" class="slide level2 center">
+<h2>Multicollinearity</h2>
 <ul>
-<li><p>The term <strong>multicollinearity</strong> refers to the correlation among the independent variables.</p></li>
-<li><p>It is important to compute pairwise correlations in a multiple regression analysis.</p></li>
-<li><p><strong>Rule of Thumb</strong>: When independent variables are highly correlated (e.g., <span class="math inline">\(|r| &gt; 0.7\)</span>), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.</p></li>
-<li><p>Every attempt should be made to avoid including independent variables that are highly correlated.</p></li>
-<li><p>If the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem</p></li>
+<li class="fragment"><p>The term <strong>multicollinearity</strong> refers to the correlation among the independent variables.</p></li>
+<li class="fragment"><p>It is important to compute pairwise correlations in a multiple regression analysis.</p></li>
+<li class="fragment"><p><strong>Rule of Thumb</strong>: When independent variables are highly correlated (e.g., <span class="math inline">\(|r| &gt; 0.7\)</span>), it is difficult to determine the separate/marginal effect of each independent variable on the dependent variable.</p></li>
+<li class="fragment"><p>Every attempt should be made to avoid including independent variables that are highly correlated.</p></li>
+<li class="fragment"><p>If the estimated regression equation is to be used only for predictive purposes, multicollinearity is usually not a serious problem</p></li>
 </ul>
 </section>
-<section id="multicollinearity-2" class="level2">
-<h2 class="anchored" data-anchor-id="multicollinearity-2">Multicollinearity</h2>
+<section id="multicollinearity-2" class="slide level2 center">
+<h2>Multicollinearity</h2>
 <ul>
-<li><p>The coefficients do not measure marginal effects of the predictors (rather <strong>combined</strong> effects may be measured).</p></li>
-<li><p>Coefficient estimates (b’s) are <strong>unstable</strong> (having “inflated” standard errors — also see <strong>Variance Inflation Factor, VIF</strong>).</p>
+<li class="fragment"><p>The coefficients do not measure marginal effects of the predictors (rather <strong>combined</strong> effects may be measured).</p></li>
+<li class="fragment"><p>Coefficient estimates (b’s) are <strong>unstable</strong> (having “inflated” standard errors — also see <strong>Variance Inflation Factor, VIF</strong>).</p>
 <ul>
-<li><strong>Nonsignificant</strong> test results for important predictor variables.</li>
-<li>Estimated regression coefficients with an algebraic sign that is the <strong>opposite</strong> of what is expected from theoretical considerations or prior experience.</li>
-<li><strong>Large changes</strong> in the estimated regression coefficients (slopes) when a predictor variable is added or deleted.</li>
-<li><strong>Wide confidence intervals</strong> for the regression coefficients representing important predictor variables.</li>
+<li class="fragment"><strong>Nonsignificant</strong> test results for important predictor variables.</li>
+<li class="fragment">Estimated regression coefficients with an algebraic sign that is the <strong>opposite</strong> of what is expected from theoretical considerations or prior experience.</li>
+<li class="fragment"><strong>Large changes</strong> in the estimated regression coefficients (slopes) when a predictor variable is added or deleted.</li>
+<li class="fragment"><strong>Wide confidence intervals</strong> for the regression coefficients representing important predictor variables.</li>
 </ul></li>
 </ul>
+</section></section>
+<section>
+<section id="estimation-and-prediction" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Estimation and Prediction</h1>
+
 </section>
-</section>
-<section id="estimation-and-prediction" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Estimation and Prediction</h1>
-<section id="estimation-and-prediction-1" class="level2">
-<h2 class="anchored" data-anchor-id="estimation-and-prediction-1">Estimation and Prediction</h2>
+<section id="estimation-and-prediction-1" class="slide level2 center">
+<h2>Estimation and Prediction</h2>
 <ul>
-<li><p>The procedures for estimating the mean value of <span class="math inline">\(y\)</span> and predicting an individual value of <span class="math inline">\(y\)</span> in multiple regression are similar to those in simple regression.</p></li>
-<li><p>We substitute the given values of <span class="math inline">\(x_1, x_2, ..., x_p\)</span> into the estimated regression equation and use the corresponding value of <span class="math inline">\(\hat{y}\)</span> as the point estimate.</p></li>
-<li><p>The interpretations of the Confidence Interval (CI) and Prediction Interval (PI) in multiple regression are similar to those in simple regression:</p>
+<li class="fragment"><p>The procedures for estimating the mean value of <span class="math inline">\(y\)</span> and predicting an individual value of <span class="math inline">\(y\)</span> in multiple regression are similar to those in simple regression.</p></li>
+<li class="fragment"><p>We substitute the given values of <span class="math inline">\(x_1, x_2, ..., x_p\)</span> into the estimated regression equation and use the corresponding value of <span class="math inline">\(\hat{y}\)</span> as the point estimate.</p></li>
+<li class="fragment"><p>The interpretations of the Confidence Interval (CI) and Prediction Interval (PI) in multiple regression are similar to those in simple regression:</p>
 <ul>
-<li>The Confidence Interval (CI) estimates the range within which the mean value of the dependent variable is expected to lie, given specific values of the independent variables.</li>
-<li>The Prediction Interval (PI) estimates the range within which an individual observation of the dependent variable is expected to lie, given specific values of the independent variables.</li>
+<li class="fragment">The Confidence Interval (CI) estimates the range within which the mean value of the dependent variable is expected to lie, given specific values of the independent variables.</li>
+<li class="fragment">The Prediction Interval (PI) estimates the range within which an individual observation of the dependent variable is expected to lie, given specific values of the independent variables.</li>
 </ul></li>
 </ul>
 <p><br></p>
 <ul>
-<li>The formulas required to develop interval estimates, CI and PI, are beyond the scope of the course and our textbook. Software packages for multiple regression will often provide these interval estimates.</li>
+<li class="fragment">The formulas required to develop interval estimates, CI and PI, are beyond the scope of the course and our textbook. Software packages for multiple regression will often provide these interval estimates.</li>
 </ul>
+</section></section>
+<section>
+<section id="categorical-independent-variables" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Categorical Independent Variables</h1>
+
 </section>
-</section>
-<section id="categorical-independent-variables" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Categorical Independent Variables</h1>
-<section id="categorical-independent-variables-1" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-1">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-1" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <ul>
-<li><p>In many situations, we need to work with categorical independent variables such as gender (an independent variable with 2 categories: Male, Female), method of payment (an independent variable with 3 categories: Cash, Check, Credit card), etc.</p></li>
-<li><p>Need to code categorical independent variables. For example, if <span class="math inline">\(x_2\)</span> is a gender variable, let <span class="math inline">\(x_2 = 1\)</span> for males and <span class="math inline">\(x_2 = 0\)</span> for females.</p></li>
-<li><p>In this case, <span class="math inline">\(x_2\)</span> is called a dummy or indicator variable, and the category with a 0 (i.e., female) is called the reference category or level.</p></li>
+<li class="fragment"><p>In many situations, we need to work with categorical independent variables such as gender (an independent variable with 2 categories: Male, Female), method of payment (an independent variable with 3 categories: Cash, Check, Credit card), etc.</p></li>
+<li class="fragment"><p>Need to code categorical independent variables. For example, if <span class="math inline">\(x_2\)</span> is a gender variable, let <span class="math inline">\(x_2 = 1\)</span> for males and <span class="math inline">\(x_2 = 0\)</span> for females.</p></li>
+<li class="fragment"><p>In this case, <span class="math inline">\(x_2\)</span> is called a dummy or indicator variable, and the category with a 0 (i.e., female) is called the reference category or level.</p></li>
 </ul>
 </section>
-<section id="categorical-independent-variables-2" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-2">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-2" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <ul>
-<li>Gender: F, M</li>
-<li>Job Type: Lawyer, Salesperson, Educator, Government (for salary)</li>
-<li>Tool Type: A, B, C (for yields)</li>
-<li>Region: NE, NW, SE, SW (for sales)</li>
-<li>Season (for sales)</li>
-<li>Training Method: Online, Hybrid, In-person (for learning outcome)</li>
-<li>Position: Manager, AVP, Senior VP, Chair (for retirement age)</li>
-<li>Advertising Media: Newspaper, Magazine, Spot TV (for sales)</li>
-<li>Smoker: Yes, No (for health risk)</li>
-<li>Method of Payment: Cash, Check, Credit Card (for credit rating or loan approvals)</li>
+<li class="fragment">Gender: F, M</li>
+<li class="fragment">Job Type: Lawyer, Salesperson, Educator, Government (for salary)</li>
+<li class="fragment">Tool Type: A, B, C (for yields)</li>
+<li class="fragment">Region: NE, NW, SE, SW (for sales)</li>
+<li class="fragment">Season (for sales)</li>
+<li class="fragment">Training Method: Online, Hybrid, In-person (for learning outcome)</li>
+<li class="fragment">Position: Manager, AVP, Senior VP, Chair (for retirement age)</li>
+<li class="fragment">Advertising Media: Newspaper, Magazine, Spot TV (for sales)</li>
+<li class="fragment">Smoker: Yes, No (for health risk)</li>
+<li class="fragment">Method of Payment: Cash, Check, Credit Card (for credit rating or loan approvals)</li>
 </ul>
 </section>
-<section id="categorical-independent-variables-3" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-3">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-3" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <p>Managers of Johnson Filtration, Inc.&nbsp;want to predict the repair time necessary for processing its maintenance requests. Repair time is believed to be related to two factors, the number of months since last service and the type of repair problem (mechanical or electrical). Data for a sample of 10 service calls are reported in the table (next slide).</p>
 </section>
-<section id="categorical-independent-variables-4" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-4">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-4" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong></p>
-<table class="caption-top table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 23%">
 <col style="width: 29%">
@@ -1326,10 +1139,10 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 </tbody>
 </table>
 </section>
-<section id="categorical-independent-variables-5" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-5">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-5" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong>: Now with a <em>dummy</em> or <em>indicator variable</em>.</p>
-<table class="caption-top table">
+<table class="caption-top">
 <colgroup>
 <col style="width: 23%">
 <col style="width: 29%">
@@ -1410,8 +1223,8 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <p>0 = Mechanical (reference)<br>
 1 = Electrical</p>
 </section>
-<section id="categorical-independent-variables-6" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-6">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-6" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <p>Regression model:</p>
 <p><span class="math display">\[
@@ -1422,22 +1235,14 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <span class="math inline">\(x_1\)</span> = Number of months since last maintenance service<br>
 <span class="math inline">\(x_2\)</span> = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( <span class="math inline">\(x_2\)</span> is a dummy variable)</p>
 </section>
-<section id="categorical-independent-variables-7" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-7">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-7" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/multiple_reg_categorical_iv.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+
+<img data-src="figs/multiple_reg_categorical_iv.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
-<section id="categorical-independent-variables-8" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-8">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-8" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <p>Interpretation of regression coefficient <span class="math inline">\(\beta_2\)</span> of dummy variable <span class="math inline">\(x_2\)</span>:</p>
 <p><span class="math display">\[
 E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
@@ -1451,56 +1256,48 @@ E(y|mechanical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 0 = \beta_0 + \beta_1 x_
 E(y|electrical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = (\beta_0 + \beta_2) + \beta_1 x_1
 \]</span></p>
 </section>
-<section id="categorical-independent-variables-9" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-9">Categorical Independent Variables</h2>
+<section id="categorical-independent-variables-9" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
 <ul>
-<li><p>The mean repair time is a linear function of <span class="math inline">\(x_1\)</span> for both mechanical and electrical repairs.</p></li>
-<li><p>The slope of both equations is <span class="math inline">\(\beta_1\)</span>, but the y-intercept differs:</p>
+<li class="fragment"><p>The mean repair time is a linear function of <span class="math inline">\(x_1\)</span> for both mechanical and electrical repairs.</p></li>
+<li class="fragment"><p>The slope of both equations is <span class="math inline">\(\beta_1\)</span>, but the y-intercept differs:</p>
 <ul>
-<li>For mechanical repairs: the y-intercept is <span class="math inline">\(\beta_0\)</span>.</li>
-<li>For electrical repairs: the y-intercept is <span class="math inline">\(\beta_0 + \beta_2\)</span>.</li>
+<li class="fragment">For mechanical repairs: the y-intercept is <span class="math inline">\(\beta_0\)</span>.</li>
+<li class="fragment">For electrical repairs: the y-intercept is <span class="math inline">\(\beta_0 + \beta_2\)</span>.</li>
 </ul></li>
-<li><p>The coefficient <span class="math inline">\(\beta_2\)</span> indicates the difference between the mean repair time for electrical repairs and the mean repair time for mechanical repairs.</p></li>
+<li class="fragment"><p>The coefficient <span class="math inline">\(\beta_2\)</span> indicates the difference between the mean repair time for electrical repairs and the mean repair time for mechanical repairs.</p></li>
 </ul>
 </section>
-<section id="interpretation-of-beta_2" class="level2">
-<h2 class="anchored" data-anchor-id="interpretation-of-beta_2">Interpretation of <span class="math inline">\(\beta_2\)</span></h2>
+<section id="interpretation-of-beta_2" class="slide level2 center">
+<h2>Interpretation of <span class="math inline">\(\beta_2\)</span></h2>
 <ul>
-<li><p><strong>If</strong> <span class="math inline">\(\beta_2\)</span> is positive: The mean repair time for an electrical repair is greater than for a mechanical repair.</p></li>
-<li><p><strong>If</strong> <span class="math inline">\(\beta_2\)</span> is negative: The mean repair time for an electrical repair is less than for a mechanical repair.</p></li>
-<li><p><strong>If</strong> <span class="math inline">\(\beta_2 = 0\)</span>: There is no difference in the mean repair time between electrical and mechanical repairs, indicating that the type of repair is not related to repair time.</p></li>
-<li><p>In effect, the use of the dummy variable for type of repair provides two estimated regression equations that can be used to predict the repair time.</p></li>
+<li class="fragment"><p><strong>If</strong> <span class="math inline">\(\beta_2\)</span> is positive: The mean repair time for an electrical repair is greater than for a mechanical repair.</p></li>
+<li class="fragment"><p><strong>If</strong> <span class="math inline">\(\beta_2\)</span> is negative: The mean repair time for an electrical repair is less than for a mechanical repair.</p></li>
+<li class="fragment"><p><strong>If</strong> <span class="math inline">\(\beta_2 = 0\)</span>: There is no difference in the mean repair time between electrical and mechanical repairs, indicating that the type of repair is not related to repair time.</p></li>
+<li class="fragment"><p>In effect, the use of the dummy variable for type of repair provides two estimated regression equations that can be used to predict the repair time.</p></li>
 </ul>
 </section>
-<section id="categorical-independent-variables-10" class="level2">
-<h2 class="anchored" data-anchor-id="categorical-independent-variables-10">Categorical Independent Variables</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/multiple_reg_categorical_iv_plot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+<section id="categorical-independent-variables-10" class="slide level2 center">
+<h2>Categorical Independent Variables</h2>
+
+<img data-src="figs/multiple_reg_categorical_iv_plot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
-<section id="more-complex-categorical-variables" class="level2">
-<h2 class="anchored" data-anchor-id="more-complex-categorical-variables">More Complex Categorical Variables</h2>
-<blockquote class="blockquote">
+<section id="more-complex-categorical-variables" class="slide level2 center">
+<h2>More Complex Categorical Variables</h2>
+<blockquote>
 <p>A categorical variable with <span class="math inline">\(k\)</span> levels must be modeled using <span class="math inline">\(k - 1\)</span> dummy variables. Care must be taken in defining and interpreting the dummy variables.</p>
 </blockquote>
 <ul>
-<li><p>In the Johnson Filtration example, a categorical variable (mechanical and electrical) with two levels was represented by a single dummy variable.</p></li>
-<li><p>When a categorical variable has more than two levels, <span class="math inline">\(k - 1\)</span> dummy variables are required, with each coded as 0 or 1.</p></li>
+<li class="fragment"><p>In the Johnson Filtration example, a categorical variable (mechanical and electrical) with two levels was represented by a single dummy variable.</p></li>
+<li class="fragment"><p>When a categorical variable has more than two levels, <span class="math inline">\(k - 1\)</span> dummy variables are required, with each coded as 0 or 1.</p></li>
 </ul>
 </section>
-<section id="example-categorical-variable-with-three-levels" class="level2">
-<h2 class="anchored" data-anchor-id="example-categorical-variable-with-three-levels">Example: Categorical Variable with Three Levels</h2>
+<section id="example-categorical-variable-with-three-levels" class="slide level2 center">
+<h2>Example: Categorical Variable with Three Levels</h2>
 <ul>
-<li><p>Suppose a manufacturer organizes the sales territories into three regions: A, B, and C.</p></li>
-<li><p>The number of copiers sold per week is the dependent variable.</p></li>
-<li><p>The sales region is a categorical variable with three levels: A, B, and C.</p></li>
+<li class="fragment"><p>Suppose a manufacturer organizes the sales territories into three regions: A, B, and C.</p></li>
+<li class="fragment"><p>The number of copiers sold per week is the dependent variable.</p></li>
+<li class="fragment"><p>The sales region is a categorical variable with three levels: A, B, and C.</p></li>
 </ul>
 <div class="fragment">
 <p><strong>Dummy Variables for Sales Region:</strong> We need <span class="math inline">\(3 - 1 = 2\)</span> dummy variables.</p>
@@ -1520,13 +1317,13 @@ x_2 =
 \]</span></p>
 </div>
 </section>
-<section id="example-dummy-variable-coding" class="level2">
-<h2 class="anchored" data-anchor-id="example-dummy-variable-coding">Example: Dummy Variable Coding</h2>
+<section id="example-dummy-variable-coding" class="slide level2 center">
+<h2>Example: Dummy Variable Coding</h2>
 <ul>
-<li>The following table shows the coding for the dummy variables <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> for each sales region.</li>
+<li class="fragment">The following table shows the coding for the dummy variables <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span> for each sales region.</li>
 </ul>
 <div class="fragment">
-<table class="caption-top table">
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th>Region</th>
@@ -1554,16 +1351,16 @@ x_2 =
 </table>
 </div>
 <ul>
-<li>Observations corresponding to region A are coded <span class="math inline">\(x_1 = 0,  x_2 = 0\)</span>.</li>
-<li>Observations corresponding to region B are coded <span class="math inline">\(x_1 = 1,  x_2 = 0\)</span>.</li>
-<li>Observations corresponding to region C are coded <span class="math inline">\(x_1 = 0,  x_2 = 1\)</span>.</li>
+<li class="fragment">Observations corresponding to region A are coded <span class="math inline">\(x_1 = 0,  x_2 = 0\)</span>.</li>
+<li class="fragment">Observations corresponding to region B are coded <span class="math inline">\(x_1 = 1,  x_2 = 0\)</span>.</li>
+<li class="fragment">Observations corresponding to region C are coded <span class="math inline">\(x_1 = 0,  x_2 = 1\)</span>.</li>
 </ul>
 </section>
-<section id="example-regression-equation-with-dummy-variables" class="level2">
-<h2 class="anchored" data-anchor-id="example-regression-equation-with-dummy-variables">Example: Regression Equation with Dummy Variables</h2>
+<section id="example-regression-equation-with-dummy-variables" class="slide level2 center">
+<h2>Example: Regression Equation with Dummy Variables</h2>
 <div style="font-size: 80%;">
 <ul>
-<li>The regression equation for the expected number of units sold is:</li>
+<li class="fragment">The regression equation for the expected number of units sold is:</li>
 </ul>
 <div class="fragment">
 <p><span class="math display">\[
@@ -1571,49 +1368,51 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
 \]</span></p>
 </div>
 <ul>
-<li><p>To interpret the parameters <span class="math inline">\(\beta_0,  \beta_1,  \beta_2\)</span>, consider the three variations of the regression equation:</p></li>
-<li><p><strong>Region A</strong>: <span class="math display">\[
+<li class="fragment"><p>To interpret the parameters <span class="math inline">\(\beta_0,  \beta_1,  \beta_2\)</span>, consider the three variations of the regression equation:</p></li>
+<li class="fragment"><p><strong>Region A</strong>: <span class="math display">\[
 E(y | \text{region A}) = \beta_0 + \beta_1 (0) + \beta_2 (0) = \beta_0
 \]</span></p></li>
-<li><p><strong>Region B</strong>: <span class="math display">\[
+<li class="fragment"><p><strong>Region B</strong>: <span class="math display">\[
 E(y | \text{region B}) = \beta_0 + \beta_1 (1) + \beta_2 (0) = \beta_0 + \beta_1
 \]</span></p></li>
-<li><p><strong>Region C</strong>: <span class="math display">\[
+<li class="fragment"><p><strong>Region C</strong>: <span class="math display">\[
 E(y | \text{region C}) = \beta_0 + \beta_1 (0) + \beta_2 (1) = \beta_0 + \beta_2
 \]</span></p></li>
-<li><p>Interpretation:</p>
+<li class="fragment"><p>Interpretation:</p>
 <ul>
-<li><span class="math inline">\(\beta_0\)</span>: Mean or expected value of sales for region A.</li>
-<li><span class="math inline">\(\beta_1\)</span>: Difference in mean sales between region B and region A.</li>
-<li><span class="math inline">\(\beta_2\)</span>: Difference in mean sales between region C and region A.</li>
+<li class="fragment"><span class="math inline">\(\beta_0\)</span>: Mean or expected value of sales for region A.</li>
+<li class="fragment"><span class="math inline">\(\beta_1\)</span>: Difference in mean sales between region B and region A.</li>
+<li class="fragment"><span class="math inline">\(\beta_2\)</span>: Difference in mean sales between region C and region A.</li>
 </ul></li>
 </ul>
 </div>
 </section>
-<section id="example-important-points-on-dummy-variables" class="level2">
-<h2 class="anchored" data-anchor-id="example-important-points-on-dummy-variables">Example: Important Points on Dummy Variables</h2>
+<section id="example-important-points-on-dummy-variables" class="slide level2 center">
+<h2>Example: Important Points on Dummy Variables</h2>
 <ul>
-<li><p>Two dummy variables are used because the sales region has three levels.</p></li>
-<li><p>The assignment of <span class="math inline">\(x_1 = 0, x_2 = 0\)</span> for region A is arbitrary.</p></li>
-<li><p>Alternative coding choices are possible, which would change the interpretation of <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span>.</p></li>
-<li><p><strong>Key Point</strong>: For a categorical variable with <span class="math inline">\(k\)</span> levels, <span class="math inline">\(k - 1\)</span> dummy variables are required.</p>
+<li class="fragment"><p>Two dummy variables are used because the sales region has three levels.</p></li>
+<li class="fragment"><p>The assignment of <span class="math inline">\(x_1 = 0, x_2 = 0\)</span> for region A is arbitrary.</p></li>
+<li class="fragment"><p>Alternative coding choices are possible, which would change the interpretation of <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span>.</p></li>
+<li class="fragment"><p><strong>Key Point</strong>: For a categorical variable with <span class="math inline">\(k\)</span> levels, <span class="math inline">\(k - 1\)</span> dummy variables are required.</p>
 <ul>
-<li>For a fourth region <span class="math inline">\(D\)</span>, we would need three dummy variables.</li>
+<li class="fragment">For a fourth region <span class="math inline">\(D\)</span>, we would need three dummy variables.</li>
 </ul></li>
 </ul>
+</section></section>
+<section>
+<section id="model-assumptions" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Model Assumptions</h1>
+
 </section>
-</section>
-<section id="model-assumptions" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Model Assumptions</h1>
-<section id="precision-and-accuracy" class="level2">
-<h2 class="anchored" data-anchor-id="precision-and-accuracy">Precision and Accuracy</h2>
+<section id="precision-and-accuracy" class="slide level2 center">
+<h2>Precision and Accuracy</h2>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/precision_accuracy.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figure>
+<p><img data-src="figs/precision_accuracy.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
@@ -1621,27 +1420,26 @@ E(y | \text{region C}) = \beta_0 + \beta_1 (0) + \beta_2 (1) = \beta_0 + \beta_2
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 70%;">
 <ul>
-<li><p><strong>Precision</strong>: Refers to the consistency or reliability of the model’s predictions.</p></li>
-<li><p><strong>Accuracy</strong>: Refers to how close the model’s predictions are to the true values.</p></li>
+<li class="fragment"><p><strong>Precision</strong>: Refers to the consistency or reliability of the model’s predictions.</p></li>
+<li class="fragment"><p><strong>Accuracy</strong>: Refers to how close the model’s predictions are to the true values.</p></li>
 </ul>
 <div class="fragment">
 <p>In the context of regression:</p>
 <ul>
-<li><strong>High Precision, Low Accuracy</strong>: Predictions are consistent but biased.</li>
-<li><strong>High Precision, High Accuracy</strong>: Predictions are both consistent and valid.</li>
-<li><strong>Low Precision, Low Accuracy</strong>: Predictions are neither consistent nor valid.</li>
-<li><strong>Low Precision, High Accuracy</strong>: Predictions are valid on average but have high variability.</li>
+<li class="fragment"><strong>High Precision, Low Accuracy</strong>: Predictions are consistent but biased.</li>
+<li class="fragment"><strong>High Precision, High Accuracy</strong>: Predictions are both consistent and valid.</li>
+<li class="fragment"><strong>Low Precision, Low Accuracy</strong>: Predictions are neither consistent nor valid.</li>
+<li class="fragment"><strong>Low Precision, High Accuracy</strong>: Predictions are valid on average but have high variability.</li>
 </ul>
 <div class="fragment">
 <p><strong>To achieve high precision and high accuracy, we need to meet the model assumptions.</strong></p>
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model" class="level2">
-<h2 class="anchored" data-anchor-id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model">Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
+<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model" class="slide level2 center">
+<h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
 <div style="font-size: 80%;">
 <p>Consider the following two-independent-variable multiple regression equation:</p>
 <p><span class="math display">\[
@@ -1649,30 +1447,22 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
 \]</span></p>
 </div>
 <p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/multiple_regression_plot.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<div style="font-size: 80%;">
+
+<img data-src="figs/multiple_regression_plot.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div style="font-size: 80%;">
 <p>The graph of this equation is a plane in three-dimensional space. The value of <span class="math inline">\(\epsilon\)</span> shown is the difference between the actual <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span>, <span class="math inline">\(E(y)\)</span>, when <span class="math inline">\(x_1 = x_1^*\)</span> and <span class="math inline">\(x_2 = x_2^*\)</span>.</p>
 </div>
 <p><br></p>
 </section>
-<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1" class="level2">
-<h2 class="anchored" data-anchor-id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1">Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
+<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1" class="slide level2 center">
+<h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
 <p><span class="math display">\[
 y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon
 \]</span></p>
 <ol type="1">
-<li><strong>The error term</strong> <span class="math inline">\(\epsilon\)</span> is a random variable with <span class="math inline">\(E(\epsilon) = 0\)</span>.</li>
+<li class="fragment"><strong>The error term</strong> <span class="math inline">\(\epsilon\)</span> is a random variable with <span class="math inline">\(E(\epsilon) = 0\)</span>.</li>
 </ol>
 <ul>
-<li><strong>Implication</strong>: For given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the expected, or average, value of <span class="math inline">\(y\)</span> is given by:</li>
+<li class="fragment"><strong>Implication</strong>: For given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the expected, or average, value of <span class="math inline">\(y\)</span> is given by:</li>
 </ul>
 <div class="fragment">
 <p><span class="math display">\[
@@ -1680,89 +1470,75 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p
 \]</span></p>
 </div>
 <ul>
-<li><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</li>
+<li class="fragment"><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</li>
 </ul>
 <ol start="2" type="1">
-<li><strong>The variance of</strong> <span class="math inline">\(\epsilon\)</span> is denoted by <span class="math inline">\(\sigma^2\)</span> and is the same for all values of the independent variables <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</li>
+<li class="fragment"><strong>The variance of</strong> <span class="math inline">\(\epsilon\)</span> is denoted by <span class="math inline">\(\sigma^2\)</span> and is the same for all values of the independent variables <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</li>
 </ol>
 <ul>
-<li><p><strong>Implication</strong>: The variance of <span class="math inline">\(y\)</span> about the regression line equals <span class="math inline">\(\sigma^2\)</span> and is the same for all values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</p></li>
-<li><p><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</p></li>
+<li class="fragment"><p><strong>Implication</strong>: The variance of <span class="math inline">\(y\)</span> about the regression line equals <span class="math inline">\(\sigma^2\)</span> and is the same for all values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>.</p></li>
+<li class="fragment"><p><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</p></li>
 </ul>
 </section>
-<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2" class="level2">
-<h2 class="anchored" data-anchor-id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2">Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
+<section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2" class="slide level2 center">
+<h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
 <ol start="3" type="1">
-<li><p><strong>The values of</strong> <span class="math inline">\(\epsilon\)</span> are independent.</p>
+<li class="fragment"><p><strong>The values of</strong> <span class="math inline">\(\epsilon\)</span> are independent.</p>
 <ul>
-<li><p><strong>Implication</strong>: The value of <span class="math inline">\(\epsilon\)</span> for a particular set of values for the independent variables is not related to the value of <span class="math inline">\(\epsilon\)</span> for any other set of values.</p></li>
-<li><p><strong>Validation</strong>: Standardized Residuals vs.&nbsp;Predicted Values Plot</p></li>
+<li class="fragment"><p><strong>Implication</strong>: The value of <span class="math inline">\(\epsilon\)</span> for a particular set of values for the independent variables is not related to the value of <span class="math inline">\(\epsilon\)</span> for any other set of values.</p></li>
+<li class="fragment"><p><strong>Validation</strong>: Standardized Residuals vs.&nbsp;Predicted Values Plot</p></li>
 </ul></li>
-<li><p><strong>The error term</strong> <span class="math inline">\(\epsilon\)</span> is a normally distributed random variable reflecting the deviation between the <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span>.</p>
+<li class="fragment"><p><strong>The error term</strong> <span class="math inline">\(\epsilon\)</span> is a normally distributed random variable reflecting the deviation between the <span class="math inline">\(y\)</span> value and the expected value of <span class="math inline">\(y\)</span>.</p>
 <ul>
-<li><p><strong>Implication</strong>: Because <span class="math inline">\(\beta_0, \beta_1, \ldots, \beta_p\)</span> are constants for the given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the dependent variable <span class="math inline">\(y\)</span> is also a normally distributed random variable.</p></li>
-<li><p><strong>Validation</strong>: Normal Probability Plot or Q-Q Plot (Quantile-Quantile Plot) of Residuals.</p></li>
+<li class="fragment"><p><strong>Implication</strong>: Because <span class="math inline">\(\beta_0, \beta_1, \ldots, \beta_p\)</span> are constants for the given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the dependent variable <span class="math inline">\(y\)</span> is also a normally distributed random variable.</p></li>
+<li class="fragment"><p><strong>Validation</strong>: Normal Probability Plot or Q-Q Plot (Quantile-Quantile Plot) of Residuals.</p></li>
 </ul></li>
 </ol>
+</section></section>
+<section>
+<section id="residual-analysis" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Residual Analysis</h1>
+
 </section>
-</section>
-<section id="residual-analysis" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Residual Analysis</h1>
-<section id="residual-analysis-1" class="level2">
-<h2 class="anchored" data-anchor-id="residual-analysis-1">Residual Analysis</h2>
+<section id="residual-analysis-1" class="slide level2 center">
+<h2>Residual Analysis</h2>
 <ul>
-<li><p>For simple linear regression, the residual plot against <span class="math inline">\(\hat{y}\)</span> and the residual plot against <span class="math inline">\(x\)</span> provide the same information.</p></li>
-<li><p>In multiple regression analysis, it is preferable to use the residual plot against <span class="math inline">\(\hat{y}\)</span> to determine if the model assumptions are satisfied.</p></li>
+<li class="fragment"><p>For simple linear regression, the residual plot against <span class="math inline">\(\hat{y}\)</span> and the residual plot against <span class="math inline">\(x\)</span> provide the same information.</p></li>
+<li class="fragment"><p>In multiple regression analysis, it is preferable to use the residual plot against <span class="math inline">\(\hat{y}\)</span> to determine if the model assumptions are satisfied.</p></li>
 </ul>
 </section>
-<section id="standardized-residuals" class="level2">
-<h2 class="anchored" data-anchor-id="standardized-residuals">Standardized Residuals</h2>
+<section id="standardized-residuals" class="slide level2 center">
+<h2>Standardized Residuals</h2>
 <ul>
-<li><p>Standardized residuals are frequently used in residual plots for purposes of:</p>
+<li class="fragment"><p>Standardized residuals are frequently used in residual plots for purposes of:</p>
 <ul>
-<li>Identifying outliers (typically, standardized residuals <span class="math inline">\(&lt; -2\)</span> or <span class="math inline">\(&gt; +2\)</span>)</li>
-<li>Providing insight about the assumption that the error term <span class="math inline">\(\epsilon\)</span> has a normal distribution, using the Empirical Rule.</li>
+<li class="fragment">Identifying outliers (typically, standardized residuals <span class="math inline">\(&lt; -2\)</span> or <span class="math inline">\(&gt; +2\)</span>)</li>
+<li class="fragment">Providing insight about the assumption that the error term <span class="math inline">\(\epsilon\)</span> has a normal distribution, using the Empirical Rule.</li>
 </ul></li>
-<li><p>The computation of standardized residuals in multiple regression analysis is too complex to be done by hand.</p>
+<li class="fragment"><p>The computation of standardized residuals in multiple regression analysis is too complex to be done by hand.</p>
 <ul>
-<li>Excel’s Regression tool can be used.</li>
+<li class="fragment">Excel’s Regression tool can be used.</li>
 </ul></li>
-<li><p>Normality of residuals can be checked by the normal probability plot.</p></li>
+<li class="fragment"><p>Normality of residuals can be checked by the normal probability plot.</p></li>
 </ul>
 </section>
-<section id="standardized-residuals-1" class="level2">
-<h2 class="anchored" data-anchor-id="standardized-residuals-1">Standardized Residuals</h2>
+<section id="standardized-residuals-1" class="slide level2 center">
+<h2>Standardized Residuals</h2>
 <p><strong>Example: Butler Trucking Company: Residual output</strong></p>
 <p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/butler_company_residual_output_excel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+
+<img data-src="figs/butler_company_residual_output_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 </section>
-<section id="standardized-residual-plot-against-haty" class="level2">
-<h2 class="anchored" data-anchor-id="standardized-residual-plot-against-haty">Standardized Residual Plot Against <span class="math inline">\(\hat{y}\)</span></h2>
+<section id="standardized-residual-plot-against-haty" class="slide level2 center">
+<h2>Standardized Residual Plot Against <span class="math inline">\(\hat{y}\)</span></h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/butler_company_residual_plot_excel.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><br></p>
+
+<img data-src="figs/butler_company_residual_plot_excel.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><br></p>
 <div style="font-size: 80%;">
 <ul>
-<li>The standardized residual plot does not indicate any abnormalities, and no standard residual is less than -2 or greater than +2.</li>
-<li>Note: the pattern of the standardized residual plot against <span class="math inline">\(\hat{y}\)</span> is the same as the pattern of the residual plot against <span class="math inline">\(\hat{y}\)</span>. But the standardized residual plot enables us to check for outliers and determine whether the assumption of normality for the regression model (Distribution of <span class="math inline">\(y\)</span>) is reasonable.</li>
+<li class="fragment">The standardized residual plot does not indicate any abnormalities, and no standard residual is less than -2 or greater than +2.</li>
+<li class="fragment">Note: the pattern of the standardized residual plot against <span class="math inline">\(\hat{y}\)</span> is the same as the pattern of the residual plot against <span class="math inline">\(\hat{y}\)</span>. But the standardized residual plot enables us to check for outliers and determine whether the assumption of normality for the regression model (Distribution of <span class="math inline">\(y\)</span>) is reasonable.</li>
 </ul>
 </div>
 <!---
@@ -1981,13 +1757,14 @@ $p$-value = 1 – `F.DIST(9.1765, 2, 12, TRUE)` $\approx 0.0038$
 -   Method A is predicted to have a lower expected production quantity than Method B (by 4 units), but the significance level cannot be determined directly based on this particular ANOVA output.
 
 --->
+</section></section>
+<section>
+<section id="summary" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Summary</h1>
+
 </section>
-</section>
-<section id="summary" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Summary</h1>
-<section id="summary-1" class="level2">
-<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
-<div class="nonincremental">
+<section id="summary-1" class="slide level2 center">
+<h2>Summary</h2>
 <p>Some key takeaways from this session:</p>
 <ul>
 <li><p>Multiple regression analysis enables the inclusion of more independent variables, improving estimates over simple regression.</p></li>
@@ -1998,418 +1775,396 @@ $p$-value = 1 – `F.DIST(9.1765, 2, 12, TRUE)` $\approx 0.0038$
 <li><p>Dummy variables can be used to incorporate categorical variables in regression models.</p></li>
 <li><p>The overall significance of the model is tested using the <strong>F-test</strong>, while individual predictors are tested using <strong>t-tests</strong>.</p></li>
 </ul>
+</section></section>
+<section id="thank-you" class="title-slide slide level1 center" data-background-color="#cfb991">
+<h1>Thank you!</h1>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p>Business Statistics</p>
 </div>
-</section>
-</section>
-<section id="thank-you" class="level1" data-background-color="#cfb991">
-<h1 data-background-color="#cfb991">Thank you!</h1>
+</div></div>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
 
-</section>
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
-        }
-        return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
         },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
       });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
-          return note.innerHTML;
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
             }
           } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
             });
           }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
         }
-      }, function(instance) {
       });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
-  </script>
-</div> <!-- /content -->
-
-
-
+      </script>
+    
 
 </body></html>
