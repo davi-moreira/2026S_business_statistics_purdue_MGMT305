@@ -303,10 +303,10 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <p><strong>Example</strong>: Butler Trucking Company - <code>Butler.xlsx</code></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 24%">
-<col style="width: 24%">
-<col style="width: 27%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -599,10 +599,10 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <p>Relationship Among SST, SSR, SSE</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 27%">
-<col style="width: 24%">
-<col style="width: 24%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -820,14 +820,14 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 <section id="testing-for-overall-significance-f-test-4" class="slide level2 center">
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>ANOVA Output</strong></p>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
 <col style="width: 16%">
 <col style="width: 16%">
 <col style="width: 16%">
 <col style="width: 16%">
 <col style="width: 16%">
-<col style="width: 17%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1062,10 +1062,10 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <p><strong>Example: Johnson Filtration, Inc</strong></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 29%">
-<col style="width: 23%">
-<col style="width: 23%">
+<col style="width: 17%">
+<col style="width: 34%">
+<col style="width: 20%">
+<col style="width: 26%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1144,10 +1144,10 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <p><strong>Example: Johnson Filtration, Inc</strong>: Now with a <em>dummy</em> or <em>indicator variable</em>.</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 29%">
-<col style="width: 23%">
-<col style="width: 23%">
+<col style="width: 17%">
+<col style="width: 34%">
+<col style="width: 20%">
+<col style="width: 26%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1998,6 +1998,44 @@ $p$-value = 1 – `F.DIST(9.1765, 2, 12, TRUE)` $\approx 0.0038$
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

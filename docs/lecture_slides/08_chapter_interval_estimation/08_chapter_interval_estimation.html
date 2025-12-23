@@ -325,7 +325,7 @@ Professor<br>Davi Moreira<br>
 <h2>Confidence Multipliers</h2>
 <p><br></p>
 <center>
-<p><strong>Values of <span class="math inline">\(Z_{\alpha/2}\)</span> for the Most Commonly Used Confidence Levels</strong></p>
+<p><strong>Values of</strong> <span class="math inline">\(Z_{\alpha/2}\)</span> for the Most Commonly Used Confidence Levels</p>
 <p><br></p>
 <table class="caption-top">
 <thead>
@@ -511,7 +511,7 @@ Professor<br>Davi Moreira<br>
 <p><span class="math display">\[
 E = z_{\alpha/2} \times \sqrt{\frac{\bar{p}(1-\bar{p})}{n}}
 \]</span></p></li>
-<li class="fragment"><p><strong>Solving for the necessary sample size <span class="math inline">\(n\)</span>, we get:</strong></p>
+<li class="fragment"><p><strong>Solving for the necessary sample size</strong> <span class="math inline">\(n\)</span>, we get:</p>
 <p><span class="math display">\[
 n = \left( \frac{z_{\alpha/2}^2 \times \bar{p}(1-\bar{p})}{E^2} \right)
 \]</span></p></li>
@@ -572,9 +572,9 @@ n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right)
 <div style="font-size: 50%;">
 <table class="caption-top">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 44%">
-<col style="width: 44%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -624,7 +624,7 @@ n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right)
 <div class="columns">
 <div class="column" style="width:50%;">
 <center>
-<strong>CI for <span class="math inline">\(\bar{p}\)</span></strong>
+<strong>CI for</strong> <span class="math inline">\(\bar{p}\)</span>
 </center>
 <ol type="1">
 <li><p>Check assumptions.</p>
@@ -646,7 +646,7 @@ se = \sqrt{\frac{\bar{p}(1 - \bar{p})}{n}}
 </ol>
 </div><div class="column" style="width:50%;">
 <center>
-<strong>CI for <span class="math inline">\(\mu\)</span></strong>
+<strong>CI for</strong> <span class="math inline">\(\mu\)</span>
 </center>
 <ol type="1">
 <li><p>Check assumptions.</p>
@@ -688,9 +688,9 @@ se = \frac{s}{\sqrt{n}}
 <div style="font-size: 75%;">
 <p>Some key takeaways from this session:</p>
 <ul>
-<li><p><strong>Population Mean (<span class="math inline">\(\sigma\)</span> Known)</strong>:</p>
+<li><p><strong>Population Mean (</strong><span class="math inline">\(\sigma\)</span> Known):</p>
 <p>When the population standard deviation is known, a z-distribution is used to construct confidence intervals for the population mean.</p></li>
-<li><p><strong>Population Mean (<span class="math inline">\(\sigma\)</span> Unknown)</strong>:</p>
+<li><p><strong>Population Mean (</strong><span class="math inline">\(\sigma\)</span> Unknown):</p>
 <p>When the population standard deviation is unknown, a t-distribution is used. This is common in practical applications where the sample standard deviation serves as an estimate for the population standard deviation.</p></li>
 <li><p><strong>Population Proportion</strong>:</p>
 <p>Involves estimating the proportion of a population that possesses a certain characteristic. Confidence intervals for population proportions can be calculated using the sample proportion and its standard error.</p></li>
@@ -921,6 +921,44 @@ se = \frac{s}{\sqrt{n}}
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

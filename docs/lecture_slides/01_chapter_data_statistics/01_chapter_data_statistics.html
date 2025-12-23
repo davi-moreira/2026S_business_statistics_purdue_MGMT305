@@ -189,8 +189,8 @@ Professor: Davi Moreira
 </div>
 </div>
 </div>
-<p><a href="dmoreira@purdue.edu">dmoreira@purdue.edu</a></p>
-<p><a href="https://davi-moreira.github.io/">https://davi-moreira.github.io/</a></p>
+<p><a href="dcordeir@purdue.edu">dcordeir@purdue.edu</a></p>
+<p><a href="https://davi-moreira.github.io/" class="uri">https://davi-moreira.github.io/</a></p>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
 <li class="fragment">Clinical Assistant Professor in the Management Department at Purdue University;</li>
@@ -249,7 +249,7 @@ Professor: Davi Moreira
 </ul>
 <p><br></p>
 <ul>
-<li class="fragment">Present yourself to your left/right colleague and tell her/him what are the current two main passions in your life.</li>
+<li class="fragment">Introduce yourself to the colleague on your left or right. Then ask them to rate, on a scale from 1 (not at all) to 5 (a lot), how much they like statistics.</li>
 </ul>
 </section></section>
 <section>
@@ -263,11 +263,14 @@ Professor: Davi Moreira
 <li class="fragment"><p><strong>Materials</strong>:</p>
 <ul>
 <li class="fragment"><p>Brightspace</p></li>
-<li class="fragment"><p><a href="https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305">Course Webpage</a></p></li>
+<li class="fragment"><p><a href="https://davi-moreira.github.io/2026S_business_statistics_purdue_MGMT305" target="_blank">Course Webpage</a></p></li>
 </ul></li>
-<li class="fragment"><p><a href="https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305" target="_blank"><strong>Syllabus</strong></a></p></li>
-<li class="fragment"><p><a href="https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305" target="_blank"><strong>Slides</strong></a></p></li>
-<li class="fragment"><p><a href="https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305" target="_blank"><strong>Schedule</strong></a></p></li>
+<li class="fragment"><p><strong>Syllabus</strong></p></li>
+<li class="fragment"><p><strong>Slides</strong></p></li>
+<li class="fragment"><p><strong>Podcast</strong></p></li>
+<li class="fragment"><p><strong>Videos</strong></p></li>
+<li class="fragment"><p><strong>Supplementary Material</strong></p></li>
+<li class="fragment"><p><strong>Schedule</strong></p></li>
 </ul>
 </section></section>
 <section id="business-statistics" class="title-slide slide level1 center" data-background-color="#cfb991">
@@ -1121,6 +1124,44 @@ Professor: Davi Moreira
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

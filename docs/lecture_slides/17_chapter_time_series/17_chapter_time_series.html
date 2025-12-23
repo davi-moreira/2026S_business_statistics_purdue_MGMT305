@@ -1448,11 +1448,11 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <p><strong>Gasoline sale time series</strong> with smoothing constant <span class="math inline">\(\alpha = 0.2\)</span></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 24%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -2489,14 +2489,14 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <h2>Linear Trend Regression: Example</h2>
 <div style="font-size: 70%;">
 <p><strong>Bicycle Sales Time Series</strong></p>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 21%">
-<col style="width: 15%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4017,11 +4017,11 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <div style="font-size: 35%;">
 <table class="caption-top">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 25%">
-<col style="width: 21%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4276,13 +4276,13 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <h2>Multiplicative Decomposition Model: Example (Step 4)</h2>
 <div style="font-size: 65%;">
 <p>Seasonal-irregular values for the entire time series.</p>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 22%">
-<col style="width: 24%">
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 18%">
+<col style="width: 30%">
+<col style="width: 32%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4504,14 +4504,14 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <section id="deseasonalized-sales-data-table-step-5" class="slide level2 center">
 <h2>Deseasonalized Sales Data Table (Step 5)</h2>
 <div style="font-size: 70%;">
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 7%">
+<col style="width: 11%">
 <col style="width: 16%">
 <col style="width: 18%">
+<col style="width: 19%">
+<col style="width: 27%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4723,11 +4723,11 @@ T_{17} = 5.10 + 0.148(17) = 7.616
 <h2>Seasonal Adjustments: Quarterly Forecasts Table (Step 8)</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 24%">
-<col style="width: 17%">
-<col style="width: 24%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4813,9 +4813,9 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
 <div style="font-size: 60%;">
 <p><strong>Important</strong>: The following table is not exhaustive; it merely illustrates the examples discussed in the lecture. Remember that within the General Linear Model framework, these methods can be combined and adapted based on the specific objectives of the analysis.</p>
 <p><br></p>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 18%">
+<col style="width: 16%">
 <col style="width: 16%">
 <col style="width: 16%">
 <col style="width: 16%">
@@ -5139,6 +5139,44 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

@@ -22,16 +22,14 @@ format:
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-
 ---
 
 # Welcome! {background-color="#cfb991"}
 
 ## Overview
 
-::: {.nonincremental}
-
-::: columns
+:::::: nonincremental
+::::: columns
 ::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
 -   Introductions
 -   Course Overview and Logistics
@@ -47,23 +45,22 @@ html-math-method:
     -   Inferential Statistics
     -   `Excel4stats`
 :::
-:::
-
-:::
+:::::
+::::::
 
 # Introductions
 
 ## Instructor
 
-::: columns
+::::: columns
 ::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
 ```{r  echo=FALSE, out.width = "60%",fig.align="center"}
 knitr::include_graphics("figs/davi_moreira_photo.JPG") 
 ```
 
-[dmoreira\@purdue.edu](dmoreira@purdue.edu)
+[dcordeir\@purdue.edu](dcordeir@purdue.edu)
 
-[https://davi-moreira.github.io/](https://davi-moreira.github.io/)
+<https://davi-moreira.github.io/>
 :::
 
 ::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
@@ -77,7 +74,7 @@ knitr::include_graphics("figs/davi_moreira_photo.JPG")
 
 -   [M&E Specialist consultant - World Bank (Brazil, Mozambique, Angola, and DRC)](https://blogs.worldbank.org/opendata/improving-how-we-measure-progress-community-biodiversity-conservation-projects-mozambique)
 :::
-:::
+:::::
 
 ## Instructor's Passions
 
@@ -97,7 +94,7 @@ knitr::include_graphics("figs/palmeiras_stadium.jpg")
 
 </center>
 
-<br> 
+<br>
 
 <br>
 
@@ -115,11 +112,12 @@ knitr::include_graphics("figs/carnaval_olinda.jpg")
 
 <br>
 
--   It is your turn! - 5 minutes
+- It is your turn! - 5 minutes
 
 <br>
 
--   Present yourself to your left/right colleague and tell her/him what are the current two main passions in your life.
+- Introduce yourself to the colleague on your left or right. Then ask them to rate, on a scale from 1 (not at all) to 5 (a lot), how much they like statistics.
+
 
 # Course Overview and Logistics {background-color="#cfb991"}
 
@@ -129,13 +127,19 @@ knitr::include_graphics("figs/carnaval_olinda.jpg")
 
     -   Brightspace
 
-    -   [Course Webpage](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305)
+    -   [Course Webpage](https://davi-moreira.github.io/2026S_business_statistics_purdue_MGMT305){target="_blank"}
 
--   [**Syllabus**](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305){target="_blank"}
+-   **Syllabus**
 
--   [**Slides**](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305){target="_blank"}
+-   **Slides**
 
--   [**Schedule**](https://davi-moreira.github.io/2025S_business_statistics_purdue_MGMT305){target="_blank"}
+-   **Podcast**
+
+-   **Videos**
+
+-   **Supplementary Material**
+
+-   **Schedule**
 
 # Business Statistics {background-color="#cfb991"}
 
@@ -146,7 +150,6 @@ knitr::include_graphics("figs/carnaval_olinda.jpg")
 ```{r  echo=FALSE, out.width = "50%",fig.align="center"}
 knitr::include_graphics("figs/mbs_book.png") 
 ```
-
 
 # Survey {background-color="#cfb991"}
 
@@ -164,7 +167,7 @@ knitr::include_graphics("figs/qrcode_review_survey.png")
 
 ## What is Statistics?
 
-::: columns
+::::: columns
 ::: {.column width="60%" style="text-align: center; justify-content: center; align-items: center;"}
 <!---Statistics can be defined as the science of collecting, analyzing, interpreting, presenting, and organizing data to make informed business decisions. It involves using mathematical theoriesto process numerical information and draw meaningful conclusions. The primary goal of statistics in business is to help managers and decision-makers understand data patterns, trends, and relationships, enabling them to make data-driven decisions, optimize operations, forecast future events, and reduce uncertainty. --->
 
@@ -186,7 +189,7 @@ W. Edwards Deming
 
 [Wiki](https://en.wikipedia.org/wiki/W._Edwards_Deming)
 :::
-:::
+:::::
 
 ## What is Statistics?
 
@@ -210,7 +213,6 @@ Statistics can be defined as the **science of collecting, analyzing, interpretin
 
     -   Risk analysts to assess the probability of default on loans or bonds, aiding in the pricing of financial instruments and risk management strategies.
 
-
 # Data and Statistics {background-color="#cfb991"}
 
 ## Data Sources and Scales of Measurement
@@ -231,11 +233,9 @@ knitr::include_graphics("figs/variables_observations.png")
 
 ## Data Types
 
-::: columns
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: {.nonincremental}
-
+::::::: columns
+:::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::: nonincremental
 **Categorical Data**
 
 -   Labels or names used to identify an attribute of each element
@@ -243,15 +243,11 @@ knitr::include_graphics("figs/variables_observations.png")
 -   Use either the nominal or ordinal scale of measurement
 -   Can be either numeric or nonnumeric
 -   Appropriate statistical analysis is rather limited
-
 :::
+::::
 
-:::
-
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: {.nonincremental}
-
+:::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::: nonincremental
 **Quantitative Data**
 
 -   Quantitative data indicate how many or how much:
@@ -264,11 +260,9 @@ knitr::include_graphics("figs/variables_observations.png")
 -   Quantitative data are always numeric.
 
 -   Ordinary arithmetic operations (+, -, ×, ÷) are meaningful for quantitative data
-
 :::
-
-:::
-:::
+::::
+:::::::
 
 ## Data Types: Examples
 
@@ -278,12 +272,12 @@ knitr::include_graphics("figs/variables_observations.png")
 
 | Categorical: Nominal | Categorical: Ordinal | Quantitative: Continuous or Discrete |
 |---------------------|-------------------|--------------------------------|
-| Vehicle Type         | Satisfaction Level   | Temperature                          |
-| Beverage             | Education Level      | Number of Transactions               |
-| Music Genre          | Customer Feedback    | Revenue                              |
-| Nationality          | Job Position         | Product Weight                       |
-| Relationship Status  | Military Rank        | Distance Traveled                    |
-| Operating System     | Priority Level       | Market Share                         |
+| Vehicle Type | Satisfaction Level | Temperature |
+| Beverage | Education Level | Number of Transactions |
+| Music Genre | Customer Feedback | Revenue |
+| Nationality | Job Position | Product Weight |
+| Relationship Status | Military Rank | Distance Traveled |
+| Operating System | Priority Level | Market Share |
 
 <br>
 
@@ -301,11 +295,9 @@ knitr::include_graphics("figs/scale_measurement.png")
 
 ## Scales of Measurement
 
-::: columns
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: {.nonincremental}
-
+:::::::: columns
+::::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+:::: nonincremental
 ::: r-fit-text
 1.  **Categorical Data**
     -   **Definition**: Data that can be sorted into categories or groups.
@@ -316,27 +308,21 @@ knitr::include_graphics("figs/scale_measurement.png")
         -   **Non-numeric**: Categorical data not represented by numbers.
             -   **Nominal**: Similar to numeric nominal data but represented with non-numeric labels. Examples include types of cuisine (e.g., Italian, Chinese, Indian).
             -   **Ordinal**: Similar to numeric ordinal data but represented with non-numeric labels. Examples include rankings such as job positions (e.g., intern, junior, senior).
-
 :::
+::::
+:::::
 
-:::
-:::
-
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: {.nonincremental}
-
+:::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::: nonincremental
 2.  **Quantitative Data**
     -   **Definition**: Data that can be measured and expressed numerically.
     -   **Subcategories**:
         -   **Numeric**: Quantitative data always represented by numbers.
             -   **Interval**: Numerical data with meaningful differences between values but no true zero point. Examples include temperature in Celsius or Fahrenheit.
             -   **Ratio**: Numerical data with meaningful differences between values and a true zero point. Examples include height, weight, and sales figures.
-
 :::
-
-:::
-:::
+::::
+::::::::
 
 ## Cross-Sectional Data: Time Series
 
@@ -352,7 +338,7 @@ knitr::include_graphics("figs/time_series.png")
 
 ## Study Design
 
-::: columns
+::::: columns
 ::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
 **Observational**
 
@@ -370,7 +356,7 @@ In experimental studies, the variable of interest is first identified. Then, the
 
 > The largest experimental study ever conducted is believed to be the 1954 Public Health Service experiment for the Salk polio vaccine. Nearly two million U.S. children (grades 1 through 3) were selected.
 :::
-:::
+:::::
 
 ## Study Design: Random Assignment vs. Random Sampling
 
@@ -496,75 +482,55 @@ File -\> Options -\> Add-ins -\> Select Analysis ToolPak and Analysis ToolPak-VB
 
 <br> <br>
 
-::: columns
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: {.nonincremental}
-
+:::::::: columns
+:::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::: nonincremental
 1.  Open Data Analysis Add-in
 
 ```{r  echo=FALSE, out.width = "100%",fig.align="center"}
 knitr::include_graphics("figs/01_hudson.png") 
 ```
-
-
 :::
-:::
+::::
 
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: fragment
-
-::: {.nonincremental}
-
+::::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+:::: fragment
+::: nonincremental
 2.  Select Histogram
-
 
 ```{r  echo=FALSE, out.width = "100%",fig.align="center"}
 knitr::include_graphics("figs/02_hudson.png") 
 ```
-
-::: 
-
 :::
-:::
-:::
+::::
+:::::
+::::::::
 
 ## Graphical Summary: Bar Chart or Histogram - Example
 
-::: columns
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: {.nonincremental}
-
+:::::::: columns
+:::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::: nonincremental
 3.  Input the ranges (data, bin limits, output cell)
-
 
 ```{r  echo=FALSE, out.width = "100%",fig.align="center"}
 knitr::include_graphics("figs/03_hudson.png") 
 ```
-
-::: 
-
 :::
+::::
 
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: fragment
-
-::: {.nonincremental}
-
+::::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+:::: fragment
+::: nonincremental
 4.  Result
 
 ```{r  echo=FALSE, out.width = "100%",fig.align="center"}
 knitr::include_graphics("figs/04_hudson.png") 
 ```
-
-::: 
-
 :::
-:::
-:::
+::::
+:::::
+::::::::
 
 ## Numerical Descriptive Statistics
 
@@ -580,74 +546,59 @@ knitr::include_graphics("figs/04_hudson.png")
 
 ## Numerical Descriptive Statistics - Example
 
-::: columns
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: {.nonincremental}
-
+:::::::: columns
+:::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::: nonincremental
 1.  Open Data Analysis Add-in and select the Descriptive Statistics analysis
 
 ```{r  echo=FALSE, out.width = "100%",fig.align="center"}
 knitr::include_graphics("figs/01_hudson_desc.png") 
 ```
-
 :::
-:::
+::::
 
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-::: fragment
-
-::: {.nonincremental}
-
+::::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+:::: fragment
+::: nonincremental
 2.  Input the ranges (data, bin limits, output cell) and options
 
 ```{r  echo=FALSE, out.width = "100%",fig.align="center"}
 knitr::include_graphics("figs/02_hudson_desc.png") 
 ```
-
-::: 
-
 :::
-:::
-:::
+::::
+:::::
+::::::::
 
 ## Numerical Descriptive Statistics - Example
 
-::: columns
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-::: {.nonincremental}
-
+::::::::: columns
+:::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::: nonincremental
 3.  Result
 
 ```{r  echo=FALSE, out.width = "100%",fig.align="center"}
 knitr::include_graphics("figs/03_hudson_desc.png") 
 ```
-
 :::
-:::
+::::
 
-::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
-
-::: fragment
-
-::: {.nonincremental}
-
+:::::: {.column width="50%" style="text-align: center; justify-content: center; align-items: center;"}
+::::: fragment
+:::: nonincremental
 4.  Let's check the result
 
 ```{r  echo=FALSE, out.width = "40%",fig.align="center"}
 knitr::include_graphics("figs/04_hudson_desc.png") 
 ```
 
-
 ::: {style="font-size: 50%;"}
 For percentiles: `= percentile.exc(Data Array, %)`
-
 :::
-
-:::
-:::
-:::
-:::
+::::
+:::::
+::::::
+:::::::::
 
 # Statistical Inference {background-color="#cfb991"}
 
@@ -657,15 +608,15 @@ For percentiles: `= percentile.exc(Data Array, %)`
 
 <br>
 
-::: columns
+::::::: columns
 ::: {.column width="40%" style="text-align: center; justify-content: center; align-items: center;"}
 ```{r  echo=FALSE, out.width = "80%",fig.align="center"}
 knitr::include_graphics("figs/inference.svg") 
 ```
 :::
 
-::: {.column width="50%" style="text-align: left; justify-content: center; align-items: center;"}
-::: fragment
+::::: {.column width="50%" style="text-align: left; justify-content: center; align-items: center;"}
+:::: fragment
 ::: r-fit-text
 -   **Population**: the set of all elements of interest in a particular study.
 
@@ -681,31 +632,27 @@ knitr::include_graphics("figs/inference.svg")
 
 -   **Prediction**: Forecasting future events based on historical data.
 :::
-:::
-:::
-:::
+::::
+:::::
+:::::::
 
 # Data Science, Big Data, and Data Mining {background-color="#cfb991"}
 
 ## Data Science, Big Data, and Data Mining - Definitions
 
-::: {.nonincremental}
-
+::: nonincremental
 -   **Data Science**:
     -   The interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data.
 -   **Big Data**:
     -   Extremely large datasets that may be analyzed computationally to reveal patterns, trends, and associations, especially relating to human behavior and interactions.
 -   **Data Mining**:
     -   The practice of examining large databases to generate new information, involving methods at the intersection of machine learning, statistics, and database systems.
-
 :::
 
 ## How Data Science, Big Data, and Data Mining are Used
 
-::: {.nonincremental}
-
+:::: nonincremental
 ::: r-fit-text
-
 -   **Data Science**:
     -   Personalizing marketing efforts by analyzing customer data to predict preferences and buying behavior.
     -   Optimizing supply chain management through predictive analytics.
@@ -715,16 +662,14 @@ knitr::include_graphics("figs/inference.svg")
 -   **Data Mining**:
     -   Identifying potential leads and sales opportunities by analyzing past sales data and customer demographics.
     -   Enhancing customer retention by understanding churn patterns and developing targeted retention strategies.
-
 :::
-:::
+::::
 
 # Summary {background-color="#cfb991"}
 
 ## Summary
 
-::: {.nonincremental}
-
+::: nonincremental
 Some key takeaways from this session:
 
 -   **Course Overview**:
@@ -737,7 +682,6 @@ Some key takeaways from this session:
     -   Data summary and visualization good practices.
     -   Distinction between Descriptive and Inferential Statistics.
     -   Data Science, Big Data, and Data Mining
-
 :::
 
 # Thank you! {background-color="#cfb991"}

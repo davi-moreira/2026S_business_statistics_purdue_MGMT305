@@ -203,8 +203,8 @@
 <h2>Hypothesis testing framework</h2>
 <ul>
 <li class="fragment"><p><a href="https://en.wikipedia.org/wiki/Statistical_hypothesis_testing">Hypothesis testing</a> can be used to determine whether a statement about the population or a hypothesized value of the population parameter should or should not be rejected.</p></li>
-<li class="fragment"><p>We start with a <em><a href="https://en.wikipedia.org/wiki/Null_hypothesis">null hypothesis</a> (<span class="math inline">\(H_0\)</span>)</em> that represents the status quo.</p></li>
-<li class="fragment"><p>We also have an <em><a href="https://en.wikipedia.org/wiki/Alternative_hypothesis">alternative hypothesis</a> (<span class="math inline">\(H_A\)</span>)</em> that represents our research question, i.e.&nbsp;what we’re testing for.</p></li>
+<li class="fragment"><p>We start with a <a href="https://en.wikipedia.org/wiki/Null_hypothesis"><em>null hypothesis</em></a> <em>(</em><span class="math inline">\(H_0\)</span>) that represents the status quo.</p></li>
+<li class="fragment"><p>We also have an <a href="https://en.wikipedia.org/wiki/Alternative_hypothesis"><em>alternative hypothesis</em></a> <em>(</em><span class="math inline">\(H_A\)</span>) that represents our research question, i.e.&nbsp;what we’re testing for.</p></li>
 <li class="fragment"><p>We conduct a hypothesis test under the assumption that the null hypothesis is true.</p></li>
 <li class="fragment"><p>If the test results suggest that the data do not provide convincing evidence for the alternative hypothesis, we stick with the null hypothesis. If they do, then we reject the null hypothesis in favor of the alternative.</p></li>
 <li class="fragment"><p>We will never know which hypothesis is true, unless we sample the entire population.</p></li>
@@ -217,9 +217,9 @@
 <p><br></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 26%">
-<col style="width: 35%">
-<col style="width: 38%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -333,16 +333,16 @@
 t = \frac{\bar{X} - \mu_0}{S / \sqrt{n}}
 \]</span></p>
 <ol type="1">
-<li class="fragment"><p><strong><span class="math inline">\(\bar{X}\)</span></strong>: The sample mean, representing the average value of the sample data.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(\mu_0\)</span></strong>: The population mean under the null hypothesis. This is the value we are testing against.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(S\)</span></strong>: The sample standard deviation, which measures the spread of the sample data.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(n\)</span></strong>: The sample size, indicating the number of observations in the sample.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(\sqrt{n}\)</span></strong>: The square root of the sample size, used to adjust the sample standard deviation for the number of observations.</p></li>
+<li class="fragment"><p><span class="math inline">\(\bar{X}\)</span>: The sample mean, representing the average value of the sample data.</p></li>
+<li class="fragment"><p><span class="math inline">\(\mu_0\)</span>: The population mean under the null hypothesis. This is the value we are testing against.</p></li>
+<li class="fragment"><p><span class="math inline">\(S\)</span>: The sample standard deviation, which measures the spread of the sample data.</p></li>
+<li class="fragment"><p><span class="math inline">\(n\)</span>: The sample size, indicating the number of observations in the sample.</p></li>
+<li class="fragment"><p><span class="math inline">\(\sqrt{n}\)</span>: The square root of the sample size, used to adjust the sample standard deviation for the number of observations.</p></li>
 </ol>
 </section>
 <section id="tests-about-a-population-mean-sigma-unknown-1" class="slide level2 center">
 <h2>Tests about a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</h2>
-<p><strong>Two approaches to decide about the Null Hypothesis (<span class="math inline">\(H_0\)</span>).</strong></p>
+<p><strong>Two approaches to decide about the Null Hypothesis (</strong><span class="math inline">\(H_0\)</span>).</p>
 <ol type="1">
 <li><strong>Critical Value Approach</strong>:</li>
 </ol>
@@ -359,7 +359,7 @@ H_0 &amp;: \mu = \mu_0; \quad H_a: \mu \neq \mu_0 \quad \text{(two-tail)} \quad 
 <section id="tests-about-a-population-mean-sigma-unknown-2" class="slide level2 center">
 <h2>Tests about a Population Mean: <span class="math inline">\(\sigma\)</span> Unknown</h2>
 <ol start="2" type="1">
-<li><strong><span class="math inline">\(p-value\)</span> Approach</strong>:</li>
+<li><span class="math inline">\(p-value\)</span> Approach:</li>
 </ol>
 <ul>
 <li>Calculate the p-value, which is the probability of obtaining a test statistic at least as extreme as the one observed, assuming the null hypothesis is true.</li>
@@ -566,7 +566,7 @@ H_0 &amp;: p = p_0 &amp;\text{Reject } H_0 \text{ if } z \leq -z_{\alpha/2} \tex
 <ol start="5" type="1">
 <li>Because <span class="math inline">\(p\)</span>-value <span class="math inline">\(= .0062 &lt; \alpha = .05\)</span>, we reject <span class="math inline">\(H_0\)</span>.</li>
 </ol>
-<p><strong>Based on the current sample, we have significant statistical evidence to conclude that the proportion of women players has increased from 20%. The significance level is 5%. The evidence against <span class="math inline">\(H_0\)</span> is overwhelming.</strong></p>
+<p><strong>Based on the current sample, we have significant statistical evidence to conclude that the proportion of women players has increased from 20%. The significance level is 5%. The evidence against</strong> <span class="math inline">\(H_0\)</span> is overwhelming.</p>
 </section></section>
 <section>
 <section id="one-sided-and-two-sided" class="title-slide slide level1 center" data-background-color="#cfb991">
@@ -832,6 +832,44 @@ H_0 &amp;: p = p_0 &amp;\text{Reject } H_0 \text{ if } z \leq -z_{\alpha/2} \tex
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

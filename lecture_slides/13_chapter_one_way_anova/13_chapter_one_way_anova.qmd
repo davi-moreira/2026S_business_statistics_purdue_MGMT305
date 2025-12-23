@@ -323,7 +323,7 @@ $H_a:$ Not all the means are equal
 
 ::: r-fit-text
 | Source of Variation | Sum of Squares | Degrees of Freedom | Mean Square | $F$ | p-Value |
-|------------|------------|------------|------------|------------|------------|
+|----|----|----|----|----|----|
 | Treatments | $SSTR$ | $df_1$ | $\text{MSTR}=\frac{\text{SSTR}}{df_1}$ | $\frac{MSTR}{MSE}$ | $1-\text{F.DIST}(F, k-1, n_T-k, \text{TRUE})$ |
 | Error | $SSE$ | $df_2$ | $\text{MSE}=\frac{\text{SSE}}{df_2}$ |  |  |
 | Total | $SST=SSTR+SSE$ | $df_3=df_1+df_2$ |  |  |  |
@@ -341,7 +341,7 @@ $H_a:$ Not all the means are equal
 
 ::: r-fit-text
 | Source of Variation | Sum of Squares | Degrees of Freedom | Mean Square | $F$ | p-Value |
-|------------|------------|------------|------------|------------|------------|
+|----|----|----|----|----|----|
 | Treatments | $\sum_{j=1}^k n_j (\bar{x}_j - \bar{x})^2$ | $k - 1$ | $\frac{\text{SSTR}}{k - 1}$ | $\frac{\text{MSTR}}{\text{MSE}}$ | $1-\text{F.DIST}(F, k-1, n_T-k, \text{TRUE})$ |
 | Error | $\sum_{j=1}^k (n_j - 1) s_j^2$ | $n_T - k$ | $\frac{\text{SSE}}{n_T - k}$ |  |  |
 | Total | $\sum_{j=1}^k \sum_{i=1}^{n_j} (x_{ij} - \bar{x})^2$ | $n_T - 1$ |  |  |  |
@@ -358,7 +358,7 @@ $H_a:$ Not all the means are equal
 <br>
 
 | Source of Variation | Sum of Squares | Degrees of Freedom | Mean Square | $F$ | p-Value |
-|------------|------------|------------|------------|------------|------------|
+|----|----|----|----|----|----|
 | Treatments | 520 | 2 | 260.00 | 9.18 | .004 |
 | Error | 340 | 12 | 28.33 |  |  |
 | Total | 860 | 14 |  |  |  |

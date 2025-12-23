@@ -579,7 +579,7 @@ knitr::include_graphics("figs/armands_pizza_plot.png")
 
 :::: {style="font-size: 80%;"}
 | i | $x_i$ | $y_i$ | $x_i - \bar{x}$ | $y_i - \bar{y}$ | $(x_i - \bar{x})(y_i - \bar{y})$ | $(x_i - \bar{x})^2$ | $(y_i - \bar{y})^2$ |
-|---------|---------|---------|---------|---------|---------|---------|---------|
+|----|----|----|----|----|----|----|----|
 | 1 | 2 | 58 | -12 | -72 | 864 | 144 | 5184 |
 | 2 | 6 | 105 | -8 | -25 | 200 | 64 | 625 |
 | 3 | 8 | 88 | -6 | -42 | 252 | 36 | 1764 |
@@ -717,7 +717,6 @@ $$
 ## Derivation of the Total Sum of Squares (SST)
 
 ::: {style="font-size: 60%;"}
-
 In the context of simple linear regression, the Total Sum of Squares (SST) is defined as the sum of the squared deviations of the observed $y$ values from their sample mean $\bar{y}$:
 
 $$
@@ -752,10 +751,8 @@ $$
 SST = (n-1)s^2_y.
 $$
 
-
 Thus, the derivation relies on the definition of sample variance, and the result follows directly from the algebraic manipulation.
-
-::: 
+:::
 
 # Coefficient of Determination {background-color="#cfb991"}
 
@@ -1040,8 +1037,7 @@ The statistical evidence is sufficient to conclude that a significant relationsh
 
 ## Testing for Individual Significance: $t$ Test
 
-::: {style="font-size: 70%;"}
-
+::::: {style="font-size: 70%;"}
 :::: nonincremental
 ::: red
 In regression, $b_1$ follows a normal distribution with mean $\beta_1$.
@@ -1057,8 +1053,7 @@ In regression, $b_1$ follows a normal distribution with mean $\beta_1$.
 
 $$
 t = \frac{b_1 - 0}{s_{b_1}}, 
-$$
-where $s_{b_1}$ is the **standard error** of the slope estimate $b_1$, i.e., an estimate of the standard deviation of the sampling distribution of $b_1$. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling. It follows $t(n-2)$, if $H_0$ is true.
+$$ where $s_{b_1}$ is the **standard error** of the slope estimate $b_1$, i.e., an estimate of the standard deviation of the sampling distribution of $b_1$. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling. It follows $t(n-2)$, if $H_0$ is true.
 
 $$
 s_{b_1} = \frac{s}{\sqrt{\sum(x_i - \bar{x})^2}} = \frac{\sqrt{\frac{\sum (y_i - \hat{y}_i)^2}{n - 2}}}{\sqrt{\sum(x_i - \bar{x})^2}}= \sqrt{\frac{\sum (Y_i - \hat{Y}_i)^2}{(n - 2)\,\sum (X_i - \bar{X})^2}}
@@ -1069,10 +1064,8 @@ if we denote $\text{MSE} = \frac{\sum (Y_i - \hat{Y}_i)^2}{n - 2}$ (the **mean s
 $$
 s_{b_1} = \sqrt{\frac{\text{MSE}}{\sum (X_i - \bar{X})^2}}.
 $$
-
 ::::
-
-:::
+:::::
 
 ## Testing for Individual Significance: $t$ Test
 
@@ -1132,9 +1125,8 @@ where:
 
 -   $b_1$ is the point estimator,
 -   $t_{\alpha/2, n-2} s_{b_1}$ is the margin of error (MOE),
--   $t_{\alpha/2, n-2}$ is the ***t* critical value** providing an upper-tail area of $\alpha/2$ in a *t* distribution with $n-2$ degrees of freedom.
+-   $t_{\alpha/2, n-2}$ is the ***t*** **critical value** providing an upper-tail area of $\alpha/2$ in a *t* distribution with $n-2$ degrees of freedom.
 -   $s_{b_1}$ is the **standard error** of the slope estimate $b_1$, i.e., an estimate of the standard deviation of the sampling distribution of $b_1$. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling.
-
 :::
 
 ## Confidence Interval for $\beta_1$
@@ -1345,7 +1337,7 @@ Predicted quarterly sales of \$110,000
 ## Sums of Squares
 
 | $i$ | $x_i$ | $y_i$ | $x_i - \bar{x}$ | $y_i - \bar{y}$ | $(x_i - \bar{x})(y_i - \bar{y})$ | $(x_i - \bar{x})^2$ | $(y_i - \bar{y})^2$ |
-|---------|---------|---------|---------|---------|-----------|---------|---------|
+|----|----|----|----|----|----|----|----|
 | 1 | 2 | 58 | -12 | -72 | 864 | 144 | 5184 |
 | 2 | 6 | 105 | -8 | -25 | 200 | 64 | 625 |
 | 3 | 8 | 88 | -6 | -42 | 252 | 36 | 1764 |
@@ -1543,7 +1535,7 @@ knitr::include_graphics("figs/reg_residual_03.png")
 **Example:** Armand’s Pizza Parlors
 
 | Student Population ($x_i$) | Sales ($y_i$) | Predicted sales $y_i = 60 + 5(x_i)$ | Residuals ($y_i - \hat{y_i}$) |
-|----------------|----------------|----------------------|------------------|
+|----|----|----|----|
 | 2 | 58 | 70 | -12 |
 | 6 | 105 | 90 | 15 |
 | 8 | 88 | 100 | -12 |
@@ -1648,7 +1640,7 @@ $$
 **Example:** Armand’s Pizza Parlors
 
 | Observation | Predicted sales $y_i = 60 + 5(x_i)$ | Residuals ($y_i - \hat{y_i}$) | Standardized Residual |
-|----------------|----------------------|-------------------|----------------|
+|----|----|----|----|
 | 1 | 70 | -12 | -1.0792 |
 | 2 | 90 | 15 | 1.2224 |
 | 3 | 100 | -12 | -.9487 |

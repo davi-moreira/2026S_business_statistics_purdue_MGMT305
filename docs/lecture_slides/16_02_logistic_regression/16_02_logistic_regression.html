@@ -228,7 +228,7 @@ Professor<br>Davi Moreira<br>
 <h2>Review of Linear Estimation</h2>
 <p><br></p>
 <center>
-<p><span class="math inline">\(Y = \beta_{0} + \beta_{1}X + \beta_{2}Z + \epsilon\)</span></p>
+<span class="math inline">\(Y = \beta_{0} + \beta_{1}X + \beta_{2}Z + \epsilon\)</span>
 </center>
 <p><br></p>
 <ul>
@@ -248,13 +248,13 @@ Professor<br>Davi Moreira<br>
 <h2>Review of Linear Estimation</h2>
 <p><br></p>
 <center>
-<p><span class="math inline">\(Y = \beta_{0} + \beta_{1}X + \beta_{2}Z + \epsilon\)</span></p>
+<span class="math inline">\(Y = \beta_{0} + \beta_{1}X + \beta_{2}Z + \epsilon\)</span>
 </center>
 <p><br></p>
 <p>In all linear models we have covered, the dependent variable (<span class="math inline">\(Y\)</span>) was numerical/continuous.</p>
 <p><br></p>
 <center>
-<p><strong>What do we do when it is not numerical/continuous?</strong></p>
+<strong>What do we do when it is not numerical/continuous?</strong>
 </center>
 </section></section>
 <section>
@@ -294,7 +294,7 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 <li>To:</li>
 </ul>
 <center>
-<p><span class="math inline">\(P_{i} = P (Y = 1) = \Lambda(\beta_{0} + \beta_{1}X_{1i} + \beta_{2}Z_{2i} + \epsilon) = \Lambda(XB + \epsilon)\)</span>,</p>
+<span class="math inline">\(P_{i} = P (Y = 1) = \Lambda(\beta_{0} + \beta_{1}X_{1i} + \beta_{2}Z_{2i} + \epsilon) = \Lambda(XB + \epsilon)\)</span>,
 </center>
 <p><br></p>
 <p>where <span class="math inline">\(\Lambda\)</span> (lambda) represents the link function that strictly assumes values between 0 and 1.</p>
@@ -308,7 +308,7 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 <p>Therefore, the predicted probabilities of a binary dependent variable model can be given by:</p>
 <p><br></p>
 <center>
-<p><span class="math inline">\(\hat{P}_{i} = \hat{P} (Y = 1) = \Lambda (\hat{\beta}_{0} + \hat{\beta}_{1}X_{1i} + \hat{\beta}_{2}Z_{2i}) = \Lambda(\hat{X}_{i}B)\)</span> ,</p>
+<span class="math inline">\(\hat{P}_{i} = \hat{P} (Y = 1) = \Lambda (\hat{\beta}_{0} + \hat{\beta}_{1}X_{1i} + \hat{\beta}_{2}Z_{2i}) = \Lambda(\hat{X}_{i}B)\)</span> ,
 </center>
 <p><br></p>
 <p>where <span class="math inline">\(\Lambda(\hat{X}_{i}B)\)</span> is the systematic (linear) component of the model.</p>
@@ -325,7 +325,7 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 How to solve this problem?
 </center>
 
-<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
 <section id="understanding-the-link-function-2" class="slide level2 center">
 <h2>Understanding the Link Function</h2>
 <p><br></p>
@@ -337,19 +337,19 @@ How to solve this problem?
 <li class="fragment"><p>To do this, we need a link function that performs this transformation.</p></li>
 </ul>
 
-<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
 <section id="solution" class="slide level2 center">
 <h2>Solution:</h2>
 
-<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
 <section id="understanding-the-link-function-3" class="slide level2 center">
 <h2>Understanding the Link Function</h2>
 <p><br></p>
 <p>Let’s remember the log-level model transformation:</p>
 <center>
-<p><span class="math display">\[
+<span class="math display">\[
 \log(\hat{Y}_{i}) = \beta_{0} + \beta X
-\]</span></p>
+\]</span>
 </center>
 <p><br></p>
 <ul>
@@ -489,7 +489,7 @@ $$
 <section id="logistic-function-vs-normal-distribution" class="slide level2 center">
 <h2>Logistic Function vs Normal Distribution</h2>
 
-<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section></section>
+<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section></section>
 <section>
 <section id="the-logit-link-function" class="title-slide slide level1 center" data-background-color="#cfb991">
 <h1>The Logit Link Function</h1>
@@ -504,7 +504,7 @@ $$
 <section id="the-logit-link-function-2" class="slide level2 center">
 <h2>The Logit Link Function</h2>
 
-<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
+<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
 <li class="fragment">The probability of the event occurring is the cumulative density function of <span class="math inline">\(\epsilon\)</span> evaluated at values determined by the independent variables</li>
 </ul>
 </section>
@@ -1737,7 +1737,7 @@ P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}
 p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}
 \]</span></p>
 
-<img data-src="16_02_logistic_regression_files/figure-html/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
+<img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
 <section id="example-output-conclusion" class="slide level2 center">
 <h2>Example Output: Conclusion</h2>
 <p><br></p>
@@ -2039,6 +2039,44 @@ P(Y = 1) = \frac{e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}{1 + e^{\beta_
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

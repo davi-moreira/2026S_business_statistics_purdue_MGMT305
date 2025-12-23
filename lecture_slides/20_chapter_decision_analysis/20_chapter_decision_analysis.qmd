@@ -218,7 +218,7 @@ By analyzing the payoff table, PDC can make an informed decision that aligns wit
 The payoff table will show projected profits (in millions of dollars) for each combination of decision alternative (complex size) and state of nature (demand).
 
 |  |  |  |
-|---------------------------------------|:---------------:|:---------------:|
+|----|:--:|:--:|
 | **Decision Alternative / State of Nature** | **Strong Demand**<br>($s_1$) | **Weak Demand**<br>($s_2$) |
 | **Small complex** ($d_1$) | 8 | 7 |
 | **Medium complex** ($d_2$) | 14 | 5 |
@@ -1080,7 +1080,7 @@ Note: These probability assessments provide a reasonable degree of confidence in
 
 ::::: {.column width="70%"}
 | (1)<br>States of Nature $s_j$ | (2)<br>Prior Probabilities $P(s_j)$ | (3)<br>Conditional Probabilities $P(F | s_j)$ | (4)<br>Joint Probabilities $P(F \cap s_j)$ | (5)<br>Posterior Probabilities $P(s_j | F)$ |
-|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+|:--:|:--:|:--:|:--:|:--:|
 | $s_1$ | 0.8 | 0.90 | $0.80\times0.90 = 0.72$ | $\frac{0.72}{0.77}=0.94$ |
 | $s_2$ | 0.2 | 0.25 | 0.05 | 0.06 |
 | **Total** | **1.0** |  | $P(F) = 0.77$ | 1.00 |
@@ -1088,7 +1088,6 @@ Note: These probability assessments provide a reasonable degree of confidence in
 <br>
 
 ::: fragment
-
 The Table shows that the probability of obtaining a favorable report is $P(F) = 0.77$.
 
 In addition:
@@ -1125,13 +1124,12 @@ The tabular probability computation procedure must be repeated for each possible
 
 :::: {.column width="70%"}
 | (1)<br>States of Nature $s_j$ | (2)<br>Prior Probabilities $P(s_j)$ | (3)<br>Conditional Probabilities $P(U | s_j)$ | (4)<br>Joint Probabilities $P(U \cap s_j)$ | (5)<br>Posterior Probabilities $P(s_j | U)$ |
-|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+|:--:|:--:|:--:|:--:|:--:|
 | $s_1$ | 0.8 | 0.10 | $0.8\times0.1=0.08$ | $\frac{0.08}{0.23}=0.35$ |
 | $s_2$ | 0.2 | 0.75 | 0.15 | 0.65 |
 | **Total** | **1.0** |  | $P(U) = 0.23$ | 1.00 |
 
 ::: fragment
-
 The probability of an unfavorable report is $P(U) = 0.23$.
 
 With an unfavorable report:
@@ -1184,7 +1182,7 @@ Some key takeaways from this session:
 ## Summary
 
 | Term | Definition | Purpose | Example |
-|---------------|----------------------|----------------|---------------------|
+|----|----|----|----|
 | **Payoff** | Quantitative value of profit/loss for a decision-state combination | Used to evaluate and compare decision alternatives | Building a large complex yields \$20 million if demand is high. |
 | **Results** | Actual effects observed after decision and state of nature occur | Evaluate real-world effectiveness of decision | Medium complex yields a realized profit of \$14 million. |
 | **Outputs** | Immediate, measurable consequences from the decision | Provide operational metrics | Number of units built, time to completion, occupancy rate. |

@@ -455,9 +455,9 @@ H_a: \text{Process is out of control}
 <p><br></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 44%">
-<col style="width: 34%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -469,8 +469,8 @@ H_a: \text{Process is out of control}
 <tbody>
 <tr class="odd">
 <td></td>
-<td><strong>H<sub>0</sub> True Process in Control</strong></td>
-<td><strong>H<sub>0</sub> False Process Out of Control</strong></td>
+<td><strong>H</strong><sub>0</sub> True Process in Control</td>
+<td><strong>H</strong><sub>0</sub> False Process Out of Control</td>
 </tr>
 <tr class="even">
 <td><strong>Continue Process</strong></td>
@@ -603,16 +603,16 @@ A variable control chart is used to monitor and control a process parameter over
 <h2><span class="math inline">\(\bar{X}\)</span> Chart: Process Mean and Standard Deviation Unknown</h2>
 <p><strong>Example: Jensen Computer Supplies Problem</strong></p>
 <p>Data and Sample Summary Statistics</p>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 8%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 8%">
-<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -815,9 +815,9 @@ A variable control chart is used to monitor and control a process parameter over
 </tbody>
 </table>
 <ul>
-<li class="fragment"><strong><span class="math inline">\(d_2\)</span></strong> and <strong><span class="math inline">\(d_3\)</span></strong>: Constants used for range calculations.</li>
-<li class="fragment"><strong><span class="math inline">\(A_2\)</span></strong>: Used in <span class="math inline">\(\bar{X}\)</span> charts for control limits.</li>
-<li class="fragment"><strong><span class="math inline">\(D_3\)</span></strong> and <strong><span class="math inline">\(D_4\)</span></strong>: Constants for the R-chart control limits.</li>
+<li class="fragment"><span class="math inline">\(d_2\)</span> and <span class="math inline">\(d_3\)</span>: Constants used for range calculations.</li>
+<li class="fragment"><span class="math inline">\(A_2\)</span>: Used in <span class="math inline">\(\bar{X}\)</span> charts for control limits.</li>
+<li class="fragment"><span class="math inline">\(D_3\)</span> and <span class="math inline">\(D_4\)</span>: Constants for the R-chart control limits.</li>
 </ul>
 </div>
 </section>
@@ -826,8 +826,8 @@ A variable control chart is used to monitor and control a process parameter over
 <div style="font-size: 65%;">
 <ol type="1">
 <li class="fragment"><p><strong>n</strong>: The sample size, or the number of observations within each subgroup.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(d_2\)</span></strong>: A constant used to estimate the mean of the range (<span class="math inline">\(\bar{R}\)</span>) when the sample size <span class="math inline">\(n\)</span> is known.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(A_2\)</span></strong>: A constant for calculating control limits for the <span class="math inline">\(\bar{X}\)</span> (X-bar) chart:</p></li>
+<li class="fragment"><p><span class="math inline">\(d_2\)</span>: A constant used to estimate the mean of the range (<span class="math inline">\(\bar{R}\)</span>) when the sample size <span class="math inline">\(n\)</span> is known.</p></li>
+<li class="fragment"><p><span class="math inline">\(A_2\)</span>: A constant for calculating control limits for the <span class="math inline">\(\bar{X}\)</span> (X-bar) chart:</p></li>
 </ol>
 <div class="fragment">
 <p><span class="math display">\[
@@ -840,8 +840,8 @@ A variable control chart is used to monitor and control a process parameter over
 <p>where <span class="math inline">\(\bar{\bar{X}}\)</span> is the mean of sample means, and <span class="math inline">\(\bar{R}\)</span> is the average range.</p>
 </div>
 <ol start="4" type="1">
-<li class="fragment"><p><strong><span class="math inline">\(d_3\)</span></strong>: A constant related to the standard deviation of the range distribution, useful for control limits on range charts.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(D_3\)</span></strong>: Used for the Lower Control Limit (LCL) on the R-chart:</p></li>
+<li class="fragment"><p><span class="math inline">\(d_3\)</span>: A constant related to the standard deviation of the range distribution, useful for control limits on range charts.</p></li>
+<li class="fragment"><p><span class="math inline">\(D_3\)</span>: Used for the Lower Control Limit (LCL) on the R-chart:</p></li>
 </ol>
 <div class="fragment">
 <p><span class="math display">\[
@@ -850,7 +850,7 @@ A variable control chart is used to monitor and control a process parameter over
 <p>For small sample sizes, <span class="math inline">\(D_3\)</span> is often zero, indicating no lower control limit.</p>
 </div>
 <ol start="6" type="1">
-<li class="fragment"><strong><span class="math inline">\(D_4\)</span></strong>: Used for the Upper Control Limit (UCL) on the R-chart:</li>
+<li class="fragment"><span class="math inline">\(D_4\)</span>: Used for the Upper Control Limit (UCL) on the R-chart:</li>
 </ol>
 <div class="fragment">
 <p><span class="math display">\[
@@ -976,8 +976,8 @@ A variable control chart is used to monitor and control a process parameter over
 <p>An attributes control chart is used if the quality of the output is measured in terms of discrete/counting data such as the number of defective units (<span class="math inline">\(X\)</span>) in a sample, etc.</p>
 <ul>
 <li class="fragment"><p><span class="math inline">\(X\)</span> is assumed to follow a Binomial distribution with a defective rate (proportion of “success”), <span class="math inline">\(p\)</span>. The expected value of <span class="math inline">\(X\)</span> is <span class="math inline">\(np\)</span>.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(p\)</span> Chart</strong>: Used to monitor <span class="math inline">\(p\)</span>. The monitoring statistic at time <span class="math inline">\(j\)</span> is the sample proportion <span class="math inline">\(\overline{p_j}\)</span>.</p></li>
-<li class="fragment"><p><strong><span class="math inline">\(np\)</span> Chart</strong>: Used to monitor the expected number of defectives in a sample of size <span class="math inline">\(n\)</span>, <span class="math inline">\(np\)</span>. The monitoring statistic at time <span class="math inline">\(j\)</span> is <span class="math inline">\(X_j\)</span>.</p></li>
+<li class="fragment"><p><span class="math inline">\(p\)</span> Chart: Used to monitor <span class="math inline">\(p\)</span>. The monitoring statistic at time <span class="math inline">\(j\)</span> is the sample proportion <span class="math inline">\(\overline{p_j}\)</span>.</p></li>
+<li class="fragment"><p><span class="math inline">\(np\)</span> Chart: Used to monitor the expected number of defectives in a sample of size <span class="math inline">\(n\)</span>, <span class="math inline">\(np\)</span>. The monitoring statistic at time <span class="math inline">\(j\)</span> is <span class="math inline">\(X_j\)</span>.</p></li>
 </ul>
 </section></section>
 <section>
@@ -1018,10 +1018,10 @@ A variable control chart is used to monitor and control a process parameter over
 <p><strong>Sample Data</strong></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 9%">
-<col style="width: 15%">
-<col style="width: 35%">
-<col style="width: 40%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1182,9 +1182,9 @@ H_a: \text{Poor-quality lot}
 \]</span></p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 28%">
 <col style="width: 33%">
-<col style="width: 37%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1770,6 +1770,44 @@ Is <span class="math inline">\((n, c) = (15, 0)\)</span> an acceptable plan?
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

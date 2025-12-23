@@ -446,9 +446,9 @@ H_a: \sigma^2 &gt; 4
 <section id="hypothesis-testing-about-a-population-variance---example-2" class="slide level2 center">
 <h2>Hypothesis Testing about a Population Variance - Example</h2>
 <p><br></p>
-<p><strong><span class="math inline">\(p\)</span>-value Approach:</strong></p>
+<p><span class="math inline">\(p\)</span>-value Approach:</p>
 
-<img data-src="figs/chi_square_pvalue.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><br>
+<img data-src="figs/chi_square_pvalue.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p><br></p>
 <center>
 <span class="math inline">\(p\)</span>-value = <code>1-CHISQ.DIST(28.18, 23, TRUE)</code> = 0.209 &gt; 5%. Fail to reject <span class="math inline">\(H_0\)</span>.
 </center>
@@ -897,6 +897,44 @@ F = \frac{S_1^2}{S_2^2} \quad \text{follows F-distribution } (n_1-1, n_2-1), \te
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

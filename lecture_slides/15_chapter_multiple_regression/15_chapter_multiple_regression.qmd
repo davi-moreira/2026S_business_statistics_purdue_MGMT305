@@ -192,7 +192,7 @@ A simple random sample of 10 driving assignments was taken.
 **Example**: Butler Trucking Company - `Butler.xlsx`
 
 | Driving Assignment | Miles traveled $x_1$ | Deliveries $x_2$ | $y$ = Travel Time (hours) |
-|------------------|------------------|------------------|--------------------|
+|----|----|----|----|
 | 1 | 100 | 4 | 9.3 |
 | 2 | 50 | 3 | 4.8 |
 | 3 | 100 | 4 | 8.9 |
@@ -328,7 +328,7 @@ knitr::include_graphics("figs/butler_company_reg_output_excel.png")
 Relationship Among SST, SSR, SSE
 
 |   | SST | SSR | SSE |
-|------------------|--------------------|------------------|------------------|
+|----|----|----|----|
 | Formula | $\sum (y_i - \bar{y})^2$ | $\sum (\hat{y}_i - \bar{y})^2$ | $\sum (y_i - \hat{y}_i)^2$ |
 | Degrees of Freedom | $n-1$ | $p$ | $n-p-1$ |
 
@@ -526,11 +526,11 @@ We have significant statistical evidence to conclude that at least one of the in
 
 **ANOVA Output**
 
-| Source     | df      | SS  | MS                  | F                   | Significance F |
-|------------|------------|------------|------------|------------|-------------|
-| Regression | $p$     | SSR | $MSR=\frac{SSR}{p}$ | $F=\frac{MSR}{MSE}$ | $p-value$      |
-| Residual   | $n-p-1$ | SSE | $MSE=\frac{SSE}{n-p-1}$ |                     |                |
-| Total      | $n-1$   | SST |                     |                     |                |
+| Source | df | SS | MS | F | Significance F |
+|----|----|----|----|----|----|
+| Regression | $p$ | SSR | $MSR=\frac{SSR}{p}$ | $F=\frac{MSR}{MSE}$ | $p-value$ |
+| Residual | $n-p-1$ | SSE | $MSE=\frac{SSE}{n-p-1}$ |  |  |
+| Total | $n-1$ | SST |  |  |  |
 
 ## Testing for Overall Significance: $F$ Test
 
@@ -703,7 +703,7 @@ Managers of Johnson Filtration, Inc. want to predict the repair time necessary f
 **Example: Johnson Filtration, Inc**
 
 | Service Call | Months since last service | Type of repair | Repair time (hours) |
-|-----------------|---------------------|-----------------|-----------------|
+|--------------|---------------------------|----------------|---------------------|
 | 1            | 2                         | Electrical     | 2.9                 |
 | 2            | 6                         | Mechanical     | 3.0                 |
 | 3            | 8                         | Electrical     | 4.8                 |
@@ -720,7 +720,7 @@ Managers of Johnson Filtration, Inc. want to predict the repair time necessary f
 **Example: Johnson Filtration, Inc**: Now with a *dummy* or *indicator variable*.
 
 | Service Call | Months since last service | Type of repair | Repair time (hours) |
-|-----------------|---------------------|-----------------|-----------------|
+|--------------|---------------------------|----------------|---------------------|
 | 1            | 2                         | 1              | 2.9                 |
 | 2            | 6                         | 0              | 3.0                 |
 | 3            | 8                         | 1              | 4.8                 |

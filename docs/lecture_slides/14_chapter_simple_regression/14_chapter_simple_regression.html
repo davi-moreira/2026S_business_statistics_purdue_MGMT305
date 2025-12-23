@@ -1500,7 +1500,7 @@ b_1 \pm t_{\alpha/2, n-2} s_{b_1}
 <ul>
 <li><span class="math inline">\(b_1\)</span> is the point estimator,</li>
 <li><span class="math inline">\(t_{\alpha/2, n-2} s_{b_1}\)</span> is the margin of error (MOE),</li>
-<li><span class="math inline">\(t_{\alpha/2, n-2}\)</span> is the <strong><em>t</em> critical value</strong> providing an upper-tail area of <span class="math inline">\(\alpha/2\)</span> in a <em>t</em> distribution with <span class="math inline">\(n-2\)</span> degrees of freedom.</li>
+<li><span class="math inline">\(t_{\alpha/2, n-2}\)</span> is the <strong><em>t</em></strong> <strong>critical value</strong> providing an upper-tail area of <span class="math inline">\(\alpha/2\)</span> in a <em>t</em> distribution with <span class="math inline">\(n-2\)</span> degrees of freedom.</li>
 <li><span class="math inline">\(s_{b_1}\)</span> is the <strong>standard error</strong> of the slope estimate <span class="math inline">\(b_1\)</span>, i.e., an estimate of the standard deviation of the sampling distribution of <span class="math inline">\(b_1\)</span>. It is not the population standard deviation; it is the estimated uncertainty in the slope due to sampling.</li>
 </ul>
 </section>
@@ -1692,7 +1692,7 @@ b_1 \pm t_{\alpha/2} s_{b_1} = 5 \pm 3.355(.5803) = 5 \pm 1.95
 <col style="width: 12%">
 <col style="width: 12%">
 <col style="width: 12%">
-<col style="width: 14%">
+<col style="width: 12%">
 <col style="width: 12%">
 <col style="width: 12%">
 </colgroup>
@@ -2000,9 +2000,9 @@ Panel C
 <p><strong>Example:</strong> Armand’s Pizza Parlors</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 22%">
-<col style="width: 22%">
-<col style="width: 30%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 <col style="width: 25%">
 </colgroup>
 <thead>
@@ -2164,10 +2164,10 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2}
 <p><strong>Example:</strong> Armand’s Pizza Parlors</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 30%">
-<col style="width: 26%">
-<col style="width: 21%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -2790,6 +2790,44 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum (x_i - \bar{x})^2} = \frac{1}{
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

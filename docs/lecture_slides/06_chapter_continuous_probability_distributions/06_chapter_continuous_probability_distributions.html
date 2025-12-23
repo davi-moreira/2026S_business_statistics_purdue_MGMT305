@@ -316,7 +316,7 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\
 
 <img data-src="figs/normal_standard_z.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
 <div style="font-size: 90%;">
-<p><strong>Standardization: Standardize <span class="math inline">\(X \sim N(\mu, \sigma)\)</span> to standard Normal Distribution, <span class="math inline">\(Z\)</span></strong></p>
+<p><strong>Standardization: Standardize</strong> <span class="math inline">\(X \sim N(\mu, \sigma)\)</span> to standard Normal Distribution, <span class="math inline">\(Z\)</span></p>
 <p><span class="math display">\[
   Z = \frac{X - \mu}{\sigma}
   \]</span></p>
@@ -495,7 +495,7 @@ x = \mu + z_{0.1} \cdot \sigma \\
 <p><br></p>
 <div class="fragment">
 <center>
-<strong><span class="math inline">\(t\)</span>-distribution</strong>
+<span class="math inline">\(t\)</span>-distribution
 </center>
 </div>
 </section>
@@ -632,7 +632,7 @@ x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
 <li>A normal distribution with a mean of 0 and a standard deviation of 1.</li>
 <li>Standardization helps in comparing different normal distributions.</li>
 </ul></li>
-<li><strong><span class="math inline">\(t\)</span>-distribution</strong>
+<li><span class="math inline">\(t\)</span>-distribution
 <ul>
 <li>Use when the sample size is small <span class="math inline">\((n &lt; 30)\)</span></li>
 <li>Use when the population standard deviation is unknown</li>
@@ -871,6 +871,44 @@ x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
