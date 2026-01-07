@@ -94,10 +94,10 @@ Below are the grading components and their respective weights:
 
 | **Assessment**               | **Weight** |
 |------------------------------|:----------:|
-| **Attendance**               |     3%     |
-| **Participation**            |     7%     |
-| **Homework** (8 total)       |    28%     |
-| **Quizzes** (3 total)        |    15%     |
+| **Attendance**               |     1%     |
+| **Participation**            |     4%     |
+| **Homework** (8 total)       |    24%     |
+| **Quizzes** (3 total)        |    21%     |
 | **Midterms** (2 total)       |    30%     |
 | **Final** (cumulative)       |    20%     |
 
@@ -108,7 +108,7 @@ Attendance is essential for success in this course. If you do not attend class r
 
 ### Participation 
 
-Participate and take participatory activities. During the semester you will be required to take participatory activities. Your participation grade will be based on this record. 
+During the semester you will be required to take participatory activities. Your participation grade will be based on this record. 
 
 ### Homework
 
