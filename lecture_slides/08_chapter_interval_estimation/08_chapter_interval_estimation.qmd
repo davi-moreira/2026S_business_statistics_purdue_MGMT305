@@ -470,7 +470,7 @@ $$
   E = z_{\alpha/2} \times \sqrt{\frac{p^*(1-p^*)}{n}} = .025
   $$
 
-At 95% confidence $z_{0.0125} = 1.96$. Assume $p^* = 0.44$.
+At 95% confidence $z_{0.025} = 1.96$. Assume $p^* = 0.44$.
 
 $$
   n = \left( \frac{z_{\alpha/2}^2 \times p^*(1-p^*)}{E^2} \right) = \left( \frac{(1.96)^2 (0.44)(0.56)}{(0.025)^2} \right) = 1,514.5
@@ -492,7 +492,7 @@ $$
 
 ::: {style="font-size: 50%;"}
 | **Concept** | **Definition** | **Purpose** |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | **Standard Deviation** | A measure of the amount of variation or dispersion in a set of values. | To quantify the dispersion of data points around the mean. |
 | **Standard Error** | The standard deviation of the sample distribution of a statistic (e.g. the sample mean). | To estimate how much sample statistics will vary from the true population parameter. |
 | **Margin of Error** | A measure of the range within which the true population parameter is expected to lie, with a given level of confidence. | To quantify the uncertainty in estimates of population parameters. |

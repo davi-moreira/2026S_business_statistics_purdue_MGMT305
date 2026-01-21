@@ -24,3 +24,4 @@ _lecture_notes/
 _quizzes/
 _supplemental_material/
 _video/
+**/*.quarto_ipynb
