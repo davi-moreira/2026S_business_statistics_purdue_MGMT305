@@ -77,7 +77,7 @@ editor: visual
 | **5** | **S** | Feb 15 | **Homework 03 Due date** | **Simple Regression** | . | . | . |
 | **6** | **M** | **Feb 16** | **Midterm 1 Review** | **Analysis of Variance & Simple Regression** | . | . | . |
 | **6** | **W** | **Feb 18** | **Midterm 1 Review** | **Analysis of Variance & Simple Regression** | . | . | . |
-| **6** | **T** | **Feb 19** | **Midterm 1 (TBD pm–TBD pm, TBD)** | **Analysis of Variance & Simple Regression** | . | . | . |
+| **6** | **T** | **Feb 19** | **Midterm 1 (Details in the Course Syllabus)** | **Analysis of Variance & Simple Regression** | . | . | . |
 | **6** | **F** | **Feb 20** | **No Class** | . | . | . | . |
 | **7** | **M** | Feb 23 | Multiple Regression | 15.1, 15.2, 15.3 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"}<br>[podcast\*\*](https://youtu.be/cB33HShD_MM){target="_blank"}<br>[video\*\*](https://youtu.be/R-GAa6eQm0Y){target="_blank"} | [data](/lecture_slides/15_chapter_multiple_regression/data/data.zip){target="_blank"} | \- [**Video**: Introduction to Multiple Regression](https://www.youtube.com/watch?v=sQpAuyfEYZg){target="_blank"} |
 | **7** | **W** | Feb 25 | Multiple Regression | 15.4 | [slides](/lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html){target="_blank"}<br>[podcast\*\*](https://youtu.be/cB33HShD_MM){target="_blank"}<br>[video\*\*](https://youtu.be/R-GAa6eQm0Y){target="_blank"} | . | . |
@@ -98,7 +98,7 @@ editor: visual
 | **11** | **S** | Mar 29 | **Homework 06 Due date** | **Logistic Regression** | . | . | . |
 | **12** | **M** | **Mar 30** | **Midterm 2 Review** | **Mult. Regr., Model Bldg., Log. Regr.** | . | . | . |
 | **12** | **M** | **Apr 1** | **Midterm 2 Review** | **Mult. Regr., Model Bldg., Log. Regr.** | . | . | . |
-| **12** | **W** | **Apr 1** | **Midterm 2 (TBD pm–TBD pm, TBD)** | **Mult. Regr., Model Bldg., Log. Regr.** | . | . | . |
+| **12** | **W** | **Apr 1** | **Midterm 2  (Details in the Course Syllabus)** | **Mult. Regr., Model Bldg., Log. Regr.** | . | . | . |
 | **12** | **F** | Apr 3 | No Class | . | . | . | . |
 | **13** | **F** | Apr 6 | Time Series | 17.1, 17.2, 17.3 | [slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"}<br>[podcast\*\*](https://youtu.be/se_Nho0TFM8){target="_blank"}<br>[video\*\*](https://youtu.be/c3cf8TK-Uz8){target="_blank"}  | [data](/lecture_slides/17_chapter_time_series/data/data.zip){target="_blank"} | [**Video**: Time Series Forecast Using Forecast Sheet in Excel](https://www.youtube.com/watch?v=WU6UKKuVGY8){target="_blank"} |
 | **13** | **W** | Apr 8 | Time Series | 17.4 | [slides](/lecture_slides/17_chapter_time_series/17_chapter_time_series.html){target="_blank"}<br>[podcast\*\*](https://youtu.be/se_Nho0TFM8){target="_blank"}<br>[video\*\*](https://youtu.be/c3cf8TK-Uz8){target="_blank"}  | . | . |
@@ -114,7 +114,7 @@ editor: visual
 | **16** | **M** | **Apr 27** | **Final Exam Review** | **Cumulative** | . | . | . |
 | **16** | **W** | **Apr 29** | **Final Exam Review** | **Cumulative** | . | . | . |
 | **16** | **F** | **May 1** | **Final Exam Preparation** | **No class** | . | . | . |
-| **17** | — | TBD | **Final Exam (TBD pm–TBD pm, TBD)** | **Cumulative** | . | . | . |
+| **17** | — | TBD | **Final Exam (Details in the Course Syllabus)** | **Cumulative** | . | . | . |
 :::
 
 ::: below-table
