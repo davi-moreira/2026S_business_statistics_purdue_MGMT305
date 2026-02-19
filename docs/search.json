@@ -1469,7 +1469,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion---example",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Sample Size for an Interval Estimate of a Population Proportion - Example",
-    "text": "Sample Size for an Interval Estimate of a Population Proportion - Example\nExample: Survey of women golfers\n\nA national survey of 900 women golfers was conducted to learn how women golfers view their treatment at golf courses in United States. The survey found that 396 of the women golfers were satisfied with the availability of tee times.\n\nLet us provide a 95% confidence interval estimate of the mean credit card debt for the population of US households. We will assume this population to be normally distributed."
+    "text": "Sample Size for an Interval Estimate of a Population Proportion - Example\nExample: Survey of women golfers\n\nA national survey of 900 women golfers was conducted to learn how women golfers view their treatment at golf courses in United States. The survey found that 396 of the women golfers were satisfied with the availability of tee times.\n\nSuppose one wants to develop a 95% confidence interval estimate for the proportion of the population of women golfers satisfied with the availability of tee times, but ensure that the Margin of Error will be equal or lower than 0.025. What is the needed sample size?"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion---example-1",

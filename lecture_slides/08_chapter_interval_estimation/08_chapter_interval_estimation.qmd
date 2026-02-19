@@ -460,7 +460,7 @@ A national survey of 900 women golfers was conducted to learn how women golfers 
 
 <br>
 
-Let us provide a 95% confidence interval estimate of the mean credit card debt for the population of US households. We will assume this population to be normally distributed.
+Suppose one wants to develop a 95% confidence interval estimate for the proportion of the population of women golfers satisfied with the availability of tee times, but ensure that the Margin of Error will be equal or lower than 0.025. What is the needed sample size?
 
 ## Sample Size for an Interval Estimate of a Population Proportion - Example
 
