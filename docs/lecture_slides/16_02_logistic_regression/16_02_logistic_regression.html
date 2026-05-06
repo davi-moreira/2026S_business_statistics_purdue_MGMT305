@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Professor Davi Moreira ">
   <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5ef896889b6f6a61ee8a14a51d301bed.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -167,7 +170,7 @@ Professor<br>Davi Moreira<br>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table caption-top" data-quarto-postprocess="true" style="margin-left: auto; margin-right: auto;">
+<table class="table caption-top" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">admit</th>
@@ -269,9 +272,7 @@ Professor<br>Davi Moreira<br>
 <li class="fragment"><p>A <strong>general linear model</strong> involving <span class="math inline">\(p\)</span> independent variables (<span class="math inline">\(z_i\)</span>’s) is:</p></li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon\]</span></p>
 <p>where each independent variable <span class="math inline">\(z_i\)</span> is a (linear or nonlinear) function of <span class="math inline">\(x_1, x_2, \ldots, x_k\)</span> (the variables for which data have been collected).</p>
 <ul>
 <li class="fragment">Here, <span class="math inline">\(y\)</span> can be a function of the original response variable as well.</li>
@@ -281,7 +282,7 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 <section id="general-linear-model-2" class="slide level2 center">
 <h2>General Linear Model</h2>
 <p><br></p>
-<p>The <strong>General Linear Model</strong> can be used to relates the dependent variable <span class="math inline">\(Y\)</span> to the systematic part of the model (linear predictors) through a link function.</p>
+<p>The <strong>General Linear Model</strong> can be used to relate the dependent variable <span class="math inline">\(Y\)</span> to the systematic part of the model (linear predictors) through a link function.</p>
 <ul>
 <li>From:</li>
 </ul>
@@ -347,9 +348,7 @@ How to solve this problem?
 <p><br></p>
 <p>Let’s remember the log-level model transformation:</p>
 <center>
-<span class="math display">\[
-\log(\hat{Y}_{i}) = \beta_{0} + \beta X
-\]</span>
+<span class="math display">\[\log(\hat{Y}_{i}) = \beta_{0} + \beta X\]</span>
 </center>
 <p><br></p>
 <ul>
@@ -372,20 +371,16 @@ How to solve this problem?
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div class="fragment">
 <div style="font-size: 70%;">
-<p><span class="math display">\[
-Y =
+<p><span class="math display">\[Y =
   \begin{cases}
     1       &amp; \quad \text{if } y^{*}_{i} &gt; 0 \\
     0  &amp; \quad \text{if } y^{*}_{i} \leq 0
-  \end{cases}
-\]</span></p>
+  \end{cases}\]</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(y^{*}\)</span>: is a latent (unobserved) variable, which represents an underlying continuous measure that influences the binary outcome. It drives the observed binary outcome <span class="math inline">\(Y\)</span>.</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-y^{*}_{i} = \beta_{0} + \beta X + \epsilon
-\]</span></p>
+<p><span class="math display">\[y^{*}_{i} = \beta_{0} + \beta X + \epsilon\]</span></p>
 <ul>
 <li class="fragment"><p>The binary variable <span class="math inline">\(Y\)</span> is determined by a threshold applied to the latent variable <span class="math inline">\(y^{*}\)</span>.</p></li>
 <li class="fragment"><p>The plot illustrates the role of the logistic function in converting the continuous latent variable into probabilities that <span class="math inline">\(Y = 1\)</span> or <span class="math inline">\(Y = 0\)</span>. As <span class="math inline">\(X\)</span> increases past a certain threshold (denoted <span class="math inline">\(\tau = 0\)</span> on the graph), the probability that <span class="math inline">\(Y = 1\)</span> rises above 0.5, indicating a higher likelihood of observing <span class="math inline">\(Y = 1\)</span>.</p></li>
@@ -472,8 +467,7 @@ Two distributions of $\epsilon$ are considered:
 <li><strong>Logistic distribution</strong>: In the Logit model, <span class="math inline">\(\epsilon\)</span> has a logistic distribution, <span class="math inline">\(\mu = 0\)</span> and variance given by: <span class="math inline">\(\sigma^2(u) = \pi^2/3\)</span></li>
 </ul>
 <p><span class="math display">\[
-\text{Pr}(y = 1|x) = \frac{\exp(\beta_{0} + \beta x)}{1 + \exp(\beta_{0} + \beta x)} \quad \text{or} \quad \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
-\]</span></p>
+\text{Pr}(y = 1|x) = \frac{\exp(\beta_{0} + \beta x)}{1 + \exp(\beta_{0} + \beta x)} \quad \text{or} \quad \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}\]</span></p>
 <!---
 ::: {.fragment}
 
@@ -510,46 +504,32 @@ $$
 </section>
 <section id="estimating-the-event-probability" class="slide level2 center">
 <h2>Estimating the Event Probability</h2>
-<p><span class="math display">\[
-P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
-\]</span></p>
+<p><span class="math display">\[P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}\]</span></p>
 <p><strong>Logit link function</strong></p>
-<p><span class="math display">\[
-\hat{Y}_i = \frac{e^{b_0 + b_1 x_i}}{1 + e^{b_0 + b_1 x_i}}
-\]</span></p>
+<p><span class="math display">\[\hat{Y}_i = \frac{e^{b_0 + b_1 x_i}}{1 + e^{b_0 + b_1 x_i}}\]</span></p>
 <p><strong>Prediction equation</strong></p>
 <p>A common estimation method to obtain <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> is called the Maximum Likelihood Method. It finds the values of <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> that maximize the probability (or likelihood) of observing the data.</p>
 </section>
 <section id="interpretation-of-beta_1-via-lnodds" class="slide level2 center">
 <h2>Interpretation of <span class="math inline">\(\beta_1\)</span> via Ln(Odds)</h2>
 <p>Define the odds for the event:</p>
-<p><span class="math display">\[
-\text{Odds}(x) \equiv \frac{\text{Event probability}}{\text{Non-event probability}} = \frac{P(Y = 1)}{1 - P(Y = 1)} = e^{\beta_0 + \beta_1 x}
-\]</span></p>
-<p><span class="math display">\[
-\ln(\text{Odds}(x)) = \beta_0 + \beta_1 x
-\]</span></p>
+<p><span class="math display">\[\text{Odds}(x) \equiv \frac{\text{Event probability}}{\text{Non-event probability}} = \frac{P(Y = 1)}{1 - P(Y = 1)} = e^{\beta_0 + \beta_1 x}\]</span></p>
+<p><span class="math display">\[\ln(\text{Odds}(x)) = \beta_0 + \beta_1 x\]</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(b_1\)</span> is the predicted change in the <span class="math inline">\(\ln(\text{Odds}(x))\)</span> per-unit increase in <span class="math inline">\(x\)</span>.</li>
-<li class="fragment"><span class="math inline">\(b_1\)</span> is the predicted difference: <span class="math display">\[
-\ln(\text{Odds}(x+1)) - \ln(\text{Odds}(x)).
-\]</span></li>
+<li class="fragment"><span class="math inline">\(b_1\)</span> is the predicted difference: <span class="math display">\[\ln(\text{Odds}(x+1)) - \ln(\text{Odds}(x)).\]</span></li>
 <li class="fragment">This relationship is true for all <span class="math inline">\(x\)</span>.</li>
 </ul>
 </section>
 <section id="interpretation-of-ebeta_1-via-odds-ratio" class="slide level2 center">
 <h2>Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> via Odds Ratio</h2>
 <p>Define the odds ratio:</p>
-<p><span class="math display">\[
-\text{Odds Ratio}(x) \equiv \frac{\text{Odds}(x+1)}{\text{Odds}(x)} = e^{\beta_1}
-\]</span></p>
+<p><span class="math display">\[\text{Odds Ratio}(x) \equiv \frac{\text{Odds}(x+1)}{\text{Odds}(x)} = e^{\beta_1}\]</span></p>
 <p>By increasing <span class="math inline">\(x\)</span> by one unit, the odds of the event change by a factor of <span class="math inline">\(e^{\beta_1}\)</span>.</p>
 </section>
 <section id="interpretation-of-ebeta_1-continuous-predictor-x" class="slide level2 center">
 <h2>Interpretation of <span class="math inline">\(e^{\beta_1}\)</span> (Continuous Predictor, <span class="math inline">\(x\)</span>)</h2>
-<p><span class="math display">\[
-\frac{\text{Odds}(x+1)}{\text{Odds}(x)} = e^{\beta_1}
-\]</span></p>
+<p><span class="math display">\[\frac{\text{Odds}(x+1)}{\text{Odds}(x)} = e^{\beta_1}\]</span></p>
 <ul>
 <li><p>The odds for the event will change by a factor of <span class="math inline">\(e^{\beta_1}\)</span> per unit increase in <span class="math inline">\(x\)</span>, where <span class="math inline">\(\beta_1\)</span> is the population slope of <span class="math inline">\(x\)</span>.</p></li>
 <li><p>If <span class="math inline">\(\beta_1 = 0\)</span> or <span class="math inline">\(e^{\beta_1} = 1\)</span>, there is no change in odds.</p></li>
@@ -568,7 +548,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <p>A researcher is interested in how variables such as GRE (Graduate Record Exam scores), GPA (Grade Point Average), and the prestige of the undergraduate institution affect admission into graduate school. The response variable, admit/don’t admit, is binary. What is the probability of success of a candidate based on these data?</p>
 <div class="cell">
 <div class="cell-output-display">
-<table class="table caption-top" data-quarto-postprocess="true" style="margin-left: auto; margin-right: auto;">
+<table class="table caption-top" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr class="header">
 <th style="text-align: right;" data-quarto-table-cell-role="th">admit</th>
@@ -626,7 +606,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -653,7 +633,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -684,7 +664,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -761,7 +741,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -788,7 +768,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -819,7 +799,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -922,7 +902,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -949,7 +929,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -980,7 +960,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1087,7 +1067,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1114,7 +1094,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1145,7 +1125,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1255,9 +1235,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <li><strong>Log-Odds (Linear Equation)</strong></li>
 </ul>
 <p>The log-odds (logit) from a logistic regression model can be written as:</p>
-<p><span class="math display">\[
-\text{Log-Odds}(Y = 1) = \beta_0 + \beta_1 \times X_1 + \beta_2 \times X_2 + \dots + \beta_k \times X_k
-\]</span></p>
+<p><span class="math display">\[\text{Log-Odds}(Y = 1) = \beta_0 + \beta_1 \times X_1 + \beta_2 \times X_2 + \dots + \beta_k \times X_k\]</span></p>
 <p>Where:</p>
 <ul>
 <li><p><span class="math inline">\(\beta_0\)</span> is the intercept,</p></li>
@@ -1270,9 +1248,7 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <li><strong>Converting Log-Odds to Odds</strong></li>
 </ul>
 <p>To convert the log-odds to odds, use the exponential function:</p>
-<p><span class="math display">\[
-\text{Odds} = e^{\text{Log-Odds}} = e^{\beta_0 + \beta_1 X_1 + \dots + \beta_k X_k}
-\]</span></p>
+<p><span class="math display">\[\text{Odds} = e^{\text{Log-Odds}} = e^{\beta_0 + \beta_1 X_1 + \dots + \beta_k X_k}\]</span></p>
 <p>The odds represent the ratio of the probability of the event happening to the probability of the event not happening.</p>
 </section>
 <section id="from-log-odds-to-probabilities" class="slide level2 center">
@@ -1281,13 +1257,9 @@ P(Y_i = 1) = \frac{e^{\beta_0 + \beta_1 x_i}}{1 + e^{\beta_0 + \beta_1 x_i}}
 <li><strong>Computing the Probability</strong></li>
 </ul>
 <p>To compute the probability from the log-odds, use the logistic function:</p>
-<p><span class="math display">\[
-P(Y = 1) = \frac{1}{1 + e^{-\text{Log-Odds}}}
-\]</span></p>
+<p><span class="math display">\[P(Y = 1) = \frac{1}{1 + e^{-\text{Log-Odds}}}\]</span></p>
 <p>Or equivalently:</p>
-<p><span class="math display">\[
-P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
-\]</span></p>
+<p><span class="math display">\[P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}\]</span></p>
 <p>This formula converts the log-odds into a probability value between 0 and 1.</p>
 </section>
 <section id="interpretation-of-results-log-odds" class="slide level2 center">
@@ -1298,7 +1270,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1325,7 +1297,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1356,7 +1328,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1441,7 +1413,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1468,7 +1440,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1499,7 +1471,7 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1570,15 +1542,9 @@ P(Y = 1) = \frac{e^{\text{Log-Odds}}}{1 + e^{\text{Log-Odds}}}
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 70%;">
 <ul>
-<li class="fragment"><p><strong>GRE</strong>: For a one-unit increase in GRE, the odds of being admitted increase by a factor of: <span class="math display">\[
-e^{0.002} \approx 1.002
-\]</span> This means that for every additional point in GRE, the odds of admission increase by 0.2%.</p></li>
-<li class="fragment"><p><strong>GPA</strong>: For a one-unit increase in GPA, the odds of being admitted increase by a factor of: <span class="math display">\[
-e^{0.804} \approx 2.23
-\]</span> This means that for each additional GPA point, the odds of admission more than double (2.23 times higher).</p></li>
-<li class="fragment"><p><strong>Rank (Rank 2)</strong>: For being in Rank 2 compared to Rank 1, the odds of admission decrease by a factor of: <span class="math display">\[
-e^{-0.675} \approx 0.51
-\]</span> This means that students from Rank 2 institutions have approximately half the odds of being admitted compared to those from Rank 1 institutions.</p></li>
+<li class="fragment"><p><strong>GRE</strong>: For a one-unit increase in GRE, the odds of being admitted increase by a factor of: <span class="math display">\[e^{0.002} \approx 1.002\]</span> This means that for every additional point in GRE, the odds of admission increase by 0.2%.</p></li>
+<li class="fragment"><p><strong>GPA</strong>: For a one-unit increase in GPA, the odds of being admitted increase by a factor of: <span class="math display">\[e^{0.804} \approx 2.23\]</span> This means that for each additional GPA point, the odds of admission more than double (2.23 times higher).</p></li>
+<li class="fragment"><p><strong>Rank (Rank 2)</strong>: For being in Rank 2 compared to Rank 1, the odds of admission decrease by a factor of: <span class="math display">\[e^{-0.675} \approx 0.51\]</span> This means that students from Rank 2 institutions have approximately half the odds of being admitted compared to those from Rank 1 institutions.</p></li>
 </ul>
 </div>
 </div></div>
@@ -1591,7 +1557,7 @@ e^{-0.675} \approx 0.51
 <div class="cell">
 <div class="cell-output-display">
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Observations</td>
@@ -1618,7 +1584,7 @@ e^{-0.675} \approx 0.51
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">𝛘²(5)</td>
@@ -1649,7 +1615,7 @@ e^{-0.675} \approx 0.51
 </div>
  
 <div class="table-responsive">
-<table class="table table-striped table-hover table-condensed caption-top" data-quarto-postprocess="true" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
+<table class="table table-striped table-hover table-condensed caption-top" style="width: auto !important; margin-left: auto; margin-right: auto;border-bottom: 0;">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th"></th>
@@ -1720,9 +1686,7 @@ e^{-0.675} \approx 0.51
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 80%;">
 <p>To convert log-odds into probabilities:</p>
-<p><span class="math display">\[
-P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}
-\]</span></p>
+<p><span class="math display">\[P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}\]</span></p>
 <ul>
 <li class="fragment"><p><strong>GRE</strong>: The change in probability for a one-unit increase in GRE is minimal, given the very small log-odds coefficient (0.002). The probability increases slightly for each GRE point.</p></li>
 <li class="fragment"><p><strong>GPA</strong>: A one-unit increase in GPA substantially increases the probability of admission, as the log-odds increase by 0.804. This leads to a noticeable jump in the probability of being admitted.</p></li>
@@ -1734,8 +1698,7 @@ P(Y = 1) = \frac{1}{1 + e^{-(\text{log-odds})}}
 <section id="interpretation-of-results-predicted-probability" class="slide level2 center">
 <h2>Interpretation of Results: Predicted Probability</h2>
 <p><span class="math display">\[
-p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}
-\]</span></p>
+p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}\]</span></p>
 
 <img data-src="16_02_logistic_regression_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
 <section id="example-output-conclusion" class="slide level2 center">
@@ -1768,16 +1731,12 @@ p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}
 <li><p><strong>When to Use Logistic Regression</strong>: Use logistic regression when the dependent variable is binary (e.g., success/failure).</p></li>
 <li><p><strong>Probabilistic Interpretation</strong>: Models the probability of an event occurring based on predictor variables.</p></li>
 <li><p><strong>Interpretation of Coefficients: Log-Odds</strong>:</p>
-<p><span class="math display">\[
-\ln\left(\frac{P(Y = 1)}{1 - P(Y = 1)}\right) = \beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p
-\]</span></p>
+<p><span class="math display">\[\ln\left(\frac{P(Y = 1)}{1 - P(Y = 1)}\right) = \beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p\]</span></p>
 <ul>
 <li>Coefficients represent the change in log-odds for a one-unit increase in the predictor.</li>
 </ul></li>
 <li><p><strong>Interpretation of Coefficients: Odds Ratio</strong>:</p>
-<p><span class="math display">\[
-\text{Odds Ratio} = e^{\beta_i}
-\]</span></p>
+<p><span class="math display">\[\text{Odds Ratio} = e^{\beta_i}\]</span></p>
 <ul>
 <li><p>An odds ratio &gt; 1 indicates increased odds of the event occurring with a one-unit increase in <span class="math inline">\(X_i\)</span>.</p></li>
 <li><p>An odds ratio &lt; 1 indicates decreased odds.</p></li>
@@ -1790,17 +1749,11 @@ p = \frac{\exp(\beta x)}{1 + \exp(\beta x)}
 <p>Some key takeaways from this session:</p>
 <ul>
 <li><p><strong>Log-Odds to Odds</strong>:</p>
-<p><span class="math display">\[
-\text{Odds} = e^{\text{Log-Odds}}
-\]</span></p></li>
+<p><span class="math display">\[\text{Odds} = e^{\text{Log-Odds}}\]</span></p></li>
 <li><p><strong>Odds to Probability</strong>:</p>
-<p><span class="math display">\[
-P(Y = 1) = \frac{\text{Odds}}{1 + \text{Odds}}
-\]</span></p></li>
+<p><span class="math display">\[P(Y = 1) = \frac{\text{Odds}}{1 + \text{Odds}}\]</span></p></li>
 <li><p><strong>Direct Conversion</strong>:</p>
-<p><span class="math display">\[
-P(Y = 1) = \frac{e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}{1 + e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}
-\]</span></p></li>
+<p><span class="math display">\[P(Y = 1) = \frac{e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}{1 + e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}\]</span></p></li>
 </ul>
 </section>
 <section id="summary-3" class="slide level2 center">
@@ -2125,13 +2078,14 @@ P(Y = 1) = \frac{e^{\beta_0 + \beta_1 X_1 + \ldots + \beta_p X_p}}{1 + e^{\beta_
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

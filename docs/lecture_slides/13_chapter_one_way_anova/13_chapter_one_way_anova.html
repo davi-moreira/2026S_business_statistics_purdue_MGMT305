@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Professor Davi Moreira ">
   <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5ef896889b6f6a61ee8a14a51d301bed.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -146,7 +149,7 @@ Professor<br>Davi Moreira<br>
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <ul>
-<li>Introducion to Experimental Design</li>
+<li>Introduction to Experimental Design</li>
 <li>Analysis of Variance (ANOVA)</li>
 </ul>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
@@ -359,12 +362,8 @@ Grand sample mean <span class="math inline">\(\bar{x}\)</span> = 60
 <ul>
 <li>The variation in the sample means is measured by the mean square due to treatments and is denoted by <strong>MSTR</strong>.</li>
 </ul>
-<p><span class="math display">\[
-\text{MSTR} = \frac{\text{Sum of squares due to treatments (SSTR)}}{\text{Degrees of freedom of SSTR}} = \frac{\sum_{j=1}^k n_j(\bar{x}_j - \bar{x})^2}{k - 1}
-\]</span></p>
-<p><span class="math display">\[
-= \frac{5(62 - 60)^2 + 5(66 - 60)^2 + 5(52 - 60)^2}{3 - 1} = \frac{520}{2} = 260
-\]</span></p>
+<p><span class="math display">\[\text{MSTR} = \frac{\text{Sum of squares due to treatments (SSTR)}}{\text{Degrees of freedom of SSTR}} = \frac{\sum_{j=1}^k n_j(\bar{x}_j - \bar{x})^2}{k - 1}\]</span></p>
+<p><span class="math display">\[= \frac{5(62 - 60)^2 + 5(66 - 60)^2 + 5(52 - 60)^2}{3 - 1} = \frac{520}{2} = 260\]</span></p>
 </section>
 <section id="one-way-anova-unexplained-within-treatments-variation-mse" class="slide level2 center">
 <h2>One-way ANOVA: Unexplained Within-Treatments Variation (MSE)</h2>
@@ -372,12 +371,8 @@ Grand sample mean <span class="math inline">\(\bar{x}\)</span> = 60
 <li><p>The variation of the sample observations within each sample is called the <strong>mean square error (MSE)</strong>.</p></li>
 <li><p>A measure of sampling variation.</p></li>
 </ul>
-<p><span class="math display">\[
-\text{MSE} = \frac{\text{Sum of squares due to unexplained error (SSE)}}{\text{Degrees of freedom of SSE}} = \frac{\sum_{j=1}^k (n_j - 1) s_j^2}{n_T - k}
-\]</span></p>
-<p><span class="math display">\[
-= \frac{(5-1)(27.5) + (5-1)(26.5) + (5-1)(31)}{15-3} = \frac{340}{12} = 28.33
-\]</span></p>
+<p><span class="math display">\[\text{MSE} = \frac{\text{Sum of squares due to unexplained error (SSE)}}{\text{Degrees of freedom of SSE}} = \frac{\sum_{j=1}^k (n_j - 1) s_j^2}{n_T - k}\]</span></p>
+<p><span class="math display">\[= \frac{(5-1)(27.5) + (5-1)(26.5) + (5-1)(31)}{15-3} = \frac{340}{12} = 28.33\]</span></p>
 <p><span class="math inline">\((n_T = 15 \text{ is the total sample size.})\)</span></p>
 </section>
 <section id="one-way-anova-test-statistic-and-decision-rule" class="slide level2 center">
@@ -400,9 +395,7 @@ Grand sample mean <span class="math inline">\(\bar{x}\)</span> = 60
 <ul>
 <li>The distribution of the test statistic:</li>
 </ul>
-<p><span class="math display">\[
-F = \frac{MSTR}{MSE}
-\]</span></p>
+<p><span class="math display">\[F = \frac{MSTR}{MSE}\]</span></p>
 <ul>
 <li>If the null hypothesis is true and the ANOVA assumptions are valid, the sampling distribution of the test statistic is an <strong>F distribution</strong> with <span class="math inline">\(k-1\)</span> (numerator) and <span class="math inline">\(n_T - k\)</span> (denominator) degrees of freedom.</li>
 </ul>
@@ -452,12 +445,8 @@ F = \frac{MSTR}{MSE}
 <ul>
 <li>Assuming <span class="math inline">\(H_0\)</span> is true, the entire data set is basically one sample from one population, the formula for computing the total sum of squares (SST) is:</li>
 </ul>
-<p><span class="math display">\[
-\text{SST} = \sum_{j=1}^k \sum_{i=1}^{n_j} (x_{ij} - \bar{x})^2 = (n_T - 1) s_x^2 = 860
-\]</span></p>
-<p><span class="math display">\[
-= \text{SSTR} + \text{SSE} = 520 + 340
-\]</span></p>
+<p><span class="math display">\[\text{SST} = \sum_{j=1}^k \sum_{i=1}^{n_j} (x_{ij} - \bar{x})^2 = (n_T - 1) s_x^2 = 860\]</span></p>
+<p><span class="math display">\[= \text{SSTR} + \text{SSE} = 520 + 340\]</span></p>
 <ul>
 <li>SST has <span class="math inline">\(n_T - 1 = 15 - 1 = 14 (= 2 + 12)\)</span> degrees of freedom.</li>
 </ul>
@@ -996,13 +985,14 @@ F = \frac{MSTR}{MSE}
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

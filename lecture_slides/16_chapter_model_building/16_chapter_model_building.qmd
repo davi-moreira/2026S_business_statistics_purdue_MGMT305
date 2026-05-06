@@ -401,7 +401,7 @@ P2 <- ggplot(data, aes(x=log(x))) +
 Rmisc::multiplot(P1, P2, layout = matrix(1:2, nrow=1))
 ```
 
-## Possibile Logarithmic Transformations
+## Possible Logarithmic Transformations
 
 <br>
 
@@ -500,7 +500,7 @@ knitr::include_graphics("figs/log_level_example.png")
 
 - The wedge-shaped pattern disappeared.
 
-- The model with the logarithm of miles per gallon as the dependent variable provides an excellent fit to the oberved data.
+- The model with the logarithm of miles per gallon as the dependent variable provides an excellent fit to the observed data.
 :::
 ::::
 :::::::

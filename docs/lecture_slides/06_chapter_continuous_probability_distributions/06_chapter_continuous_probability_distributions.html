@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Professor Davi Moreira ">
   <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5ef896889b6f6a61ee8a14a51d301bed.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -244,9 +247,7 @@ Professor<br>Davi Moreira<br>
 <p><br></p>
 <ul>
 <li class="fragment"><p><strong>Normal Probability Density Function</strong></p>
-<p><span class="math display">\[
-f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}
-\]</span></p>
+<p><span class="math display">\[f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}\]</span></p>
 <p>where:</p>
 <ul>
 <li class="fragment"><span class="math inline">\(\mu\)</span>= population mean</li>
@@ -265,7 +266,7 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\
 
 <img data-src="figs/normal_dist.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><p><strong>Characteristics</strong></p>
 <ul>
-<li class="fragment">The entire family of normal probability distributions is defined by its mean $$and its standard deviation <span class="math inline">\(\sigma\)</span>. Denoted by <span class="math inline">\(N(\mu, \sigma)\)</span>.</li>
+<li class="fragment">The entire family of normal probability distributions is defined by its mean <span class="math inline">\(\mu\)</span> and its standard deviation <span class="math inline">\(\sigma\)</span>. Denoted by <span class="math inline">\(N(\mu, \sigma)\)</span>.</li>
 <li class="fragment">The highest point on the normal curve is at the mean, which is also the median and mode.</li>
 <li class="fragment">The mean can be any numerical value: negative, zero, or positive. The mean determines the location of the distribution.</li>
 </ul>
@@ -317,8 +318,7 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\
 <img data-src="figs/normal_standard_z.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
 <div style="font-size: 90%;">
 <p><strong>Standardization: Standardize</strong> <span class="math inline">\(X \sim N(\mu, \sigma)\)</span> to standard Normal Distribution, <span class="math inline">\(Z\)</span></p>
-<p><span class="math display">\[
-  Z = \frac{X - \mu}{\sigma}
+<p><span class="math display">\[  Z = \frac{X - \mu}{\sigma}
   \]</span></p>
 <ul>
 <li class="fragment"><p>We can think of <span class="math inline">\(Z\)</span> as a measure of the number of standard deviations <span class="math inline">\(X\)</span> is from <span class="math inline">\(\mu\)</span>. (Cf. Standardization in Chapter 1.)</p>
@@ -426,11 +426,9 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\
 </ul>
 <div class="fragment">
 <p><strong>Step 1</strong>: Convert x to standard normal distribution.</p>
-<p><span class="math display">\[
-z = \frac{(x - \mu)}{\sigma} \\
+<p><span class="math display">\[z = \frac{(x - \mu)}{\sigma} \\
 z = \frac{(40,000 - 36,500)}{5,000} \\
-z = 0.7
-\]</span></p>
+z = 0.7\]</span></p>
 </div>
 </section>
 <section id="standard-normal-probabilities---example-grear-tire-company-problem-2" class="slide level2 center">
@@ -440,12 +438,10 @@ z = 0.7
 <p><br></p>
 
 <img data-src="figs/z-score_example_q1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<p><span class="math display">\[
-P(z &gt; 0.7) = 1 - P(z \leq 0.7) \\
+<p><span class="math display">\[P(z &gt; 0.7) = 1 - P(z \leq 0.7) \\
 = 1 - \text{=NORM.S.DIST}(0.7, \text{TRUE}) \\
 = 1 - 0.7580 \\
-= 0.2420
-\]</span></p>
+= 0.2420\]</span></p>
 </div>
 </section>
 <section id="standard-normal-probabilities---example-grear-tire-company-problem-3" class="slide level2 center">
@@ -471,12 +467,10 @@ P(z &gt; 0.7) = 1 - P(z \leq 0.7) \\
 <p><br></p>
 
 <img data-src="figs/z-score_example_q2.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="fragment">
-<p><span class="math display">\[
-x = \mu + z_{0.1} \cdot \sigma \\
+<p><span class="math display">\[x = \mu + z_{0.1} \cdot \sigma \\
 = 36,500 + \text{=NORM.S.INV}(0.1) \cdot (5000) \\
 = 36,500 + (-1.28155) \cdot (5000) \\
-= 30,092.24
-\]</span></p>
+= 30,092.24\]</span></p>
 <p>Thus, a guarantee of 30,100 miles will meet the requirement that approximately 10% of the tires will be eligible for the guarantee.</p>
 </div>
 </section></section>
@@ -526,9 +520,7 @@ x = \mu + z_{0.1} \cdot \sigma \\
 <ul>
 <li>Standardize <span class="math inline">\(N(\mu, \sigma)\)</span> using sample mean and sample standard deviation:</li>
 </ul>
-<p><span class="math display">\[
-t = \frac{X - \bar{X}}{S}
-\]</span></p>
+<p><span class="math display">\[t = \frac{X - \bar{X}}{S}\]</span></p>
 <ul>
 <li><p>This t-statistic has a <span class="math inline">\(t\)</span>-distribution with <strong>degrees of freedom (df)</strong> = <span class="math inline">\(n-1\)</span>, which is the degrees of freedom of the sample standard deviation <span class="math inline">\(S\)</span>.</p></li>
 <li><p>When using sample mean and sample standard deviation to standardize a normal distribution, we will always have a <span class="math inline">\(t\)</span>-distribution, <strong>approximately</strong>.</p></li>
@@ -587,18 +579,14 @@ t = \frac{X - \bar{X}}{S}
 <ul>
 <li class="fragment"><p><strong>Question 1:</strong> What is the probability that the tire mileage <span class="math inline">\(X\)</span> will exceed 40,000 miles?</p>
 <p><span class="math inline">\(P(X &gt; 40,000) = P(t_{27} &gt; 0.7) = 1 - P(t_{27} \leq 0.7)\)</span></p>
-<p><span class="math display">\[
-= 1 - \text{T.DIST}(0.7, 27, \text{TRUE}) \\
+<p><span class="math display">\[= 1 - \text{T.DIST}(0.7, 27, \text{TRUE}) \\
 = 1 - 0.7550 \\
-= 0.250
-\]</span></p></li>
+= 0.250\]</span></p></li>
 <li class="fragment"><p><strong>Question 2:</strong> What is the 10th percentile tire mileage for the new tires?</p>
-<p><span class="math display">\[
-x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
+<p><span class="math display">\[x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
 = 36,500 + \text{T.INV}(0.1, 27) \cdot (5000) \\
 = 36,500 + (-1.314) \cdot (5000) \\
-= 29,903 \text{ miles}
-\]</span></p></li>
+= 29,903 \text{ miles}\]</span></p></li>
 </ul>
 </section></section>
 <section>
@@ -957,13 +945,14 @@ x_{0.1} = \bar{X} + t_{0.1,27} \cdot s \\
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
