@@ -25,3 +25,4 @@ _quizzes/
 _supplemental_material/
 _video/
 **/*.quarto_ipynb
+.positai

@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Professor Davi Moreira ">
   <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5ef896889b6f6a61ee8a14a51d301bed.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -499,12 +502,8 @@ Professor<br>Davi Moreira<br>
 <ul>
 <li>The key concept associated with measuring forecast accuracy is <strong>forecast error</strong>:</li>
 </ul>
-<p><span class="math display">\[
-\text{Forecast Error} = \text{Actual Observed Value} - \text{Forecast}
-\]</span></p>
-<p><span class="math display">\[
-\text{Residual} = \text{Observed} - \text{Predicted}
-\]</span></p>
+<p><span class="math display">\[\text{Forecast Error} = \text{Actual Observed Value} - \text{Forecast}\]</span></p>
+<p><span class="math display">\[\text{Residual} = \text{Observed} - \text{Predicted}\]</span></p>
 <ul>
 <li><p>A positive forecast error indicates the forecasting method underestimated the actual value.</p></li>
 <li><p>A negative forecast error indicates the forecasting method overestimated the actual value.</p></li>
@@ -532,9 +531,7 @@ Professor<br>Davi Moreira<br>
 <li><p>To demonstrate the computation of these measures of forecast accuracy, let’s introduce the simplest of forecasting methods: the <strong>naïve forecasting method</strong></p></li>
 <li><p>The <strong>naïve forecasting method</strong> uses only the most recent observation in the time series as the forecast for the next time period.</p></li>
 </ul>
-<p><span class="math display">\[
-F_{t+1} = Y_t, \text{ the actual observed value in period } t
-\]</span></p>
+<p><span class="math display">\[F_{t+1} = Y_t, \text{ the actual observed value in period } t\]</span></p>
 </section>
 <section id="forecast-accuracy-example-naïve-forecast-1" class="slide level2 center">
 <h2>Forecast Accuracy: Example Naïve Forecast</h2>
@@ -697,7 +694,7 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 </tbody>
 </table>
 <ul>
-<li class="fragment"><p>Week 2: the postive forecast error indicates that the forecasting method underestimated the actual value of sales.</p></li>
+<li class="fragment"><p>Week 2: the positive forecast error indicates that the forecasting method underestimated the actual value of sales.</p></li>
 <li class="fragment"><p>Week 3: the negative forecast error indicates that the forecasting method overestimated the actual value of sales.</p></li>
 </ul>
 </div>
@@ -710,29 +707,23 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 <li class="fragment"><strong>Mean Absolute Error (MAE)</strong>: It is the mean of the <strong>absolute values</strong> of the forecast errors.</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-\text{MAE} = \frac{41}{11} = 3.73
-\]</span></p>
+<p><span class="math display">\[\text{MAE} = \frac{41}{11} = 3.73\]</span></p>
 <ul>
 <li class="fragment"><strong>Mean Squared Error (MSE)</strong>: It is the average of the squared forecast errors.</li>
 </ul>
 </div>
 <div class="fragment">
-<p><span class="math display">\[
-\text{MSE} = \frac{179}{11} = 16.27
-\]</span></p>
+<p><span class="math display">\[\text{MSE} = \frac{179}{11} = 16.27\]</span></p>
 </div>
 <div class="fragment">
 <ul>
 <li class="fragment"><p>The size of <strong>MAE</strong> and <strong>MSE</strong> depends upon the scale of the data. So, it is not recommended to make comparisons for different time intervals (e.g.&nbsp;months vs weeks).</p></li>
-<li class="fragment"><p>To make comparisons like these we need relative or percentage error measues like <strong>MAPE</strong>.</p></li>
+<li class="fragment"><p>To make comparisons like these we need relative or percentage error measures like <strong>MAPE</strong>.</p></li>
 <li class="fragment"><p><strong>Mean Absolute Percentage Error (MAPE)</strong>: It is the average of the absolute percentage errors of the forecasts.</p></li>
 </ul>
 </div>
 <div class="fragment">
-<p><span class="math display">\[
-\text{MAPE} = \frac{211.69}{11} = 19.24\%
-\]</span></p>
+<p><span class="math display">\[\text{MAPE} = \frac{211.69}{11} = 19.24\%\]</span></p>
 </div>
 </div>
 </section>
@@ -744,15 +735,11 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 </div>
 <div class="fragment">
 <p>To compute the forecast for Week 3, we take the average of the sales values in Weeks 1 and 2:</p>
-<p><span class="math display">\[
-\text{Forecast for week 3} = \frac{17 + 21}{2} = 19
-\]</span></p>
+<p><span class="math display">\[\text{Forecast for week 3} = \frac{17 + 21}{2} = 19\]</span></p>
 </div>
 <div class="fragment">
 <p>Similarly, the forecast for Week 4 is:</p>
-<p><span class="math display">\[
-\text{Forecast for week 4} = \frac{17 + 21 + 19}{3} = 19
-\]</span></p>
+<p><span class="math display">\[\text{Forecast for week 4} = \frac{17 + 21 + 19}{3} = 19\]</span></p>
 </div>
 </section>
 <section id="forecast-accuracy-example-historical-data-average-1" class="slide level2 center">
@@ -920,15 +907,9 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 <section id="forecast-accuracy-example-historical-data-average-2" class="slide level2 center">
 <h2>Forecast Accuracy: Example Historical Data Average</h2>
 <p>Using the results shown, we obtained the following values of MAE, MSE, and MAPE:</p>
-<p><span class="math display">\[
-\text{MAE} = \frac{26.81}{11} = 2.44
-\]</span></p>
-<p><span class="math display">\[
-\text{MSE} = \frac{89.07}{11} = 8.10
-\]</span></p>
-<p><span class="math display">\[
-\text{MAPE} = \frac{141.34}{11} = 12.85\%
-\]</span></p>
+<p><span class="math display">\[\text{MAE} = \frac{26.81}{11} = 2.44\]</span></p>
+<p><span class="math display">\[\text{MSE} = \frac{89.07}{11} = 8.10\]</span></p>
+<p><span class="math display">\[\text{MAPE} = \frac{141.34}{11} = 12.85\%\]</span></p>
 </section>
 <section id="forecast-accuracy-comparison-of-forecasting-methods" class="slide level2 center">
 <h2>Forecast Accuracy: Comparison of Forecasting Methods</h2>
@@ -1014,9 +995,7 @@ F_{t+1} = Y_t, \text{ the actual observed value in period } t
 <p><strong>Moving Average Forecast of Order <span class="math inline">\(k\)</span></strong></p>
 </div>
 <div class="callout-content">
-<p><span class="math display">\[
-F_{t+1} = \frac{\sum (\text{most recent } k \text{ data values})}{k} = \frac{Y_t + Y_{t-1} + \cdots + Y_{t-k+1}}{k}
-\]</span></p>
+<p><span class="math display">\[F_{t+1} = \frac{\sum (\text{most recent } k \text{ data values})}{k} = \frac{Y_t + Y_{t-1} + \cdots + Y_{t-k+1}}{k}\]</span></p>
 <p>where:</p>
 <ul>
 <li><span class="math inline">\(F_{t+1}\)</span> = forecast of the time series for period <span class="math inline">\(t + 1\)</span></li>
@@ -1212,15 +1191,9 @@ F_{t+1} = \frac{\sum (\text{most recent } k \text{ data values})}{k} = \frac{Y_t
 <section id="moving-averages-4" class="slide level2 center">
 <h2>Moving Averages</h2>
 <p><strong>Example</strong>: Gasoline sale time series: three-week moving average</p>
-<p><span class="math display">\[
-\text{MAE} = \frac{24}{9} = 2.67
-\]</span></p>
-<p><span class="math display">\[
-\text{MSE} = \frac{92}{9} = 10.22
-\]</span></p>
-<p><span class="math display">\[
-\text{MAPE} = \frac{129.21}{9} = 14.36\%
-\]</span></p>
+<p><span class="math display">\[\text{MAE} = \frac{24}{9} = 2.67\]</span></p>
+<p><span class="math display">\[\text{MSE} = \frac{92}{9} = 10.22\]</span></p>
+<p><span class="math display">\[\text{MAPE} = \frac{129.21}{9} = 14.36\%\]</span></p>
 <ul>
 <li class="fragment">The three-week moving average approach provided more accurate forecasts than the naïve approach (19.24%).</li>
 </ul>
@@ -1273,9 +1246,7 @@ F_{t+1} = \frac{\sum (\text{most recent } k \text{ data values})}{k} = \frac{Y_t
 <section id="weighted-moving-averages-2" class="slide level2 center">
 <h2>Weighted Moving Averages</h2>
 <p><strong>For the Gasoline data, a three-period weighted moving average (3WMA) for Week 4 is:</strong></p>
-<p><span class="math display">\[
-WMA_3 = \frac{1}{6}(17) + \frac{2}{6}(21) + \frac{3}{6}(19) = 19.33
-\]</span></p>
+<p><span class="math display">\[WMA_3 = \frac{1}{6}(17) + \frac{2}{6}(21) + \frac{3}{6}(19) = 19.33\]</span></p>
 <ul>
 <li class="fragment"><p>if the weights are <span class="math inline">\(\frac{1}{6}, \frac{2}{6}, \frac{3}{6}\)</span>, which sum to 1.</p></li>
 <li class="fragment"><p>19 is the most recent of the three observations and receives the largest weight.</p></li>
@@ -1313,9 +1284,7 @@ WMA_3 = \frac{1}{6}(17) + \frac{2}{6}(21) + \frac{3}{6}(19) = 19.33
 <p><strong>Single Exponential Smoothing Forecast</strong></p>
 </div>
 <div class="callout-content">
-<p><span class="math display">\[
-F_{t+1} = \alpha Y_t + (1 - \alpha) F_t
-\]</span></p>
+<p><span class="math display">\[F_{t+1} = \alpha Y_t + (1 - \alpha) F_t\]</span></p>
 <p>where</p>
 <ul>
 <li><span class="math inline">\(F_{t+1}\)</span> = forecast of the time series for period <span class="math inline">\(t + 1\)</span></li>
@@ -1344,30 +1313,24 @@ F_{t+1} = \alpha Y_t + (1 - \alpha) F_t
 <p>Let’s illustrate by working with a time series involving only three periods of data: <span class="math inline">\(Y_1\)</span>, <span class="math inline">\(Y_2\)</span>, and <span class="math inline">\(Y_3\)</span>.</p>
 <div class="fragment">
 <p>To initiate, let <span class="math inline">\(F_1\)</span> equal the actual value of the time series in period 1; that is, <span class="math inline">\(F_1 = Y_1\)</span>. Hence, the forecast for period 2 is</p>
-<p><span class="math display">\[
-\begin{aligned}
+<p><span class="math display">\[\begin{aligned}
 F_2 &amp;= \alpha Y_1 + (1 - \alpha) F_1 \\
     &amp;= \alpha Y_1 + (1 - \alpha) Y_1 \\
     &amp;= Y_1
-\end{aligned}
-\]</span></p>
+\end{aligned}\]</span></p>
 <p>Thus, the exponential smoothing forecast for period 2 is equal to the actual value of the time series in period 1.</p>
 </div>
 </section>
 <section id="exponential-smoothing-forecast-3" class="slide level2 center">
 <h2>Exponential Smoothing Forecast</h2>
 <p>The forecast for period 3 is</p>
-<p><span class="math display">\[
-F_3 = \alpha Y_2 + (1 - \alpha) F_2 = \alpha Y_2 + (1 - \alpha) Y_1
-\]</span></p>
+<p><span class="math display">\[F_3 = \alpha Y_2 + (1 - \alpha) F_2 = \alpha Y_2 + (1 - \alpha) Y_1\]</span></p>
 <p>Finally, substituting this expression for <span class="math inline">\(F_3\)</span> in the expression for <span class="math inline">\(F_4\)</span>, we obtain</p>
-<p><span class="math display">\[
-\begin{aligned}
+<p><span class="math display">\[\begin{aligned}
 F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 &amp;= \alpha Y_3 + (1 - \alpha)[\alpha Y_2 + (1 - \alpha) Y_1] \\
 &amp;= \alpha Y_3 + \alpha (1 - \alpha) Y_2 + (1 - \alpha)^2 Y_1
-\end{aligned}
-\]</span></p>
+\end{aligned}\]</span></p>
 </section>
 <section id="exponential-smoothing-forecast-4" class="slide level2 center">
 <h2>Exponential Smoothing Forecast</h2>
@@ -1562,9 +1525,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <section id="exponential-smoothing-forecast-example-2" class="slide level2 center">
 <h2>Exponential Smoothing Forecast: Example</h2>
 <p><strong>Gasoline sale time series</strong> with smoothing constant <span class="math inline">\(\alpha = 0.2\)</span></p>
-<p><span class="math display">\[
-\text{MSE} = \frac{98.80}{11} = 8.98
-\]</span></p>
+<p><span class="math display">\[\text{MSE} = \frac{98.80}{11} = 8.98\]</span></p>
 </section>
 <section id="exponential-smoothing-forecast-example-3" class="slide level2 center">
 <h2>Exponential Smoothing Forecast: Example</h2>
@@ -1686,9 +1647,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <section id="exponential-smoothing-forecast-example-4" class="slide level2 center">
 <h2>Exponential Smoothing Forecast: Example</h2>
 <p><strong>Gasoline sale time series</strong> with smoothing constant <span class="math inline">\(\alpha = 0.3\)</span></p>
-<p><span class="math display">\[
-\text{MSE} = \frac{102.83}{11} = 9.35
-\]</span></p>
+<p><span class="math display">\[\text{MSE} = \frac{102.83}{11} = 9.35\]</span></p>
 <ul>
 <li class="fragment">Exponential smoothing (with <span class="math inline">\(\alpha = 0.2\)</span>) provided more accurate forecasts (8.98) than exponential smoothing with <span class="math inline">\(\alpha = 0.3\)</span> in this example.</li>
 </ul>
@@ -2171,9 +2130,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 </tr>
 </tbody>
 </table>
-<p><span class="math display">\[
-\widehat{Sales_t} = 13.161 + (0.813) \widehat{Sales_{t-4}}
-\]</span></p>
+<p><span class="math display">\[\widehat{Sales_t} = 13.161 + (0.813) \widehat{Sales_{t-4}}\]</span></p>
 <p>where the predictor is the Lag 4 variable.</p>
 </div>
 </section>
@@ -2394,7 +2351,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 </div>
 <ul>
 <li class="fragment"><p>Although it shows some up and down movement over the past 10 years, we can identify a linear trend line.</p></li>
-<li class="fragment"><p>The trend line provides a reasonable approximation o the. long-run movement in the series.</p></li>
+<li class="fragment"><p>The trend line provides a reasonable approximation to the long-run movement in the series.</p></li>
 <li class="fragment"><p>We can use the simple linear regression method to develop such a linear trend line.</p></li>
 </ul>
 </div></div>
@@ -2414,8 +2371,7 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 </div>
 <div class="callout-content">
 <p><span class="math display">\[
-\hat{Y_t} = b_0 + b_1 t, \quad t = 1, 2, \ldots
-\]</span></p>
+\hat{Y_t} = b_0 + b_1 t, \quad t = 1, 2, \ldots \]</span></p>
 <p>where:</p>
 <ul>
 <li><span class="math inline">\(\hat{Y_t}\)</span> = linear trend forecast of <strong>mean</strong> response for period <em>t</em></li>
@@ -2440,12 +2396,8 @@ F_4 &amp;= \alpha Y_3 + (1 - \alpha) F_3 \\
 <p><strong>Computing the Slope and Intercept for a Linear Trend</strong></p>
 </div>
 <div class="callout-content">
-<p><span class="math display">\[
-b_1 = \frac{\sum_{t=1}^{n} (t - \bar{t})(Y_t - \bar{Y})}{\sum_{t=1}^{n} (t - \bar{t})^2}, \quad \text{or} \quad b_1 = \frac{\sum_{t=1}^{n} t Y_t - \left( \frac{\sum_{t=1}^{n} t \sum_{t=1}^{n} Y_t}{n} \right)}{\sum_{t=1}^{n} t^2 - \left( \frac{\left(\sum_{t=1}^{n} t\right)^2}{n} \right)}
-\]</span></p>
-<p><span class="math display">\[
-b_0 = \bar{Y} - b_1 \bar{t}
-\]</span></p>
+<p><span class="math display">\[b_1 = \frac{\sum_{t=1}^{n} (t - \bar{t})(Y_t - \bar{Y})}{\sum_{t=1}^{n} (t - \bar{t})^2}, \quad \text{or} \quad b_1 = \frac{\sum_{t=1}^{n} t Y_t - \left( \frac{\sum_{t=1}^{n} t \sum_{t=1}^{n} Y_t}{n} \right)}{\sum_{t=1}^{n} t^2 - \left( \frac{\left(\sum_{t=1}^{n} t\right)^2}{n} \right)}\]</span></p>
+<p><span class="math display">\[b_0 = \bar{Y} - b_1 \bar{t}\]</span></p>
 <p>Where:</p>
 <ul>
 <li><span class="math inline">\(Y_t\)</span> = value of the time series in period <span class="math inline">\(t\)</span></li>
@@ -2462,26 +2414,16 @@ b_0 = \bar{Y} - b_1 \bar{t}
 <h2>Linear Trend Regression: Example</h2>
 <div style="font-size: 70%;">
 <p>To compute the <strong>linear trend equation for the bicycle sales time series</strong>, we begin the calculations by computing <span class="math inline">\(\bar{t}\)</span> and <span class="math inline">\(\bar{Y}\)</span>.</p>
-<p><span class="math display">\[
-\bar{t} = \frac{\sum_{t=1}^{n} t}{n} = \frac{55}{10} = 5.5
-\]</span></p>
-<p><span class="math display">\[
-\bar{Y} = \frac{\sum_{t=1}^{n} Y_t}{n} = \frac{264.5}{10} = 26.45
-\]</span></p>
+<p><span class="math display">\[\bar{t} = \frac{\sum_{t=1}^{n} t}{n} = \frac{55}{10} = 5.5\]</span></p>
+<p><span class="math display">\[\bar{Y} = \frac{\sum_{t=1}^{n} Y_t}{n} = \frac{264.5}{10} = 26.45\]</span></p>
 <div class="fragment">
 <p>Using these values, and the data, we can compute: the slope and intercept.</p>
-<p><span class="math display">\[
-b_1 = \frac{\sum_{t=1}^{n} (t - \bar{t})(Y_t - \bar{Y})}{\sum_{t=1}^{n} (t - \bar{t})^2} = \frac{90.75}{82.5} = 1.1
-\]</span></p>
-<p><span class="math display">\[
-b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
-\]</span></p>
+<p><span class="math display">\[b_1 = \frac{\sum_{t=1}^{n} (t - \bar{t})(Y_t - \bar{Y})}{\sum_{t=1}^{n} (t - \bar{t})^2} = \frac{90.75}{82.5} = 1.1\]</span></p>
+<p><span class="math display">\[b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4\]</span></p>
 </div>
 <div class="fragment">
 <p>Therefore, the linear trend equation is:</p>
-<p><span class="math display">\[
-\hat{Y}_t = 20.4 + 1.1t
-\]</span></p>
+<p><span class="math display">\[\hat{Y}_t = 20.4 + 1.1t\]</span></p>
 </div>
 </div>
 </section>
@@ -2604,15 +2546,11 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <section id="linear-trend-regression-example-2" class="slide level2 center">
 <h2>Linear Trend Regression: Example</h2>
 <p>Linear Trend Equation for the Bicycle Sales Time Series:</p>
-<p><span class="math display">\[
-\hat{Y}_t = 20.4 + 1.1t
-\]</span></p>
+<p><span class="math display">\[\hat{Y}_t = 20.4 + 1.1t\]</span></p>
 <p>The slope 1.1 indicates that over the past 10 years the firm experienced an average growth in sales of about 1100 units per year.</p>
 <div class="fragment">
 <p>If we assume that the past 10-year trend in sales is a good indicator of the future, this trend equation can be used to develop forecasts for future time periods. Substituting <span class="math inline">\(t = 11\)</span> into the equation yields next year’s trend projection or forecast, <span class="math inline">\(\hat{Y}_{11}\)</span>.</p>
-<p><span class="math display">\[
-\hat{Y}_t = 20.4 + 1.1 \times 11 = 32.5
-\]</span></p>
+<p><span class="math display">\[\hat{Y}_t = 20.4 + 1.1 \times 11 = 32.5\]</span></p>
 <p>Thus, using trend projection, we would forecast sales of 32,500 bicycles next year.</p>
 </div>
 </section>
@@ -2710,9 +2648,7 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 </tr>
 </tbody>
 </table>
-<p><span class="math display">\[
-\text{MSE} = \frac{\sum_{t=1}^{n} (Y_t - F_t)^2}{n} = \frac{30.7}{10} = 3.07
-\]</span></p>
+<p><span class="math display">\[\text{MSE} = \frac{\sum_{t=1}^{n} (Y_t - F_t)^2}{n} = \frac{30.7}{10} = 3.07\]</span></p>
 </div>
 </section>
 <section id="regression-output-example-excel" class="slide level2 center">
@@ -2768,15 +2704,11 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <li><p>A variety of nonlinear functions can be used to develop an estimate of the trend in a time series.</p></li>
 <li><p>One example is this <strong>quadratic trend equation</strong>:</p></li>
 </ul>
-<p><span class="math display">\[
-\hat{Y_t} = b_0 + b_1t + b_2t^2
-\]</span></p>
+<p><span class="math display">\[\hat{Y_t} = b_0 + b_1t + b_2t^2\]</span></p>
 <ul>
 <li>Another example is this <strong>exponential trend equation</strong>:</li>
 </ul>
-<p><span class="math display">\[
-\hat{Y_t} = b_0(b_1)^t
-\]</span></p>
+<p><span class="math display">\[\hat{Y_t} = b_0(b_1)^t\]</span></p>
 </section>
 <section id="nonlinear-trend-regression-example" class="slide level2 center">
 <h2>Nonlinear Trend Regression: Example</h2>
@@ -2889,13 +2821,9 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 </div>
 <div style="font-size: 50%;">
 <p>The estimated regression equation is:</p>
-<p><span class="math display">\[
-\hat{Y}_t = 24.1817 - 2.1060t + 0.9216t^2
-\]</span></p>
+<p><span class="math display">\[\hat{Y}_t = 24.1817 - 2.1060t + 0.9216t^2\]</span></p>
 <p>The forecast of sales revenue for year 11 is:</p>
-<p><span class="math display">\[
-\hat{Y}_t = 24.1817 - 2.1060(11) + 0.9216(11)^2 = 112.53, \quad \text{or} \quad \approx \text{\$112.5 million}.
-\]</span></p>
+<p><span class="math display">\[\hat{Y}_t = 24.1817 - 2.1060(11) + 0.9216(11)^2 = 112.53, \quad \text{or} \quad \approx \text{\$112.5 million}.\]</span></p>
 <p><br></p>
 </div>
 </div></div>
@@ -3141,8 +3069,7 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 </ul>
 <div style="font-size: 90%;">
 <div class="fragment">
-<p><span class="math display">\[
-\text{Qtr1} =
+<p><span class="math display">\[\text{Qtr1} =
 \begin{cases}
 1 &amp; \text{if Quarter 1} \\
 0 &amp; \text{otherwise}
@@ -3158,8 +3085,7 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 \begin{cases}
 1 &amp; \text{if Quarter 3} \\
 0 &amp; \text{otherwise}
-\end{cases}
-\]</span></p>
+\end{cases}\]</span></p>
 </div>
 </div>
 </section>
@@ -3360,16 +3286,12 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <ul>
 <li><strong>General Form of Estimated Regression Equation</strong></li>
 </ul>
-<p><span class="math display">\[
-\hat{Y} = b_0 + b_1(Qtr1) + b_2(Qtr2) + b_3(Qtr3)
-\]</span></p>
+<p><span class="math display">\[\hat{Y} = b_0 + b_1(Qtr1) + b_2(Qtr2) + b_3(Qtr3)\]</span></p>
 <div class="fragment">
 <ul>
 <li><strong>Estimated Regression Equation</strong></li>
 </ul>
-<p><span class="math display">\[
-\text{Forecasted Sales} = 95.0 + 29.0(Qtr1) + 57.0(Qtr2) + 26.0(Qtr3)
-\]</span></p>
+<p><span class="math display">\[\text{Forecasted Sales} = 95.0 + 29.0(Qtr1) + 57.0(Qtr2) + 26.0(Qtr3)\]</span></p>
 </div>
 <div class="fragment">
 <ul>
@@ -3563,9 +3485,7 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <h2>Seasonality and Trend: Example</h2>
 <p><strong>Multiple Regression Equation for Seasonal Effects and Trend</strong></p>
 <p>The general form of the estimated multiple regression equation for modeling both the quarterly seasonal effects and the linear trend in the smartphone time series is as follows:</p>
-<p><span class="math display">\[
-\hat{Y}_t = b_0 + b_1 \text{Qtr1} + b_2 \text{Qtr2} + b_3 \text{Qtr3} + b_4 t
-\]</span></p>
+<p><span class="math display">\[\hat{Y}_t = b_0 + b_1 \text{Qtr1} + b_2 \text{Qtr2} + b_3 \text{Qtr3} + b_4 t\]</span></p>
 <p><strong>where</strong></p>
 <ul>
 <li class="fragment"><span class="math inline">\(\hat{Y}_t\)</span> = estimate or forecast of sales in period <span class="math inline">\(t\)</span></li>
@@ -3758,36 +3678,26 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <h2>Seasonality and Trend: Example</h2>
 <div style="font-size: 70%;">
 <p><strong>General Form of Estimated Regression Equation</strong></p>
-<p><span class="math display">\[
-\hat{Y} = b_0 + b_1 Qtr1 + b_2 \cdot Qtr2 + b_3 \cdot Qtr3 + b_4 \cdot t
-\]</span></p>
+<p><span class="math display">\[\hat{Y} = b_0 + b_1 Qtr1 + b_2 \cdot Qtr2 + b_3 \cdot Qtr3 + b_4 \cdot t \]</span></p>
 <p>Where <span class="math inline">\(t\)</span> is the time period <span class="math inline">\(t = 1, 2, \ldots\)</span></p>
 <div class="fragment">
 <center>
 <strong>Estimated Regression Equation</strong>
 </center>
 <p><strong>Forecast for Time Period 17 (Quarter 1 in Year 5)</strong></p>
-<p><span class="math display">\[
-\text{Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146(17) = 7.19
-\]</span></p>
+<p><span class="math display">\[\text{Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146(17) = 7.19\]</span></p>
 </div>
 <div class="fragment">
 <p><strong>Forecast for Time Period 18 (Quarter 2 in Year 5)</strong></p>
-<p><span class="math display">\[
-\text{Sales} = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146(18) = 6.67
-\]</span></p>
+<p><span class="math display">\[\text{Sales} = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146(18) = 6.67\]</span></p>
 </div>
 <div class="fragment">
 <p><strong>Forecast for Time Period 19 (Quarter 3 in Year 5)</strong></p>
-<p><span class="math display">\[
-\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146(19) = 8.54
-\]</span></p>
+<p><span class="math display">\[\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146(19) = 8.54\]</span></p>
 </div>
 <div class="fragment">
 <p><strong>Forecast for Time Period 20 (Quarter 4 in Year 5)</strong></p>
-<p><span class="math display">\[
-\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146(20) = 8.99
-\]</span></p>
+<p><span class="math display">\[\text{Sales} = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146(20) = 8.99\]</span></p>
 </div>
 <div class="fragment">
 <p>Thus, accounting for the seasonal effects and the linear trend in smartphone sales, the estimates of quarterly sales in year 5 are 7190, 6670, 8540, and 8990.</p>
@@ -3798,25 +3708,19 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <h2>Seasonality and Trend: Example</h2>
 <div style="font-size: 65%;">
 <p>The dummy variables in the estimated multiple regression equation provide four estimated multiple regression equations, one for each quarter.</p>
-<p><span class="math display">\[
-\text{Quarter 1: Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146t = 4.71 + .146t
-\]</span></p>
+<p><span class="math display">\[\text{Quarter 1: Sales} = 6.07 - 1.36(1) - 2.03(0) - .304(0) + .146t = 4.71 + .146t\]</span></p>
 <p>Similarly, if time period <span class="math inline">\(t\)</span> corresponds to quarters 2, 3, and 4, the estimates of quarterly sales are:</p>
-<p><span class="math display">\[
-\begin{align*}
+<p><span class="math display">\[\begin{align*}
 \text{Quarter 2: Sales} &amp; = 6.07 - 1.36(0) - 2.03(1) - .304(0) + .146t = 4.04 + .146t \\
 \text{Quarter 3: Sales} &amp; = 6.07 - 1.36(0) - 2.03(0) - .304(1) + .146t = 5.77 + .146t \\
 \text{Quarter 4: Sales} &amp; = 6.07 - 1.36(0) - 2.03(0) - .304(0) + .146t = 6.07 + .146t
-\end{align*}
-\]</span></p>
+\end{align*}\]</span></p>
 <div class="fragment">
 <p><strong>Interpretation of the Regression Coefficients</strong></p>
 <p>The slope of the trend line for each quarterly forecast equation is .146, indicating a growth in sales of about 146 smartphones per quarter.</p>
 <p>The only difference in the four equations is that they have different intercepts.</p>
 <p>For instance, the intercept for the quarter 1 equation is 4.71 and the intercept for the quarter 4 equation is 6.07. Thus, sales in quarter 1 are</p>
-<p><span class="math display">\[
-4.71 - 6.07 = -1.36
-\]</span></p>
+<p><span class="math display">\[4.71 - 6.07 = -1.36\]</span></p>
 <p>or 1360 smartphones less than in quarter 4.</p>
 <p>In other words, the estimated regression coefficient for Qtr1 provides an estimate of the difference in sales between quarter 1 and quarter 4.</p>
 </div>
@@ -3870,9 +3774,7 @@ b_0 = \bar{Y} - b_1 \bar{t} = 26.45 - 1.1(5.5) = 20.4
 <section id="additive-decomposition-model-1" class="slide level2 center">
 <h2>Additive Decomposition Model</h2>
 <p>An <strong>additive decomposition model</strong> takes the following form:</p>
-<p><span class="math display">\[
-Y_t = Trend_t + Seasonal_t + Irregular_t
-\]</span></p>
+<p><span class="math display">\[Y_t = Trend_t + Seasonal_t + Irregular_t\]</span></p>
 <p>where</p>
 <ul>
 <li class="fragment"><p><span class="math inline">\(Trend_t\)</span> = trend value at time period <span class="math inline">\(t\)</span></p></li>
@@ -3885,9 +3787,7 @@ Y_t = Trend_t + Seasonal_t + Irregular_t
 <section id="multiplicative-decomposition-model" class="slide level2 center">
 <h2>Multiplicative Decomposition Model</h2>
 <p>A <strong>multiplicative decomposition model</strong> takes the following form:</p>
-<p><span class="math display">\[
-Y_t = Trend_t \times Seasonal_t \times Irregular_t
-\]</span></p>
+<p><span class="math display">\[Y_t = Trend_t \times Seasonal_t \times Irregular_t\]</span></p>
 <p>where</p>
 <ul>
 <li class="fragment"><p><span class="math inline">\(Trend_t\)</span> = trend value at time period <span class="math inline">\(t\)</span></p></li>
@@ -3938,9 +3838,7 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <li><p>Because we are working with a quarterly series, we will use four data values in each moving average.</p></li>
 <li><p>The moving average calculation for the first four quarters of the smartphone sales data is:</p></li>
 </ul>
-<p><span class="math display">\[
-\text{First moving average} = \frac{4.8 + 4.1 + 6.0 + 6.5}{4} = \frac{21.4}{4} = 5.35
-\]</span></p>
+<p><span class="math display">\[\text{First moving average} = \frac{4.8 + 4.1 + 6.0 + 6.5}{4} = \frac{21.4}{4} = 5.35\]</span></p>
 </section>
 <section id="multiplicative-decomposition-model-example-step-1-1" class="slide level2 center">
 <h2>Multiplicative Decomposition Model: Example (Step 1)</h2>
@@ -3950,17 +3848,13 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <li><p>Continuing the moving average calculations, we next add the 5.8 value for the first quarter of year 2 and drop the 4.8 for the first quarter of year 1.</p></li>
 </ul>
 <p>Thus, the second moving average is:</p>
-<p><span class="math display">\[
-\text{Second moving average} = \frac{4.1 + 6.0 + 6.5 + 5.8}{4} = \frac{22.4}{4} = 5.60
-\]</span></p>
+<p><span class="math display">\[\text{Second moving average} = \frac{4.1 + 6.0 + 6.5 + 5.8}{4} = \frac{22.4}{4} = 5.60\]</span></p>
 </section>
 <section id="multiplicative-decomposition-model-example-step-1-2" class="slide level2 center">
 <h2>Multiplicative Decomposition Model: Example (Step 1)</h2>
 <p><strong>Moving Average Calculation</strong></p>
 <p>Similarly, the third moving average calculation is:</p>
-<p><span class="math display">\[
-(6.0 + 6.5 + 5.8 + 5.2) / 4 = 5.875
-\]</span></p>
+<p><span class="math display">\[(6.0 + 6.5 + 5.8 + 5.2) / 4 = 5.875\]</span></p>
 </section>
 <section id="multiplicative-decomposition-model-example-step-1-3" class="slide level2 center">
 <h2>Multiplicative Decomposition Model: Example (Step 1)</h2>
@@ -3996,16 +3890,12 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <ul>
 <li>Thus, the centered moving average for period 3 is:</li>
 </ul>
-<p><span class="math display">\[
-\frac{5.35 + 5.60}{2} = 5.475
-\]</span></p>
+<p><span class="math display">\[\frac{5.35 + 5.60}{2} = 5.475\]</span></p>
 <ul>
 <li class="fragment">Similarly, the centered moving average value for period 4 is:</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-\frac{5.60 + 5.875}{2} = 5.738
-\]</span></p>
+<p><span class="math display">\[\frac{5.60 + 5.875}{2} = 5.738\]</span></p>
 </div>
 </section>
 <section id="multiplicative-decomposition-model-example-step-2-3" class="slide level2 center">
@@ -4255,34 +4145,28 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <section id="multiplicative-decomposition-model-example-step-4" class="slide level2 center">
 <h2>Multiplicative Decomposition Model: Example (Step 4)</h2>
 <p>The multiplicative decomposition model is:</p>
-<p><span class="math display">\[
-Y_t = Trend_t \times Seasonal_t \times Irregular_t
-\]</span></p>
+<p><span class="math display">\[Y_t = Trend_t \times Seasonal_t \times Irregular_t\]</span></p>
 <p>By dividing each side of this equation by the trend component <span class="math inline">\(T_t\)</span>, we can identify the combined seasonal-irregular effect in the time series.</p>
-<p><span class="math display">\[
-\frac{Y_t}{Trend_t} = \frac{Trend_t \times Seasonal_t \times Irregular_t}{Trend_t} = Seasonal_t \times Irregular_t
-\]</span></p>
+<p><span class="math display">\[\frac{Y_t}{Trend_t} = \frac{Trend_t \times Seasonal_t \times Irregular_t}{Trend_t} = Seasonal_t \times Irregular_t\]</span></p>
 </section>
 <section id="multiplicative-decomposition-model-example-step-4-1" class="slide level2 center">
 <h2>Multiplicative Decomposition Model: Example (Step 4)</h2>
 <p>For example, the third quarter of year 1 shows a trend value of 5.475 (the centered moving average).</p>
 <p>So:</p>
-<p><span class="math display">\[
-\frac{6.0}{5.475} = 1.096
-\]</span></p>
+<p><span class="math display">\[\frac{6.0}{5.475} = 1.096\]</span></p>
 <p>This is the combined seasonal-irregular value.</p>
 </section>
 <section id="multiplicative-decomposition-model-example-step-4-2" class="slide level2 center">
 <h2>Multiplicative Decomposition Model: Example (Step 4)</h2>
 <div style="font-size: 65%;">
 <p>Seasonal-irregular values for the entire time series.</p>
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 11%">
-<col style="width: 18%">
-<col style="width: 30%">
-<col style="width: 32%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 22%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4423,9 +4307,7 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <h2>Multiplicative Decomposition Model: Example (Step 4)</h2>
 <p><strong>Averaging to Estimate Seasonal Influence</strong></p>
 <p>Since the year-to-year fluctuations in the seasonal-irregular values are primarily due to random error, we can average the computed values to eliminate the irregular influence and obtain an estimate of the third-quarter seasonal influence.</p>
-<p><span class="math display">\[
-\text{Seasonal effect of quarter 3} = \frac{1.096 + 1.075 + 1.109}{3} = 1.09
-\]</span></p>
+<p><span class="math display">\[\text{Seasonal effect of quarter 3} = \frac{1.096 + 1.075 + 1.109}{3} = 1.09\]</span></p>
 </section>
 <section id="multiplicative-decomposition-model-example-step-4-5" class="slide level2 center">
 <h2>Multiplicative Decomposition Model: Example (Step 4)</h2>
@@ -4485,9 +4367,7 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <li>Multiply each seasonal index by the number of seasons divided by the sum of the unadjusted seasonal indexes.</li>
 </ul>
 <p>For quarterly data, this means:</p>
-<p><span class="math display">\[
-\text{Adjusted Seasonal Index} = \frac{4}{\text{sum of the unadjusted seasonal indexes}}
-\]</span></p>
+<p><span class="math display">\[\text{Adjusted Seasonal Index} = \frac{4}{\text{sum of the unadjusted seasonal indexes}}\]</span></p>
 </section>
 <section id="deseasonalizing-the-time-series-step-5" class="slide level2 center">
 <h2>Deseasonalizing the Time Series (Step 5)</h2>
@@ -4496,22 +4376,20 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <li><p>Using a multiplicative decomposition model, we deseasonalize a time series by dividing each observation by its corresponding seasonal index.</p></li>
 <li><p>The multiplicative decomposition model is:</p></li>
 </ul>
-<p><span class="math display">\[
-Y_t = Trend_t \times Seasonal_t \times Irregular_t
-\]</span></p>
+<p><span class="math display">\[Y_t = Trend_t \times Seasonal_t \times Irregular_t\]</span></p>
 <p>When we divide each time series observation <span class="math inline">\(Y_t\)</span> by its corresponding seasonal index, the resulting data show only trend and random variability (the irregular component).</p>
 </section>
 <section id="deseasonalized-sales-data-table-step-5" class="slide level2 center">
 <h2>Deseasonalized Sales Data Table (Step 5)</h2>
 <div style="font-size: 70%;">
-<table class="caption-top" style="width:100%;">
+<table class="caption-top">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 11%">
 <col style="width: 16%">
-<col style="width: 18%">
-<col style="width: 19%">
-<col style="width: 27%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 17%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4675,9 +4553,7 @@ Y_t = Trend_t \times Seasonal_t \times Irregular_t
 <section id="deseasonalizing-the-time-series-linear-trend-equation-step-6" class="slide level2 center">
 <h2>Deseasonalizing the Time Series: Linear Trend Equation (Step 6)</h2>
 <p>Recall that for a linear trend, the estimated regression equation can be written as:</p>
-<p><span class="math display">\[
-T_t = b_0 + b_1 t
-\]</span></p>
+<p><span class="math display">\[T_t = b_0 + b_1 t\]</span></p>
 <p>where</p>
 <ul>
 <li class="fragment"><span class="math inline">\(T_t\)</span>: linear trend forecast in period <span class="math inline">\(t\)</span></li>
@@ -4690,9 +4566,7 @@ T_t = b_0 + b_1 t
 <h2>Deseasonalizing the Time Series: Fitting a Linear Trend Line (Step 6)</h2>
 <p>To fit a linear trend line to the deseasonalized data, the only change is that the deseasonalized time series values are used instead of the observed values <span class="math inline">\(Y_t\)</span> in computing <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span>.</p>
 <p>Using Excel’s Regression tool, the estimated linear trend equation is:</p>
-<p><span class="math display">\[
-\text{Deseasonalized Sales} = 5.10 + 0.148t
-\]</span></p>
+<p><span class="math display">\[\text{Deseasonalized Sales} = 5.10 + 0.148t\]</span></p>
 </section>
 <section id="deseasonalizing-the-time-series-interpretation-of-the-slope-step-6" class="slide level2 center">
 <h2>Deseasonalizing the Time Series: Interpretation of the Slope (Step 6)</h2>
@@ -4704,9 +4578,7 @@ T_t = b_0 + b_1 t
 <section id="deseasonalizing-the-time-series-example-projection-step-7" class="slide level2 center">
 <h2>Deseasonalizing the Time Series: Example Projection (Step 7)</h2>
 <p>Substituting <span class="math inline">\(t = 17\)</span> into the equation yields next quarter’s deseasonalized trend projection, <span class="math inline">\(T_{17}\)</span>:</p>
-<p><span class="math display">\[
-T_{17} = 5.10 + 0.148(17) = 7.616
-\]</span></p>
+<p><span class="math display">\[T_{17} = 5.10 + 0.148(17) = 7.616\]</span></p>
 <p>Thus, using the deseasonalized data, the linear trend forecast for next quarter (period 17) is <strong>7616 smartphones</strong>.</p>
 <p>Similarly, the deseasonalized trend forecasts for the next three quarters (periods 18, 19, and 20) are <strong>7764</strong>, <strong>7912</strong>, and <strong>8060</strong> smartphones, respectively.</p>
 </section>
@@ -4775,9 +4647,7 @@ T_{17} = 5.10 + 0.148(17) = 7.616
 <section id="cyclical-component" class="slide level2 center">
 <h2>Cyclical Component</h2>
 <p>Mathematically, the multiplicative model can be expanded to include a cyclical component.</p>
-<p><span class="math display">\[
-Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
-\]</span></p>
+<p><span class="math display">\[Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t\]</span></p>
 <ul>
 <li><p>The cyclical component, like the seasonal component, is expressed as a percentage of trend.</p></li>
 <li><p>This component is attributable to multiyear cycles in the time series.</p></li>
@@ -5225,13 +5095,14 @@ Y_t = Trend_t \times Cyclical_t \times Seasonal_t \times Irregular_t
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
