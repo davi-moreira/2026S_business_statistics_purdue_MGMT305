@@ -160,28 +160,28 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multiple-regression-model",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Multiple Regression Model",
-    "text": "Multiple Regression Model\nThe equation that describes how the dependent variable \\(y\\) is related to the independent variables \\(x_1, x_2, \\ldots x_p\\) and an error term \\(\\epsilon\\) is:\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_p x_p + \\epsilon\n\\]\nWhere:\n\n\\(\\beta_0, \\beta_1, \\beta_2, \\dots, \\beta_p\\) are the unknown parameters.\n\\(\\epsilon\\) is a random variable called the error term with the same assumptions as in simple regression (Normality, zero mean, constant variance, independence).\n\\(p\\) is the number of independent variables (dimension or complexity of the model)."
+    "text": "Multiple Regression Model\nThe equation that describes how the dependent variable \\(y\\) is related to the independent variables \\(x_1, x_2, \\ldots x_p\\) and an error term \\(\\epsilon\\) is:\n\\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_p x_p + \\epsilon\\]\nWhere:\n\n\\(\\beta_0, \\beta_1, \\beta_2, \\dots, \\beta_p\\) are the unknown parameters.\n\\(\\epsilon\\) is a random variable called the error term with the same assumptions as in simple regression (Normality, zero mean, constant variance, independence).\n\\(p\\) is the number of independent variables (dimension or complexity of the model)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multiple-regression-equation",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multiple-regression-equation",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Multiple Regression Equation",
-    "text": "Multiple Regression Equation\nThe equation that describes how the mean value of \\(y\\) is related to \\(x_1, x_2, \\ldots x_p\\) is:\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_p x_p\n\\]\n\\(\\beta_1, \\ldots, \\beta_p\\) measure the marginal effects of the respective independent variables.\n\nFor example, \\(\\beta_1\\) is the change in \\(E(y)\\) corresponding to a 1-unit increase in \\(x_1\\), when all other independent variables are held constant or when we control for all other independent variables."
+    "text": "Multiple Regression Equation\nThe equation that describes how the mean value of \\(y\\) is related to \\(x_1, x_2, \\ldots x_p\\) is:\n\\[E(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_p x_p\\]\n\\(\\beta_1, \\ldots, \\beta_p\\) measure the marginal effects of the respective independent variables.\n\nFor example, \\(\\beta_1\\) is the change in \\(E(y)\\) corresponding to a 1-unit increase in \\(x_1\\), when all other independent variables are held constant or when we control for all other independent variables."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#estimated-multiple-regression-equation",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#estimated-multiple-regression-equation",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Estimated Multiple Regression Equation",
-    "text": "Estimated Multiple Regression Equation\n\n\\[\n\\hat{y} = b_0 + b_1 x_1 + b_2 x_2 + \\dots + b_p x_p\n\\]\nA simple random sample is used to compute sample slopes \\(b_0, b_1, b_2, \\dots, b_p\\) that are used as the point estimators of the population slopes \\(\\beta_0, \\beta_1, \\beta_2, \\dots, \\beta_p\\).\n\nHence, \\(\\hat{y}\\) estimates \\(E(Y)\\)."
+    "text": "Estimated Multiple Regression Equation\n\n\\[\\hat{y} = b_0 + b_1 x_1 + b_2 x_2 + \\dots + b_p x_p\\]\nA simple random sample is used to compute sample intercept and slopes \\(b_0, b_1, b_2, \\dots, b_p\\) that are used as the point estimators of the population intercept and slopes \\(\\beta_0, \\beta_1, \\beta_2, \\dots, \\beta_p\\).\n\nHence, \\(\\hat{y}\\) estimates \\(E(Y)\\)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#least-squares-method-1",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#least-squares-method-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Least Squares Method",
-    "text": "Least Squares Method\n\nLeast Squares Criterion: Minimize the Sum of Squared Errors (SSE):\n\\[\n\\min \\sum (y_i - \\hat{y_i})^2\n\\]\nWhere \\(y_i - \\hat{y_i}\\) is the \\(i\\)-th residual/error.\n\n\nThe formulas for the regression coefficients \\(b_0, b_1, b_2, \\dots, b_p\\) involve the use of matrix algebra. We will rely on computer software packages to perform the calculations.\nThe emphasis will be on how to interpret the computer output rather than on how to make the multiple regression computations."
+    "text": "Least Squares Method\n\nLeast Squares Criterion: Minimize the Sum of Squared Errors (SSE):\n\\[\\min \\sum (y_i - \\hat{y_i})^2\\]\nWhere \\(y_i - \\hat{y_i}\\) is the \\(i\\)-th residual/error.\n\n\nThe formulas for the regression coefficients \\(b_0, b_1, b_2, \\dots, b_p\\) involve the use of matrix algebra. We will rely on computer software packages to perform the calculations.\nThe emphasis will be on how to interpret the computer output rather than on how to make the multiple regression computations."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#estimation-process",
@@ -209,7 +209,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multiple-regression-model-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Multiple Regression Model",
-    "text": "Multiple Regression Model\nExample: Butler Trucking Company\nSuppose we believe that total daily travel time (\\(y\\)) is related to the miles traveled (\\(x_1\\)) and the number of deliveries made (\\(x_2\\)) by the following multiple linear regression model:\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\epsilon\n\\]\nWhere:\n\n\\(y\\) = Total travel time\n\\(x_1\\) = Miles traveled\n\\(x_2\\) = Deliveries made\n\\(n = 10, p = 2\\)"
+    "text": "Multiple Regression Model\nExample: Butler Trucking Company\nSuppose we believe that total daily travel time (\\(y\\)) is related to the miles traveled (\\(x_1\\)) and the number of deliveries made (\\(x_2\\)) by the following multiple linear regression model:\n\\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\epsilon\\]\nWhere:\n\n\\(y\\) = Total travel time\n\\(x_1\\) = Miles traveled\n\\(x_2\\) = Deliveries made\n\\(n = 10, p = 2\\)"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#summary-statistics",
@@ -237,7 +237,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#estimated-regression-equation",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Estimated Regression Equation",
-    "text": "Estimated Regression Equation\nExample: Butler Trucking Company\nPrediction equation:\n\\[\n\\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2\n\\]\n\n\nFor observation #1 where \\(x_1 = 100\\), \\(x_2 = 4\\), and \\(y = 9.3\\):\n\\[\n\\hat{y} = -0.8687 + 0.0611(100) + 0.9234(4) = 8.9385\n\\]\nUnexplained residual = \\(y - \\hat{y} = 9.3 - 8.9385 = 0.3615\\)"
+    "text": "Estimated Regression Equation\nExample: Butler Trucking Company\nPrediction equation:\n\\[\\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2\\]\n\n\nFor observation #1 where \\(x_1 = 100\\), \\(x_2 = 4\\), and \\(y = 9.3\\):\n\\[\\hat{y} = -0.8687 + 0.0611(100) + 0.9234(4) = 8.9385\\]\nUnexplained residual = \\(y - \\hat{y} = 9.3 - 8.9385 = 0.3615\\)"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#interpreting-the-regression-coefficients",
@@ -258,7 +258,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multiple-coefficient-of-determination-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Multiple Coefficient of Determination",
-    "text": "Multiple Coefficient of Determination\n\nRelationship Among SST, SSR, SSE\n\n\n\n\n\n\n\n\n\n\nSST\nSSR\nSSE\n\n\n\n\nFormula\n\\(\\sum (y_i - \\bar{y})^2\\)\n\\(\\sum (\\hat{y}_i - \\bar{y})^2\\)\n\\(\\sum (y_i - \\hat{y}_i)^2\\)\n\n\nDegrees of Freedom\n\\(n-1\\)\n\\(p\\)\n\\(n-p-1\\)\n\n\n\n\\[\n\\sum (y_i - \\bar{y})^2 = \\sum (\\hat{y_i} - \\bar{y})^2 + \\sum (y_i - \\hat{y_i})^2\n\\]\nWhere:\n\nSST = Total sum of squares (total variation of the response)\nSSR = Sum of squares due to regression (explained by all predictors)\nSSE = Sum of squares due to error (unexplained variation of residuals)\n\\(n\\) = sample size.\n\\(p\\) = number of predictors (independent variables).\nThe degrees of freedom for SSE reflect the number of observations left after accounting for the number of estimated parameters (\\(n - (p + \\text{one intercept})\\)."
+    "text": "Multiple Coefficient of Determination\n\nRelationship Among SST, SSR, SSE\n\n\n\n\n\n\n\n\n\n\nSST\nSSR\nSSE\n\n\n\n\nFormula\n\\(\\sum (y_i - \\bar{y})^2\\)\n\\(\\sum (\\hat{y}_i - \\bar{y})^2\\)\n\\(\\sum (y_i - \\hat{y}_i)^2\\)\n\n\nDegrees of Freedom\n\\(n-1\\)\n\\(p\\)\n\\(n-p-1\\)\n\n\n\n\\[\\sum (y_i - \\bar{y})^2 = \\sum (\\hat{y_i} - \\bar{y})^2 + \\sum (y_i - \\hat{y_i})^2\\]\nWhere:\n\nSST = Total sum of squares (total variation of the response)\nSSR = Sum of squares due to regression (explained by all predictors)\nSSE = Sum of squares due to error (unexplained variation of residuals)\n\\(n\\) = sample size.\n\\(p\\) = number of predictors (independent variables).\nThe degrees of freedom for SSE reflect the number of observations left after accounting for the number of estimated parameters (\\(n - (p + \\text{one intercept})\\)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#partition-of-sst",
@@ -279,7 +279,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#multiple-coefficient-of-determination-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Multiple Coefficient of Determination",
-    "text": "Multiple Coefficient of Determination\nExample: Butler Trucking Company\n\\[\nR^2 = \\frac{SSR}{SST} = 1 - \\frac{SSE}{SST}\n\\]\n\\[\nR^2 = \\frac{21.6006}{23.9} = 1 - \\frac{2.2994}{23.9} = 90.38\\%\n\\]\n\\[\nR^2 = 1 - \\frac{SSE / (n - 1)}{SST / (n - 1)} = 1 - \\frac{\\text{Residual variance}}{\\text{Response variance}}\n\\]"
+    "text": "Multiple Coefficient of Determination\nExample: Butler Trucking Company\n\\[R^2 = \\frac{SSR}{SST} = 1 - \\frac{SSE}{SST}\\]\n\\[R^2 = \\frac{21.6006}{23.9} = 1 - \\frac{2.2994}{23.9} = 90.38\\%\\]\n\\[R^2 = 1 - \\frac{SSE / (n - 1)}{SST / (n - 1)} = 1 - \\frac{\\text{Residual variance}}{\\text{Response variance}}\\]"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#remarks-on-multiple-coefficient-of-determination",
@@ -300,14 +300,14 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#adjusted-multiple-coefficient-of-determination-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adjusted Multiple Coefficient of Determination",
-    "text": "Adjusted Multiple Coefficient of Determination\nExample: Butler Trucking Company\n\\[\nR^2 = 1 - \\frac{SSE}{SST} = 90.38\\%\n\\]\n\\[\nR^2_a = 1 - \\frac{\\frac{SSE}{(n - p - 1)}}{\\frac{SST}{(n - 1)}} = 1 - (1 - R^2) \\cdot \\frac{n - 1}{n - p - 1}\n\\]\n\\[\nR^2_a = 1 - \\frac{2.2994 / (10 - 2 - 1)}{23.9 / (10 - 1)} = 1 - (1 - 0.9038) \\cdot \\frac{10 - 1}{10 - 2 - 1} = 87.63\\%\n\\]"
+    "text": "Adjusted Multiple Coefficient of Determination\nExample: Butler Trucking Company\n\\[R^2 = 1 - \\frac{SSE}{SST} = 90.38\\%\\]\n\\[R^2_a = 1 - \\frac{\\frac{SSE}{(n - p - 1)}}{\\frac{SST}{(n - 1)}} = 1 - (1 - R^2) \\cdot \\frac{n - 1}{n - p - 1}\\]\n\\[R^2_a = 1 - \\frac{2.2994 / (10 - 2 - 1)}{23.9 / (10 - 1)} = 1 - (1 - 0.9038) \\cdot \\frac{10 - 1}{10 - 2 - 1} = 87.63\\%\\]"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#adjusted-multiple-coefficient-of-determination-2",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#adjusted-multiple-coefficient-of-determination-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adjusted Multiple Coefficient of Determination",
-    "text": "Adjusted Multiple Coefficient of Determination\n\\[\nR^2_a = 1 - \\frac{\\frac{SSE}{(n - p - 1)}}{\\frac{SST}{(n - 1)}} = 1 - \\frac{MSE}{\\frac{SST}{(n - 1)}} = 1 - \\frac{S^2}{\\frac{SST}{(n - 1)}}\n\\]\n\nA smaller \\(S^2\\) gives a higher \\(R^2_a\\).\nBringing in a new independent variable will increase the \\(R^2_a\\) when and only when it can decrease the estimated error variance (\\(S^2\\) or MSE). Hence, \\(R^2_a\\) is a good criterion for model building or model selection.\n\n(Recall: MSE or \\(S^2\\) estimates the error variance \\(\\sigma^2\\).)"
+    "text": "Adjusted Multiple Coefficient of Determination\n\\[R^2_a = 1 - \\frac{\\frac{SSE}{(n - p - 1)}}{\\frac{SST}{(n - 1)}} = 1 - \\frac{MSE}{\\frac{SST}{(n - 1)}} = 1 - \\frac{S^2}{\\frac{SST}{(n - 1)}}\\]\n\nA smaller \\(S^2\\) gives a higher \\(R^2_a\\).\nBringing in a new independent variable will increase the \\(R^2_a\\) when and only when it can decrease the estimated error variance (\\(S^2\\) or MSE). Hence, \\(R^2_a\\) is a good criterion for model building or model selection.\n\n(Recall: MSE or \\(S^2\\) estimates the error variance \\(\\sigma^2\\).)"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-significance-1",
@@ -328,21 +328,21 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Overall Significance: \\(F\\) Test",
-    "text": "Testing for Overall Significance: \\(F\\) Test\n\nHypotheses\n\\[\nH_0: \\beta_1 = \\beta_2 = \\dots = \\beta_p = 0 \\quad (\\text{No linear relationship})\n\\]\n\\[\nH_a: \\text{One or more of the slopes is not equal to zero}\n\\]\nTest Statistics\n\\[\nF = \\frac{MSR}{MSE}\n\\] where,\n\\[\nMSR = \\frac{SSR}{p} \\quad \\text{and} \\quad MSE = \\frac{SSE}{n-p-1}\n\\]\nRejection Rule\nReject \\(H_0\\) if \\(F \\geq F_\\alpha\\) or \\(p \\leq \\alpha\\).\nwhere \\(F_\\alpha\\) is based on an \\(F\\) distribution with \\(p\\) d.f. (numerator) and \\(n - p - 1\\) d.f. (denominator)."
+    "text": "Testing for Overall Significance: \\(F\\) Test\n\nHypotheses\n\\[H_0: \\beta_1 = \\beta_2 = \\dots = \\beta_p = 0 \\quad (\\text{No linear relationship})\\]\n\\[H_a: \\text{One or more of the slopes is not equal to zero}\\]\nTest Statistics\n\\[F = \\frac{MSR}{MSE}\\] where,\n\\[MSR = \\frac{SSR}{p} \\quad \\text{and} \\quad MSE = \\frac{SSE}{n-p-1}\\]\nRejection Rule\nReject \\(H_0\\) if \\(F \\geq F_\\alpha\\) or \\(p \\leq \\alpha\\).\nwhere \\(F_\\alpha\\) is based on an \\(F\\) distribution with \\(p\\) d.f. (numerator) and \\(n - p - 1\\) d.f. (denominator)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-2",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Overall Significance: \\(F\\) Test",
-    "text": "Testing for Overall Significance: \\(F\\) Test\nExample: Butler Trucking Company\nHypotheses:\n\\[\nH_0: \\beta_1 = \\beta_2 = 0\n\\]\n\\[\nH_a: \\text{One or both slopes are not equal to zero}\n\\]\nRejection Rule\nFor \\(\\alpha = 0.01\\) and degrees of freedom = 2 and 7, \\(F_{\\alpha} = 9.55\\).\nReject \\(H_0\\) if \\(F \\geq 9.55\\) or \\(p \\leq .01\\)."
+    "text": "Testing for Overall Significance: \\(F\\) Test\nExample: Butler Trucking Company\nHypotheses:\n\\[H_0: \\beta_1 = \\beta_2 = 0\\]\n\\[H_a: \\text{One or both slopes are not equal to zero}\\]\nRejection Rule\nFor \\(\\alpha = 0.01\\) and degrees of freedom = 2 and 7, \\(F_{\\alpha} = 9.55\\).\nReject \\(H_0\\) if \\(F \\geq 9.55\\) or \\(p \\leq .01\\)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-3",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Overall Significance: \\(F\\) Test",
-    "text": "Testing for Overall Significance: \\(F\\) Test\nTest Statistics\n\\[\nF = \\frac{MSR}{MSE} = \\frac{10.8003}{0.3285} = 32.8784\n\\]\nConclusion:\nWe reject \\(H_0\\) because \\(F = 32.8784 &gt; 9.55\\).\nWe have significant statistical evidence to conclude that at least one of the independent variables is useful in explaining the variation in the total travel time, or for predicting the total travel time. The significance level is 1%."
+    "text": "Testing for Overall Significance: \\(F\\) Test\nTest Statistics\n\\[F = \\frac{MSR}{MSE} = \\frac{10.8003}{0.3285} = 32.8784\\]\nConclusion:\nWe reject \\(H_0\\) because \\(F = 32.8784 &gt; 9.55\\).\nWe have significant statistical evidence to conclude that at least one of the independent variables is useful in explaining the variation in the total travel time, or for predicting the total travel time. The significance level is 1%."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-4",
@@ -356,7 +356,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-overall-significance-f-test-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Overall Significance: \\(F\\) Test",
-    "text": "Testing for Overall Significance: \\(F\\) Test\nANOVA Output\n\n\n\nSource\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n2\n21.6006\n10.8003\n32.8784\n0.0003\n\n\nResidual\n7\n2.2994\n0.3285\n\n\n\n\nTotal\n9\n23.9\n\n\n\n\n\n\n\\[\np-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \\approx 0.0003\n\\]"
+    "text": "Testing for Overall Significance: \\(F\\) Test\nANOVA Output\n\n\n\nSource\ndf\nSS\nMS\nF\nSignificance F\n\n\n\n\nRegression\n2\n21.6006\n10.8003\n32.8784\n0.0003\n\n\nResidual\n7\n2.2994\n0.3285\n\n\n\n\nTotal\n9\n23.9\n\n\n\n\n\n\n\\[p-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \\approx 0.0003\\]"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test",
@@ -370,21 +370,21 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Individual Significance: \\(t\\) Test",
-    "text": "Testing for Individual Significance: \\(t\\) Test\nHypotheses\n\\[\nH_0: \\beta_i = 0 \\quad (x_i \\text{ is not significant in the presence of all other } x's)\n\\]\n\\[\nH_a: \\beta_i \\neq 0\n\\]\nTest Statistic\n\\[\nt = \\frac{b_i - 0}{s_{b_i}} \\quad (s_{b_i} \\text{ is the standard error of } b_i)\n\\]\nRejection Rule\nReject \\(H_0\\) if \\(t \\leq -t_{\\alpha / 2}\\) or \\(t \\geq t_{\\alpha / 2}\\) or if \\(p\\)-value \\(\\leq \\alpha\\).\nwhere \\(t_{\\alpha/2}\\) is based on a \\(t\\)-distribution with \\(n - p - 1\\) degrees of freedom."
+    "text": "Testing for Individual Significance: \\(t\\) Test\nHypotheses\n\\[H_0: \\beta_i = 0 \\quad (x_i \\text{ is not significant in the presence of all other } x's)\\]\n\\[H_a: \\beta_i \\neq 0\\]\nTest Statistic\n\\[t = \\frac{b_i - 0}{s_{b_i}} \\quad (s_{b_i} \\text{ is the standard error of } b_i)\\]\nRejection Rule\nReject \\(H_0\\) if \\(t \\leq -t_{\\alpha / 2}\\) or \\(t \\geq t_{\\alpha / 2}\\) or if \\(p\\)-value \\(\\leq \\alpha\\).\nwhere \\(t_{\\alpha/2}\\) is based on a \\(t\\)-distribution with \\(n - p - 1\\) degrees of freedom."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test-2",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Individual Significance: \\(t\\) Test",
-    "text": "Testing for Individual Significance: \\(t\\) Test\nExample: Butler Trucking Company\n\n\\(H_0: \\beta_i = 0\\)\n\\(H_a: \\beta_i \\neq 0 \\quad \\text{(Two-tailed)}\\)\n\n\nFor \\(\\alpha = 0.01\\) and \\(df = 7\\):\n\\[\nt_{0.005} = 3.499\n\\]\nReject \\(H_0\\) if \\(p\\)-value \\(\\leq .01\\), or if \\(t \\leq -3.499\\) or \\(t \\geq 3.499\\)."
+    "text": "Testing for Individual Significance: \\(t\\) Test\nExample: Butler Trucking Company\n\n\\(H_0: \\beta_i = 0\\)\n\\(H_a: \\beta_i \\neq 0 \\quad \\text{(Two-tailed)}\\)\n\n\nFor \\(\\alpha = 0.01\\) and \\(df = 7\\):\n\\[t_{0.005} = 3.499\\]\nReject \\(H_0\\) if \\(p\\)-value \\(\\leq .01\\), or if \\(t \\leq -3.499\\) or \\(t \\geq 3.499\\)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test-3",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Testing for Individual Significance: \\(t\\) Test",
-    "text": "Testing for Individual Significance: \\(t\\) Test\nTest Statistics\n\\[\nt = \\frac{b_1 - 0}{s_{b_1}} = \\frac{0.0611 - 0}{0.0099} = 6.1717, \\quad \\text{for } x_1\n\\]\n\\[\nt = \\frac{b_2 - 0}{s_{b_2}} = \\frac{0.9234 - 0}{0.2211} = 4.1764, \\quad \\text{for } x_2\n\\]\nConclusion\nReject each of \\(H_0: \\beta_1 = 0\\) and \\(H_0: \\beta_2 = 0\\). Each independent variable is statistically significant in the presence of the other."
+    "text": "Testing for Individual Significance: \\(t\\) Test\nTest Statistics\n\\[t = \\frac{b_1 - 0}{s_{b_1}} = \\frac{0.0611 - 0}{0.0099} = 6.1717, \\quad \\text{for } x_1\\]\n\\[t = \\frac{b_2 - 0}{s_{b_2}} = \\frac{0.9234 - 0}{0.2211} = 4.1764, \\quad \\text{for } x_2\\]\nConclusion\nReject each of \\(H_0: \\beta_1 = 0\\) and \\(H_0: \\beta_2 = 0\\). Each independent variable is statistically significant in the presence of the other."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#testing-for-individual-significance-t-test-4",
@@ -454,7 +454,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-6",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Categorical Independent Variables",
-    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc.\nRegression model:\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\epsilon\n\\]\nWhere:\n\\(y\\) = Repair time in hours\n\\(x_1\\) = Number of months since last maintenance service\n\\(x_2\\) = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( \\(x_2\\) is a dummy variable)"
+    "text": "Categorical Independent Variables\nExample: Johnson Filtration, Inc.\nRegression model:\n\\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\epsilon\\]\nWhere:\n\\(y\\) = Repair time in hours\n\\(x_1\\) = Number of months since last maintenance service\n\\(x_2\\) = 0 if type of repair is mechanical, 1 if the type of repair is electrical ( \\(x_2\\) is a dummy variable)"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-7",
@@ -468,7 +468,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-8",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Categorical Independent Variables",
-    "text": "Categorical Independent Variables\nInterpretation of regression coefficient \\(\\beta_2\\) of dummy variable \\(x_2\\):\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\n\\]\nFor mechanical (reference):\n\\[\nE(y|mechanical) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 0 = \\beta_0 + \\beta_1 x_1\n\\]\nFor electrical:\n\\[\nE(y|electrical) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 1 = (\\beta_0 + \\beta_2) + \\beta_1 x_1\n\\]"
+    "text": "Categorical Independent Variables\nInterpretation of regression coefficient \\(\\beta_2\\) of dummy variable \\(x_2\\):\n\\[E(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\\]\nFor mechanical (reference):\n\n\\[E(y|mechanical) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 0 = \\beta_0 + \\beta_1 x_1\\]\nFor electrical:\n\n\\[E(y|electrical) = \\beta_0 + \\beta_1 x_1 + \\beta_2 \\cdot 1 = (\\beta_0 + \\beta_2) + \\beta_1 x_1 \\]"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#categorical-independent-variables-9",
@@ -503,7 +503,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-categorical-variable-with-three-levels",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Categorical Variable with Three Levels",
-    "text": "Example: Categorical Variable with Three Levels\n\nSuppose a manufacturer organizes the sales territories into three regions: A, B, and C.\nThe number of copiers sold per week is the dependent variable.\nThe sales region is a categorical variable with three levels: A, B, and C.\n\n\nDummy Variables for Sales Region: We need \\(3 - 1 = 2\\) dummy variables.\n\\[\nx_1 =\n\\begin{cases}\n1 & \\text{if sales region B} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]\n\\[\nx_2 =\n\\begin{cases}\n1 & \\text{if sales region C} \\\\\n0 & \\text{otherwise}\n\\end{cases}\n\\]"
+    "text": "Example: Categorical Variable with Three Levels\n\nSuppose a manufacturer organizes the sales territories into three regions: A, B, and C.\nThe number of copiers sold per week is the dependent variable.\nThe sales region is a categorical variable with three levels: A, B, and C.\n\n\nDummy Variables for Sales Region: We need \\(3 - 1 = 2\\) dummy variables.\n\\[x_1 =\n\\begin{cases}\n1 & \\text{if sales region B} \\\\\n0 & \\text{otherwise}\n\\end{cases}\\]\n\\[x_2 =\n\\begin{cases}\n1 & \\text{if sales region C} \\\\\n0 & \\text{otherwise}\n\\end{cases}\\]"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-dummy-variable-coding",
@@ -517,7 +517,7 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-regression-equation-with-dummy-variables",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Regression Equation with Dummy Variables",
-    "text": "Example: Regression Equation with Dummy Variables\n\n\nThe regression equation for the expected number of units sold is:\n\n\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\n\\]\n\n\nTo interpret the parameters \\(\\beta_0,  \\beta_1,  \\beta_2\\), consider the three variations of the regression equation:\nRegion A: \\[\nE(y | \\text{region A}) = \\beta_0 + \\beta_1 (0) + \\beta_2 (0) = \\beta_0\n\\]\nRegion B: \\[\nE(y | \\text{region B}) = \\beta_0 + \\beta_1 (1) + \\beta_2 (0) = \\beta_0 + \\beta_1\n\\]\nRegion C: \\[\nE(y | \\text{region C}) = \\beta_0 + \\beta_1 (0) + \\beta_2 (1) = \\beta_0 + \\beta_2\n\\]\nInterpretation:\n\n\\(\\beta_0\\): Mean or expected value of sales for region A.\n\\(\\beta_1\\): Difference in mean sales between region B and region A.\n\\(\\beta_2\\): Difference in mean sales between region C and region A."
+    "text": "Example: Regression Equation with Dummy Variables\n\n\nThe regression equation for the expected number of units sold is:\n\n\n\\[E(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\\]\n\n\nTo interpret the parameters \\(\\beta_0,  \\beta_1,  \\beta_2\\), consider the three variations of the regression equation:\nRegion A: \\[E(y | \\text{region A}) = \\beta_0 + \\beta_1 (0) + \\beta_2 (0) = \\beta_0\\]\nRegion B: \\[E(y | \\text{region B}) = \\beta_0 + \\beta_1 (1) + \\beta_2 (0) = \\beta_0 + \\beta_1 \\]\nRegion C: \\[E(y | \\text{region C}) = \\beta_0 + \\beta_1 (0) + \\beta_2 (1) = \\beta_0 + \\beta_2\\]\nInterpretation:\n\n\\(\\beta_0\\): Mean or expected value of sales for region A.\n\\(\\beta_1\\): Difference in mean sales between region B and region A.\n\\(\\beta_2\\): Difference in mean sales between region C and region A."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#example-important-points-on-dummy-variables",
@@ -538,14 +538,14 @@
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model",
-    "text": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model\n\nConsider the following two-independent-variable multiple regression equation:\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\n\\]\n\n\n\n\nThe graph of this equation is a plane in three-dimensional space. The value of \\(\\epsilon\\) shown is the difference between the actual \\(y\\) value and the expected value of \\(y\\), \\(E(y)\\), when \\(x_1 = x_1^*\\) and \\(x_2 = x_2^*\\)."
+    "text": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model\n\nConsider the following two-independent-variable multiple regression equation:\n\\[E(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2\\]\n\n\n\n\nThe graph of this equation is a plane in three-dimensional space. The value of \\(\\epsilon\\) shown is the difference between the actual \\(y\\) value and the expected value of \\(y\\), \\(E(y)\\), when \\(x_1 = x_1^*\\) and \\(x_2 = x_2^*\\)."
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1",
     "href": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model",
-    "text": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\cdots + \\beta_p x_p + \\epsilon\n\\]\n\nThe error term \\(\\epsilon\\) is a random variable with \\(E(\\epsilon) = 0\\).\n\n\nImplication: For given values of \\(x_1, x_2, \\ldots, x_p\\), the expected, or average, value of \\(y\\) is given by:\n\n\n\\[\nE(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\cdots + \\beta_p x_p\n\\]\n\n\nValidation: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot\n\n\nThe variance of \\(\\epsilon\\) is denoted by \\(\\sigma^2\\) and is the same for all values of the independent variables \\(x_1, x_2, \\ldots, x_p\\).\n\n\nImplication: The variance of \\(y\\) about the regression line equals \\(\\sigma^2\\) and is the same for all values of \\(x_1, x_2, \\ldots, x_p\\).\nValidation: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot"
+    "text": "Assumptions about the Error Term \\(\\epsilon\\) in the Multiple Regression Model\n\\[y = \\beta_0 + \\beta_1 x_1 + \\cdots + \\beta_p x_p + \\epsilon\\]\n\nThe error term \\(\\epsilon\\) is a random variable with \\(E(\\epsilon) = 0\\).\n\n\nImplication: For given values of \\(x_1, x_2, \\ldots, x_p\\), the expected, or average, value of \\(y\\) is given by:\n\n\n\\[E(y) = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\cdots + \\beta_p x_p\\]\n\n\nValidation: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot\n\n\nThe variance of \\(\\epsilon\\) is denoted by \\(\\sigma^2\\) and is the same for all values of the independent variables \\(x_1, x_2, \\ldots, x_p\\).\n\n\nImplication: The variance of \\(y\\) about the regression line equals \\(\\sigma^2\\) and is the same for all values of \\(x_1, x_2, \\ldots, x_p\\).\nValidation: Residuals vs. Predicted Values Plot or the Standardized Residuals vs. Predicted Values Plot"
   },
   {
     "objectID": "lecture_slides/15_chapter_multiple_regression/15_chapter_multiple_regression.html#assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-2",
@@ -1322,7 +1322,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-and-margin-of-error-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate and Margin of Error",
-    "text": "Interval Estimate and Margin of Error\n\nA point estimator cannot be expected to provide the exact value of the population parameter with a given level of confidence; but it is a good starting point to construct an interval estimate.\nAn interval estimate for mean can be computed by adding and subtracting a margin of error (MOE) to the point estimate.\n\\[\n\\text{Point Estimate} \\pm \\text{Margin of Error}\n\\]\nThe purpose of an interval estimate is to provide information about how close the point estimate is to the true value of the unknown population parameter with a certain level of confidence."
+    "text": "Interval Estimate and Margin of Error\n\nA point estimator cannot be expected to provide the exact value of the population parameter with a given level of confidence; but it is a good starting point to construct an interval estimate.\nAn interval estimate for mean can be computed by adding and subtracting a margin of error (MOE) to the point estimate.\n\\[\\text{Point Estimate} \\pm \\text{Margin of Error}\\]\nThe purpose of an interval estimate is to provide information about how close the point estimate is to the true value of the unknown population parameter with a certain level of confidence."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-and-margin-of-error-3",
@@ -1343,21 +1343,21 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#margin-of-error-and-the-interval-estimate",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Margin of Error and the Interval Estimate",
-    "text": "Margin of Error and the Interval Estimate\n\nThe general form of an interval estimate of a population mean is\n\\[\n\\bar{X} \\pm \\text{Margin of Error}\n\\]\nThe Margin of Error (MOE) depends on the sampling distribution (sampling variation) of the point estimate \\(\\bar{X}\\)."
+    "text": "Margin of Error and the Interval Estimate\n\nThe general form of an interval estimate of a population mean is\n\\[\\bar{X} \\pm \\text{Margin of Error}\\]\nThe Margin of Error (MOE) depends on the sampling distribution (sampling variation) of the point estimate \\(\\bar{X}\\)."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sampling-distribution-of-barx",
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sampling-distribution-of-barx",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Sampling Distribution of \\(\\bar{X}\\)",
-    "text": "Sampling Distribution of \\(\\bar{X}\\)\n\n\nIt will be symmetric if:\n\n\\(n\\) is large (Central Limit Teorem) or\nPopulation of \\(X\\) is normal"
+    "text": "Sampling Distribution of \\(\\bar{X}\\)\n\n\nIt will be symmetric if:\n\n\\(n\\) is large (Central Limit Theorem) or\nPopulation of \\(X\\) is normal"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-mean-sigma-known-1",
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-mean-sigma-known-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate of a Population Mean: \\(\\sigma\\) Known",
-    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Known\n\nWhen the population standard deviation (\\(\\sigma\\)) is known, we can compute a 95% confidence that the population parameter \\((\\mu)\\) will fall within \\(1.96 \\times \\sigma_{\\bar{X}}\\) from the \\(\\bar{X}\\); i.e., \\(\\mu\\) is in the following interval\n\n\\[\n\\bar{X} \\pm 1.96 \\frac{\\sigma}{\\sqrt{n}}\n\\]\n\nWhen the quantities are replaced by numbers, the interval is called a 95% confidence interval for \\(\\mu\\).\n95% is called the confidence level (\\(= 1- \\alpha\\)). What means that \\(\\alpha = 0.05\\).\n1.96 is referred to as the 95% z-confidence multiplier, denoted by \\(z_{0.025}\\) (or \\(z_{\\alpha/2}\\)). This value represents the number of standard deviations one must move from the mean in both directions to capture the central 95% of the standard normal distribution, thereby defining the 95% confidence interval.\n\\(\\frac{\\sigma}{\\sqrt{n}}\\) Standard Error of the Mean"
+    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Known\n\nWhen the population standard deviation (\\(\\sigma\\)) is known, we can compute a 95% confidence that the population parameter \\((\\mu)\\) will fall within \\(1.96 \\times \\sigma_{\\bar{X}}\\) from the \\(\\bar{X}\\); i.e., \\(\\mu\\) is in the following interval\n\n\\[\\bar{X} \\pm 1.96 \\frac{\\sigma}{\\sqrt{n}}\\]\n\nWhen the quantities are replaced by numbers, the interval is called a 95% confidence interval for \\(\\mu\\).\n95% is called the confidence level (\\(= 1- \\alpha\\)). What means that \\(\\alpha = 0.05\\).\n1.96 is referred to as the 95% z-confidence multiplier, denoted by \\(z_{0.025}\\) (or \\(z_{\\alpha/2}\\)). This value represents the number of standard deviations one must move from the mean in both directions to capture the central 95% of the standard normal distribution, thereby defining the 95% confidence interval.\n\\(\\frac{\\sigma}{\\sqrt{n}}\\) Standard Error of the Mean"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#confidence-multipliers",
@@ -1378,7 +1378,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-mean-sigma-unknown-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown",
-    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown\nThis formula is used to construct a confidence interval for the population mean when the population standard deviation is unknown and the sample size is relatively small.\n\\[\n\\bar{X} \\pm t_{\\alpha/2, n-1} \\times \\frac{s}{\\sqrt{n}}\n\\]\n\n\\(\\bar{X}\\): The sample mean, which serves as the point estimate of the population mean.\n\\(t_{\\alpha/2, n-1}\\): The t-value for the chosen confidence level with \\(n-1\\) degrees of freedom. It represents the number of standard deviations (from the t-distribution) needed to capture the central \\((1-\\alpha)\\%\\) of the data.\n\\(s\\): The sample standard deviation, which measures the amount of variation or dispersion in the sample.\n\\(n\\): The sample size, representing the number of observations in the sample.\n\\(\\frac{s}{\\sqrt{n}}\\): The standard error of the mean, which estimates the standard deviation of the sampling distribution of the sample mean."
+    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown\nThis formula is used to construct a confidence interval for the population mean when the population standard deviation is unknown and the sample size is relatively small.\n\\[\\bar{X} \\pm t_{\\alpha/2, n-1} \\times \\frac{s}{\\sqrt{n}}\\]\n\n\\(\\bar{X}\\): The sample mean, which serves as the point estimate of the population mean.\n\\(t_{\\alpha/2, n-1}\\): The t-value for the chosen confidence level with \\(n-1\\) degrees of freedom. It represents the number of standard deviations (from the t-distribution) needed to capture the central \\((1-\\alpha)\\%\\) of the data.\n\\(s\\): The sample standard deviation, which measures the amount of variation or dispersion in the sample.\n\\(n\\): The sample size, representing the number of observations in the sample.\n\\(\\frac{s}{\\sqrt{n}}\\): The standard error of the mean, which estimates the standard deviation of the sampling distribution of the sample mean."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-mean-sigma-unknown---example",
@@ -1392,21 +1392,21 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-mean-sigma-unknown---example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown - Example",
-    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown - Example\n\\[\n\\bar{x} \\pm t_{.025, 69} \\times \\frac{s}{\\sqrt{n}}\n\\]\n\\[\n\\bar{x} \\pm =T.INV(1-0.025,69) \\times \\frac{s}{\\sqrt{n}}\n\\]\n\\[\n9,312 \\pm 1.995 \\times \\frac{4007}{\\sqrt{70}} = 9,312 \\pm 955 = (8,357,10,267)\n\\]\nWe are 95% confident that the mean credit card debt for the entire population of U.S. households is between $8,357 and $10,267. The margin of error (maximum error) of the sample mean (as an estimate of the unknown population mean) is $955."
+    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown - Example\n\\[\\bar{x} \\pm t_{.025, 69} \\times \\frac{s}{\\sqrt{n}}\\]\n\\[\\bar{x} \\pm =T.INV(1-0.025,69) \\times \\frac{s}{\\sqrt{n}}\\]\n\\[9,312 \\pm 1.995 \\times \\frac{4007}{\\sqrt{70}} = 9,312 \\pm 955 = (8,357,10,267)\\]\nWe are 95% confident that the mean credit card debt for the entire population of U.S. households is between $8,357 and $10,267. The margin of error (maximum error) of the sample mean (as an estimate of the unknown population mean) is $955."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-mean-sigma-unknown---example-2",
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-mean-sigma-unknown---example-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown - Example",
-    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown - Example\nAdequate Sample Size\nUsually, a sample size of \\(n \\geq 30\\) is adequate when using the expression\n\\[\n\\bar{x} \\pm t_{\\alpha/2} \\frac{s}{\\sqrt{n}}\n\\]\nto develop an interval estimate of a population mean \\(\\mu\\).\n\nIf the population distribution is highly skewed or contains outliers, a sample size of 50 or more is recommended.\nIf the population is not normally distributed but is roughly symmetric, a sample size as small as 15 will suffice.\nIf the population is believed to be at least approximately normal, a sample size of less than 15 can be used."
+    "text": "Interval Estimate of a Population Mean: \\(\\sigma\\) Unknown - Example\nAdequate Sample Size\nUsually, a sample size of \\(n \\geq 30\\) is adequate when using the expression\n\\[\\bar{x} \\pm t_{\\alpha/2} \\frac{s}{\\sqrt{n}}\\]\nto develop an interval estimate of a population mean \\(\\mu\\).\n\nIf the population distribution is highly skewed or contains outliers, a sample size of 50 or more is recommended.\nIf the population is not normally distributed but is roughly symmetric, a sample size as small as 15 will suffice.\nIf the population is believed to be at least approximately normal, a sample size of less than 15 can be used."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-proportion-1",
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-proportion-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate of a Population Proportion",
-    "text": "Interval Estimate of a Population Proportion\n\nThe general form of an interval estimate of a population proportion is:\n\n\\[\n\\bar{p} \\pm \\text{Margin of Error}\n\\]\n\nwhere \\(\\bar{p}\\) is the sample proportion of the event of interest."
+    "text": "Interval Estimate of a Population Proportion\n\nThe general form of an interval estimate of a population proportion is:\n\n\\[\\bar{p} \\pm \\text{Margin of Error}\\]\n\nwhere \\(\\bar{p}\\) is the sample proportion of the event of interest."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-proportion-2",
@@ -1427,7 +1427,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-proportion-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate of a Population Proportion",
-    "text": "Interval Estimate of a Population Proportion\nThis formula is used to construct a confidence interval for the population proportion.\n\\[\n\\bar{p} \\pm z_{\\alpha/2} \\times \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\n\\]\n\n\\(\\bar{p}\\): The sample proportion, which serves as the point estimate of the population proportion.\n\\(z_{\\alpha/2}\\): The z-value for the chosen confidence level. It represents the number of standard deviations (from the standard normal distribution) needed to capture the central \\((1-\\alpha)\\%\\) of the data.\n\\(\\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\\): The standard error of the proportion, which estimates the standard deviation of the sampling distribution of the sample proportion.\n\n\\(\\bar{p}(1 - \\bar{p})\\): The variance of the sample proportion.\n\\(n\\): The sample size, representing the number of observations in the sample."
+    "text": "Interval Estimate of a Population Proportion\nThis formula is used to construct a confidence interval for the population proportion.\n\\[\\bar{p} \\pm z_{\\alpha/2} \\times \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\\]\n\n\\(\\bar{p}\\): The sample proportion, which serves as the point estimate of the population proportion.\n\\(z_{\\alpha/2}\\): The z-value for the chosen confidence level. It represents the number of standard deviations (from the standard normal distribution) needed to capture the central \\((1-\\alpha)\\%\\) of the data.\n\\(\\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\\): The standard error of the proportion, which estimates the standard deviation of the sampling distribution of the sample proportion.\n\n\\(\\bar{p}(1 - \\bar{p})\\): The variance of the sample proportion.\n\\(n\\): The sample size, representing the number of observations in the sample."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-proportion---example",
@@ -1441,7 +1441,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-proportion---example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interval Estimate of a Population Proportion - Example",
-    "text": "Interval Estimate of a Population Proportion - Example\n\\[\n\\bar{p} \\pm z_{\\alpha/2} \\times \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\n\\]\nwhere:\n\n\\(n = 900\\),\n\\(\\bar{p} = \\frac{396}{900} = 0.44\\),\n\\(z_{\\alpha/2} = 1.96\\)\n\n\\[\n0.44 \\pm 1.96 \\times \\sqrt{\\frac{0.44(1 - 0.44)}{900}} = 0.44 \\pm 0.0324\n\\]\nSurvey results enable us to state with 95% confidence that between 40.76% and 47.24% of all women golfers are satisfied with the availability of tee times."
+    "text": "Interval Estimate of a Population Proportion - Example\n\\[\\bar{p} \\pm z_{\\alpha/2} \\times \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\\]\nwhere:\n\n\\(n = 900\\),\n\\(\\bar{p} = \\frac{396}{900} = 0.44\\),\n\\(z_{\\alpha/2} = 1.96\\)\n\n\\[0.44 \\pm 1.96 \\times \\sqrt{\\frac{0.44(1 - 0.44)}{900}} = 0.44 \\pm 0.0324\\]\nSurvey results enable us to state with 95% confidence that between 40.76% and 47.24% of all women golfers are satisfied with the availability of tee times."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#interval-estimate-of-a-population-proportion---excel-example",
@@ -1455,14 +1455,14 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Sample Size for an Interval Estimate of a Population Proportion",
-    "text": "Sample Size for an Interval Estimate of a Population Proportion\n\nMargin of Error\n\\[\nE = z_{\\alpha/2} \\times \\sqrt{\\frac{\\bar{p}(1-\\bar{p})}{n}}\n\\]\nSolving for the necessary sample size \\(n\\), we get:\n\\[\nn = \\left( \\frac{z_{\\alpha/2}^2 \\times \\bar{p}(1-\\bar{p})}{E^2} \\right)\n\\]\nHowever, \\(\\bar{p}\\) will not be known until after we have selected the sample. We can use the planning value \\(p^*\\) for \\(\\bar{p}\\)."
+    "text": "Sample Size for an Interval Estimate of a Population Proportion\n\nMargin of Error\n\\[E = z_{\\alpha/2} \\times \\sqrt{\\frac{\\bar{p}(1-\\bar{p})}{n}}\\]\nSolving for the necessary sample size \\(n\\), we get:\n\\[n = \\left( \\frac{z_{\\alpha/2}^2 \\times \\bar{p}(1-\\bar{p})}{E^2} \\right)\\]\nHowever, \\(\\bar{p}\\) will not be known until after we have selected the sample. We can use the planning value \\(p^*\\) for \\(\\bar{p}\\)."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion-2",
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Sample Size for an Interval Estimate of a Population Proportion",
-    "text": "Sample Size for an Interval Estimate of a Population Proportion\n\nNecessary Sample Size:\n\\[\nn = \\left( \\frac{z_{\\alpha/2}^2 \\times p^*(1-p^*)}{E^2} \\right)\n\\]\nThe planning value \\(p^*\\) can be chosen by one of the following procedures:\n\n\nPrevious Studies: Use the sample proportion from a previous study or similar survey as \\(p^*\\).\nPilot Study: Conduct a preliminary survey and use the sample proportion from that study as \\(p^*\\).\nBest Guess: Use a judgment or “best guess” based on available information or expert opinion.\nConservative Approach: If no prior information is available, use \\(p^* = 0.5\\) as it maximizes the sample size and provides the most conservative estimate. This is because the product \\(p^*(1 - p^*)\\) is maximized when \\(p^* = 0.5\\)."
+    "text": "Sample Size for an Interval Estimate of a Population Proportion\n\nNecessary Sample Size:\n\\[n = \\left( \\frac{z_{\\alpha/2}^2 \\times p^*(1-p^*)}{E^2} \\right)\\]\nThe planning value \\(p^*\\) can be chosen by one of the following procedures:\n\n\nPrevious Studies: Use the sample proportion from a previous study or similar survey as \\(p^*\\).\nPilot Study: Conduct a preliminary survey and use the sample proportion from that study as \\(p^*\\).\nBest Guess: Use a judgment or “best guess” based on available information or expert opinion.\nConservative Approach: If no prior information is available, use \\(p^* = 0.5\\) as it maximizes the sample size and provides the most conservative estimate. This is because the product \\(p^*(1 - p^*)\\) is maximized when \\(p^* = 0.5\\)."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion---example",
@@ -1476,7 +1476,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion---example-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Sample Size for an Interval Estimate of a Population Proportion - Example",
-    "text": "Sample Size for an Interval Estimate of a Population Proportion - Example\nCalculations:\n\\[\n  E = z_{\\alpha/2} \\times \\sqrt{\\frac{p^*(1-p^*)}{n}} = .025\n  \\]\nAt 95% confidence \\(z_{0.025} = 1.96\\). Assume \\(p^* = 0.44\\).\n\\[\n  n = \\left( \\frac{z_{\\alpha/2}^2 \\times p^*(1-p^*)}{E^2} \\right) = \\left( \\frac{(1.96)^2 (0.44)(0.56)}{(0.025)^2} \\right) = 1,514.5\n  \\]\nConclusion: A sample of size 1,515 is needed to reach a desired precision of \\(\\pm\\) 0.025 at 95% confidence."
+    "text": "Sample Size for an Interval Estimate of a Population Proportion - Example\nCalculations:\n\\[  E = z_{\\alpha/2} \\times \\sqrt{\\frac{p^*(1-p^*)}{n}} = .025\n  \\]\nAt 95% confidence \\(z_{0.025} = 1.96\\). Assume \\(p^* = 0.44\\).\n\\[  n = \\left( \\frac{z_{\\alpha/2}^2 \\times p^*(1-p^*)}{E^2} \\right) = \\left( \\frac{(1.96)^2 (0.44)(0.56)}{(0.025)^2} \\right) = 1,514.5\n  \\]\nConclusion: A sample of size 1,515 is needed to reach a desired precision of \\(\\pm\\) 0.025 at 95% confidence."
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#sample-size-for-an-interval-estimate-of-a-population-proportion---example-2",
@@ -1497,7 +1497,7 @@
     "href": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#summary-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Summary",
-    "text": "Summary\n\n\n\n\nCI for \\(\\bar{p}\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{p}\\) is approximately normal. (\n\nCheck \\(n\\bar{p} \\geq 5\\) and \\(n(1 - \\bar{p}) \\geq 5\\).\n\n\nCalculate the standard error of \\(\\bar{p}\\): \\[\nse = \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\n\\]\nIdentify \\(z\\) for your specified level of confidence.\nCalculate the interval: \\[\n\\bar{p} \\pm z \\times se\n\\]\n\n\n\nCI for \\(\\mu\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{x}\\) is approximately normal.\n\nCheck \\(n \\geq 30\\) or underlying population distribution normal.\n\n\nCalculate the standard error of \\(\\bar{x}\\): \\[\nse = \\frac{s}{\\sqrt{n}}\n\\]\nIdentify \\(t\\) for your specified level of confidence \\[\n(df = n - 1)\n\\]\nCalculate the interval: \\[\n\\bar{x} \\pm t \\times se\n\\]"
+    "text": "Summary\n\n\n\n\nCI for \\(\\bar{p}\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{p}\\) is approximately normal. (\n\nCheck \\(n\\bar{p} \\geq 5\\) and \\(n(1 - \\bar{p}) \\geq 5\\).\n\n\nCalculate the standard error of \\(\\bar{p}\\): \\[se = \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}\\]\nIdentify \\(z\\) for your specified level of confidence.\nCalculate the interval: \\[\\bar{p} \\pm z \\times se\\]\n\n\n\nCI for \\(\\mu\\)\n\n\nCheck assumptions.\n\nRandomization\nIndependence\nThe sampling distribution of \\(\\bar{x}\\) is approximately normal.\n\nCheck \\(n \\geq 30\\) or underlying population distribution normal.\n\n\nCalculate the standard error of \\(\\bar{x}\\): \\[se = \\frac{s}{\\sqrt{n}}\\]\nIdentify \\(t\\) for your specified level of confidence \\[(df = n - 1)\\]\nCalculate the interval: \\[\\bar{x} \\pm t \\times se\\]"
   },
   {
     "objectID": "lecture_slides/08_chapter_interval_estimation/08_chapter_interval_estimation.html#summary-2",
@@ -3565,14 +3565,14 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#general-linear-model-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "General Linear Model",
-    "text": "General Linear Model\n\nModels in which the parameters \\((\\beta_0, \\beta_1, \\ldots, \\beta_p)\\) all have exponents of one are called linear models.\nA general linear model involving \\(p\\) independent variables (\\(z_i\\)’s) is:\n\n\n\\[\ny = \\beta_0 + \\beta_1 z_1 + \\beta_2 z_2 + \\ldots + \\beta_p z_p + \\epsilon\n\\]\nwhere each independent variable \\(z_i\\) is a (linear or nonlinear) function of \\(x_1, x_2, \\ldots, x_k\\) (the variables for which data have been collected).\n\nHere, \\(y\\) can be a function of the original response variable as well."
+    "text": "General Linear Model\n\nModels in which the parameters \\((\\beta_0, \\beta_1, \\ldots, \\beta_p)\\) all have exponents of one are called linear models.\nA general linear model involving \\(p\\) independent variables (\\(z_i\\)’s) is:\n\n\n\\[y = \\beta_0 + \\beta_1 z_1 + \\beta_2 z_2 + \\ldots + \\beta_p z_p + \\epsilon\\]\nwhere each independent variable \\(z_i\\) is a (linear or nonlinear) function of \\(x_1, x_2, \\ldots, x_k\\) (the variables for which data have been collected).\n\nHere, \\(y\\) can be a function of the original response variable as well."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#general-linear-model-2",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#general-linear-model-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "General Linear Model",
-    "text": "General Linear Model\n\nThe simplest case is when we have collected data for just one variable \\(x_1\\) and want to estimate \\(y\\) by using a straight-line relationship. In this case \\(z_1 = x_1\\).\nThis model is called a simple first-order model with one predictor variable.\n\n\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\epsilon\n\\]"
+    "text": "General Linear Model\n\nThe simplest case is when we have collected data for just one variable \\(x_1\\) and want to estimate \\(y\\) by using a straight-line relationship. In this case \\(z_1 = x_1\\).\nThis model is called a simple first-order model with one predictor variable.\n\n\n\\[y = \\beta_0 + \\beta_1 x_1 + \\epsilon\\]"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#modelling-curvilinear-relationships-1",
@@ -3586,14 +3586,14 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#modelling-curvilinear-relationships-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Modelling Curvilinear Relationships",
-    "text": "Modelling Curvilinear Relationships\n\nSome non-linear models can be expressed as a general linear model.\nTo account for a curvilinear relationship, we might consider a second-order model with one predictor variable \\((x_1)\\):\n\n\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_1^2 + \\epsilon\n\\]\n\nIt is a linear model because we can set: \\(z_1 = x_1\\) and \\(z_2 = x_1^2\\)."
+    "text": "Modelling Curvilinear Relationships\n\nSome non-linear models can be expressed as a general linear model.\nTo account for a curvilinear relationship, we might consider a second-order model with one predictor variable \\((x_1)\\):\n\n\n\\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_1^2 + \\epsilon\\]\n\nIt is a linear model because we can set: \\(z_1 = x_1\\) and \\(z_2 = x_1^2\\)."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#modelling-curvilinear-relationships-3",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#modelling-curvilinear-relationships-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Modelling Curvilinear Relationships",
-    "text": "Modelling Curvilinear Relationships\n\n\n\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\epsilon\n\\]\n\n\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_1^2 + \\epsilon\n\\]"
+    "text": "Modelling Curvilinear Relationships\n\n\n\n\\[y = \\beta_0 + \\beta_1 x_1 + \\epsilon\\]\n\n\n\\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_1^2 + \\epsilon\\]"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#interpretation-of-independent-variable-effect-in-a-second-order-model",
@@ -3607,7 +3607,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#marginal-effect-of-x_1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Marginal Effect of \\(x_1\\)",
-    "text": "Marginal Effect of \\(x_1\\)\n\nThe overall effect of \\(x_1\\) on \\(y\\) can be expressed as:\n\n\n\\[\n\\frac{dy}{dx_1} = \\beta_1 + 2\\beta_2 x_1\n\\]\n\nThis shows that the effect of \\(x_1\\) on \\(y\\) changes as \\(x_1\\) increases or decreases due to the presence of the quadratic term \\(x_1^2\\).\nInstead of a constant change (as in linear models), the presence of \\(2\\beta_2 x_1\\) shows a varying slope depending on the value of \\(x_1\\)."
+    "text": "Marginal Effect of \\(x_1\\)\n\nThe overall effect of \\(x_1\\) on \\(y\\) can be expressed as:\n\n\n\\[\\frac{dy}{dx_1} = \\beta_1 + 2\\beta_2 x_1\\]\n\nThis shows that the effect of \\(x_1\\) on \\(y\\) changes as \\(x_1\\) increases or decreases due to the presence of the quadratic term \\(x_1^2\\).\nInstead of a constant change (as in linear models), the presence of \\(2\\beta_2 x_1\\) shows a varying slope depending on the value of \\(x_1\\)."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#practical-interpretation",
@@ -3621,35 +3621,35 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#interaction-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Interaction",
-    "text": "Interaction\n\nIf the original data set consists of observations for \\(y\\) and two independent variables, \\(x_1\\) and \\(x_2\\), we might develop a second-order model with two predictor variables \\((x_1\\) and \\(x_2)\\) with interaction:\n\n\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\beta_3 x_1 x_2 + \\epsilon\n\\]\n\nThe variable \\(x_1 x_2\\) is added to account for the potential effects of the two variables acting together.\n\\(\\beta_3\\) measures the interaction effect."
+    "text": "Interaction\n\nIf the original data set consists of observations for \\(y\\) and two independent variables, \\(x_1\\) and \\(x_2\\), we might develop a second-order model with two predictor variables \\((x_1\\) and \\(x_2)\\) with interaction:\n\n\n\\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\beta_3 x_1 x_2 + \\epsilon\\]\n\nThe variable \\(x_1 x_2\\) is added to account for the potential effects of the two variables acting together.\n\\(\\beta_3\\) measures the interaction effect."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-interaction",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-interaction",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Interaction",
-    "text": "Example: Interaction\nLets check the regression study conducted by Tyler Personal Care for one of its new shampoo products. Two factors believed to have the most influence on sales are:\n\nUnit selling price\nAdvertising expenditure\n\nTo investigate the effects of these two variables on sales, prices of $2.00, $2.50, and $3.00 were paired with advertising expenditures of $50,000 and $100,000 in 24 test markets."
+    "text": "Example: Interaction\nLet’s check the regression study conducted by Tyler Personal Care for one of its new shampoo products. Two factors believed to have the most influence on sales are:\n\nUnit selling price\nAdvertising expenditure\n\nTo investigate the effects of these two variables on sales, prices of $2.00, $2.50, and $3.00 were paired with advertising expenditures of $50,000 and $100,000 in 24 test markets."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-difference-in-mean-sales",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-difference-in-mean-sales",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Difference in Mean Sales",
-    "text": "Example: Difference in Mean Sales\n\n\nMean Sales (1000s) for the Tyler Personal Care Example\n\n\n\nAdvertising Expenditure\n$2.00\n$2.50\n$3.00\n\n\n\n\n$50,000\n461\n364\n332\n\n\n$100,000\n808\n646\n375\n\n\n\n\n\n\nWith a price of $2.00, the difference in mean sales between advertising expenditures of $50,000 and $100,000 is:\n\\[\n808,000 - 461,000 = 347,000 \\, units\n\\]\nWhen the price is $2.50, the difference is:\n\\[\n646,000 - 364,000 = 282,000 \\, units\n\\]\nWhen the price is $3.00, the difference is:\n\\[\n375,000 - 332,000 = 43,000 \\, units\n\\]\n\n\nClearly, the difference in mean sales between advertising expenditures depends on the price of the product. The effect of increased advertising expenditure diminishes at higher selling prices, providing evidence of interaction between the price and advertising expenditure variables."
+    "text": "Example: Difference in Mean Sales\n\n\nMean Sales (1000s) for the Tyler Personal Care Example\n\n\n\nAdvertising Expenditure\n$2.00\n$2.50\n$3.00\n\n\n\n\n$50,000\n461\n364\n332\n\n\n$100,000\n808\n646\n375\n\n\n\n\n\n\nWith a price of $2.00, the difference in mean sales between advertising expenditures of $50,000 and $100,000 is:\n\\[808,000 - 461,000 = 347,000 \\, units\\]\nWhen the price is $2.50, the difference is:\n\\[646,000 - 364,000 = 282,000 \\, units\\]\nWhen the price is $3.00, the difference is:\n\\[375,000 - 332,000 = 43,000 \\, units\\]\n\n\nClearly, the difference in mean sales between advertising expenditures depends on the price of the product. The effect of increased advertising expenditure diminishes at higher selling prices, providing evidence of interaction between the price and advertising expenditure variables."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-regression-model-with-interaction",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-regression-model-with-interaction",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Regression Model with Interaction",
-    "text": "Example: Regression Model with Interaction\n\nTo account for the effect of interaction, we use the following regression model:\n\\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\beta_3 x_1 x_2 + \\epsilon\n\\]\nWhere:\n\n\\(y\\) = unit sales (1000s)\n\\(x_1\\) = price ($)\n\\(x_2\\) = advertising expenditure ($1000s)"
+    "text": "Example: Regression Model with Interaction\n\nTo account for the effect of interaction, we use the following regression model:\n\\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\beta_3 x_1 x_2 + \\epsilon\\]\nWhere:\n\n\\(y\\) = unit sales (1000s)\n\\(x_1\\) = price ($)\n\\(x_2\\) = advertising expenditure ($1000s)"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-estimated-regression-equation",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-estimated-regression-equation",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Estimated Regression Equation",
-    "text": "Example: Estimated Regression Equation\nUsing the estimated regression equation:\n\\[\n\\text{Sales} = -275.8333 + 175 \\, \\text{Price} + 19.68 \\, \\text{AdvExp} - 6.08 \\, \\text{PriceAdv}\n\\]\nWhere:\n\nSales = unit sales (1000s)\nPrice = price of the product ($)\nAdvExp = advertising expenditure ($1000s)\nPriceAdv = interaction term (Price times AdvExp)"
+    "text": "Example: Estimated Regression Equation\nUsing the estimated regression equation:\n\\[\\text{Sales} = -275.8333 + 175 \\, \\text{Price} + 19.68 \\, \\text{AdvExp} - 6.08 \\, \\text{PriceAdv}\\]\nWhere:\n\nSales = unit sales (1000s)\nPrice = price of the product ($)\nAdvExp = advertising expenditure ($1000s)\nPriceAdv = interaction term (Price times AdvExp)"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-significance-of-interaction",
@@ -3670,7 +3670,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-marginal-effects",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Marginal Effects",
-    "text": "Example: Marginal Effects\n\nEffect of \\(x_1\\):\n\n\n\\[\n\\frac{\\partial y}{\\partial x_1} = \\beta_1 + \\beta_3 x_2\n\\]\n\nEffect of \\(x_2\\):\n\n\n\n\\[\n\\frac{\\partial y}{\\partial x_2} = \\beta_2 + \\beta_3 x_1\n\\]\n\n\nThe effect of \\(x_1\\) on \\(y\\) depends on \\(x_2\\), and the effect of \\(x_2\\) on \\(y\\) depends on \\(x_1\\)."
+    "text": "Example: Marginal Effects\n\nEffect of \\(x_1\\):\n\n\n\\[\\frac{\\partial y}{\\partial x_1} = \\beta_1 + \\beta_3 x_2\\]\n\nEffect of \\(x_2\\):\n\n\n\n\\[\\frac{\\partial y}{\\partial x_2} = \\beta_2 + \\beta_3 x_1\\]\n\n\nThe effect of \\(x_1\\) on \\(y\\) depends on \\(x_2\\), and the effect of \\(x_2\\) on \\(y\\) depends on \\(x_1\\)."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-interpretation-of-interaction-effect",
@@ -3726,42 +3726,42 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-log-transformation",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example: Log Transformation",
-    "text": "Example: Log Transformation\n\nPredict Miles-Per-Gallon (MPG) according to the automobile Weight (in pounds):\n\n\n\n\\[\n\\text{MPG} = 56.0957 - 0.0116 \\times \\text{Weight}\n\\]\n\n\n\n\n\n\n\n\n\n\nThe pattern does not look like the the horizontal band we should expect to find if the assumptions about the error term are valid.\nVariability in the residuals appears to increase as the value of \\(\\hat{y}\\) increases.\n\n\n\n\n\\[\n\\text{LnMPG} = 4.5242 - 0.0005 \\times \\text{Weight}\n\\]\n\n\n\n\n\n\n\n\n\n\nThe wedge-shaped pattern disappeared.\nThe model with the logarithm of miles per gallon as the dependent variable provides an excellent fit to the oberved data."
+    "text": "Example: Log Transformation\n\nPredict Miles-Per-Gallon (MPG) according to the automobile Weight (in pounds):\n\n\n\n\\[\\text{MPG} = 56.0957 - 0.0116 \\times \\text{Weight}\\]\n\n\n\n\n\n\n\n\n\n\nThe pattern does not look like the the horizontal band we should expect to find if the assumptions about the error term are valid.\nVariability in the residuals appears to increase as the value of \\(\\hat{y}\\) increases.\n\n\n\n\n\\[\\text{LnMPG} = 4.5242 - 0.0005 \\times \\text{Weight}\\]\n\n\n\n\n\n\n\n\n\n\nThe wedge-shaped pattern disappeared.\nThe model with the logarithm of miles per gallon as the dependent variable provides an excellent fit to the oberved data."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#nonlinear-models-that-are-intrinsically-linear-1",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#nonlinear-models-that-are-intrinsically-linear-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Nonlinear Models That Are Intrinsically Linear",
-    "text": "Nonlinear Models That Are Intrinsically Linear\n\nModels in which the parameters \\(\\beta_0, \\beta_1, \\ldots, \\beta_p\\) have exponents other than one are called nonlinear models.\nFor the case of the exponential model, we can perform a transformation of variables that will enable us to perform regression analysis using the general linear model.\nThe exponential model involves the following regression equation:\n\\[\nE(y) = \\beta_0 \\beta_1^x\n\\]\nThis model is appropriate when the dependent variable \\(y\\) increases or decreases by a constant percentage, instead of by a fixed amount, as \\(x\\) increases."
+    "text": "Nonlinear Models That Are Intrinsically Linear\n\nModels in which the parameters \\(\\beta_0, \\beta_1, \\ldots, \\beta_p\\) have exponents other than one are called nonlinear models.\nFor the case of the exponential model, we can perform a transformation of variables that will enable us to perform regression analysis using the general linear model.\nThe exponential model involves the following regression equation:\n\\[E(y) = \\beta_0 \\beta_1^x\\]\nThis model is appropriate when the dependent variable \\(y\\) increases or decreases by a constant percentage, instead of by a fixed amount, as \\(x\\) increases."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-of-exponential-model",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#example-of-exponential-model",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Example of Exponential Model",
-    "text": "Example of Exponential Model\nSuppose sales for a product \\(y\\) are related to advertising expenditure \\(x\\) (in $1000s) according to the following regression equation:\n\\[\nE(y) = 500(1.2)^x\n\\] Thus,\n\nfor \\(x = 1\\), \\(E(y) = 500(1.2)^1 = 600\\)\nfor \\(x = 2\\), \\(E(y) = 500(1.2)^2 = 720\\)\nfor \\(x = 3\\), \\(E(y) = 500(1.2)^3 = 864\\)\n\nNote that \\(E(y)\\) is not increasing by a constant amount in this case, but by a constant percentage. The percentage increase is 20%."
+    "text": "Example of Exponential Model\nSuppose sales for a product \\(y\\) are related to advertising expenditure \\(x\\) (in $1000s) according to the following regression equation:\n\\[E(y) = 500(1.2)^x\\] Thus,\n\nfor \\(x = 1\\), \\(E(y) = 500(1.2)^1 = 600\\)\nfor \\(x = 2\\), \\(E(y) = 500(1.2)^2 = 720\\)\nfor \\(x = 3\\), \\(E(y) = 500(1.2)^3 = 864\\)\n\nNote that \\(E(y)\\) is not increasing by a constant amount in this case, but by a constant percentage. The percentage increase is 20%."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#logarithmic-transformation-of-the-model",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#logarithmic-transformation-of-the-model",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Logarithmic Transformation of the Model",
-    "text": "Logarithmic Transformation of the Model\n\nWe can transform this nonlinear model to a linear model by taking the natural logarithm of both sides of the equation:\n\\[\n\\ln E(y) = \\ln \\beta_0 + x \\ln \\beta_1\n\\]"
+    "text": "Logarithmic Transformation of the Model\n\nWe can transform this nonlinear model to a linear model by taking the natural logarithm of both sides of the equation:\n\\[\\ln E(y) = \\ln \\beta_0 + x \\ln \\beta_1\\]"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#linearized-model",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#linearized-model",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linearized Model",
-    "text": "Linearized Model\n\nNow, if we let \\(y' = \\ln E(y)\\), \\(\\beta'_0 = \\ln \\beta_0\\), and \\(\\beta'_1 = \\ln \\beta_1\\), we can rewrite the equation as:\n\\[\ny' = \\beta'_0 + \\beta'_1 x\n\\]\nThe formulas for simple linear regression can now be used to develop estimates of \\(\\beta'_0\\) and \\(\\beta'_1\\). Denoting the estimates as \\(b'_0\\) and \\(b'_1\\), leads to the following estimated regression equation:\n\\[\n\\hat{y'} = b'_0 + b'_1 x\n\\]\nTo obtain predictions of the original dependent variable \\(y\\) given a value of \\(x\\), we would first substitute the value of \\(x\\) into the equation above to compute \\(\\hat{y'}\\), and then raise \\(e\\) to the power of \\(\\hat{y'}\\) to obtain the prediction of \\(y\\), or the expected value of \\(y\\), in its original units."
+    "text": "Linearized Model\n\nNow, if we let \\(y' = \\ln E(y)\\), \\(\\beta'_0 = \\ln \\beta_0\\), and \\(\\beta'_1 = \\ln \\beta_1\\), we can rewrite the equation as:\n\\[y' = \\beta'_0 + \\beta'_1 x\\]\nThe formulas for simple linear regression can now be used to develop estimates of \\(\\beta'_0\\) and \\(\\beta'_1\\). Denoting the estimates as \\(b'_0\\) and \\(b'_1\\), leads to the following estimated regression equation:\n\\[\\hat{y'} = b'_0 + b'_1 x\\]\nTo obtain predictions of the original dependent variable \\(y\\) given a value of \\(x\\), we would first substitute the value of \\(x\\) into the equation above to compute \\(\\hat{y'}\\), and then raise \\(e\\) to the power of \\(\\hat{y'}\\) to obtain the prediction of \\(y\\), or the expected value of \\(y\\), in its original units."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#linearized-model---example-prediction",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#linearized-model---example-prediction",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Linearized Model - Example Prediction",
-    "text": "Linearized Model - Example Prediction\nGiven the estimates:\n\n\\(b'_0 = 3.5\\)\n\\(b'_1 = 0.2\\)\n\nLet’s predict \\(y\\) when the advertising expenditure \\(x = 5\\) (in $1000s).\nUsing the linearized equation we calculate \\(y'\\):\n\\[\ny' = b'_0 + b'_1 \\cdot x = 3.5 + 0.2 \\cdot 5 = 4.5\n\\]\nNow, exponentiate \\(y'\\) to get the predicted \\(y\\):\n\\[\ny = e^{4.5} \\approx 90.02\n\\]\nThus, the predicted sales \\(y\\) when the advertising expenditure is 5 (in $1000s) is approximately 90 units (in $1000s)."
+    "text": "Linearized Model - Example Prediction\nGiven the estimates:\n\n\\(b'_0 = 3.5\\)\n\\(b'_1 = 0.2\\)\n\nLet’s predict \\(y\\) when the advertising expenditure \\(x = 5\\) (in $1000s).\nUsing the linearized equation we calculate \\(y'\\):\n\\[y' = b'_0 + b'_1 \\cdot x = 3.5 + 0.2 \\cdot 5 = 4.5\\]\nNow, exponentiate \\(y'\\) to get the predicted \\(y\\):\n\\[y = e^{4.5} \\approx 90.02\\]\nThus, the predicted sales \\(y\\) when the advertising expenditure is 5 (in $1000s) is approximately 90 units (in $1000s)."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#other-transformations-to-consider-1",
@@ -3866,49 +3866,49 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adding Variables in Regression Models: F-test",
-    "text": "Adding Variables in Regression Models: F-test\nWe can use an F-test to determine whether it is advantageous to add one or more independent variables to a multiple regression model.\nThis is based on determining the reduction in the error sum of squares (SSE) resulting from adding variables.\nThe null and alternative hypotheses are defined as:\n\\[\nH_0: \\beta_{q+1} = \\beta_{q+2} = \\cdots = \\beta_p = 0\n\\]\n\\[\nH_a: \\text{One or more of the parameters is not equal to zero}\n\\]\nwhere \\(q\\) is the number of independent variables in the first model."
+    "text": "Adding Variables in Regression Models: F-test\nWe can use an F-test to determine whether it is advantageous to add one or more independent variables to a multiple regression model.\nThis is based on determining the reduction in the error sum of squares (SSE) resulting from adding variables.\nThe null and alternative hypotheses are defined as:\n\\[H_0: \\beta_{q+1} = \\beta_{q+2} = \\cdots = \\beta_p = 0\\]\n\\[H_a: \\text{One or more of the parameters is not equal to zero}\\]\nwhere \\(q\\) is the number of independent variables in the first model."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-1",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-1",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adding Variables in Regression Models: F-test",
-    "text": "Adding Variables in Regression Models: F-test\nLet’s illustrate this using the Butler Trucking example.\nThe regression equation with miles traveled \\(x_1\\) as the only independent variable is:\n\\[\n\\hat{y} = 1.2739 + 0.0678x_1\n\\]\nThe error sum of squares for this model is:\n\\[\nSSE(x_1) = 8.0287\n\\]"
+    "text": "Adding Variables in Regression Models: F-test\nLet’s illustrate this using the Butler Trucking example.\nThe regression equation with miles traveled \\(x_1\\) as the only independent variable is:\n\\[\\hat{y} = 1.2739 + 0.0678x_1\\]\nThe error sum of squares for this model is:\n\\[SSE(x_1) = 8.0287\\]"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-2",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-2",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adding Variables in Regression Models: F-test",
-    "text": "Adding Variables in Regression Models: F-test\nWhen the number of deliveries \\(x_2\\) is added, the regression equation becomes:\n\\[\n\\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2\n\\]\nThe error sum of squares for this model is:\n\\[\nSSE(x_1, x_2) = 2.2994\n\\]"
+    "text": "Adding Variables in Regression Models: F-test\nWhen the number of deliveries \\(x_2\\) is added, the regression equation becomes:\n\\[\\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2\\]\nThe error sum of squares for this model is:\n\\[SSE(x_1, x_2) = 2.2994\\]"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-3",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-3",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adding Variables in Regression Models: F-test",
-    "text": "Adding Variables in Regression Models: F-test\nThe reduction in SSE from adding \\(x_2\\) to the model is:\n\\[\nSSE(x_1) - SSE(x_1, x_2) = 8.0287 - 2.2994 = 5.7293\n\\]\nWe can conduct a F-test to determine if this reduction is significant:\n\\[\nF = \\frac{\\frac{SSE(x_1) - SSE(x_1, x_2)}{1}}{\\frac{SSE(x_1, x_2)}{n - p - 1}}\n\\]"
+    "text": "Adding Variables in Regression Models: F-test\nThe reduction in SSE from adding \\(x_2\\) to the model is:\n\\[SSE(x_1) - SSE(x_1, x_2) = 8.0287 - 2.2994 = 5.7293\\]\nWe can conduct a F-test to determine if this reduction is significant:\n\\[F = \\frac{\\frac{SSE(x_1) - SSE(x_1, x_2)}{1}}{\\frac{SSE(x_1, x_2)}{n - p - 1}}\\]"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-4",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-4",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adding Variables in Regression Models: F-test",
-    "text": "Adding Variables in Regression Models: F-test\n\nSubstituting the values:\n\\[\nF = \\frac{5.7293}{1} \\Big/ \\frac{2.2994}{7} = 17.44\n\\] Where,\n\n\\(n = 10\\)\n\\(p = 2\\)\n\nConclusion from F-Test\nUsing Excel, we obtain a \\(p\\)-value of \\(0.0042\\) for the calculated F-statistic. Since the \\(p\\)-value is less than the significance level \\(\\alpha = 0.05,\\) we reject the null hypothesis. Thus, adding \\(x_2\\) results in a significant reduction in SSE.\nThe t-test and F-test are equivalent when only one independent variable is being added, and we can use either to assess significance."
+    "text": "Adding Variables in Regression Models: F-test\n\nSubstituting the values:\n\\[F = \\frac{5.7293}{1} \\Big/ \\frac{2.2994}{7} = 17.44\\] Where,\n\n\\(n = 10\\)\n\\(p = 2\\)\n\nConclusion from F-Test\nUsing Excel, we obtain a \\(p\\)-value of \\(0.0042\\) for the calculated F-statistic. Since the \\(p\\)-value is less than the significance level \\(\\alpha = 0.05,\\) we reject the null hypothesis. Thus, adding \\(x_2\\) results in a significant reduction in SSE.\nThe t-test and F-test are equivalent when only one independent variable is being added, and we can use either to assess significance."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-5",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-5",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adding Variables in Regression Models: F-test",
-    "text": "Adding Variables in Regression Models: F-test\nIn the stepwise regression, forward selection, and backward elimination procedures, the criterion for selecting an independent variable to add or delete from the model at each step is based on the F-statistic.\nSuppose we are considering adding \\(x_2\\) to a model involving \\(x_1\\) or deleting \\(x_2\\) from a model involving \\(x_1\\) and \\(x_2\\). To test whether the addition or deletion of \\(x_2\\) is statistically significant, the null and alternative hypotheses can be stated as follows:\n\\[\nH_0: \\beta_2 = 0\n\\]\n\\[\nH_a: \\beta_2 \\neq 0\n\\]"
+    "text": "Adding Variables in Regression Models: F-test\nIn the stepwise regression, forward selection, and backward elimination procedures, the criterion for selecting an independent variable to add or delete from the model at each step is based on the F-statistic.\nSuppose we are considering adding \\(x_2\\) to a model involving \\(x_1\\) or deleting \\(x_2\\) from a model involving \\(x_1\\) and \\(x_2\\). To test whether the addition or deletion of \\(x_2\\) is statistically significant, the null and alternative hypotheses can be stated as follows:\n\\[H_0: \\beta_2 = 0\\]\n\\[H_a: \\beta_2 \\neq 0\\]"
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-6",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#adding-variables-in-regression-models-f-test-6",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Adding Variables in Regression Models: F-test",
-    "text": "Adding Variables in Regression Models: F-test\nWe saw that:\n\\[\nF = \\frac{{SSE(x_1) - SSE(x_1, x_2)}}{1} \\div \\frac{{SSE(x_1, x_2)}}{n - p - 1}\n\\]\ncan be used as a criterion for determining whether the presence of \\(x_2\\) in the model causes a significant reduction in the error sum of squares.\nThe p-value corresponding to this F-statistic is used to determine whether an independent variable should be added or deleted from the regression model. The usual rejection rule applies: Reject \\(H_0\\) if p-value \\(\\leq \\alpha\\)."
+    "text": "Adding Variables in Regression Models: F-test\nWe saw that:\n\\[F = \\frac{{SSE(x_1) - SSE(x_1, x_2)}}{1} \\div \\frac{{SSE(x_1, x_2)}}{n - p - 1}\\]\ncan be used as a criterion for determining whether the presence of \\(x_2\\) in the model causes a significant reduction in the error sum of squares.\nThe p-value corresponding to this F-statistic is used to determine whether an independent variable should be added or deleted from the regression model. The usual rejection rule applies: Reject \\(H_0\\) if p-value \\(\\leq \\alpha\\)."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-overview",
@@ -3943,28 +3943,28 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-starting-point",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example: Starting Point",
-    "text": "Stepwise Regression Example: Starting Point\n\nInitial Model\n\nBegin with one predictor (for instance, Income) or a subset deemed important by domain knowledge.\nFit the model:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\epsilon.\n\\]\nSuppose Income is significant at \\(\\alpha=0.05\\). Keep Income in the model.\n\nEvaluating Other Predictors\n\nNext, consider adding Age or Education.\nFit two separate models, each adding one candidate variable:\n\n\\(\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\\)\n\\(\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_3 \\cdot \\text{Age} + \\epsilon.\\)\n\nCalculate p-values for \\(\\hat{\\beta}_2\\) and \\(\\hat{\\beta}_3\\). If Education has the lower p-value (below the “p-value to enter,” say 0.05), add Education to the model."
+    "text": "Stepwise Regression Example: Starting Point\n\nInitial Model\n\nBegin with one predictor (for instance, Income) or a subset deemed important by domain knowledge.\nFit the model:\n\n\\[\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\epsilon.\\]\nSuppose Income is significant at \\(\\alpha=0.05\\). Keep Income in the model.\n\nEvaluating Other Predictors\n\nNext, consider adding Age or Education.\nFit two separate models, each adding one candidate variable:\n\n\\(\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\\)\n\\(\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_3 \\cdot \\text{Age} + \\epsilon.\\)\n\nCalculate p-values for \\(\\hat{\\beta}_2\\) and \\(\\hat{\\beta}_3\\). If Education has the lower p-value (below the “p-value to enter,” say 0.05), add Education to the model."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-checking-for-removal",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-checking-for-removal",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example: Checking for Removal",
-    "text": "Stepwise Regression Example: Checking for Removal\nOnce you have a model with Income and Education, stepwise regression checks if Income or Education should be removed:\n\nRe-estimate:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\n\\]\nIf either predictor’s p-value exceeds “p-value to leave” (say 0.10), remove that predictor. Otherwise, both stay."
+    "text": "Stepwise Regression Example: Checking for Removal\nOnce you have a model with Income and Education, stepwise regression checks if Income or Education should be removed:\n\nRe-estimate:\n\n\\[\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\\]\nIf either predictor’s p-value exceeds “p-value to leave” (say 0.10), remove that predictor. Otherwise, both stay."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-considering-remaining-predictors",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-considering-remaining-predictors",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example: Considering Remaining Predictors",
-    "text": "Stepwise Regression Example: Considering Remaining Predictors\nIf Age is still not in the model, you check whether it can enter:\n\nFit:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\beta_3 \\cdot \\text{Age} + \\epsilon.\n\\]\nIf Age’s p-value is below the threshold, it is added; otherwise, it is excluded.\n\nContinue this process until no more additions or removals are justified."
+    "text": "Stepwise Regression Example: Considering Remaining Predictors\nIf Age is still not in the model, you check whether it can enter:\n\nFit:\n\n\\[\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\beta_3 \\cdot \\text{Age} + \\epsilon.\\]\nIf Age’s p-value is below the threshold, it is added; otherwise, it is excluded.\n\nContinue this process until no more additions or removals are justified."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-final-model",
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#stepwise-regression-example-final-model",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Stepwise Regression Example: Final Model",
-    "text": "Stepwise Regression Example: Final Model\nEventually, the procedure converges on a model, for example:\n\\[\n\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\n\\]\nThis indicates Income and Education meet the significance criteria for inclusion, while Age does not."
+    "text": "Stepwise Regression Example: Final Model\nEventually, the procedure converges on a model, for example:\n\\[\\text{Spending} = \\beta_0 + \\beta_1 \\cdot \\text{Income} + \\beta_2 \\cdot \\text{Education} + \\epsilon.\\]\nThis indicates Income and Education meet the significance criteria for inclusion, while Age does not."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#summary-of-the-stepwise-procedure",
@@ -3985,7 +3985,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#forward-selection-procedure",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Forward Selection: Procedure",
-    "text": "Forward Selection: Procedure\n\n\nStart with No Variables\n\nThe initial model includes no predictors: \\[\ny = \\beta_0 + \\epsilon.\n\\]\n\nEvaluate All Predictors for Entry\n\nFor each potential predictor not yet in the model, calculate the F-statistic (or equivalently, t-statistic for the coefficient) and its corresponding p-value.\np-Value to Enter: Each predictor is tested against a specified significance level (e.g., \\(\\alpha_{\\text{enter}}\\)). If the smallest p-value among all candidate predictors falls below \\(\\alpha_{\\text{enter}}\\), add that corresponding predictor to the model.\n\nRecalculate and Repeat\n\nAfter adding a predictor, recalculate the model parameters and evaluate the remaining predictors for entry. Continue this process of adding one variable at a time.\n\nTermination\n\nThe procedure stops when no remaining predictors meet the threshold for entry, meaning all p-values for excluded variables exceed \\(\\alpha_{\\text{enter}}\\).\n\n\n\n\nKey Difference from Stepwise: In forward selection, once a variable is included, it cannot be removed—even if adding subsequent variables renders it less significant."
+    "text": "Forward Selection: Procedure\n\n\nStart with No Variables\n\nThe initial model includes no predictors: \\[y = \\beta_0 + \\epsilon.\\]\n\nEvaluate All Predictors for Entry\n\nFor each potential predictor not yet in the model, calculate the F-statistic (or equivalently, t-statistic for the coefficient) and its corresponding p-value.\np-Value to Enter: Each predictor is tested against a specified significance level (e.g., \\(\\alpha_{\\text{enter}}\\)). If the smallest p-value among all candidate predictors falls below \\(\\alpha_{\\text{enter}}\\), add that corresponding predictor to the model.\n\nRecalculate and Repeat\n\nAfter adding a predictor, recalculate the model parameters and evaluate the remaining predictors for entry. Continue this process of adding one variable at a time.\n\nTermination\n\nThe procedure stops when no remaining predictors meet the threshold for entry, meaning all p-values for excluded variables exceed \\(\\alpha_{\\text{enter}}\\).\n\n\n\n\nKey Difference from Stepwise: In forward selection, once a variable is included, it cannot be removed—even if adding subsequent variables renders it less significant."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#forward-selection-limitations",
@@ -4006,7 +4006,7 @@
     "href": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-procedure",
     "title": " MGMT 30500: Business Statistics ",
     "section": "Backward Elimination: Procedure",
-    "text": "Backward Elimination: Procedure\n\n\nBegin with All Predictors\n\nThe initial model is: \\[\ny = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_k x_k + \\epsilon.\n\\]\n\nCompute p-values\n\nEstimate the coefficients and compute p-values (or equivalent F-statistics) for each predictor.\n\nRemove the Least Significant Variable\n\nIdentify the predictor with the largest p-value.\nIf that p-value exceeds the “p-value to leave” threshold, remove the corresponding variable from the model.\n\nRe-estimate and Repeat\n\nAfter removing a variable, re-fit the model and compute p-values again for the reduced set of predictors.\n\nContinue removing variables one at a time until no remaining predictors have p-values larger than \\(\\alpha_{\\text{remove}}\\).\n\nStop Criterion\n\nOnce no variable meets the removal criterion, the procedure ends. The final set of variables constitutes the chosen model.\n\n\n\n\nKey Restriction: Any predictor removed at an earlier step cannot be reconsidered for reentry in later steps."
+    "text": "Backward Elimination: Procedure\n\n\nBegin with All Predictors\n\nThe initial model is: \\[y = \\beta_0 + \\beta_1 x_1 + \\beta_2 x_2 + \\dots + \\beta_k x_k + \\epsilon.\\]\n\nCompute p-values\n\nEstimate the coefficients and compute p-values (or equivalent F-statistics) for each predictor.\n\nRemove the Least Significant Variable\n\nIdentify the predictor with the largest p-value.\nIf that p-value exceeds the “p-value to leave” threshold, remove the corresponding variable from the model.\n\nRe-estimate and Repeat\n\nAfter removing a variable, re-fit the model and compute p-values again for the reduced set of predictors.\n\nContinue removing variables one at a time until no remaining predictors have p-values larger than \\(\\alpha_{\\text{remove}}\\).\n\nStop Criterion\n\nOnce no variable meets the removal criterion, the procedure ends. The final set of variables constitutes the chosen model.\n\n\n\n\nKey Restriction: Any predictor removed at an earlier step cannot be reconsidered for reentry in later steps."
   },
   {
     "objectID": "lecture_slides/16_chapter_model_building/16_chapter_model_building.html#backward-elimination-limitations",

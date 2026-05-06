@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Professor Davi Moreira ">
   <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5ef896889b6f6a61ee8a14a51d301bed.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -178,9 +181,7 @@ Professor<br>Davi Moreira<br>
 <li class="fragment"><p>A <strong>general linear model</strong> involving <span class="math inline">\(p\)</span> independent variables (<span class="math inline">\(z_i\)</span>’s) is:</p></li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon\]</span></p>
 <p>where each independent variable <span class="math inline">\(z_i\)</span> is a (linear or nonlinear) function of <span class="math inline">\(x_1, x_2, \ldots, x_k\)</span> (the variables for which data have been collected).</p>
 <ul>
 <li class="fragment">Here, <span class="math inline">\(y\)</span> can be a function of the original response variable as well.</li>
@@ -194,9 +195,7 @@ y = \beta_0 + \beta_1 z_1 + \beta_2 z_2 + \ldots + \beta_p z_p + \epsilon
 <li class="fragment"><p>This model is called a <strong>simple first-order model</strong> with one predictor variable.</p></li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \epsilon\]</span></p>
 </div>
 </section></section>
 <section>
@@ -217,9 +216,7 @@ y = \beta_0 + \beta_1 x_1 + \epsilon
 <li class="fragment"><p>To account for a curvilinear relationship, we might consider a <strong>second-order model with one predictor variable</strong> <span class="math inline">\((x_1)\)</span>:</p></li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon\]</span></p>
 <ul>
 <li class="fragment">It is a linear model because we can set: <span class="math inline">\(z_1 = x_1\)</span> and <span class="math inline">\(z_2 = x_1^2\)</span>.</li>
 </ul>
@@ -230,14 +227,10 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon
 
 <img data-src="16_chapter_model_building_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \epsilon\]</span></p>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div style="font-size: 70%;">
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon\]</span></p>
 </div>
 </div></div>
 </section>
@@ -254,9 +247,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon
 <li class="fragment">The overall effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> can be expressed as:</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-\frac{dy}{dx_1} = \beta_1 + 2\beta_2 x_1
-\]</span></p>
+<p><span class="math display">\[\frac{dy}{dx_1} = \beta_1 + 2\beta_2 x_1\]</span></p>
 <ul>
 <li class="fragment"><p>This shows that the effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> changes as <span class="math inline">\(x_1\)</span> increases or decreases due to the presence of the quadratic term <span class="math inline">\(x_1^2\)</span>.</p></li>
 <li class="fragment"><p>Instead of a constant change (as in linear models), the presence of <span class="math inline">\(2\beta_2 x_1\)</span> shows a varying slope depending on the value of <span class="math inline">\(x_1\)</span>.</p></li>
@@ -282,9 +273,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_1^2 + \epsilon
 <li class="fragment">If the original data set consists of observations for <span class="math inline">\(y\)</span> and two independent variables, <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>, we might develop a <strong>second-order model with two predictor variables</strong> <span class="math inline">\((x_1\)</span> and <span class="math inline">\(x_2)\)</span> with interaction:</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon\]</span></p>
 <ul>
 <li class="fragment"><p>The variable <span class="math inline">\(x_1 x_2\)</span> is added to account for the potential effects of the two variables acting together.</p></li>
 <li class="fragment"><p><span class="math inline">\(\beta_3\)</span> measures the <strong>interaction effect</strong>.</p></li>
@@ -293,7 +282,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 </section>
 <section id="example-interaction" class="slide level2 center">
 <h2>Example: Interaction</h2>
-<p>Lets check the regression study conducted by Tyler Personal Care for one of its new shampoo products. Two factors believed to have the most influence on sales are:</p>
+<p>Let’s check the regression study conducted by Tyler Personal Care for one of its new shampoo products. Two factors believed to have the most influence on sales are:</p>
 <ul>
 <li><p>Unit selling price</p></li>
 <li><p>Advertising expenditure</p></li>
@@ -333,17 +322,11 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 <div style="font-size: 70%;">
 <ul>
 <li class="fragment"><p>With a price of $2.00, the difference in mean sales between advertising expenditures of $50,000 and $100,000 is:</p>
-<p><span class="math display">\[
-808,000 - 461,000 = 347,000 \, units
-\]</span></p></li>
+<p><span class="math display">\[808,000 - 461,000 = 347,000 \, units\]</span></p></li>
 <li class="fragment"><p>When the price is $2.50, the difference is:</p>
-<p><span class="math display">\[
-646,000 - 364,000 = 282,000 \, units
-\]</span></p></li>
+<p><span class="math display">\[646,000 - 364,000 = 282,000 \, units\]</span></p></li>
 <li class="fragment"><p>When the price is $3.00, the difference is:</p>
-<p><span class="math display">\[
-375,000 - 332,000 = 43,000 \, units
-\]</span></p></li>
+<p><span class="math display">\[375,000 - 332,000 = 43,000 \, units\]</span></p></li>
 </ul>
 <div class="fragment">
 <p>Clearly, the difference in mean sales between advertising expenditures depends on the price of the product. The effect of increased advertising expenditure diminishes at higher selling prices, providing evidence of interaction between the price and advertising expenditure variables.</p>
@@ -355,9 +338,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 <h2>Example: Regression Model with Interaction</h2>
 <p><br></p>
 <p>To account for the effect of interaction, we use the following regression model:</p>
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon\]</span></p>
 <p>Where:</p>
 <ul>
 <li class="fragment"><span class="math inline">\(y\)</span> = unit sales (1000s)</li>
@@ -368,9 +349,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 <section id="example-estimated-regression-equation" class="slide level2 center">
 <h2>Example: Estimated Regression Equation</h2>
 <p>Using the estimated regression equation:</p>
-<p><span class="math display">\[
-\text{Sales} = -275.8333 + 175 \, \text{Price} + 19.68 \, \text{AdvExp} - 6.08 \, \text{PriceAdv}
-\]</span></p>
+<p><span class="math display">\[\text{Sales} = -275.8333 + 175 \, \text{Price} + 19.68 \, \text{AdvExp} - 6.08 \, \text{PriceAdv}\]</span></p>
 <p>Where:</p>
 <ul>
 <li class="fragment"><strong>Sales</strong> = unit sales (1000s)</li>
@@ -402,17 +381,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 <li class="fragment"><strong>Effect of</strong> <span class="math inline">\(x_1\)</span>:</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-\frac{\partial y}{\partial x_1} = \beta_1 + \beta_3 x_2
-\]</span></p>
+<p><span class="math display">\[\frac{\partial y}{\partial x_1} = \beta_1 + \beta_3 x_2\]</span></p>
 <ul>
 <li class="fragment"><strong>Effect of</strong> <span class="math inline">\(x_2\)</span>:</li>
 </ul>
 </div>
 <div class="fragment">
-<p><span class="math display">\[
-\frac{\partial y}{\partial x_2} = \beta_2 + \beta_3 x_1
-\]</span></p>
+<p><span class="math display">\[\frac{\partial y}{\partial x_2} = \beta_2 + \beta_3 x_1\]</span></p>
 </div>
 <ul>
 <li class="fragment">The effect of <span class="math inline">\(x_1\)</span> on <span class="math inline">\(y\)</span> depends on <span class="math inline">\(x_2\)</span>, and the effect of <span class="math inline">\(x_2\)</span> on <span class="math inline">\(y\)</span> depends on <span class="math inline">\(x_1\)</span>.</li>
@@ -611,9 +586,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 <div class="columns">
 <div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div class="fragment">
-<p><span class="math display">\[
-\text{MPG} = 56.0957 - 0.0116 \times \text{Weight}
-\]</span></p>
+<p><span class="math display">\[\text{MPG} = 56.0957 - 0.0116 \times \text{Weight}\]</span></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -630,9 +603,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 </div>
 </div><div class="column" style="text-align: center; justify-content: center; align-items: center;">
 <div class="fragment">
-<p><span class="math display">\[
-\text{LnMPG} = 4.5242 - 0.0005 \times \text{Weight}
-\]</span></p>
+<p><span class="math display">\[\text{LnMPG} = 4.5242 - 0.0005 \times \text{Weight}\]</span></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -661,17 +632,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_1 x_2 + \epsilon
 <p>Models in which the parameters <span class="math inline">\(\beta_0, \beta_1, \ldots, \beta_p\)</span> have exponents other than one are called nonlinear models.</p>
 <p>For the case of the <strong>exponential model</strong>, we can perform a transformation of variables that will enable us to perform regression analysis using the general linear model.</p>
 <p>The exponential model involves the following regression equation:</p>
-<p><span class="math display">\[
-E(y) = \beta_0 \beta_1^x
-\]</span></p>
+<p><span class="math display">\[E(y) = \beta_0 \beta_1^x\]</span></p>
 <p>This model is appropriate when the dependent variable <span class="math inline">\(y\)</span> increases or decreases by a constant percentage, instead of by a fixed amount, as <span class="math inline">\(x\)</span> increases.</p>
 </section>
 <section id="example-of-exponential-model" class="slide level2 center">
 <h2>Example of Exponential Model</h2>
 <p>Suppose sales for a product <span class="math inline">\(y\)</span> are related to advertising expenditure <span class="math inline">\(x\)</span> (in $1000s) according to the following regression equation:</p>
-<p><span class="math display">\[
-E(y) = 500(1.2)^x
-\]</span> Thus,</p>
+<p><span class="math display">\[E(y) = 500(1.2)^x\]</span> Thus,</p>
 <ul>
 <li>for <span class="math inline">\(x = 1\)</span>, <span class="math inline">\(E(y) = 500(1.2)^1 = 600\)</span></li>
 <li>for <span class="math inline">\(x = 2\)</span>, <span class="math inline">\(E(y) = 500(1.2)^2 = 720\)</span></li>
@@ -683,21 +650,15 @@ E(y) = 500(1.2)^x
 <h2>Logarithmic Transformation of the Model</h2>
 <p><br></p>
 <p>We can transform this nonlinear model to a linear model by taking the natural logarithm of both sides of the equation:</p>
-<p><span class="math display">\[
-\ln E(y) = \ln \beta_0 + x \ln \beta_1
-\]</span></p>
+<p><span class="math display">\[\ln E(y) = \ln \beta_0 + x \ln \beta_1\]</span></p>
 </section>
 <section id="linearized-model" class="slide level2 center">
 <h2>Linearized Model</h2>
 <p><br></p>
 <p>Now, if we let <span class="math inline">\(y' = \ln E(y)\)</span>, <span class="math inline">\(\beta'_0 = \ln \beta_0\)</span>, and <span class="math inline">\(\beta'_1 = \ln \beta_1\)</span>, we can rewrite the equation as:</p>
-<p><span class="math display">\[
-y' = \beta'_0 + \beta'_1 x
-\]</span></p>
+<p><span class="math display">\[y' = \beta'_0 + \beta'_1 x\]</span></p>
 <p>The formulas for simple linear regression can now be used to develop estimates of <span class="math inline">\(\beta'_0\)</span> and <span class="math inline">\(\beta'_1\)</span>. Denoting the estimates as <span class="math inline">\(b'_0\)</span> and <span class="math inline">\(b'_1\)</span>, leads to the following estimated regression equation:</p>
-<p><span class="math display">\[
-\hat{y'} = b'_0 + b'_1 x
-\]</span></p>
+<p><span class="math display">\[\hat{y'} = b'_0 + b'_1 x\]</span></p>
 <p>To obtain predictions of the original dependent variable <span class="math inline">\(y\)</span> given a value of <span class="math inline">\(x\)</span>, we would first substitute the value of <span class="math inline">\(x\)</span> into the equation above to compute <span class="math inline">\(\hat{y'}\)</span>, and then raise <span class="math inline">\(e\)</span> to the power of <span class="math inline">\(\hat{y'}\)</span> to obtain the prediction of <span class="math inline">\(y\)</span>, or the expected value of <span class="math inline">\(y\)</span>, in its original units.</p>
 </section>
 <section id="linearized-model---example-prediction" class="slide level2 center">
@@ -709,13 +670,9 @@ y' = \beta'_0 + \beta'_1 x
 </ul>
 <p>Let’s predict <span class="math inline">\(y\)</span> when the advertising expenditure <span class="math inline">\(x = 5\)</span> (in $1000s).</p>
 <p>Using the linearized equation we calculate <span class="math inline">\(y'\)</span>:</p>
-<p><span class="math display">\[
-y' = b'_0 + b'_1 \cdot x = 3.5 + 0.2 \cdot 5 = 4.5
-\]</span></p>
+<p><span class="math display">\[y' = b'_0 + b'_1 \cdot x = 3.5 + 0.2 \cdot 5 = 4.5\]</span></p>
 <p>Now, exponentiate <span class="math inline">\(y'\)</span> to get the predicted <span class="math inline">\(y\)</span>:</p>
-<p><span class="math display">\[
-y = e^{4.5} \approx 90.02
-\]</span></p>
+<p><span class="math display">\[y = e^{4.5} \approx 90.02\]</span></p>
 <p>Thus, the predicted sales <span class="math inline">\(y\)</span> when the advertising expenditure is 5 (in $1000s) is approximately 90 units (in $1000s).</p>
 </section></section>
 <section>
@@ -1031,55 +988,37 @@ y = e^{4.5} \approx 90.02
 <p>We can use an F-test to determine whether it is advantageous to add one or more independent variables to a multiple regression model.</p>
 <p>This is based on determining the reduction in the error sum of squares (SSE) resulting from adding variables.</p>
 <p>The null and alternative hypotheses are defined as:</p>
-<p><span class="math display">\[
-H_0: \beta_{q+1} = \beta_{q+2} = \cdots = \beta_p = 0
-\]</span></p>
-<p><span class="math display">\[
-H_a: \text{One or more of the parameters is not equal to zero}
-\]</span></p>
+<p><span class="math display">\[H_0: \beta_{q+1} = \beta_{q+2} = \cdots = \beta_p = 0\]</span></p>
+<p><span class="math display">\[H_a: \text{One or more of the parameters is not equal to zero}\]</span></p>
 <p>where <span class="math inline">\(q\)</span> is the number of independent variables in the first model.</p>
 </section>
 <section id="adding-variables-in-regression-models-f-test-1" class="slide level2 center">
 <h2>Adding Variables in Regression Models: F-test</h2>
 <p>Let’s illustrate this using the Butler Trucking example.</p>
 <p>The regression equation with miles traveled <span class="math inline">\(x_1\)</span> as the only independent variable is:</p>
-<p><span class="math display">\[
-\hat{y} = 1.2739 + 0.0678x_1
-\]</span></p>
+<p><span class="math display">\[\hat{y} = 1.2739 + 0.0678x_1\]</span></p>
 <p>The error sum of squares for this model is:</p>
-<p><span class="math display">\[
-SSE(x_1) = 8.0287
-\]</span></p>
+<p><span class="math display">\[SSE(x_1) = 8.0287\]</span></p>
 </section>
 <section id="adding-variables-in-regression-models-f-test-2" class="slide level2 center">
 <h2>Adding Variables in Regression Models: F-test</h2>
 <p>When the number of deliveries <span class="math inline">\(x_2\)</span> is added, the regression equation becomes:</p>
-<p><span class="math display">\[
-\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2
-\]</span></p>
+<p><span class="math display">\[\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2\]</span></p>
 <p>The error sum of squares for this model is:</p>
-<p><span class="math display">\[
-SSE(x_1, x_2) = 2.2994
-\]</span></p>
+<p><span class="math display">\[SSE(x_1, x_2) = 2.2994\]</span></p>
 </section>
 <section id="adding-variables-in-regression-models-f-test-3" class="slide level2 center">
 <h2>Adding Variables in Regression Models: F-test</h2>
 <p>The reduction in SSE from adding <span class="math inline">\(x_2\)</span> to the model is:</p>
-<p><span class="math display">\[
-SSE(x_1) - SSE(x_1, x_2) = 8.0287 - 2.2994 = 5.7293
-\]</span></p>
+<p><span class="math display">\[SSE(x_1) - SSE(x_1, x_2) = 8.0287 - 2.2994 = 5.7293\]</span></p>
 <p>We can conduct a F-test to determine if this reduction is significant:</p>
-<p><span class="math display">\[
-F = \frac{\frac{SSE(x_1) - SSE(x_1, x_2)}{1}}{\frac{SSE(x_1, x_2)}{n - p - 1}}
-\]</span></p>
+<p><span class="math display">\[F = \frac{\frac{SSE(x_1) - SSE(x_1, x_2)}{1}}{\frac{SSE(x_1, x_2)}{n - p - 1}}\]</span></p>
 </section>
 <section id="adding-variables-in-regression-models-f-test-4" class="slide level2 center">
 <h2>Adding Variables in Regression Models: F-test</h2>
 <div style="font-size: 80%;">
 <p>Substituting the values:</p>
-<p><span class="math display">\[
-F = \frac{5.7293}{1} \Big/ \frac{2.2994}{7} = 17.44
-\]</span> Where,</p>
+<p><span class="math display">\[F = \frac{5.7293}{1} \Big/ \frac{2.2994}{7} = 17.44\]</span> Where,</p>
 <ul>
 <li><span class="math inline">\(n = 10\)</span></li>
 <li><span class="math inline">\(p = 2\)</span></li>
@@ -1093,19 +1032,13 @@ F = \frac{5.7293}{1} \Big/ \frac{2.2994}{7} = 17.44
 <h2>Adding Variables in Regression Models: F-test</h2>
 <p>In the stepwise regression, forward selection, and backward elimination procedures, the criterion for selecting an independent variable to add or delete from the model at each step is based on the F-statistic.</p>
 <p>Suppose we are considering adding <span class="math inline">\(x_2\)</span> to a model involving <span class="math inline">\(x_1\)</span> or deleting <span class="math inline">\(x_2\)</span> from a model involving <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. To test whether the addition or deletion of <span class="math inline">\(x_2\)</span> is statistically significant, the null and alternative hypotheses can be stated as follows:</p>
-<p><span class="math display">\[
-H_0: \beta_2 = 0
-\]</span></p>
-<p><span class="math display">\[
-H_a: \beta_2 \neq 0
-\]</span></p>
+<p><span class="math display">\[H_0: \beta_2 = 0\]</span></p>
+<p><span class="math display">\[H_a: \beta_2 \neq 0\]</span></p>
 </section>
 <section id="adding-variables-in-regression-models-f-test-6" class="slide level2 center">
 <h2>Adding Variables in Regression Models: F-test</h2>
 <p>We saw that:</p>
-<p><span class="math display">\[
-F = \frac{{SSE(x_1) - SSE(x_1, x_2)}}{1} \div \frac{{SSE(x_1, x_2)}}{n - p - 1}
-\]</span></p>
+<p><span class="math display">\[F = \frac{{SSE(x_1) - SSE(x_1, x_2)}}{1} \div \frac{{SSE(x_1, x_2)}}{n - p - 1}\]</span></p>
 <p>can be used as a criterion for determining whether the presence of <span class="math inline">\(x_2\)</span> in the model causes a significant reduction in the error sum of squares.</p>
 <p>The p-value corresponding to this F-statistic is used to determine whether an independent variable should be added or deleted from the regression model. The usual rejection rule applies: Reject <span class="math inline">\(H_0\)</span> if p-value <span class="math inline">\(\leq \alpha\)</span>.</p>
 </section></section>
@@ -1165,12 +1098,11 @@ F = \frac{{SSE(x_1) - SSE(x_1, x_2)}}{1} \div \frac{{SSE(x_1, x_2)}}{n - p - 1}
 <ol type="1">
 <li class="fragment"><strong>Initial Model</strong>
 <ul>
-<li class="fragment">Begin with one predictor (for instance, <strong>Income</strong>) or a subset deemed important by domain knowledge.</li>
-<li class="fragment">Fit the model:<br>
-<span class="math display">\[
-\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \epsilon.
-\]</span></li>
-<li class="fragment">Suppose <strong>Income</strong> is significant at <span class="math inline">\(\alpha=0.05\)</span>. Keep <strong>Income</strong> in the model.</li>
+<li class="fragment"><p>Begin with one predictor (for instance, <strong>Income</strong>) or a subset deemed important by domain knowledge.</p></li>
+<li class="fragment"><p>Fit the model:<br>
+</p>
+<p><span class="math display">\[\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \epsilon.\]</span></p></li>
+<li class="fragment"><p>Suppose <strong>Income</strong> is significant at <span class="math inline">\(\alpha=0.05\)</span>. Keep <strong>Income</strong> in the model.</p></li>
 </ul></li>
 <li class="fragment"><strong>Evaluating Other Predictors</strong>
 <ul>
@@ -1188,32 +1120,28 @@ F = \frac{{SSE(x_1) - SSE(x_1, x_2)}}{1} \div \frac{{SSE(x_1, x_2)}}{n - p - 1}
 <h2>Stepwise Regression Example: Checking for Removal</h2>
 <p>Once you have a model with <strong>Income</strong> and <strong>Education</strong>, stepwise regression checks if <strong>Income</strong> or <strong>Education</strong> should be removed:</p>
 <ol type="1">
-<li class="fragment">Re-estimate:<br>
-<span class="math display">\[
-\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \epsilon.
-\]</span></li>
-<li class="fragment">If either predictor’s p-value exceeds “p-value to leave” (say 0.10), remove that predictor. Otherwise, both stay.</li>
+<li class="fragment"><p>Re-estimate:<br>
+</p>
+<p><span class="math display">\[\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \epsilon.\]</span></p></li>
+<li class="fragment"><p>If either predictor’s p-value exceeds “p-value to leave” (say 0.10), remove that predictor. Otherwise, both stay.</p></li>
 </ol>
 </section>
 <section id="stepwise-regression-example-considering-remaining-predictors" class="slide level2 center">
 <h2>Stepwise Regression Example: Considering Remaining Predictors</h2>
 <p>If <strong>Age</strong> is still not in the model, you check whether it can enter:</p>
 <ol type="1">
-<li class="fragment">Fit:<br>
-<span class="math display">\[
-\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \beta_3 \cdot \text{Age} + \epsilon.
-\]</span></li>
-<li class="fragment">If <strong>Age</strong>’s p-value is below the threshold, it is added; otherwise, it is excluded.<br>
-</li>
-<li class="fragment">Continue this process until no more additions or removals are justified.</li>
+<li class="fragment"><p>Fit:<br>
+</p>
+<p><span class="math display">\[\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \beta_3 \cdot \text{Age} + \epsilon.\]</span></p></li>
+<li class="fragment"><p>If <strong>Age</strong>’s p-value is below the threshold, it is added; otherwise, it is excluded.<br>
+</p></li>
+<li class="fragment"><p>Continue this process until no more additions or removals are justified.</p></li>
 </ol>
 </section>
 <section id="stepwise-regression-example-final-model" class="slide level2 center">
 <h2>Stepwise Regression Example: Final Model</h2>
 <p>Eventually, the procedure converges on a model, for example:</p>
-<p><span class="math display">\[
-\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \epsilon.
-\]</span></p>
+<p><span class="math display">\[\text{Spending} = \beta_0 + \beta_1 \cdot \text{Income} + \beta_2 \cdot \text{Education} + \epsilon.\]</span></p>
 <p>This indicates <strong>Income</strong> and <strong>Education</strong> meet the significance criteria for inclusion, while <strong>Age</strong> does not.</p>
 </section>
 <section id="summary-of-the-stepwise-procedure" class="slide level2 center">
@@ -1444,9 +1372,7 @@ Here, **Income** and **Education** are the only significant predictors of **Spen
 <ol type="1">
 <li class="fragment"><strong>Start with No Variables</strong>
 <ul>
-<li class="fragment">The initial model includes <strong>no</strong> predictors: <span class="math display">\[
-y = \beta_0 + \epsilon.
-\]</span></li>
+<li class="fragment">The initial model includes <strong>no</strong> predictors: <span class="math display">\[y = \beta_0 + \epsilon.\]</span></li>
 </ul></li>
 <li class="fragment"><strong>Evaluate All Predictors for Entry</strong>
 <ul>
@@ -1520,9 +1446,7 @@ The forward selection procedure starts with no independent variables. It adds va
 <ol type="1">
 <li class="fragment"><strong>Begin with All Predictors</strong>
 <ul>
-<li class="fragment">The initial model is: <span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_k x_k + \epsilon.
-\]</span></li>
+<li class="fragment">The initial model is: <span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_k x_k + \epsilon.\]</span></li>
 </ul></li>
 <li class="fragment"><strong>Compute p-values</strong>
 <ul>
@@ -1955,13 +1879,14 @@ The procedure stops when none of the independent variables in the model has a p-
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

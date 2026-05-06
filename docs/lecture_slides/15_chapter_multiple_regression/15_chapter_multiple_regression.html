@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Professor Davi Moreira ">
   <title>MGMT 30500: Business Statistics –  MGMT 30500: Business Statistics </title>
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-c812a774c17cd743a31b19f8745c44ab.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-5ef896889b6f6a61ee8a14a51d301bed.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -237,9 +240,7 @@ Professor<br>Davi Moreira<br>
 <section id="multiple-regression-model" class="slide level2 center">
 <h2>Multiple Regression Model</h2>
 <p>The equation that describes how the dependent variable <span class="math inline">\(y\)</span> is related to the independent variables <span class="math inline">\(x_1, x_2, \ldots x_p\)</span> and an error term <span class="math inline">\(\epsilon\)</span> is:</p>
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p + \epsilon\]</span></p>
 <p>Where:</p>
 <ul>
 <li class="fragment"><p><span class="math inline">\(\beta_0, \beta_1, \beta_2, \dots, \beta_p\)</span> are the unknown parameters.</p></li>
@@ -250,9 +251,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p + \epsilon
 <section id="multiple-regression-equation" class="slide level2 center">
 <h2>Multiple Regression Equation</h2>
 <p>The equation that describes how the mean value of <span class="math inline">\(y\)</span> is related to <span class="math inline">\(x_1, x_2, \ldots x_p\)</span> is:</p>
-<p><span class="math display">\[
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
-\]</span></p>
+<p><span class="math display">\[E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p\]</span></p>
 <p><span class="math inline">\(\beta_1, \ldots, \beta_p\)</span> measure the marginal effects of the respective independent variables.</p>
 <p><br></p>
 <p>For example, <span class="math inline">\(\beta_1\)</span> is the change in <span class="math inline">\(E(y)\)</span> corresponding to a 1-unit increase in <span class="math inline">\(x_1\)</span>, when all other independent variables are held constant or when we control for all other independent variables.</p>
@@ -260,10 +259,8 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <section id="estimated-multiple-regression-equation" class="slide level2 center">
 <h2>Estimated Multiple Regression Equation</h2>
 <p><br></p>
-<p><span class="math display">\[
-\hat{y} = b_0 + b_1 x_1 + b_2 x_2 + \dots + b_p x_p
-\]</span></p>
-<p>A simple random sample is used to compute sample slopes <span class="math inline">\(b_0, b_1, b_2, \dots, b_p\)</span> that are used as the point estimators of the population slopes <span class="math inline">\(\beta_0, \beta_1, \beta_2, \dots, \beta_p\)</span>.</p>
+<p><span class="math display">\[\hat{y} = b_0 + b_1 x_1 + b_2 x_2 + \dots + b_p x_p\]</span></p>
+<p>A simple random sample is used to compute sample intercept and slopes <span class="math inline">\(b_0, b_1, b_2, \dots, b_p\)</span> that are used as the point estimators of the population intercept and slopes <span class="math inline">\(\beta_0, \beta_1, \beta_2, \dots, \beta_p\)</span>.</p>
 <p><br></p>
 <p>Hence, <span class="math inline">\(\hat{y}\)</span> estimates <span class="math inline">\(E(Y)\)</span>.</p>
 </section></section>
@@ -276,9 +273,7 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <h2>Least Squares Method</h2>
 <p><br></p>
 <p>Least Squares Criterion: Minimize the Sum of Squared Errors (SSE):</p>
-<p><span class="math display">\[
-\min \sum (y_i - \hat{y_i})^2
-\]</span></p>
+<p><span class="math display">\[\min \sum (y_i - \hat{y_i})^2\]</span></p>
 <p>Where <span class="math inline">\(y_i - \hat{y_i}\)</span> is the <span class="math inline">\(i\)</span>-th residual/error.</p>
 <p><br></p>
 <ul>
@@ -384,9 +379,7 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_p x_p
 <h2>Multiple Regression Model</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p>Suppose we believe that total daily travel time (<span class="math inline">\(y\)</span>) is related to the miles traveled (<span class="math inline">\(x_1\)</span>) and the number of deliveries made (<span class="math inline">\(x_2\)</span>) by the following multiple linear regression model:</p>
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon\]</span></p>
 <p>Where:</p>
 <ul>
 <li class="fragment"><p><span class="math inline">\(y\)</span> = Total travel time</p></li>
@@ -540,15 +533,11 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <h2>Estimated Regression Equation</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p>Prediction equation:</p>
-<p><span class="math display">\[
-\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2
-\]</span></p>
+<p><span class="math display">\[\hat{y} = -0.8687 + 0.0611x_1 + 0.9234x_2\]</span></p>
 <div class="fragment">
 <p><br></p>
 <p>For observation #1 where <span class="math inline">\(x_1 = 100\)</span>, <span class="math inline">\(x_2 = 4\)</span>, and <span class="math inline">\(y = 9.3\)</span>:</p>
-<p><span class="math display">\[
-\hat{y} = -0.8687 + 0.0611(100) + 0.9234(4) = 8.9385
-\]</span></p>
+<p><span class="math display">\[\hat{y} = -0.8687 + 0.0611(100) + 0.9234(4) = 8.9385\]</span></p>
 <p>Unexplained residual = <span class="math inline">\(y - \hat{y} = 9.3 - 8.9385 = 0.3615\)</span></p>
 </div>
 </section>
@@ -627,9 +616,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 </tr>
 </tbody>
 </table>
-<p><span class="math display">\[
-\sum (y_i - \bar{y})^2 = \sum (\hat{y_i} - \bar{y})^2 + \sum (y_i - \hat{y_i})^2
-\]</span></p>
+<p><span class="math display">\[\sum (y_i - \bar{y})^2 = \sum (\hat{y_i} - \bar{y})^2 + \sum (y_i - \hat{y_i})^2\]</span></p>
 <p>Where:</p>
 <ul>
 <li class="fragment"><p>SST = Total sum of squares (total variation of the response)</p></li>
@@ -696,15 +683,9 @@ df: SST = 9, SSE = 7, SSR = 2
 <section id="multiple-coefficient-of-determination-3" class="slide level2 center">
 <h2>Multiple Coefficient of Determination</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
-<p><span class="math display">\[
-R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}
-\]</span></p>
-<p><span class="math display">\[
-R^2 = \frac{21.6006}{23.9} = 1 - \frac{2.2994}{23.9} = 90.38\%
-\]</span></p>
-<p><span class="math display">\[
-R^2 = 1 - \frac{SSE / (n - 1)}{SST / (n - 1)} = 1 - \frac{\text{Residual variance}}{\text{Response variance}}
-\]</span></p>
+<p><span class="math display">\[R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}\]</span></p>
+<p><span class="math display">\[R^2 = \frac{21.6006}{23.9} = 1 - \frac{2.2994}{23.9} = 90.38\%\]</span></p>
+<p><span class="math display">\[R^2 = 1 - \frac{SSE / (n - 1)}{SST / (n - 1)} = 1 - \frac{\text{Residual variance}}{\text{Response variance}}\]</span></p>
 </section>
 <section id="remarks-on-multiple-coefficient-of-determination" class="slide level2 center">
 <h2>Remarks on Multiple Coefficient of Determination</h2>
@@ -727,21 +708,13 @@ R^2 = 1 - \frac{SSE / (n - 1)}{SST / (n - 1)} = 1 - \frac{\text{Residual varianc
 <section id="adjusted-multiple-coefficient-of-determination-1" class="slide level2 center">
 <h2>Adjusted Multiple Coefficient of Determination</h2>
 <p><strong>Example</strong>: Butler Trucking Company</p>
-<p><span class="math display">\[
-R^2 = 1 - \frac{SSE}{SST} = 90.38\%
-\]</span></p>
-<p><span class="math display">\[
-R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - (1 - R^2) \cdot \frac{n - 1}{n - p - 1}
-\]</span></p>
-<p><span class="math display">\[
-R^2_a = 1 - \frac{2.2994 / (10 - 2 - 1)}{23.9 / (10 - 1)} = 1 - (1 - 0.9038) \cdot \frac{10 - 1}{10 - 2 - 1} = 87.63\%
-\]</span></p>
+<p><span class="math display">\[R^2 = 1 - \frac{SSE}{SST} = 90.38\%\]</span></p>
+<p><span class="math display">\[R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - (1 - R^2) \cdot \frac{n - 1}{n - p - 1}\]</span></p>
+<p><span class="math display">\[R^2_a = 1 - \frac{2.2994 / (10 - 2 - 1)}{23.9 / (10 - 1)} = 1 - (1 - 0.9038) \cdot \frac{10 - 1}{10 - 2 - 1} = 87.63\%\]</span></p>
 </section>
 <section id="adjusted-multiple-coefficient-of-determination-2" class="slide level2 center">
 <h2>Adjusted Multiple Coefficient of Determination</h2>
-<p><span class="math display">\[
-R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - \frac{MSE}{\frac{SST}{(n - 1)}} = 1 - \frac{S^2}{\frac{SST}{(n - 1)}}
-\]</span></p>
+<p><span class="math display">\[R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - \frac{MSE}{\frac{SST}{(n - 1)}} = 1 - \frac{S^2}{\frac{SST}{(n - 1)}}\]</span></p>
 <p><br></p>
 <p>A smaller <span class="math inline">\(S^2\)</span> gives a higher <span class="math inline">\(R^2_a\)</span>.</p>
 <p>Bringing in a new independent variable will increase the <span class="math inline">\(R^2_a\)</span> when and only when it can decrease the estimated error variance (<span class="math inline">\(S^2\)</span> or MSE). Hence, <span class="math inline">\(R^2_a\)</span> is a good criterion for <strong>model building or model selection</strong>.</p>
@@ -775,19 +748,11 @@ R^2_a = 1 - \frac{\frac{SSE}{(n - p - 1)}}{\frac{SST}{(n - 1)}} = 1 - \frac{MSE}
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <div style="font-size: 80%;">
 <p><strong>Hypotheses</strong></p>
-<p><span class="math display">\[
-H_0: \beta_1 = \beta_2 = \dots = \beta_p = 0 \quad (\text{No linear relationship})
-\]</span></p>
-<p><span class="math display">\[
-H_a: \text{One or more of the slopes is not equal to zero}
-\]</span></p>
+<p><span class="math display">\[H_0: \beta_1 = \beta_2 = \dots = \beta_p = 0 \quad (\text{No linear relationship})\]</span></p>
+<p><span class="math display">\[H_a: \text{One or more of the slopes is not equal to zero}\]</span></p>
 <p><strong>Test Statistics</strong></p>
-<p><span class="math display">\[
-F = \frac{MSR}{MSE}
-\]</span> where,</p>
-<p><span class="math display">\[
-MSR = \frac{SSR}{p} \quad \text{and} \quad MSE = \frac{SSE}{n-p-1}
-\]</span></p>
+<p><span class="math display">\[F = \frac{MSR}{MSE}\]</span> where,</p>
+<p><span class="math display">\[MSR = \frac{SSR}{p} \quad \text{and} \quad MSE = \frac{SSE}{n-p-1}\]</span></p>
 <p><strong>Rejection Rule</strong></p>
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq F_\alpha\)</span> or <span class="math inline">\(p \leq \alpha\)</span>.</p>
 <p>where <span class="math inline">\(F_\alpha\)</span> is based on an <span class="math inline">\(F\)</span> distribution with <span class="math inline">\(p\)</span> d.f. (numerator) and <span class="math inline">\(n - p - 1\)</span> d.f. (denominator).</p>
@@ -797,12 +762,8 @@ MSR = \frac{SSR}{p} \quad \text{and} \quad MSE = \frac{SSE}{n-p-1}
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>Example: Butler Trucking Company</strong></p>
 <p><strong>Hypotheses:</strong></p>
-<p><span class="math display">\[
-H_0: \beta_1 = \beta_2 = 0
-\]</span></p>
-<p><span class="math display">\[
-H_a: \text{One or both slopes are not equal to zero}
-\]</span></p>
+<p><span class="math display">\[H_0: \beta_1 = \beta_2 = 0\]</span></p>
+<p><span class="math display">\[H_a: \text{One or both slopes are not equal to zero}\]</span></p>
 <p><strong>Rejection Rule</strong></p>
 <p>For <span class="math inline">\(\alpha = 0.01\)</span> and degrees of freedom = 2 and 7, <span class="math inline">\(F_{\alpha} = 9.55\)</span>.</p>
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(F \geq 9.55\)</span> or <span class="math inline">\(p \leq .01\)</span>.</p>
@@ -810,9 +771,7 @@ H_a: \text{One or both slopes are not equal to zero}
 <section id="testing-for-overall-significance-f-test-3" class="slide level2 center">
 <h2>Testing for Overall Significance: <span class="math inline">\(F\)</span> Test</h2>
 <p><strong>Test Statistics</strong></p>
-<p><span class="math display">\[
-F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
-\]</span></p>
+<p><span class="math display">\[F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784\]</span></p>
 <p><strong>Conclusion:</strong></p>
 <p>We reject <span class="math inline">\(H_0\)</span> because <span class="math inline">\(F = 32.8784 &gt; 9.55\)</span>.</p>
 <p>We have significant statistical evidence to conclude that at least one of the independent variables is useful in explaining the variation in the total travel time, or for predicting the total travel time. The significance level is 1%.</p>
@@ -908,9 +867,7 @@ F = \frac{MSR}{MSE} = \frac{10.8003}{0.3285} = 32.8784
 </tr>
 </tbody>
 </table>
-<p><span class="math display">\[
-p-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
-\]</span></p>
+<p><span class="math display">\[p-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003\]</span></p>
 </section>
 <section id="testing-for-individual-significance-t-test" class="slide level2 center">
 <h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
@@ -926,16 +883,10 @@ p-value = 1 - F.DIST(32.8784, 2, 7, TRUE) \approx 0.0003
 <section id="testing-for-individual-significance-t-test-1" class="slide level2 center">
 <h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Hypotheses</strong></p>
-<p><span class="math display">\[
-H_0: \beta_i = 0 \quad (x_i \text{ is not significant in the presence of all other } x's)
-\]</span></p>
-<p><span class="math display">\[
-H_a: \beta_i \neq 0
-\]</span></p>
+<p><span class="math display">\[H_0: \beta_i = 0 \quad (x_i \text{ is not significant in the presence of all other } x's)\]</span></p>
+<p><span class="math display">\[H_a: \beta_i \neq 0\]</span></p>
 <p><strong>Test Statistic</strong></p>
-<p><span class="math display">\[
-t = \frac{b_i - 0}{s_{b_i}} \quad (s_{b_i} \text{ is the standard error of } b_i)
-\]</span></p>
+<p><span class="math display">\[t = \frac{b_i - 0}{s_{b_i}} \quad (s_{b_i} \text{ is the standard error of } b_i)\]</span></p>
 <p><strong>Rejection Rule</strong></p>
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(t \leq -t_{\alpha / 2}\)</span> or <span class="math inline">\(t \geq t_{\alpha / 2}\)</span> or if <span class="math inline">\(p\)</span>-value <span class="math inline">\(\leq \alpha\)</span>.</p>
 <p>where <span class="math inline">\(t_{\alpha/2}\)</span> is based on a <span class="math inline">\(t\)</span>-distribution with <span class="math inline">\(n - p - 1\)</span> degrees of freedom.</p>
@@ -949,21 +900,15 @@ t = \frac{b_i - 0}{s_{b_i}} \quad (s_{b_i} \text{ is the standard error of } b_i
 </ul>
 <div class="fragment">
 <p>For <span class="math inline">\(\alpha = 0.01\)</span> and <span class="math inline">\(df = 7\)</span>:</p>
-<p><span class="math display">\[
-t_{0.005} = 3.499
-\]</span></p>
+<p><span class="math display">\[t_{0.005} = 3.499\]</span></p>
 <p>Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(p\)</span>-value <span class="math inline">\(\leq .01\)</span>, or if <span class="math inline">\(t \leq -3.499\)</span> or <span class="math inline">\(t \geq 3.499\)</span>.</p>
 </div>
 </section>
 <section id="testing-for-individual-significance-t-test-3" class="slide level2 center">
 <h2>Testing for Individual Significance: <span class="math inline">\(t\)</span> Test</h2>
 <p><strong>Test Statistics</strong></p>
-<p><span class="math display">\[
-t = \frac{b_1 - 0}{s_{b_1}} = \frac{0.0611 - 0}{0.0099} = 6.1717, \quad \text{for } x_1
-\]</span></p>
-<p><span class="math display">\[
-t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{for } x_2
-\]</span></p>
+<p><span class="math display">\[t = \frac{b_1 - 0}{s_{b_1}} = \frac{0.0611 - 0}{0.0099} = 6.1717, \quad \text{for } x_1\]</span></p>
+<p><span class="math display">\[t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{for } x_2\]</span></p>
 <p><strong>Conclusion</strong></p>
 <p>Reject each of <span class="math inline">\(H_0: \beta_1 = 0\)</span> and <span class="math inline">\(H_0: \beta_2 = 0\)</span>. Each independent variable is statistically significant <strong>in the presence of the other</strong>.</p>
 </section>
@@ -1060,12 +1005,12 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <section id="categorical-independent-variables-4" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong></p>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 34%">
-<col style="width: 20%">
-<col style="width: 26%">
+<col style="width: 21%">
+<col style="width: 31%">
+<col style="width: 21%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1142,12 +1087,12 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <section id="categorical-independent-variables-5" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc</strong>: Now with a <em>dummy</em> or <em>indicator variable</em>.</p>
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 34%">
-<col style="width: 20%">
-<col style="width: 26%">
+<col style="width: 21%">
+<col style="width: 31%">
+<col style="width: 21%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1227,9 +1172,7 @@ t = \frac{b_2 - 0}{s_{b_2}} = \frac{0.9234 - 0}{0.2211} = 4.1764, \quad \text{fo
 <h2>Categorical Independent Variables</h2>
 <p><strong>Example: Johnson Filtration, Inc.</strong></p>
 <p>Regression model:</p>
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon\]</span></p>
 <p>Where:<br>
 <span class="math inline">\(y\)</span> = Repair time in hours<br>
 <span class="math inline">\(x_1\)</span> = Number of months since last maintenance service<br>
@@ -1244,17 +1187,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <section id="categorical-independent-variables-8" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
 <p>Interpretation of regression coefficient <span class="math inline">\(\beta_2\)</span> of dummy variable <span class="math inline">\(x_2\)</span>:</p>
-<p><span class="math display">\[
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
-\]</span></p>
+<p><span class="math display">\[E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2\]</span></p>
 <p>For mechanical (reference):<br>
-<span class="math display">\[
-E(y|mechanical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 0 = \beta_0 + \beta_1 x_1
-\]</span></p>
+</p>
+<p><span class="math display">\[E(y|mechanical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 0 = \beta_0 + \beta_1 x_1\]</span></p>
 <p>For electrical:<br>
-<span class="math display">\[
-E(y|electrical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = (\beta_0 + \beta_2) + \beta_1 x_1
-\]</span></p>
+</p>
+<p><span class="math display">\[E(y|electrical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = (\beta_0 + \beta_2) + \beta_1 x_1 \]</span></p>
 </section>
 <section id="categorical-independent-variables-9" class="slide level2 center">
 <h2>Categorical Independent Variables</h2>
@@ -1301,20 +1240,16 @@ E(y|electrical) = \beta_0 + \beta_1 x_1 + \beta_2 \cdot 1 = (\beta_0 + \beta_2) 
 </ul>
 <div class="fragment">
 <p><strong>Dummy Variables for Sales Region:</strong> We need <span class="math inline">\(3 - 1 = 2\)</span> dummy variables.</p>
-<p><span class="math display">\[
-x_1 =
+<p><span class="math display">\[x_1 =
 \begin{cases}
 1 &amp; \text{if sales region B} \\
 0 &amp; \text{otherwise}
-\end{cases}
-\]</span></p>
-<p><span class="math display">\[
-x_2 =
+\end{cases}\]</span></p>
+<p><span class="math display">\[x_2 =
 \begin{cases}
 1 &amp; \text{if sales region C} \\
 0 &amp; \text{otherwise}
-\end{cases}
-\]</span></p>
+\end{cases}\]</span></p>
 </div>
 </section>
 <section id="example-dummy-variable-coding" class="slide level2 center">
@@ -1363,21 +1298,13 @@ x_2 =
 <li class="fragment">The regression equation for the expected number of units sold is:</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
-\]</span></p>
+<p><span class="math display">\[E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2\]</span></p>
 </div>
 <ul>
 <li class="fragment"><p>To interpret the parameters <span class="math inline">\(\beta_0,  \beta_1,  \beta_2\)</span>, consider the three variations of the regression equation:</p></li>
-<li class="fragment"><p><strong>Region A</strong>: <span class="math display">\[
-E(y | \text{region A}) = \beta_0 + \beta_1 (0) + \beta_2 (0) = \beta_0
-\]</span></p></li>
-<li class="fragment"><p><strong>Region B</strong>: <span class="math display">\[
-E(y | \text{region B}) = \beta_0 + \beta_1 (1) + \beta_2 (0) = \beta_0 + \beta_1
-\]</span></p></li>
-<li class="fragment"><p><strong>Region C</strong>: <span class="math display">\[
-E(y | \text{region C}) = \beta_0 + \beta_1 (0) + \beta_2 (1) = \beta_0 + \beta_2
-\]</span></p></li>
+<li class="fragment"><p><strong>Region A</strong>: <span class="math display">\[E(y | \text{region A}) = \beta_0 + \beta_1 (0) + \beta_2 (0) = \beta_0\]</span></p></li>
+<li class="fragment"><p><strong>Region B</strong>: <span class="math display">\[E(y | \text{region B}) = \beta_0 + \beta_1 (1) + \beta_2 (0) = \beta_0 + \beta_1 \]</span></p></li>
+<li class="fragment"><p><strong>Region C</strong>: <span class="math display">\[E(y | \text{region C}) = \beta_0 + \beta_1 (0) + \beta_2 (1) = \beta_0 + \beta_2\]</span></p></li>
 <li class="fragment"><p>Interpretation:</p>
 <ul>
 <li class="fragment"><span class="math inline">\(\beta_0\)</span>: Mean or expected value of sales for region A.</li>
@@ -1442,9 +1369,7 @@ E(y | \text{region C}) = \beta_0 + \beta_1 (0) + \beta_2 (1) = \beta_0 + \beta_2
 <h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
 <div style="font-size: 80%;">
 <p>Consider the following two-independent-variable multiple regression equation:</p>
-<p><span class="math display">\[
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
-\]</span></p>
+<p><span class="math display">\[E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2\]</span></p>
 </div>
 <p><br></p>
 
@@ -1455,9 +1380,7 @@ E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2
 </section>
 <section id="assumptions-about-the-error-term-epsilon-in-the-multiple-regression-model-1" class="slide level2 center">
 <h2>Assumptions about the Error Term <span class="math inline">\(\epsilon\)</span> in the Multiple Regression Model</h2>
-<p><span class="math display">\[
-y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon
-\]</span></p>
+<p><span class="math display">\[y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon\]</span></p>
 <ol type="1">
 <li class="fragment"><strong>The error term</strong> <span class="math inline">\(\epsilon\)</span> is a random variable with <span class="math inline">\(E(\epsilon) = 0\)</span>.</li>
 </ol>
@@ -1465,9 +1388,7 @@ y = \beta_0 + \beta_1 x_1 + \cdots + \beta_p x_p + \epsilon
 <li class="fragment"><strong>Implication</strong>: For given values of <span class="math inline">\(x_1, x_2, \ldots, x_p\)</span>, the expected, or average, value of <span class="math inline">\(y\)</span> is given by:</li>
 </ul>
 <div class="fragment">
-<p><span class="math display">\[
-E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p
-\]</span></p>
+<p><span class="math display">\[E(y) = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \cdots + \beta_p x_p\]</span></p>
 </div>
 <ul>
 <li class="fragment"><strong>Validation</strong>: Residuals vs.&nbsp;Predicted Values Plot or the Standardized Residuals vs.&nbsp;Predicted Values Plot</li>
@@ -2084,13 +2005,14 @@ $p$-value = 1 – `F.DIST(9.1765, 2, 12, TRUE)` $\approx 0.0038$
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
